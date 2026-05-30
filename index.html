@@ -631,16 +631,20 @@ function indexTrendData(rawData) {
   });
 }
 
+const GROUP_CHART_START = '2026-05-24';
+const groupLabelOffset  = Math.max(0, D.labels.indexOf(GROUP_CHART_START));
+const groupChartLabels  = D.labels.slice(groupLabelOffset);
+
 function buildGroupChart() {
   const trendData = indexTrendData(calcGroupTrendData(D.jobRecords || []));
   const ctx = document.getElementById('groupChart').getContext('2d');
   groupChart = new Chart(ctx, {
     type: 'line',
     data: {
-      labels: D.labels,
+      labels: groupChartLabels,
       datasets: LABEL_DEFS.map((def, i) => ({
         label: def.name,
-        data: trendData[i],
+        data: trendData[i].slice(groupLabelOffset),
         borderColor: def.color,
         backgroundColor: def.color + '22',
         borderWidth: 2,
@@ -679,7 +683,7 @@ function buildGroupChart() {
 
 function updateGroupChart(records) {
   const trendData = indexTrendData(calcGroupTrendData(records));
-  LABEL_DEFS.forEach((_, i) => { groupChart.data.datasets[i].data = trendData[i]; });
+  LABEL_DEFS.forEach((_, i) => { groupChart.data.datasets[i].data = trendData[i].slice(groupLabelOffset); });
   groupChart.update();
 }
 
