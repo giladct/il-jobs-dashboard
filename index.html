@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Israel Jobs Dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script src="data.js"></script>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 13px;
+    background: #f0f2f5;
+    color: #333;
+  }
+
+  /* ── Header ── */
+  header {
+    background: #1a6e3c;   /* AllJobs green */
+    color: #fff;
+    padding: 14px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  header h1 { font-size: 18px; font-weight: 600; }
+  header .meta { font-size: 11px; opacity: .75; margin-top: 3px; }
+
+  /* ── Stats strip ── */
+  .stats-bar {
+    background: #fff;
+    border-bottom: 1px solid #dde1e7;
+    padding: 12px 24px;
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+  .stat { display: flex; flex-direction: column; }
+  .stat-value { font-size: 22px; font-weight: 700; color: #1a6e3c; line-height: 1.2; }
+  .stat-label { font-size: 11px; color: #888; margin-top: 2px; }
+
+  /* ── Filter bar ── */
+  .filter-bar {
+    background: #fff;
+    border-bottom: 1px solid #dde1e7;
+    padding: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+  }
+  .filter-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: .4px;
+    white-space: nowrap;
+  }
+  .company-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    flex: 1;
+  }
+  .chip {
+    padding: 4px 10px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-size: 11px;
+    background: #f5f5f5;
+    color: #555;
+    transition: all .15s;
+    user-select: none;
+    white-space: nowrap;
+  }
+  .chip.active {
+    color: #fff;
+    border-color: transparent;
+  }
+  .chip:hover { opacity: .85; }
+
+  .btn {
+    padding: 5px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background: #fff;
+    cursor: pointer;
+    font-size: 11px;
+    color: #555;
+    white-space: nowrap;
+  }
+  .btn:hover { background: #f0f0f0; }
+
+  /* ── Meta filters (role / mode / location / title) ── */
+  .filter-bar2 {
+    background: #fff;
+    border-bottom: 1px solid #dde1e7;
+    padding: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+  }
+  .filter-bar2 label {
+    font-size: 11px;
+    font-weight: 700;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: .4px;
+    white-space: nowrap;
+  }
+  .filter-select {
+    padding: 4px 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 12px;
+    color: #333;
+    background: #fafafa;
+    outline: none;
+    min-width: 120px;
+    cursor: pointer;
+  }
+  .filter-select:focus { border-color: #1a6e3c; }
+  .filter-input {
+    padding: 4px 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 12px;
+    color: #333;
+    background: #fafafa;
+    outline: none;
+    width: 160px;
+  }
+  .filter-input:focus { border-color: #1a6e3c; }
+  .dev-badge {
+    display: inline-block;
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 600;
+    background: #e8f4ed;
+    color: #1a6e3c;
+    white-space: nowrap;
+    margin-left: 5px;
+    vertical-align: middle;
+  }
+
+  /* ── Company multi-select dropdown ── */
+  .co-filter-wrap { position: relative; }
+  .co-filter-btn {
+    padding: 4px 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 12px;
+    color: #333;
+    background: #fafafa;
+    cursor: pointer;
+    min-width: 150px;
+    text-align: left;
+    white-space: nowrap;
+  }
+  .co-filter-btn:focus { border-color: #1a6e3c; outline: none; }
+  .co-filter-btn.has-selection { border-color: #1a6e3c; background: #e8f4ed; font-weight: 600; color: #1a6e3c; }
+  .co-filter-panel {
+    display: none;
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    z-index: 200;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0,0,0,.14);
+    width: 230px;
+    padding: 8px;
+  }
+  .co-filter-panel.open { display: block; }
+  .co-filter-search {
+    width: 100%;
+    padding: 4px 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 12px;
+    margin-bottom: 6px;
+    outline: none;
+    box-sizing: border-box;
+  }
+  .co-filter-search:focus { border-color: #1a6e3c; }
+  .co-filter-list { max-height: 220px; overflow-y: auto; }
+  .co-filter-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 3px 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    user-select: none;
+  }
+  .co-filter-item:hover { background: #f5f5f5; }
+  .co-filter-item input[type=checkbox] { cursor: pointer; accent-color: #1a6e3c; }
+  .co-filter-clear {
+    margin-top: 6px;
+    padding: 3px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #fff;
+    font-size: 11px;
+    cursor: pointer;
+    color: #555;
+    width: 100%;
+  }
+  .co-filter-clear:hover { background: #f0f0f0; }
+
+  /* ── Chart area ── */
+  .chart-wrap {
+    margin: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.08);
+    padding: 20px 24px;
+  }
+  .chart-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 16px;
+  }
+  canvas { max-height: 260px; }
+
+  /* ── Table ── */
+  .table-wrap {
+    margin: 0 20px 24px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.08);
+    padding: 20px 24px;
+    overflow-x: auto;
+  }
+  table { width: 100%; border-collapse: collapse; }
+  th {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .4px;
+    color: #888;
+    text-align: left;
+    padding: 6px 10px;
+    border-bottom: 2px solid #eee;
+  }
+  td {
+    padding: 7px 10px;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 12px;
+  }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: #f9fbff; }
+  .rank-cell { color: #aaa; width: 32px; }
+  .bar-cell { width: 160px; }
+  .bar-bg {
+    height: 8px;
+    background: #e8f0fe;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .bar-fill {
+    height: 100%;
+    border-radius: 4px;
+    background: #1a6e3c;
+  }
+
+  /* ── Raw data table ── */
+  .raw-wrap {
+    margin: 0 20px 24px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0,0,0,.08);
+    padding: 20px 24px;
+    overflow-x: auto;
+  }
+  .raw-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+    flex-wrap: wrap;
+  }
+  .raw-search {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 12px;
+    width: 200px;
+    outline: none;
+  }
+  .raw-search:focus { border-color: #1a6e3c; }
+  .raw-count { font-size: 11px; color: #999; }
+  #raw-table { width: 100%; border-collapse: collapse; font-size: 11px; }
+  #raw-table th {
+    padding: 6px 10px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: .3px;
+    color: #888;
+    border-bottom: 2px solid #eee;
+    white-space: nowrap;
+    cursor: pointer;
+    user-select: none;
+  }
+  #raw-table th:hover { color: #1a6e3c; }
+  #raw-table th.sort-asc::after  { content: ' ▲'; }
+  #raw-table th.sort-desc::after { content: ' ▼'; }
+  #raw-table td {
+    padding: 5px 10px;
+    text-align: left;
+    border-bottom: 1px solid #f4f4f4;
+    white-space: nowrap;
+  }
+  #raw-table td:first-child { font-weight: 500; }
+  #raw-table tr:last-child td { border-bottom: none; }
+  #raw-table tr:hover td { background: #f9fbff; }
+  .cell-heat {
+    display: inline-block;
+    min-width: 28px;
+    padding: 2px 5px;
+    border-radius: 4px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  /* ── No-data overlay ── */
+  #no-data {
+    display: none;
+    margin: 40px auto;
+    max-width: 520px;
+    text-align: center;
+    color: #666;
+    line-height: 1.7;
+  }
+  #no-data h2 { font-size: 18px; color: #333; margin-bottom: 10px; }
+  #no-data code {
+    display: inline-block;
+    background: #f0f0f0;
+    padding: 2px 7px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #c00;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>🟢 Israel Jobs Dashboard</h1>
+    <div class="meta" id="meta-line">Loading…</div>
+  </div>
+</header>
+
+<!-- stats strip -->
+<div class="stats-bar">
+  <div class="stat">
+    <span class="stat-value" id="stat-jobs">—</span>
+    <span class="stat-label">Jobs in snapshot</span>
+  </div>
+  <div class="stat">
+    <span class="stat-value" id="stat-companies">—</span>
+    <span class="stat-label">Companies</span>
+  </div>
+  <div class="stat">
+    <span class="stat-value" id="stat-days">—</span>
+    <span class="stat-label">Days tracked</span>
+  </div>
+  <div class="stat">
+    <span class="stat-value" id="stat-date">—</span>
+    <span class="stat-label">Latest snapshot</span>
+  </div>
+</div>
+
+<!-- meta filters: role / mode / location / title -->
+<div class="filter-bar2">
+  <label for="flt-work-mode">Mode</label>
+  <select class="filter-select" id="flt-work-mode">
+    <option value="">All modes</option>
+  </select>
+
+  <label for="flt-location">Location</label>
+  <select class="filter-select" id="flt-location">
+    <option value="">All locations</option>
+  </select>
+
+  <label for="flt-title">Title</label>
+  <input class="filter-input" id="flt-title" type="text" placeholder="keyword…">
+
+  <label for="flt-listed">Listed</label>
+  <select class="filter-select" id="flt-listed" style="min-width:110px">
+    <option value="">Any date</option>
+  </select>
+
+  <label for="flt-removed">Status</label>
+  <select class="filter-select" id="flt-removed" style="min-width:130px">
+    <option value="">All</option>
+    <option value="__active__">Active now</option>
+  </select>
+
+  <label>Company</label>
+  <div class="co-filter-wrap" id="co-filter-wrap">
+    <button class="co-filter-btn" id="co-filter-btn" type="button">All companies ▾</button>
+    <div class="co-filter-panel" id="co-filter-panel">
+      <input class="co-filter-search" id="co-filter-search" placeholder="Search companies…" type="text">
+      <div class="co-filter-list" id="co-filter-list"></div>
+      <button class="co-filter-clear" id="co-filter-clear" type="button">Clear selection</button>
+    </div>
+  </div>
+</div>
+
+<!-- 2×2 chart grid -->
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;margin:20px;border-radius:10px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.08);background:#dde1e7;">
+
+  <div class="table-wrap" style="margin:0;border-radius:0;box-shadow:none;max-height:340px;overflow-y:auto;">
+    <div class="chart-title" style="margin-bottom:12px">All companies</div>
+    <table>
+      <thead>
+        <tr>
+          <th class="rank-cell">#</th>
+          <th>Company</th>
+          <th style="text-align:right;color:#1a6e3c">Active</th>
+          <th style="text-align:right;color:#dc2626">Removed</th>
+          <th class="bar-cell"></th>
+        </tr>
+      </thead>
+      <tbody id="rank-body"></tbody>
+    </table>
+  </div>
+
+  <div class="chart-wrap" style="margin:0;border-radius:0;box-shadow:none;">
+    <div class="chart-title">Total open positions over time</div>
+    <canvas id="lineChart"></canvas>
+  </div>
+
+  <div class="chart-wrap" style="margin:0;border-radius:0;box-shadow:none;">
+    <div class="chart-title">Positions added &amp; removed per day <span style="font-size:11px;font-weight:400;color:#999">(click a bar to filter)</span></div>
+    <canvas id="flowChart" style="max-height:200px;cursor:pointer"></canvas>
+  </div>
+
+  <div class="chart-wrap" style="margin:0;border-radius:0;box-shadow:none;">
+    <div class="chart-title">Open positions by role group over time</div>
+    <div id="group-chips" style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px;"></div>
+    <canvas id="groupChart" style="max-height:200px;"></canvas>
+  </div>
+
+</div>
+
+<!-- raw data table -->
+<div class="raw-wrap">
+  <div class="raw-header">
+    <div class="chart-title" style="margin:0">Raw data — all snapshots</div>
+    <input class="raw-search" id="raw-search" placeholder="Filter company or title…" type="text">
+    <span class="raw-count" id="raw-count"></span>
+  </div>
+  <table id="raw-table">
+    <thead id="raw-thead"></thead>
+    <tbody id="raw-tbody"></tbody>
+  </table>
+</div>
+
+<!-- no-data state -->
+<div id="no-data">
+  <h2>No data yet</h2>
+  <p>Run the tracker to collect your first snapshot:</p>
+  <br>
+  <code>pip install requests beautifulsoup4</code><br><br>
+  <code>python jobs_tracker.py</code><br><br>
+  <p>Then refresh this page. Run it daily to build a trend chart.</p>
+</div>
+
+<script>
+// ── Palette: 30 distinct colours ─────────────────────────────────────────────
+const PALETTE = [
+  '#1a6e3c','#e8a838','#2563eb','#dc2626','#7c3aed',
+  '#0891b2','#be185d','#65a30d','#9333ea','#0d9488',
+  '#f97316','#6366f1','#84cc16','#ef4444','#06b6d4',
+  '#d97706','#10b981','#8b5cf6','#ec4899','#14b8a6',
+  '#3b82f6','#a855f7','#22c55e','#f43f5e','#eab308',
+  '#6d28d9','#059669','#b45309','#0ea5e9','#c026d3',
+];
+
+// ── Flow chart (added / removed per day) ─────────────────────────────────────
+let flowChart;
+
+const FLOW_SKIP = new Set(['2026-05-23', '2026-05-24']);
+
+function calcFlowData(records) {
+  const labels  = D.labels.filter(d => !FLOW_SKIP.has(d));
+  const added   = {};
+  const removed = {};
+  labels.forEach(d => { added[d] = 0; removed[d] = 0; });
+  records.forEach(r => {
+    if (r.firstSeen   && added[r.firstSeen]   !== undefined) added[r.firstSeen]++;
+    if (r.dateRemoved && removed[r.dateRemoved] !== undefined) removed[r.dateRemoved]++;
+  });
+  return {
+    labels,
+    addedData:   labels.map(d =>  added[d]),
+    removedData: labels.map(d => -removed[d]),
+  };
+}
+
+let flowActiveDate  = null;
+let flowActiveDsIdx = null;
+
+function applyFlowBarColors() {
+  const { labels } = calcFlowData(D.jobRecords || []);
+  const active = flowActiveDate !== null;
+  flowChart.data.datasets[0].backgroundColor = labels.map(d =>
+    active && (d !== flowActiveDate || flowActiveDsIdx !== 0) ? '#1a6e3c55' : '#1a6e3c');
+  flowChart.data.datasets[1].backgroundColor = labels.map(d =>
+    active && (d !== flowActiveDate || flowActiveDsIdx !== 1) ? '#dc262655' : '#dc2626');
+  flowChart.update();
+}
+
+function buildFlowChart() {
+  const { labels, addedData, removedData } = calcFlowData(D.jobRecords || []);
+  const ctx = document.getElementById('flowChart').getContext('2d');
+  flowChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels,
+      datasets: [
+        { label: 'Added',   data: addedData,   backgroundColor: '#1a6e3c', borderRadius: 4, borderSkipped: false },
+        { label: 'Removed', data: removedData, backgroundColor: '#dc2626', borderRadius: 4, borderSkipped: false },
+      ],
+    },
+    options: {
+      responsive: true,
+      interaction: { mode: 'index', intersect: false },
+      onClick(e) {
+        const pts = flowChart.getElementsAtEventForMode(e, 'nearest', { intersect: true }, false);
+        if (!pts.length) return;
+        const date   = flowChart.data.labels[pts[0].index];
+        const dsIdx  = pts[0].datasetIndex;  // 0=Added, 1=Removed
+        const sameBar = flowActiveDate === date && flowActiveDsIdx === dsIdx;
+        if (sameBar) {
+          flowActiveDate  = null;
+          flowActiveDsIdx = null;
+          setFlowFilter(null, null);
+        } else {
+          flowActiveDate  = date;
+          flowActiveDsIdx = dsIdx;
+          setFlowFilter(dsIdx === 0 ? date : null, dsIdx === 1 ? date : null);
+        }
+        applyFlowBarColors();
+      },
+      plugins: {
+        legend: {
+          display: true,
+          position: 'bottom',
+          labels: { boxWidth: 12, font: { size: 11 }, padding: 12 },
+        },
+        tooltip: {
+          callbacks: {
+            label: item => ` ${item.dataset.label}: ${Math.abs(item.parsed.y)}`,
+          },
+        },
+      },
+      scales: {
+        x: { ticks: { font: { size: 11 }, maxRotation: 45 }, grid: { color: '#f0f0f0' } },
+        y: { ticks: { font: { size: 11 }, callback: v => Math.abs(v) }, grid: { color: '#f0f0f0' } },
+      },
+    },
+  });
+}
+
+function updateFlowChart(records) {
+  const { addedData, removedData } = calcFlowData(records);
+  flowChart.data.datasets[0].data = addedData;
+  flowChart.data.datasets[1].data = removedData;
+  flowChart.update();
+}
+
+// ── Role group trends ─────────────────────────────────────────────────────────
+let groupChart;
+
+const LABEL_DEFS = [
+  { name: 'Full Stack',     color: '#2563eb', re: /full.?stack|software.engineer|software.developer|web.developer|\br&d\b/i },
+  { name: 'Frontend',       color: '#06b6d4', re: /frontend|front.end|\bui\b|\bux\b|react|angular|vue|typescript|javascript|next\.?js|svelte|nuxt|webpack/i },
+  { name: 'Backend',        color: '#059669', re: /backend|back.end|\bapi\b|node\.?js|\bjava\b|python|ruby|\bgo\b|golang|php|\.net\b|spring|kotlin|scala|rust|c#|c\+\+|microservice|server.side|django|flask|fastapi|express/i },
+  { name: 'Mobile',         color: '#7c3aed', re: /mobile|\bios\b|android|flutter|react.native|swift|\bxamarin\b/i },
+  { name: 'Embedded',       color: '#f97316', re: /embedded|firmware|hardware|\brtos\b|\bfpga\b|verilog|vhdl|microcontroller|signal.process|\bdsp\b|real.time.system/i },
+  { name: 'AI',             color: '#a855f7', re: /\bai\b|artificial.intellig|machine.learn|\bllm\b|\bgpt\b|\bnlp\b|deep.learn|neural|computer.vision|pytorch|tensorflow|keras|generative|mlops|\brag\b|algorithm|recommendation/i },
+  { name: 'Data',           color: '#ec4899', re: /\bdata\b|analytics|analytic|scientist|business.intel|\bsql\b|\bspark\b|warehouse|tableau|power.bi|\bdbt\b|airflow|snowflake|bigquery|databricks|looker|etl|\bredshift\b/i },
+  { name: 'Infrastructure', color: '#d97706', re: /devops|infra|cloud|platform|\bsre\b|kubernetes|\bk8s\b|terraform|\baws\b|\bazure\b|\bgcp\b|docker|ci.?cd|jenkins|network.eng|sysadmin|system.eng|linux.admin|observability/i },
+  { name: 'Security',       color: '#ef4444', re: /security|cyber|pentest|\bsoc\b|appsec|devsecops|vulnerability|penetration.test/i },
+  { name: 'QA',             color: '#16a34a', re: /\bqa\b|quality.assur|test.auto|automation.test|manual.test|\btester\b|testing.eng|\bsdet\b|selenium|playwright|cypress/i },
+  { name: 'Manager',        color: '#6b7280', re: /\bmanager\b|team.lead|head.of|\bdirector\b|\bvp\b|\blead\b|scrum.master|product.owner|program.manager|project.manager/i },
+];
+
+function calcGroupTrendData(records) {
+  const result = LABEL_DEFS.map(() => new Array(D.labels.length).fill(0));
+  records.forEach(r => {
+    const title = r.title || '';
+    LABEL_DEFS.forEach((def, li) => {
+      if (!def.re.test(title)) return;
+      D.labels.forEach((d, di) => {
+        if (!r.firstSeen || r.firstSeen > d) return;
+        if (r.dateRemoved && r.dateRemoved <= d) return;
+        result[li][di]++;
+      });
+    });
+  });
+  return result;
+}
+
+function indexTrendData(rawData) {
+  return rawData.map(series => {
+    const nonZero = series.filter(v => v > 0);
+    if (!nonZero.length) return series.map(() => null);
+    const base = Math.min(...nonZero);
+    return series.map(v => v === 0 ? null : Math.round((v / base) * 100));
+  });
+}
+
+function buildGroupChart() {
+  const trendData = indexTrendData(calcGroupTrendData(D.jobRecords || []));
+  const ctx = document.getElementById('groupChart').getContext('2d');
+  groupChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: D.labels,
+      datasets: LABEL_DEFS.map((def, i) => ({
+        label: def.name,
+        data: trendData[i],
+        borderColor: def.color,
+        backgroundColor: def.color + '22',
+        borderWidth: 2,
+        pointRadius: D.labels.length <= 7 ? 4 : 2,
+        pointHoverRadius: 6,
+        tension: 0.3,
+        spanGaps: true,
+      })),
+    },
+    options: {
+      responsive: true,
+      interaction: { mode: 'index', intersect: false },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            title: items => items[0].label,
+            label: item => item.parsed.y == null ? null : ` ${item.dataset.label}: ${item.parsed.y > 100 ? '+' : ''}${item.parsed.y - 100}%`,
+          },
+        },
+      },
+      scales: {
+        x: { ticks: { font: { size: 11 }, maxRotation: 45 }, grid: { color: '#f0f0f0' } },
+        y: {
+          title: { display: true, text: 'Change from baseline (%)', font: { size: 11 } },
+          ticks: {
+            font: { size: 11 },
+            callback: v => `${v > 100 ? '+' : ''}${v - 100}%`,
+          },
+          grid: { color: '#f0f0f0' },
+        },
+      },
+    },
+  });
+}
+
+function updateGroupChart(records) {
+  const trendData = indexTrendData(calcGroupTrendData(records));
+  LABEL_DEFS.forEach((_, i) => { groupChart.data.datasets[i].data = trendData[i]; });
+  groupChart.update();
+}
+
+function buildGroupChips() {
+  const container = document.getElementById('group-chips');
+  LABEL_DEFS.forEach(def => {
+    const chip = document.createElement('button');
+    chip.className = 'chip';
+    chip.textContent = def.name;
+    chip.style.cssText = 'background:#f5f5f5;border-color:#ccc;color:#555';
+    chip.addEventListener('click', () => {
+      if (selectedLabels.has(def.name)) selectedLabels.delete(def.name);
+      else selectedLabels.add(def.name);
+      chip.style.cssText = selectedLabels.has(def.name)
+        ? `background:${def.color};border-color:${def.color};color:#fff`
+        : 'background:#f5f5f5;border-color:#ccc;color:#555';
+      triggerRender();
+    });
+    container.appendChild(chip);
+  });
+}
+
+// ── Guard: data.js may not exist yet ─────────────────────────────────────────
+if (typeof JOB_DATA === 'undefined') {
+  document.getElementById('no-data').style.display = 'block';
+  document.getElementById('meta-line').textContent = 'No data collected yet';
+  throw new Error('data.js not found');
+}
+
+const D = JOB_DATA;
+
+// ── Filter out Agoda globally ─────────────────────────────────────────────────
+const EXCLUDED_COMPANIES = new Set(['Agoda']);
+D.jobRecords  = (D.jobRecords  || []).filter(r => !EXCLUDED_COMPANIES.has(r.company));
+D.datasets    = (D.datasets    || []).filter(ds => !EXCLUDED_COMPANIES.has(ds.label));
+D.topCompanies= (D.topCompanies|| []).filter(c  => !EXCLUDED_COMPANIES.has(c));
+D.allRanking  = (D.allRanking  || []).filter(r  => !EXCLUDED_COMPANIES.has(r.company));
+
+// ── State ─────────────────────────────────────────────────────────────────────
+const ALL_COMPANIES = D.topCompanies;
+let chart;
+let selectedCompanies = new Set();
+let selectedLabels    = new Set();
+let setFlowFilter;   // set by IIFE — called from flow chart click
+
+// ── Populate stats ────────────────────────────────────────────────────────────
+document.getElementById('meta-line').textContent =
+  `Source: devjobs.co.il  ·  Generated: ${D.generated.replace('T', ' ')}`;
+document.getElementById('stat-days').textContent =
+  D.daysTracked;
+document.getElementById('stat-date').textContent =
+  D.latestDate;
+
+function updateStats(filteredRecords) {
+  const jobs      = filteredRecords.length;
+  const companies = new Set(filteredRecords.map(r => r.company)).size;
+  document.getElementById('stat-jobs').textContent      = jobs.toLocaleString();
+  document.getElementById('stat-companies').textContent = companies.toLocaleString();
+}
+// initialise with unfiltered totals
+updateStats(D.jobRecords || []);
+
+
+// ── Build / update chart ──────────────────────────────────────────────────────
+// Compute total open positions per day from filtered companies
+function buildTotalDataset(filteredCos) {
+  const records = filteredCos
+    ? (D.jobRecords || []).filter(r => filteredCos.has(r.company))
+    : (D.jobRecords || []);
+  const totals = new Array(D.labels.length).fill(0);
+  records.forEach(r => {
+    D.labels.forEach((d, di) => {
+      if (!r.firstSeen || r.firstSeen > d) return;
+      if (r.dateRemoved && r.dateRemoved <= d) return;
+      totals[di]++;
+    });
+  });
+  return [{
+    label: 'Total open positions',
+    data: totals,
+    borderColor: '#1a6e3c',
+    backgroundColor: '#1a6e3c22',
+    borderWidth: 2.5,
+    pointRadius: D.labels.length <= 7 ? 4 : 2,
+    pointHoverRadius: 6,
+    tension: 0.3,
+    spanGaps: true,
+    fill: true,
+  }];
+}
+
+function updateChart(filteredCos) {
+  chart.data.datasets = buildTotalDataset(filteredCos);
+  chart.update();
+}
+
+const ctx = document.getElementById('lineChart').getContext('2d');
+chart = new Chart(ctx, {
+  type: 'line',
+  data: { labels: D.labels, datasets: buildTotalDataset(null) },
+  options: {
+    responsive: true,
+    interaction: { mode: 'index', intersect: false },
+    plugins: {
+      legend: {
+        display: true,
+        position: 'bottom',
+        labels: { boxWidth: 12, font: { size: 11 }, padding: 10 },
+      },
+      tooltip: {
+        callbacks: {
+          title: items => items[0].label,
+          label: item => ` ${item.dataset.label}: ${item.parsed.y ?? '—'}`,
+        },
+      },
+    },
+    scales: {
+      x: { ticks: { font: { size: 11 }, maxRotation: 45 }, grid: { color: '#f0f0f0' } },
+      y: {
+        beginAtZero: true,
+        title: { display: true, text: 'Open positions', font: { size: 11 } },
+        ticks: { font: { size: 11 } },
+        grid: { color: '#f0f0f0' },
+      },
+    },
+  },
+});
+
+// ── Ranking table ─────────────────────────────────────────────────────────────
+const rankTbody = document.getElementById('rank-body');
+
+function renderRanking(filteredRecords) {
+  const activeMap  = new Map();
+  const removedMap = new Map();
+  filteredRecords.forEach(r => {
+    if (r.isActive)     activeMap.set(r.company,  (activeMap.get(r.company)  || 0) + 1);
+    if (r.dateRemoved)  removedMap.set(r.company, (removedMap.get(r.company) || 0) + 1);
+  });
+  const allCos = new Set([...activeMap.keys(), ...removedMap.keys()]);
+  let rankData = [...allCos].map(company => ({
+    company,
+    active:  activeMap.get(company)  || 0,
+    removed: removedMap.get(company) || 0,
+  })).sort((a, b) => (b.active + b.removed) - (a.active + a.removed));
+
+  const maxTotal = rankData[0] ? rankData[0].active + rankData[0].removed : 1;
+  rankTbody.innerHTML = '';
+  rankData.forEach((row, i) => {
+    const activePct  = (row.active  / maxTotal * 100).toFixed(1);
+    const removedPct = (row.removed / maxTotal * 100).toFixed(1);
+    const sel = selectedCompanies.has(row.company);
+    const tr  = document.createElement('tr');
+    tr.style.cursor = 'pointer';
+    if (sel) tr.style.background = '#e8f4ed';
+    tr.innerHTML = `
+      <td class="rank-cell">${i + 1}</td>
+      <td style="font-weight:${sel ? 700 : 400}">${row.company}</td>
+      <td style="text-align:right;font-weight:600;color:#1a6e3c">${row.active || '—'}</td>
+      <td style="text-align:right;font-weight:600;color:#dc2626">${row.removed || '—'}</td>
+      <td class="bar-cell">
+        <div class="bar-bg" style="display:flex">
+          <div style="height:8px;border-radius:4px 0 0 4px;background:#1a6e3c;width:${activePct}%"></div>
+          <div style="height:8px;border-radius:0 4px 4px 0;background:#dc2626;width:${removedPct}%"></div>
+        </div>
+      </td>
+    `;
+    tr.addEventListener('click', () => {
+      if (selectedCompanies.has(row.company)) selectedCompanies.delete(row.company);
+      else selectedCompanies.add(row.company);
+      triggerRender();
+    });
+    rankTbody.appendChild(tr);
+  });
+}
+renderRanking(D.jobRecords);
+buildFlowChart();
+buildGroupChart();
+buildGroupChips();
+
+// ── Raw data table ───────────────────────────────────────────────────────────
+let triggerRender;   // set by IIFE below so ranking table can call render()
+(function () {
+  const records   = D.jobRecords || [];
+  let sortKey     = 'firstSeen';
+  let sortDir     = -1;
+  let filterTxt   = '';
+  let fltWorkMode = '';
+  let fltLocation = '';
+  let fltTitle    = '';
+  let fltListed   = '';
+  let fltRemoved  = '';
+
+  const rawTbody  = document.getElementById('raw-tbody');
+  const countEl   = document.getElementById('raw-count');
+
+  // ── Populate meta-filter dropdowns ──────────────────────────────────────
+  function populateSelect(id, values) {
+    const sel = document.getElementById(id);
+    [...values].filter(Boolean).sort().forEach(v => {
+      const o = document.createElement('option');
+      o.value = o.textContent = v;
+      sel.appendChild(o);
+    });
+  }
+  populateSelect('flt-work-mode', new Set(records.map(r => r.workMode)));
+  populateSelect('flt-location',  new Set(records.map(r => r.location)));
+  // ── Build company multi-select ──────────────────────────────────────────
+  const allCompanyNames = [...new Set(records.map(r => r.company))].filter(Boolean).sort();
+  const coBtn    = document.getElementById('co-filter-btn');
+  const coPanel  = document.getElementById('co-filter-panel');
+  const coSearch = document.getElementById('co-filter-search');
+  const coList   = document.getElementById('co-filter-list');
+  const coClear  = document.getElementById('co-filter-clear');
+
+  function buildCoList(query, counts) {
+    coList.innerHTML = '';
+    const q = query.toLowerCase();
+    let names = allCompanyNames.filter(c => !q || c.toLowerCase().includes(q));
+    if (counts) names = [...names].sort((a, b) => (counts.get(b) || 0) - (counts.get(a) || 0));
+    names.forEach(c => {
+      const label = document.createElement('label');
+      label.className = 'co-filter-item';
+      const cb = document.createElement('input');
+      cb.type = 'checkbox';
+      cb.value = c;
+      cb.checked = selectedCompanies.has(c);
+      cb.addEventListener('change', () => {
+        if (cb.checked) selectedCompanies.add(c);
+        else selectedCompanies.delete(c);
+        updateCoBtnLabel();
+        render();
+      });
+      label.appendChild(cb);
+      const nameSpan = document.createElement('span');
+      nameSpan.style.flex = '1';
+      nameSpan.textContent = c;
+      label.appendChild(nameSpan);
+      if (counts) {
+        const cnt = counts.get(c) || 0;
+        const badge = document.createElement('span');
+        badge.textContent = cnt;
+        badge.style.cssText = 'font-size:10px;color:#999;min-width:22px;text-align:right;flex-shrink:0';
+        label.appendChild(badge);
+      }
+      coList.appendChild(label);
+    });
+  }
+
+  function getCountsForCoFilter() {
+    const counts = new Map();
+    records.forEach(r => {
+      if (!r.isActive) return;
+      if (filterTxt   && !r.company.toLowerCase().includes(filterTxt) &&
+                         !r.title.toLowerCase().includes(filterTxt)) return;
+      if (fltWorkMode && r.workMode  !== fltWorkMode) return;
+      if (fltLocation && r.location  !== fltLocation) return;
+      if (fltTitle    && !r.title.toLowerCase().includes(fltTitle.toLowerCase())) return;
+      if (fltListed   && r.firstSeen !== fltListed)   return;
+      if (fltRemoved !== '' && fltRemoved !== '__active__' && r.dateRemoved !== fltRemoved) return;
+      counts.set(r.company, (counts.get(r.company) || 0) + 1);
+    });
+    return counts;
+  }
+
+  function updateCoBtnLabel() {
+    const n = selectedCompanies.size;
+    coBtn.textContent = n === 0 ? 'All companies ▾' : `${n} selected ▾`;
+    coBtn.classList.toggle('has-selection', n > 0);
+  }
+
+  let lastCounts = null;
+
+  coBtn.addEventListener('click', e => {
+    e.stopPropagation();
+    coPanel.classList.toggle('open');
+    if (coPanel.classList.contains('open')) {
+      coSearch.value = '';
+      lastCounts = getCountsForCoFilter();
+      buildCoList('', lastCounts);
+      coSearch.focus();
+    }
+  });
+  coSearch.addEventListener('input', e => buildCoList(e.target.value.trim(), lastCounts));
+  coClear.addEventListener('click', () => {
+    selectedCompanies.clear();
+    updateCoBtnLabel();
+    lastCounts = getCountsForCoFilter();
+    buildCoList(coSearch.value.trim(), lastCounts);
+    render();
+  });
+  document.addEventListener('click', e => {
+    if (!document.getElementById('co-filter-wrap').contains(e.target)) coPanel.classList.remove('open');
+  });
+  lastCounts = getCountsForCoFilter();
+  buildCoList('', lastCounts);
+
+  const listedDates = [...new Set(records.map(r => r.firstSeen).filter(Boolean))].sort().reverse();
+  listedDates.forEach(d => {
+    const o = document.createElement('option');
+    o.value = o.textContent = d;
+    document.getElementById('flt-listed').appendChild(o);
+  });
+
+  const removedDates = [...new Set(records.map(r => r.dateRemoved).filter(Boolean))].sort().reverse();
+  removedDates.forEach(d => {
+    const o = document.createElement('option');
+    o.value = o.textContent = d;
+    document.getElementById('flt-removed').appendChild(o);
+  });
+
+  // ── Build header ────────────────────────────────────────────────────────
+  const headerRow = document.getElementById('raw-thead').insertRow();
+  [['firstSeen','First Seen'], ['company','Company'], ['title','Job Title'],
+   ['','Labels'], ['workMode','Mode'], ['location','Location'],
+   ['daysListed','Days'], ['dateRemoved','Removed'], ['jobId','ID']].forEach(([key, label]) => {
+    const th = document.createElement('th');
+    th.textContent = label;
+    th.dataset.key = key;
+    headerRow.appendChild(th);
+  });
+  headerRow.appendChild(document.createElement('th'));
+
+  // ── Filter logic ─────────────────────────────────────────────────────────
+  function getFiltered() {
+    return records.filter(r =>
+      (!selectedCompanies.size || selectedCompanies.has(r.company)) &&
+      (!selectedLabels.size    || [...selectedLabels].some(name => {
+        const def = LABEL_DEFS.find(d => d.name === name);
+        return def && def.re.test(r.title || '');
+      }))                                                            &&
+      (!filterTxt   || r.company.toLowerCase().includes(filterTxt) ||
+                       r.title.toLowerCase().includes(filterTxt))  &&
+      (!fltWorkMode || r.workMode  === fltWorkMode)                &&
+      (!fltLocation || r.location  === fltLocation)                &&
+      (!fltTitle    || r.title.toLowerCase().includes(fltTitle.toLowerCase())) &&
+      (!fltListed   || r.firstSeen === fltListed)                  &&
+      (fltRemoved === ''           ? true :
+       fltRemoved === '__active__' ? r.isActive :
+                                    r.dateRemoved === fltRemoved)
+    );
+  }
+
+  function getSorted(data) {
+    return [...data].sort((a, b) => {
+      if (sortKey === 'daysListed') return sortDir * ((b[sortKey] ?? 0) - (a[sortKey] ?? 0));
+      const va = a[sortKey] || '', vb = b[sortKey] || '';
+      return va < vb ? sortDir : va > vb ? -sortDir : 0;
+    });
+  }
+
+  function updateSortIndicators() {
+    headerRow.querySelectorAll('th[data-key]').forEach(th => {
+      th.classList.remove('sort-asc', 'sort-desc');
+      if (th.dataset.key === sortKey)
+        th.classList.add(sortDir === 1 ? 'sort-asc' : 'sort-desc');
+    });
+  }
+
+  // ── Render all views ──────────────────────────────────────────────────────
+  function render() {
+    const filtered = getFiltered();
+    const data     = getSorted(filtered);
+
+    // Stats bar
+    updateStats(data);
+    countEl.textContent = `${data.length.toLocaleString()} of ${records.length.toLocaleString()} jobs`;
+
+    // Derive filtered company set for chart + ranking
+    // null means "no filter active" — preserve unfiltered behaviour
+    const hasMetaFilter = selectedCompanies.size || selectedLabels.size || filterTxt ||
+                          fltWorkMode || fltLocation || fltTitle || fltListed || fltRemoved;
+    const filteredCos = hasMetaFilter ? new Set(data.map(r => r.company)) : null;
+
+    // Update chart & ranking table & flow chart
+    updateChart(filteredCos);
+    renderRanking(hasMetaFilter ? filtered : D.jobRecords);
+    updateFlowChart(filtered);
+    updateGroupChart(hasMetaFilter ? filtered : D.jobRecords);
+
+    // Refresh co-filter counts if panel is open
+    if (coPanel.classList.contains('open')) refreshCoList();
+
+    // Raw table rows
+    rawTbody.innerHTML = '';
+    data.forEach(r => {
+      const tr = document.createElement('tr');
+      const removedCell = r.dateRemoved
+        ? `<span style="color:#dc2626;font-size:11px">${r.dateRemoved}</span>`
+        : `<span style="color:#1a6e3c;font-size:10px">active</span>`;
+      tr.insertAdjacentHTML('beforeend', `
+        <td style="color:#888;white-space:nowrap">${r.firstSeen || ''}</td>
+        <td style="font-weight:500">${r.company}</td>
+        <td style="white-space:normal;max-width:260px">${r.title}</td>
+        <td style="white-space:normal;min-width:120px">${
+          LABEL_DEFS.filter(def => def.re.test(r.title || '')).map(def =>
+            `<span style="display:inline-block;padding:1px 5px;border-radius:3px;font-size:10px;font-weight:600;background:${def.color}22;color:${def.color};margin:1px 1px;white-space:nowrap">${def.name}</span>`
+          ).join('')
+        }</td>
+        <td style="color:#555">${r.workMode || ''}</td>
+        <td style="color:#555">${r.location || ''}</td>
+        <td style="color:#777;white-space:nowrap;font-size:12px"
+            title="First seen: ${r.firstSeen}${r.lastSeen ? ' · Last seen: ' + r.lastSeen : ''}">${
+          r.daysListed === 0 ? 'today' : r.daysListed + 'd'
+        }</td>
+        <td style="text-align:center;white-space:nowrap">${removedCell}</td>
+        <td style="white-space:nowrap">${
+          r.jobId
+            ? `<a href="https://www.linkedin.com/jobs/view/${r.jobId}" target="_blank"
+                  style="color:#0a66c2;text-decoration:none;font-size:11px;font-family:monospace"
+                  title="View on LinkedIn">${r.jobId}</a>`
+            : ''
+        }</td>
+        <td style="text-align:center">${
+          r.url ? `<a href="${r.url}" target="_blank" style="color:#1a6e3c;text-decoration:none;font-size:11px">↗</a>` : ''
+        }</td>
+      `);
+      rawTbody.appendChild(tr);
+    });
+
+    updateSortIndicators();
+  }
+
+  // ── Events ───────────────────────────────────────────────────────────────
+  headerRow.addEventListener('click', e => {
+    const th = e.target.closest('th[data-key]');
+    if (!th) return;
+    const key = th.dataset.key;
+    if (key === sortKey) { sortDir *= -1; }
+    else { sortKey = key; sortDir = (key === 'firstSeen' || key === 'daysListed' || key === 'dateRemoved') ? -1 : 1; }
+    render();
+  });
+  document.getElementById('raw-search').addEventListener('input',   e => { filterTxt   = e.target.value.trim().toLowerCase(); render(); });
+  document.getElementById('flt-work-mode').addEventListener('change',e => { fltWorkMode = e.target.value; render(); });
+  document.getElementById('flt-location').addEventListener('change', e => { fltLocation = e.target.value; render(); });
+  document.getElementById('flt-title').addEventListener('input',     e => { fltTitle    = e.target.value.trim(); render(); });
+  document.getElementById('flt-listed').addEventListener('change',   e => { fltListed   = e.target.value; render(); });
+  document.getElementById('flt-removed').addEventListener('change',  e => { fltRemoved  = e.target.value; render(); });
+
+  function refreshCoList() {
+    lastCounts = getCountsForCoFilter();
+    buildCoList(coSearch.value.trim(), lastCounts);
+  }
+
+  setFlowFilter = (listed, removed) => {
+    fltListed  = listed  || '';
+    fltRemoved = removed || '';
+    document.getElementById('flt-listed').value  = fltListed;
+    document.getElementById('flt-removed').value = fltRemoved;
+    render();
+  };
+
+  triggerRender = () => { updateCoBtnLabel(); refreshCoList(); render(); };
+  render();
+})();
+</script>
+</body>
+</html>
