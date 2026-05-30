@@ -620,10 +620,13 @@ function calcGroupTrendData(records) {
 }
 
 function indexTrendData(rawData) {
+  const baseDate = '2026-05-24';
+  const baseDi   = D.labels.indexOf(baseDate);
   return rawData.map(series => {
-    const nonZero = series.filter(v => v > 0);
-    if (!nonZero.length) return series.map(() => null);
-    const base = Math.min(...nonZero);
+    const base = baseDi >= 0 && series[baseDi] > 0
+      ? series[baseDi]
+      : series.find(v => v > 0);
+    if (!base) return series.map(() => null);
     return series.map(v => v === 0 ? null : Math.round((v / base) * 100));
   });
 }
