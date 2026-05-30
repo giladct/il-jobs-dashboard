@@ -631,11 +631,12 @@ function indexTrendData(rawData) {
   });
 }
 
-const GROUP_CHART_START = '2026-05-24';
-const groupLabelOffset  = Math.max(0, D.labels.indexOf(GROUP_CHART_START));
-const groupChartLabels  = D.labels.slice(groupLabelOffset);
+let groupLabelOffset = 0;
 
 function buildGroupChart() {
+  const GROUP_CHART_START = '2026-05-24';
+  groupLabelOffset = Math.max(0, D.labels.indexOf(GROUP_CHART_START));
+  const groupChartLabels = D.labels.slice(groupLabelOffset);
   const trendData = indexTrendData(calcGroupTrendData(D.jobRecords || []));
   const ctx = document.getElementById('groupChart').getContext('2d');
   groupChart = new Chart(ctx, {
