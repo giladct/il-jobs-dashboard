@@ -1,12 +1,13 @@
 const JOB_DATA = {
-  "generated": "2026-05-31T09:35:22",
+  "generated": "2026-05-31T10:03:58",
   "labels": [
     "2026-05-24",
     "2026-05-25",
     "2026-05-26",
     "2026-05-27",
     "2026-05-28",
-    "2026-05-30"
+    "2026-05-30",
+    "2026-05-31"
   ],
   "datasets": [
     {
@@ -17,7 +18,8 @@ const JOB_DATA = {
         508,
         516,
         488,
-        535
+        535,
+        527
       ]
     },
     {
@@ -28,7 +30,8 @@ const JOB_DATA = {
         123,
         118,
         118,
-        113
+        113,
+        120
       ]
     },
     {
@@ -39,6 +42,7 @@ const JOB_DATA = {
         96,
         96,
         96,
+        109,
         109
       ]
     },
@@ -50,7 +54,8 @@ const JOB_DATA = {
         83,
         84,
         86,
-        90
+        90,
+        88
       ]
     },
     {
@@ -61,7 +66,8 @@ const JOB_DATA = {
         84,
         87,
         85,
-        82
+        82,
+        87
       ]
     },
     {
@@ -72,18 +78,8 @@ const JOB_DATA = {
         79,
         82,
         81,
-        80
-      ]
-    },
-    {
-      "label": "Agoda",
-      "data": [
-        62,
-        61,
-        62,
-        66,
-        67,
-        78
+        80,
+        84
       ]
     },
     {
@@ -94,7 +90,20 @@ const JOB_DATA = {
         70,
         73,
         70,
-        77
+        77,
+        81
+      ]
+    },
+    {
+      "label": "Agoda",
+      "data": [
+        62,
+        61,
+        62,
+        66,
+        67,
+        78,
+        78
       ]
     },
     {
@@ -105,7 +114,8 @@ const JOB_DATA = {
         60,
         62,
         66,
-        64
+        64,
+        68
       ]
     },
     {
@@ -116,7 +126,8 @@ const JOB_DATA = {
         50,
         47,
         53,
-        46
+        46,
+        52
       ]
     },
     {
@@ -127,7 +138,8 @@ const JOB_DATA = {
         37,
         37,
         43,
-        41
+        41,
+        42
       ]
     },
     {
@@ -138,7 +150,8 @@ const JOB_DATA = {
         33,
         32,
         32,
-        31
+        31,
+        34
       ]
     },
     {
@@ -149,7 +162,8 @@ const JOB_DATA = {
         32,
         32,
         33,
-        32
+        32,
+        30
       ]
     },
     {
@@ -160,7 +174,8 @@ const JOB_DATA = {
         25,
         26,
         27,
-        30
+        30,
+        29
       ]
     },
     {
@@ -171,7 +186,8 @@ const JOB_DATA = {
         27,
         23,
         27,
-        18
+        18,
+        26
       ]
     },
     {
@@ -182,7 +198,8 @@ const JOB_DATA = {
         25,
         28,
         27,
-        27
+        27,
+        28
       ]
     },
     {
@@ -191,6 +208,7 @@ const JOB_DATA = {
         23,
         22,
         25,
+        28,
         28,
         28,
         28
@@ -204,7 +222,8 @@ const JOB_DATA = {
         20,
         21,
         17,
-        18
+        18,
+        19
       ]
     },
     {
@@ -215,7 +234,8 @@ const JOB_DATA = {
         16,
         17,
         17,
-        17
+        17,
+        16
       ]
     },
     {
@@ -226,7 +246,8 @@ const JOB_DATA = {
         18,
         18,
         18,
-        null
+        null,
+        4
       ]
     },
     {
@@ -237,7 +258,8 @@ const JOB_DATA = {
         17,
         18,
         16,
-        17
+        17,
+        15
       ]
     },
     {
@@ -247,6 +269,7 @@ const JOB_DATA = {
         15,
         16,
         16,
+        18,
         18,
         18
       ]
@@ -259,7 +282,8 @@ const JOB_DATA = {
         15,
         17,
         17,
-        17
+        17,
+        16
       ]
     },
     {
@@ -270,7 +294,8 @@ const JOB_DATA = {
         16,
         17,
         11,
-        13
+        13,
+        16
       ]
     },
     {
@@ -281,6 +306,7 @@ const JOB_DATA = {
         15,
         15,
         13,
+        15,
         15
       ]
     },
@@ -292,7 +318,8 @@ const JOB_DATA = {
         16,
         15,
         16,
-        10
+        10,
+        16
       ]
     },
     {
@@ -303,7 +330,20 @@ const JOB_DATA = {
         16,
         16,
         16,
+        16,
         16
+      ]
+    },
+    {
+      "label": "AlgoSec",
+      "data": [
+        14,
+        13,
+        12,
+        12,
+        10,
+        13,
+        15
       ]
     },
     {
@@ -314,7 +354,8 @@ const JOB_DATA = {
         15,
         15,
         13,
-        12
+        12,
+        14
       ]
     },
     {
@@ -325,18 +366,8 @@ const JOB_DATA = {
         15,
         12,
         14,
-        13
-      ]
-    },
-    {
-      "label": "Varonis",
-      "data": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        15
+        13,
+        14
       ]
     }
   ],
@@ -347,8 +378,8 @@ const JOB_DATA = {
     "Mobileye",
     "IAI - Israel Aerospace Industries",
     "Amazon Web Services (AWS)",
-    "Agoda",
     "Google",
+    "Agoda",
     "Palo Alto Networks",
     "Rafael Advanced Defense Systems",
     "Intel",
@@ -368,18 +399,18 @@ const JOB_DATA = {
     "Forter",
     "Gini-Apps",
     "Red Hat",
+    "AlgoSec",
     "Commit",
-    "SolarEdge Technologies",
-    "Varonis"
+    "SolarEdge Technologies"
   ],
   "allRanking": [
     {
       "company": "NVIDIA",
-      "cnt": 535
+      "cnt": 527
     },
     {
       "company": "Elbit Systems Israel",
-      "cnt": 113
+      "cnt": 120
     },
     {
       "company": "Apple",
@@ -387,63 +418,63 @@ const JOB_DATA = {
     },
     {
       "company": "Mobileye",
-      "cnt": 90
+      "cnt": 88
     },
     {
       "company": "IAI - Israel Aerospace Industries",
-      "cnt": 82
+      "cnt": 87
     },
     {
       "company": "Amazon Web Services (AWS)",
-      "cnt": 80
+      "cnt": 84
+    },
+    {
+      "company": "Google",
+      "cnt": 81
     },
     {
       "company": "Agoda",
       "cnt": 78
     },
     {
-      "company": "Google",
-      "cnt": 77
-    },
-    {
       "company": "Palo Alto Networks",
-      "cnt": 64
+      "cnt": 68
     },
     {
       "company": "Rafael Advanced Defense Systems",
-      "cnt": 46
+      "cnt": 52
     },
     {
       "company": "Intel",
-      "cnt": 41
-    },
-    {
-      "company": "abra",
-      "cnt": 32
+      "cnt": 42
     },
     {
       "company": "Qualcomm",
-      "cnt": 31
+      "cnt": 34
+    },
+    {
+      "company": "abra",
+      "cnt": 30
     },
     {
       "company": "CrowdStrike",
-      "cnt": 30
+      "cnt": 29
+    },
+    {
+      "company": "Cato Networks",
+      "cnt": 28
     },
     {
       "company": "Check Point Software",
       "cnt": 28
     },
     {
-      "company": "Cato Networks",
-      "cnt": 27
-    },
-    {
       "company": "CyberArk",
-      "cnt": 18
+      "cnt": 26
     },
     {
       "company": "Elad Software Systems",
-      "cnt": 18
+      "cnt": 19
     },
     {
       "company": "DriveNets",
@@ -451,15 +482,19 @@ const JOB_DATA = {
     },
     {
       "company": "Dream",
-      "cnt": 17
+      "cnt": 16
     },
     {
-      "company": "NiCE",
-      "cnt": 17
+      "company": "Gini-Apps",
+      "cnt": 16
+    },
+    {
+      "company": "Cellebrite",
+      "cnt": 16
     },
     {
       "company": "JFrog",
-      "cnt": 17
+      "cnt": 16
     },
     {
       "company": "Red Hat",
@@ -470,24 +505,32 @@ const JOB_DATA = {
       "cnt": 15
     },
     {
-      "company": "Varonis",
+      "company": "NiCE",
+      "cnt": 15
+    },
+    {
+      "company": "AlgoSec",
       "cnt": 15
     },
     {
       "company": "Amazon",
+      "cnt": 15
+    },
+    {
+      "company": "Commit",
       "cnt": 14
     },
     {
-      "company": "Cellebrite",
-      "cnt": 13
-    },
-    {
-      "company": "AlgoSec",
-      "cnt": 13
-    },
-    {
       "company": "SolarEdge Technologies",
-      "cnt": 13
+      "cnt": 14
+    },
+    {
+      "company": "Varonis",
+      "cnt": 14
+    },
+    {
+      "company": "Aidoc",
+      "cnt": 14
     },
     {
       "company": "Applied Materials - Israel",
@@ -498,14 +541,6 @@ const JOB_DATA = {
       "cnt": 13
     },
     {
-      "company": "Commit",
-      "cnt": 12
-    },
-    {
-      "company": "Aidoc",
-      "cnt": 12
-    },
-    {
       "company": "CodeValue",
       "cnt": 12
     },
@@ -514,8 +549,12 @@ const JOB_DATA = {
       "cnt": 12
     },
     {
-      "company": "Tenable",
+      "company": "Team8",
       "cnt": 12
+    },
+    {
+      "company": "Tenable",
+      "cnt": 11
     },
     {
       "company": "AppsFlyer",
@@ -538,27 +577,15 @@ const JOB_DATA = {
       "cnt": 11
     },
     {
-      "company": "Team8",
+      "company": "Connecteam",
       "cnt": 11
-    },
-    {
-      "company": "Gini-Apps",
-      "cnt": 10
     },
     {
       "company": "Cisco",
       "cnt": 10
     },
     {
-      "company": "Connecteam",
-      "cnt": 10
-    },
-    {
       "company": "Lightricks",
-      "cnt": 10
-    },
-    {
-      "company": "Melio",
       "cnt": 10
     },
     {
@@ -583,10 +610,18 @@ const JOB_DATA = {
     },
     {
       "company": "General Motors",
-      "cnt": 9
+      "cnt": 10
     },
     {
-      "company": "Gong",
+      "company": "Microsoft",
+      "cnt": 10
+    },
+    {
+      "company": "Nova Ltd.",
+      "cnt": 10
+    },
+    {
+      "company": "Melio",
       "cnt": 9
     },
     {
@@ -594,15 +629,7 @@ const JOB_DATA = {
       "cnt": 9
     },
     {
-      "company": "Microsoft",
-      "cnt": 9
-    },
-    {
       "company": "Navan",
-      "cnt": 9
-    },
-    {
-      "company": "Nova Ltd.",
       "cnt": 9
     },
     {
@@ -616,6 +643,22 @@ const JOB_DATA = {
     {
       "company": "proteanTecs",
       "cnt": 9
+    },
+    {
+      "company": "monday.com",
+      "cnt": 9
+    },
+    {
+      "company": "Cadence",
+      "cnt": 9
+    },
+    {
+      "company": "KLA",
+      "cnt": 9
+    },
+    {
+      "company": "Gong",
+      "cnt": 8
     },
     {
       "company": "Amdocs",
@@ -654,7 +697,7 @@ const JOB_DATA = {
       "cnt": 8
     },
     {
-      "company": "monday.com",
+      "company": "Zenity",
       "cnt": 8
     },
     {
@@ -666,16 +709,20 @@ const JOB_DATA = {
       "cnt": 7
     },
     {
-      "company": "JLL",
-      "cnt": 7
-    },
-    {
       "company": "Qualitest",
       "cnt": 7
     },
     {
       "company": "Semperis",
       "cnt": 7
+    },
+    {
+      "company": "Cloudinary",
+      "cnt": 7
+    },
+    {
+      "company": "JLL",
+      "cnt": 6
     },
     {
       "company": "Akamai Technologies",
@@ -766,11 +813,15 @@ const JOB_DATA = {
       "cnt": 6
     },
     {
-      "company": "Zenity",
+      "company": "april",
       "cnt": 6
     },
     {
-      "company": "april",
+      "company": "Silverfort",
+      "cnt": 6
+    },
+    {
+      "company": "Forcepoint",
       "cnt": 6
     },
     {
@@ -783,10 +834,6 @@ const JOB_DATA = {
     },
     {
       "company": "Axonius",
-      "cnt": 5
-    },
-    {
-      "company": "Cadence",
       "cnt": 5
     },
     {
@@ -803,10 +850,6 @@ const JOB_DATA = {
     },
     {
       "company": "Jeen.ai",
-      "cnt": 5
-    },
-    {
-      "company": "KLA",
       "cnt": 5
     },
     {
@@ -834,14 +877,6 @@ const JOB_DATA = {
       "cnt": 5
     },
     {
-      "company": "Radware",
-      "cnt": 5
-    },
-    {
-      "company": "Silverfort",
-      "cnt": 5
-    },
-    {
       "company": "Snyk",
       "cnt": 5
     },
@@ -860,6 +895,26 @@ const JOB_DATA = {
     {
       "company": "Xsight Labs",
       "cnt": 5
+    },
+    {
+      "company": "Moon Active",
+      "cnt": 5
+    },
+    {
+      "company": "Nuvei",
+      "cnt": 5
+    },
+    {
+      "company": "BioCatch",
+      "cnt": 5
+    },
+    {
+      "company": "THR",
+      "cnt": 4
+    },
+    {
+      "company": "Radware",
+      "cnt": 4
     },
     {
       "company": "365Scores",
@@ -883,10 +938,6 @@ const JOB_DATA = {
     },
     {
       "company": "Classiq",
-      "cnt": 4
-    },
-    {
-      "company": "Cloudinary",
       "cnt": 4
     },
     {
@@ -930,15 +981,7 @@ const JOB_DATA = {
       "cnt": 4
     },
     {
-      "company": "Moon Active",
-      "cnt": 4
-    },
-    {
       "company": "Navina",
-      "cnt": 4
-    },
-    {
-      "company": "Nuvei",
       "cnt": 4
     },
     {
@@ -1002,8 +1045,20 @@ const JOB_DATA = {
       "cnt": 4
     },
     {
-      "company": "Addressable.io",
-      "cnt": 3
+      "company": "Honeycomb Insurance",
+      "cnt": 4
+    },
+    {
+      "company": "Nanit",
+      "cnt": 4
+    },
+    {
+      "company": "NetNut.io",
+      "cnt": 4
+    },
+    {
+      "company": "Qodo",
+      "cnt": 4
     },
     {
       "company": "Align Technology",
@@ -1023,10 +1078,6 @@ const JOB_DATA = {
     },
     {
       "company": "Atera",
-      "cnt": 3
-    },
-    {
-      "company": "Autodesk",
       "cnt": 3
     },
     {
@@ -1062,10 +1113,6 @@ const JOB_DATA = {
       "cnt": 3
     },
     {
-      "company": "Datadog",
-      "cnt": 3
-    },
-    {
       "company": "DoubleVerify",
       "cnt": 3
     },
@@ -1082,15 +1129,7 @@ const JOB_DATA = {
       "cnt": 3
     },
     {
-      "company": "Forcepoint",
-      "cnt": 3
-    },
-    {
       "company": "Global-e",
-      "cnt": 3
-    },
-    {
-      "company": "Honeycomb Insurance",
       "cnt": 3
     },
     {
@@ -1146,15 +1185,7 @@ const JOB_DATA = {
       "cnt": 3
     },
     {
-      "company": "Nanit",
-      "cnt": 3
-    },
-    {
       "company": "Ness Technologies | נס טכנולוגיות",
-      "cnt": 3
-    },
-    {
-      "company": "NetNut.io",
       "cnt": 3
     },
     {
@@ -1167,10 +1198,6 @@ const JOB_DATA = {
     },
     {
       "company": "Payoneer",
-      "cnt": 3
-    },
-    {
-      "company": "Qodo",
       "cnt": 3
     },
     {
@@ -1234,6 +1261,34 @@ const JOB_DATA = {
       "cnt": 3
     },
     {
+      "company": "Digital Turbine",
+      "cnt": 3
+    },
+    {
+      "company": "Millennium",
+      "cnt": 3
+    },
+    {
+      "company": "Placer.ai",
+      "cnt": 3
+    },
+    {
+      "company": "WorldQuant",
+      "cnt": 3
+    },
+    {
+      "company": "Addressable.io",
+      "cnt": 2
+    },
+    {
+      "company": "Autodesk",
+      "cnt": 2
+    },
+    {
+      "company": "Datadog",
+      "cnt": 2
+    },
+    {
       "company": "Adge.AI",
       "cnt": 2
     },
@@ -1275,10 +1330,6 @@ const JOB_DATA = {
     },
     {
       "company": "BigPanda",
-      "cnt": 2
-    },
-    {
-      "company": "BioCatch",
       "cnt": 2
     },
     {
@@ -1343,10 +1394,6 @@ const JOB_DATA = {
     },
     {
       "company": "Descope",
-      "cnt": 2
-    },
-    {
-      "company": "Digital Turbine",
       "cnt": 2
     },
     {
@@ -1490,10 +1537,6 @@ const JOB_DATA = {
       "cnt": 2
     },
     {
-      "company": "Millennium",
-      "cnt": 2
-    },
-    {
       "company": "Mitiga",
       "cnt": 2
     },
@@ -1550,10 +1593,6 @@ const JOB_DATA = {
       "cnt": 2
     },
     {
-      "company": "Placer.ai",
-      "cnt": 2
-    },
-    {
       "company": "PlainID",
       "cnt": 2
     },
@@ -1563,10 +1602,6 @@ const JOB_DATA = {
     },
     {
       "company": "QuantHealth",
-      "cnt": 2
-    },
-    {
-      "company": "Questar Auto Technologies",
       "cnt": 2
     },
     {
@@ -1682,10 +1717,6 @@ const JOB_DATA = {
       "cnt": 2
     },
     {
-      "company": "WorldQuant",
-      "cnt": 2
-    },
-    {
       "company": "Zafran Security",
       "cnt": 2
     },
@@ -1704,6 +1735,50 @@ const JOB_DATA = {
     {
       "company": "מרטנס | Mertens – מקבוצת מלם תים",
       "cnt": 2
+    },
+    {
+      "company": "D-Fend Solutions",
+      "cnt": 2
+    },
+    {
+      "company": "Deel",
+      "cnt": 2
+    },
+    {
+      "company": "Logz.io",
+      "cnt": 2
+    },
+    {
+      "company": "Microchip Technology Inc.",
+      "cnt": 2
+    },
+    {
+      "company": "NoTraffic",
+      "cnt": 2
+    },
+    {
+      "company": "PAPAYA",
+      "cnt": 2
+    },
+    {
+      "company": "Q.ai",
+      "cnt": 2
+    },
+    {
+      "company": "Rounds",
+      "cnt": 2
+    },
+    {
+      "company": "SailPoint",
+      "cnt": 2
+    },
+    {
+      "company": "Ledge",
+      "cnt": 2
+    },
+    {
+      "company": "Questar Auto Technologies",
+      "cnt": 1
     },
     {
       "company": "4M Analytics",
@@ -1870,10 +1945,6 @@ const JOB_DATA = {
       "cnt": 1
     },
     {
-      "company": "D-Fend Solutions",
-      "cnt": 1
-    },
-    {
       "company": "DSG.AI",
       "cnt": 1
     },
@@ -1887,10 +1958,6 @@ const JOB_DATA = {
     },
     {
       "company": "DealHub.ai",
-      "cnt": 1
-    },
-    {
-      "company": "Deel",
       "cnt": 1
     },
     {
@@ -1935,10 +2002,6 @@ const JOB_DATA = {
     },
     {
       "company": "Element Security",
-      "cnt": 1
-    },
-    {
-      "company": "Elmo Motion Control",
       "cnt": 1
     },
     {
@@ -1995,10 +2058,6 @@ const JOB_DATA = {
     },
     {
       "company": "GO-OUT",
-      "cnt": 1
-    },
-    {
-      "company": "Genesys",
       "cnt": 1
     },
     {
@@ -2154,10 +2213,6 @@ const JOB_DATA = {
       "cnt": 1
     },
     {
-      "company": "Logz.io",
-      "cnt": 1
-    },
-    {
       "company": "Lowental Hybrid",
       "cnt": 1
     },
@@ -2218,10 +2273,6 @@ const JOB_DATA = {
       "cnt": 1
     },
     {
-      "company": "Microchip Technology Inc.",
-      "cnt": 1
-    },
-    {
       "company": "Mize",
       "cnt": 1
     },
@@ -2247,10 +2298,6 @@ const JOB_DATA = {
     },
     {
       "company": "NextVision Stabilized Systems Ltd.",
-      "cnt": 1
-    },
-    {
-      "company": "NoTraffic",
       "cnt": 1
     },
     {
@@ -2306,10 +2353,6 @@ const JOB_DATA = {
       "cnt": 1
     },
     {
-      "company": "PAPAYA",
-      "cnt": 1
-    },
-    {
       "company": "PTC",
       "cnt": 1
     },
@@ -2346,10 +2389,6 @@ const JOB_DATA = {
       "cnt": 1
     },
     {
-      "company": "Ping Identity",
-      "cnt": 1
-    },
-    {
       "company": "Pipl",
       "cnt": 1
     },
@@ -2379,10 +2418,6 @@ const JOB_DATA = {
     },
     {
       "company": "Proofpoint",
-      "cnt": 1
-    },
-    {
-      "company": "Q.ai",
       "cnt": 1
     },
     {
@@ -2418,23 +2453,7 @@ const JOB_DATA = {
       "cnt": 1
     },
     {
-      "company": "Robusta Dev",
-      "cnt": 1
-    },
-    {
-      "company": "Rounds",
-      "cnt": 1
-    },
-    {
       "company": "SNF AI",
-      "cnt": 1
-    },
-    {
-      "company": "SailPoint",
-      "cnt": 1
-    },
-    {
-      "company": "Salt Security",
       "cnt": 1
     },
     {
@@ -2738,14 +2757,238 @@ const JOB_DATA = {
       "cnt": 1
     },
     {
-      "company": "THR",
+      "company": "Adaptive6",
+      "cnt": 1
+    },
+    {
+      "company": "LocalizeOS",
+      "cnt": 1
+    },
+    {
+      "company": "Medāna",
+      "cnt": 1
+    },
+    {
+      "company": "Regatta Data",
+      "cnt": 1
+    },
+    {
+      "company": "SafeBreach",
+      "cnt": 1
+    },
+    {
+      "company": "Speedata.io",
+      "cnt": 1
+    },
+    {
+      "company": "Vi",
+      "cnt": 1
+    },
+    {
+      "company": "ZEISS Group",
+      "cnt": 1
+    },
+    {
+      "company": "abra R&D Solutions (formerly Devalore)",
+      "cnt": 1
+    },
+    {
+      "company": "onsemi",
+      "cnt": 1
+    },
+    {
+      "company": "Elmo Motion Control",
+      "cnt": 0
+    },
+    {
+      "company": "Genesys",
+      "cnt": 0
+    },
+    {
+      "company": "Ping Identity",
+      "cnt": 0
+    },
+    {
+      "company": "Robusta Dev",
+      "cnt": 0
+    },
+    {
+      "company": "Salt Security",
       "cnt": 0
     }
   ],
-  "latestDate": "2026-05-30",
-  "latestTotal": 3177,
-  "daysTracked": 6,
+  "latestDate": "2026-05-31",
+  "latestTotal": 3267,
+  "daysTracked": 7,
   "jobRecords": [
+    {
+      "jobId": "4421339752",
+      "company": "AlgoSec",
+      "title": "DevOps Team Leader, Israel",
+      "url": "https://devjobs.co.il/job-details/4421339752",
+      "devType": "DevOps",
+      "workMode": "Hybrid",
+      "location": "Petah Tikva",
+      "firstSeen": "2026-05-31",
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 0,
+      "isActive": true
+    },
+    {
+      "jobId": "4421358646",
+      "company": "AlgoSec",
+      "title": "Infrastructure Automation Developer, Israel",
+      "url": "https://devjobs.co.il/job-details/4421358646",
+      "devType": "DevOps",
+      "workMode": "On-site",
+      "location": "Petah Tikva",
+      "firstSeen": "2026-05-31",
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 0,
+      "isActive": true
+    },
+    {
+      "jobId": "4411941838",
+      "company": "Cloudinary",
+      "title": "Staff Backend Engineer – AI Algorithm Platform",
+      "url": "https://devjobs.co.il/job-details/4411941838",
+      "devType": "Backend",
+      "workMode": "Hybrid",
+      "location": "Petah Tikva",
+      "firstSeen": "2026-05-31",
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 0,
+      "isActive": true
+    },
+    {
+      "jobId": "4412125844",
+      "company": "Google",
+      "title": "Senior SoC and IP Design Engineer, Google Cloud",
+      "url": "https://devjobs.co.il/job-details/4412125844",
+      "devType": "Security",
+      "workMode": "On-site",
+      "location": "Tel Aviv-Yafo",
+      "firstSeen": "2026-05-31",
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 0,
+      "isActive": true
+    },
+    {
+      "jobId": "4412130608",
+      "company": "Google",
+      "title": "Senior SoC and IP Design Engineer, Google Cloud",
+      "url": "https://devjobs.co.il/job-details/4412130608",
+      "devType": "Security",
+      "workMode": "On-site",
+      "location": "Haifa District",
+      "firstSeen": "2026-05-31",
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 0,
+      "isActive": true
+    },
+    {
+      "jobId": "4421355965",
+      "company": "Medāna",
+      "title": "Artificial Intelligence Engineer",
+      "url": "https://devjobs.co.il/job-details/4421355965",
+      "devType": "Other",
+      "workMode": "Remote",
+      "location": "Israel",
+      "firstSeen": "2026-05-31",
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 0,
+      "isActive": true
+    },
+    {
+      "jobId": "4411900241",
+      "company": "NVIDIA",
+      "title": "Senior Chip Design Verification Engineer",
+      "url": "https://devjobs.co.il/job-details/4411900241",
+      "devType": "Other",
+      "workMode": "On-site",
+      "location": "Tel Aviv-Yafo",
+      "firstSeen": "2026-05-31",
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 0,
+      "isActive": true
+    },
+    {
+      "jobId": "4411908016",
+      "company": "NVIDIA",
+      "title": "Senior Data and AI Solutions Engineer",
+      "url": "https://devjobs.co.il/job-details/4411908016",
+      "devType": "Data/ML",
+      "workMode": "On-site",
+      "location": "Yokneam Ilit",
+      "firstSeen": "2026-05-31",
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 0,
+      "isActive": true
+    },
+    {
+      "jobId": "4412461709",
+      "company": "Placer.ai",
+      "title": "Senior Backend Engineer",
+      "url": "https://devjobs.co.il/job-details/4412461709",
+      "devType": "Backend",
+      "workMode": "Hybrid",
+      "location": "Ramat Gan",
+      "firstSeen": "2026-05-31",
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 0,
+      "isActive": true
+    },
+    {
+      "jobId": "4422523528",
+      "company": "Qualcomm",
+      "title": "FY27 Intern - Modeling internship - Hod Hasharon",
+      "url": "https://devjobs.co.il/job-details/4422523528",
+      "devType": "Other",
+      "workMode": "On-site",
+      "location": "Hod HaSharon",
+      "firstSeen": "2026-05-31",
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 0,
+      "isActive": true
+    },
+    {
+      "jobId": "4422532568",
+      "company": "Qualcomm",
+      "title": "Intern FY27 - AI Driven Test Automation Engineer - Hod Hasharon",
+      "url": "https://devjobs.co.il/job-details/4422532568",
+      "devType": "Data/ML",
+      "workMode": "On-site",
+      "location": "Hod HaSharon",
+      "firstSeen": "2026-05-31",
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 0,
+      "isActive": true
+    },
+    {
+      "jobId": "4421328643",
+      "company": "ZEISS Group",
+      "title": "SW Engineer",
+      "url": "https://devjobs.co.il/job-details/4421328643",
+      "devType": "Other",
+      "workMode": "On-site",
+      "location": "Israel",
+      "firstSeen": "2026-05-31",
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 0,
+      "isActive": true
+    },
     {
       "jobId": "4410526822",
       "company": "Agoda",
@@ -2755,7 +2998,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -2769,7 +3012,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "West Jerusalem",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -2783,7 +3026,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -2797,7 +3040,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "West Jerusalem",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -2811,7 +3054,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "West Jerusalem",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -2825,7 +3068,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -2839,7 +3082,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "West Jerusalem",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -2853,7 +3096,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "West Jerusalem",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -2867,7 +3110,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "West Jerusalem",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -2881,7 +3124,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -2895,7 +3138,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -2909,7 +3152,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -2923,7 +3166,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -2937,7 +3180,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -2951,7 +3194,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -2965,7 +3208,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -2979,7 +3222,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -2993,7 +3236,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3007,7 +3250,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3021,7 +3264,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3035,7 +3278,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3049,7 +3292,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3063,7 +3306,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3077,7 +3320,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3091,7 +3334,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3105,7 +3348,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3119,7 +3362,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3133,7 +3376,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3147,7 +3390,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3161,7 +3404,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3175,7 +3418,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3189,7 +3432,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3203,7 +3446,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3217,7 +3460,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3231,7 +3474,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3245,7 +3488,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rehovot",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3259,7 +3502,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3273,7 +3516,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3287,7 +3530,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Or Yehuda",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3301,7 +3544,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3315,7 +3558,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3329,7 +3572,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3343,7 +3586,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3357,7 +3600,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3371,7 +3614,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3385,7 +3628,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3399,7 +3642,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3413,7 +3656,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3427,7 +3670,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3441,7 +3684,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3455,7 +3698,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3469,7 +3712,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3483,7 +3726,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3497,7 +3740,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3511,7 +3754,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa District",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3525,7 +3768,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3539,7 +3782,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3553,7 +3796,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3567,7 +3810,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3581,7 +3824,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3595,7 +3838,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ashdod",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3609,7 +3852,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ashdod",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3623,7 +3866,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Lod",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3637,7 +3880,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yehud Monosson",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3651,7 +3894,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3665,7 +3908,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3679,7 +3922,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3693,7 +3936,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3707,7 +3950,7 @@ const JOB_DATA = {
       "workMode": "Remote",
       "location": "Israel",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3721,7 +3964,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3735,7 +3978,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa District",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3749,7 +3992,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa District",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3763,7 +4006,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3777,7 +4020,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3791,7 +4034,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3805,7 +4048,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3819,7 +4062,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3833,7 +4076,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3847,7 +4090,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3861,7 +4104,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3875,7 +4118,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3889,7 +4132,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3903,7 +4146,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3917,7 +4160,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3931,7 +4174,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3945,7 +4188,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3959,7 +4202,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3973,7 +4216,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -3987,7 +4230,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -4001,7 +4244,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Israel",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -4015,7 +4258,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Rosh HaAyin",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -4029,7 +4272,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Center District",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -4043,7 +4286,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -4057,7 +4300,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -4071,7 +4314,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -4085,7 +4328,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rishon LeZion",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -4099,7 +4342,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -4113,7 +4356,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -4127,7 +4370,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -4141,7 +4384,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -4155,7 +4398,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "North District",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -4169,7 +4412,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -4183,7 +4426,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -4197,7 +4440,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -4211,7 +4454,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -4225,7 +4468,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -4239,7 +4482,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -4253,7 +4496,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -4267,7 +4510,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -4281,7 +4524,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -4295,7 +4538,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -4309,7 +4552,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -4323,7 +4566,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -4337,7 +4580,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -4351,7 +4594,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -4365,7 +4608,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Netanya",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -4379,7 +4622,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -4393,7 +4636,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rehovot",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -4407,7 +4650,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Center District",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -4421,7 +4664,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Center District",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -4435,7 +4678,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -4449,7 +4692,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -4463,7 +4706,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Center District",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -4477,7 +4720,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Center District",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 1,
       "isActive": true
@@ -4491,7 +4734,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -4505,7 +4748,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -4519,7 +4762,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -4533,7 +4776,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -4547,7 +4790,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -4561,7 +4804,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -4575,7 +4818,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -4589,7 +4832,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -4603,7 +4846,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -4617,7 +4860,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -4631,7 +4874,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -4645,7 +4888,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -4659,7 +4902,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -4673,7 +4916,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -4687,7 +4930,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -4701,7 +4944,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -4715,7 +4958,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -4729,7 +4972,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -4743,7 +4986,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -4757,7 +5000,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -4771,7 +5014,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -4785,7 +5028,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -4799,7 +5042,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -4813,7 +5056,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -4827,7 +5070,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -4841,7 +5084,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -4855,7 +5098,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -4869,7 +5112,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -4883,7 +5126,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Hod HaSharon",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -4897,7 +5140,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -4911,7 +5154,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -4925,7 +5168,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -4939,7 +5182,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -4953,7 +5196,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -4967,7 +5210,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Rishon LeZion",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -4981,7 +5224,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -4995,7 +5238,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5009,7 +5252,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5023,7 +5266,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5037,7 +5280,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5051,7 +5294,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5065,7 +5308,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5079,7 +5322,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5093,7 +5336,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5107,7 +5350,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5121,7 +5364,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Caesarea",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5135,7 +5378,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rehovot",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5149,7 +5392,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5163,7 +5406,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5177,7 +5420,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5191,7 +5434,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5205,7 +5448,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5219,7 +5462,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5233,7 +5476,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5247,7 +5490,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5261,7 +5504,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5275,7 +5518,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5289,7 +5532,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5303,7 +5546,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5317,7 +5560,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5331,7 +5574,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5345,7 +5588,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5359,7 +5602,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5373,7 +5616,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5387,7 +5630,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5401,7 +5644,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5415,7 +5658,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5429,7 +5672,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5443,7 +5686,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5457,7 +5700,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5471,7 +5714,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5485,7 +5728,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5499,7 +5742,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5513,7 +5756,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "North District",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5527,7 +5770,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5541,7 +5784,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5555,7 +5798,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5569,7 +5812,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5583,7 +5826,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5597,7 +5840,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5611,7 +5854,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5625,7 +5868,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Center District",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5639,7 +5882,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5653,7 +5896,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5667,7 +5910,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5681,7 +5924,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5695,7 +5938,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5709,7 +5952,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5723,7 +5966,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5751,7 +5994,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5765,7 +6008,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5779,7 +6022,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-28",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 3,
       "isActive": true
@@ -5793,7 +6036,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "West Jerusalem",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -5807,7 +6050,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -5821,7 +6064,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "West Jerusalem",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -5835,7 +6078,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -5849,7 +6092,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -5863,7 +6106,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "West Jerusalem",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -5877,7 +6120,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -5891,7 +6134,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -5905,7 +6148,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -5919,7 +6162,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -5933,7 +6176,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -5947,7 +6190,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -5961,7 +6204,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -5975,7 +6218,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rehovot",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -5989,7 +6232,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6003,7 +6246,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6017,7 +6260,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6031,7 +6274,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6045,7 +6288,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6073,7 +6316,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6115,7 +6358,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6143,7 +6386,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Center District",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6157,7 +6400,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6171,7 +6414,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6185,7 +6428,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6199,7 +6442,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6213,7 +6456,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6227,7 +6470,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6241,7 +6484,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6255,7 +6498,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6269,7 +6512,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6283,7 +6526,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6297,7 +6540,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Hod HaSharon",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6311,7 +6554,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ashdod",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6325,7 +6568,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Rishon LeZion",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6339,7 +6582,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6353,7 +6596,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6367,7 +6610,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6395,7 +6638,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6409,7 +6652,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Hadera",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6423,7 +6666,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6437,7 +6680,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6451,7 +6694,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6465,7 +6708,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6479,7 +6722,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6493,7 +6736,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6507,7 +6750,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6521,7 +6764,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Be'er Sheva",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6535,7 +6778,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6549,7 +6792,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6563,7 +6806,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6577,7 +6820,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Be'er Sheva",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6591,7 +6834,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Kiryat Ata",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6605,7 +6848,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6619,7 +6862,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6633,7 +6876,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6647,7 +6890,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6661,7 +6904,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6675,7 +6918,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Givatayim",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6689,7 +6932,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Center District",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6703,7 +6946,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6717,7 +6960,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6731,7 +6974,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6745,7 +6988,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6759,7 +7002,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6773,7 +7016,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6787,7 +7030,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6801,7 +7044,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6815,7 +7058,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Holon",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6829,7 +7072,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6843,7 +7086,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rosh HaAyin",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6857,7 +7100,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6871,7 +7114,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6885,7 +7128,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Karmiel",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6899,7 +7142,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Karmiel",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6913,7 +7156,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6941,7 +7184,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6955,7 +7198,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6969,7 +7212,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Netanya",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6983,7 +7226,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -6997,7 +7240,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -7011,7 +7254,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Netanya",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -7025,7 +7268,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -7039,7 +7282,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Hod HaSharon",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -7053,7 +7296,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Sarid",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -7067,7 +7310,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -7081,7 +7324,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Caesarea",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -7109,7 +7352,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -7151,7 +7394,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Center District",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 4,
       "isActive": true
@@ -7179,7 +7422,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7193,7 +7436,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7221,7 +7464,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Center District",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7249,7 +7492,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7263,7 +7506,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7277,7 +7520,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7291,7 +7534,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7305,7 +7548,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7319,7 +7562,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7333,7 +7576,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Caesarea",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7347,7 +7590,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7361,7 +7604,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7375,7 +7618,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7389,7 +7632,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7403,7 +7646,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7417,7 +7660,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7431,7 +7674,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7445,7 +7688,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7459,7 +7702,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7473,7 +7716,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7487,7 +7730,7 @@ const JOB_DATA = {
       "workMode": "Remote",
       "location": "Israel",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7501,7 +7744,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7515,7 +7758,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7529,7 +7772,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7543,7 +7786,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Lod",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7557,7 +7800,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yehud Monosson",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7585,7 +7828,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7599,7 +7842,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa District",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7613,7 +7856,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa District",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7627,7 +7870,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Or Yehuda",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7641,7 +7884,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7655,7 +7898,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7669,7 +7912,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "West Jerusalem",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7683,7 +7926,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Center District",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7697,7 +7940,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7711,7 +7954,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7725,7 +7968,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7739,7 +7982,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7753,7 +7996,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7767,7 +8010,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7781,7 +8024,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7795,7 +8038,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7809,7 +8052,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rishon LeZion",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7823,7 +8066,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rishon LeZion",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7837,7 +8080,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7851,7 +8094,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7865,7 +8108,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7879,7 +8122,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7893,7 +8136,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7907,7 +8150,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7921,7 +8164,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7949,7 +8192,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7963,7 +8206,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7977,7 +8220,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Center District",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -7991,7 +8234,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 5,
       "isActive": true
@@ -8019,7 +8262,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8033,7 +8276,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8047,7 +8290,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8061,7 +8304,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8075,7 +8318,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8103,7 +8346,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa District",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8117,7 +8360,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8131,7 +8374,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8173,7 +8416,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8187,7 +8430,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8201,7 +8444,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8215,7 +8458,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8229,7 +8472,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Givatayim",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8243,7 +8486,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Netanya",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8257,7 +8500,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8271,7 +8514,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Be'er Sheva",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8299,7 +8542,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8327,7 +8570,7 @@ const JOB_DATA = {
       "workMode": "Remote",
       "location": "Israel",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8341,7 +8584,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8355,7 +8598,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8369,7 +8612,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Holon",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8383,7 +8626,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8397,7 +8640,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8411,7 +8654,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8425,7 +8668,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8439,7 +8682,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8453,7 +8696,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Rishon LeZion",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8467,7 +8710,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8481,7 +8724,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8495,7 +8738,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yehud Monosson",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8509,7 +8752,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ashdod",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8523,7 +8766,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ashdod",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8537,7 +8780,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rosh HaAyin",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8551,7 +8794,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8579,7 +8822,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa District",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8593,7 +8836,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8607,7 +8850,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa District",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8635,7 +8878,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8649,7 +8892,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8663,7 +8906,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Yizra'el",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8705,7 +8948,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8719,7 +8962,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8733,7 +8976,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8747,7 +8990,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8761,7 +9004,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8775,7 +9018,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Be'er Sheva",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8789,7 +9032,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8803,7 +9046,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8817,7 +9060,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8831,7 +9074,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8845,7 +9088,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8859,7 +9102,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8873,7 +9116,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8887,7 +9130,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8901,7 +9144,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8915,7 +9158,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8943,7 +9186,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8957,7 +9200,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8971,7 +9214,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Kiryat Bialik",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8985,7 +9228,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "North District",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -8999,7 +9242,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Kiryat Bialik",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -9013,7 +9256,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Kiryat Bialik",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -9027,7 +9270,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Karmiel",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -9041,7 +9284,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Karmiel",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -9055,7 +9298,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Karmiel",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -9069,7 +9312,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Karmiel",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -9083,7 +9326,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Karmiel",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -9097,7 +9340,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "North District",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -9111,7 +9354,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Karmiel",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -9125,7 +9368,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "North District",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -9139,7 +9382,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "North District",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -9153,7 +9396,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Kiryat Bialik",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -9167,7 +9410,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Bnei Brak",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -9181,7 +9424,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Karmiel",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -9195,7 +9438,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Be'er Sheva",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -9209,7 +9452,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Karmiel",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -9223,7 +9466,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Kiryat Bialik",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -9251,7 +9494,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Karmiel",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -9265,7 +9508,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Be'er Sheva",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -9279,7 +9522,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -9307,7 +9550,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -9321,7 +9564,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -9335,7 +9578,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Migdal HaEmek",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -9349,7 +9592,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -9363,7 +9606,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -9377,7 +9620,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -9391,7 +9634,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -9405,7 +9648,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -9419,7 +9662,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Center District",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -9433,7 +9676,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Karmiel",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -9447,7 +9690,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa",
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 6,
       "isActive": true
@@ -9531,7 +9774,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -9545,7 +9788,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -9559,7 +9802,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -9573,7 +9816,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -9601,7 +9844,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -9615,7 +9858,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -9629,7 +9872,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Neot Hovav",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -9657,7 +9900,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Hod HaSharon",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -9671,10 +9914,10 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4416179341",
@@ -9700,9 +9943,9 @@ const JOB_DATA = {
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-05-30",
-      "dateRemoved": "",
+      "dateRemoved": "2026-05-31",
       "daysListed": 7,
-      "isActive": true
+      "isActive": false
     },
     {
       "jobId": "4413127609",
@@ -9713,7 +9956,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -9727,7 +9970,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -9741,7 +9984,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -9755,7 +9998,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -9783,7 +10026,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -9797,7 +10040,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -9811,7 +10054,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -9825,7 +10068,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -9839,7 +10082,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -9853,7 +10096,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -9867,7 +10110,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -9881,7 +10124,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -9895,7 +10138,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -9909,7 +10152,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -9923,7 +10166,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -9937,7 +10180,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -9951,7 +10194,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -9965,7 +10208,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "West Jerusalem",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -9979,7 +10222,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -9993,7 +10236,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "West Jerusalem",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10007,7 +10250,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10021,7 +10264,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10035,7 +10278,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10049,7 +10292,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "West Jerusalem",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10063,7 +10306,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10077,7 +10320,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10105,7 +10348,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10119,7 +10362,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10133,7 +10376,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10147,7 +10390,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "West Jerusalem",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10161,7 +10404,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10175,7 +10418,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10189,7 +10432,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10203,7 +10446,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10217,7 +10460,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10231,7 +10474,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10245,7 +10488,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jérusalem-Ouest",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10259,7 +10502,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "West Jerusalem",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10273,7 +10516,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10287,7 +10530,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10301,7 +10544,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10315,7 +10558,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10329,7 +10572,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10343,7 +10586,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10357,7 +10600,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10371,7 +10614,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10385,7 +10628,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10399,7 +10642,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10413,7 +10656,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10427,7 +10670,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "West Jerusalem",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10441,7 +10684,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "West Jerusalem",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10455,7 +10698,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10469,7 +10712,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10483,7 +10726,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "West Jerusalem",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10497,7 +10740,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10511,7 +10754,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10525,7 +10768,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "West Jerusalem",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10539,7 +10782,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10553,7 +10796,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "West Jerusalem",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10567,7 +10810,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10581,7 +10824,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10595,7 +10838,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10609,7 +10852,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "West Jerusalem",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10623,7 +10866,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "West Jerusalem",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10637,7 +10880,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10651,7 +10894,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10665,7 +10908,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10679,7 +10922,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10693,7 +10936,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10707,7 +10950,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10721,10 +10964,10 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4346736057",
@@ -10735,7 +10978,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10749,7 +10992,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10763,7 +11006,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10777,7 +11020,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10791,7 +11034,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10805,7 +11048,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10819,7 +11062,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10833,7 +11076,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10847,10 +11090,10 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4390723260",
@@ -10875,7 +11118,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Kfar Saba",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10889,7 +11132,7 @@ const JOB_DATA = {
       "workMode": "Remote",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10903,7 +11146,7 @@ const JOB_DATA = {
       "workMode": "Remote",
       "location": "Telavive",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10917,7 +11160,7 @@ const JOB_DATA = {
       "workMode": "Remote",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10931,7 +11174,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10945,7 +11188,7 @@ const JOB_DATA = {
       "workMode": "Remote",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10959,7 +11202,7 @@ const JOB_DATA = {
       "workMode": "Remote",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -10973,7 +11216,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11183,7 +11426,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11197,7 +11440,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11211,7 +11454,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11225,7 +11468,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Caesarea",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11239,7 +11482,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11253,7 +11496,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11267,7 +11510,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11281,7 +11524,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11295,7 +11538,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ra’anana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11309,7 +11552,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Hod HaSharon",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11323,7 +11566,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Hod HaSharon",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11337,7 +11580,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Hod HaSharon",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11351,7 +11594,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Hod HaSharon",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11365,7 +11608,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Hod HaSharon",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11379,7 +11622,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11407,7 +11650,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11421,7 +11664,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11435,7 +11678,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11449,7 +11692,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11463,7 +11706,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11477,7 +11720,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11491,7 +11734,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11505,7 +11748,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11519,10 +11762,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4400246526",
@@ -11533,7 +11776,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11561,7 +11804,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11575,7 +11818,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11589,7 +11832,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11603,7 +11846,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11617,7 +11860,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11631,7 +11874,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11645,7 +11888,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11659,7 +11902,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11673,7 +11916,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11687,7 +11930,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11701,7 +11944,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11715,7 +11958,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11729,7 +11972,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11743,7 +11986,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11757,7 +12000,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11771,7 +12014,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11785,7 +12028,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11799,7 +12042,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11813,7 +12056,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11827,7 +12070,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11841,7 +12084,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11855,7 +12098,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11869,7 +12112,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11883,7 +12126,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11897,7 +12140,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11911,7 +12154,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11925,7 +12168,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11939,7 +12182,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11953,7 +12196,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haïfa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -11967,10 +12210,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4364902583",
@@ -11981,7 +12224,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12009,7 +12252,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12023,7 +12266,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12037,7 +12280,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12051,7 +12294,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haïfa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12065,7 +12308,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12079,7 +12322,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12093,7 +12336,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12107,7 +12350,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12121,7 +12364,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12135,7 +12378,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12149,7 +12392,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12163,7 +12406,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12191,10 +12434,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4271082789",
@@ -12205,7 +12448,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12219,7 +12462,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12233,7 +12476,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12247,7 +12490,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12262,9 +12505,9 @@ const JOB_DATA = {
       "location": "Haifa",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-05-30",
-      "dateRemoved": "",
+      "dateRemoved": "2026-05-31",
       "daysListed": 7,
-      "isActive": true
+      "isActive": false
     },
     {
       "jobId": "4334893576",
@@ -12289,10 +12532,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4345961864",
@@ -12303,7 +12546,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12317,7 +12560,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12331,7 +12574,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12345,7 +12588,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12359,7 +12602,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12373,7 +12616,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12387,7 +12630,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12401,7 +12644,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12415,7 +12658,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12429,7 +12672,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12443,7 +12686,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12457,7 +12700,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12471,10 +12714,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4377560555",
@@ -12485,7 +12728,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12499,7 +12742,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12513,7 +12756,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12527,7 +12770,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12541,7 +12784,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12555,7 +12798,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12570,9 +12813,9 @@ const JOB_DATA = {
       "location": "Haifa",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-05-30",
-      "dateRemoved": "",
+      "dateRemoved": "2026-05-31",
       "daysListed": 7,
-      "isActive": true
+      "isActive": false
     },
     {
       "jobId": "4397470492",
@@ -12583,7 +12826,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12597,7 +12840,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12611,7 +12854,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12625,7 +12868,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12639,10 +12882,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4345847769",
@@ -12653,10 +12896,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4320071442",
@@ -12667,7 +12910,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12681,7 +12924,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12695,7 +12938,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12709,7 +12952,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12723,7 +12966,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12737,7 +12980,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12751,7 +12994,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12765,7 +13008,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12793,7 +13036,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12807,7 +13050,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12821,7 +13064,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12835,7 +13078,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Daerah Tel Aviv",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12849,7 +13092,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Distrito de Tel Aviv",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12863,7 +13106,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Distrito de Tel Aviv",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12891,7 +13134,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12933,7 +13176,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12961,7 +13204,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12975,7 +13218,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -12989,7 +13232,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13003,7 +13246,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13017,7 +13260,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13031,7 +13274,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13045,7 +13288,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13059,7 +13302,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13073,7 +13316,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13087,7 +13330,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13101,7 +13344,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13115,7 +13358,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13129,7 +13372,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13143,7 +13386,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13157,7 +13400,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13171,7 +13414,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13185,7 +13428,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13199,7 +13442,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13213,7 +13456,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13227,7 +13470,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13241,7 +13484,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13255,7 +13498,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13269,7 +13512,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13283,7 +13526,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13297,7 +13540,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13311,7 +13554,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13325,7 +13568,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13339,7 +13582,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13353,7 +13596,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13367,7 +13610,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13381,7 +13624,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13395,7 +13638,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13409,7 +13652,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13423,7 +13666,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13437,7 +13680,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13451,7 +13694,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13465,7 +13708,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13479,7 +13722,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13493,7 +13736,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13507,7 +13750,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13521,7 +13764,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13535,7 +13778,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13549,7 +13792,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13563,7 +13806,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13577,7 +13820,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13591,7 +13834,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13605,7 +13848,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13619,7 +13862,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13633,7 +13876,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13647,7 +13890,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13661,7 +13904,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13675,7 +13918,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13689,7 +13932,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13703,7 +13946,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13717,7 +13960,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13731,7 +13974,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13745,7 +13988,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13759,7 +14002,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13773,7 +14016,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13787,7 +14030,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13801,7 +14044,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13815,7 +14058,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13829,7 +14072,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13843,7 +14086,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13857,7 +14100,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13871,7 +14114,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13885,7 +14128,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13899,7 +14142,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13913,7 +14156,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13927,7 +14170,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13941,7 +14184,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13955,7 +14198,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13969,7 +14212,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13983,7 +14226,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -13997,7 +14240,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14011,7 +14254,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14025,7 +14268,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14039,7 +14282,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14053,7 +14296,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14067,7 +14310,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14081,7 +14324,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14095,7 +14338,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14109,7 +14352,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14123,7 +14366,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14137,7 +14380,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14151,7 +14394,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14165,7 +14408,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14179,7 +14422,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14193,7 +14436,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14207,7 +14450,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14221,7 +14464,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14235,7 +14478,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14249,7 +14492,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14263,7 +14506,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14277,7 +14520,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14291,7 +14534,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14305,7 +14548,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14319,7 +14562,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rejovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14333,7 +14576,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14347,7 +14590,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14361,7 +14604,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14389,7 +14632,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14403,7 +14646,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14417,7 +14660,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14431,7 +14674,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14445,7 +14688,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14459,7 +14702,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14473,7 +14716,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14501,7 +14744,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14515,7 +14758,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14529,7 +14772,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14543,7 +14786,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14557,7 +14800,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14571,7 +14814,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14585,7 +14828,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14599,7 +14842,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14613,7 +14856,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14627,7 +14870,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14655,7 +14898,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14669,7 +14912,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14683,7 +14926,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14711,7 +14954,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14725,7 +14968,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14739,7 +14982,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14753,7 +14996,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14767,7 +15010,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14823,7 +15066,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14837,7 +15080,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14851,7 +15094,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14865,7 +15108,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14879,7 +15122,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14893,7 +15136,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14907,7 +15150,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14921,7 +15164,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14935,7 +15178,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14949,7 +15192,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14963,7 +15206,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14977,7 +15220,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -14991,7 +15234,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Bnei Ayish",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15019,7 +15262,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15033,7 +15276,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15047,7 +15290,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15061,7 +15304,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15073,9 +15316,9 @@ const JOB_DATA = {
       "url": "https://devjobs.co.il/job-details/4370421706",
       "devType": "Other",
       "workMode": "On-site",
-      "location": "Israël",
+      "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15089,7 +15332,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15103,7 +15346,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15117,7 +15360,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15131,7 +15374,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15145,7 +15388,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15159,7 +15402,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15173,7 +15416,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15187,7 +15430,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15201,7 +15444,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15229,7 +15472,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15243,7 +15486,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15257,7 +15500,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15271,7 +15514,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Or Yehuda",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15285,7 +15528,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Or Yehuda",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15299,7 +15542,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Or Yehuda",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15313,7 +15556,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Or Yehuda",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15327,7 +15570,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Or Yehuda",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15355,7 +15598,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15369,7 +15612,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15383,7 +15626,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15397,7 +15640,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15411,7 +15654,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15425,7 +15668,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15439,7 +15682,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15453,7 +15696,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15468,9 +15711,9 @@ const JOB_DATA = {
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-05-30",
-      "dateRemoved": "",
+      "dateRemoved": "2026-05-31",
       "daysListed": 7,
-      "isActive": true
+      "isActive": false
     },
     {
       "jobId": "4413553959",
@@ -15481,7 +15724,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15495,7 +15738,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15509,7 +15752,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ashdod",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15523,7 +15766,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15537,7 +15780,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15551,7 +15794,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15565,7 +15808,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15579,7 +15822,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rosh HaAyin",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15621,7 +15864,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15635,7 +15878,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15649,7 +15892,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15663,7 +15906,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15677,7 +15920,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15691,7 +15934,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15733,7 +15976,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15761,7 +16004,7 @@ const JOB_DATA = {
       "workMode": "Remote",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15775,7 +16018,7 @@ const JOB_DATA = {
       "workMode": "Remote",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15789,7 +16032,7 @@ const JOB_DATA = {
       "workMode": "Remote",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15803,7 +16046,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15831,7 +16074,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15859,7 +16102,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15873,10 +16116,10 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4387290289",
@@ -15887,10 +16130,10 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4389083318",
@@ -15901,7 +16144,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15915,10 +16158,10 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4371111806",
@@ -15929,7 +16172,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15943,7 +16186,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15957,7 +16200,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15971,7 +16214,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15985,7 +16228,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -15999,7 +16242,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16013,7 +16256,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16027,7 +16270,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16041,7 +16284,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16055,7 +16298,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16069,7 +16312,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16083,7 +16326,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16097,7 +16340,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16125,7 +16368,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16139,7 +16382,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16153,7 +16396,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16167,7 +16410,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16181,7 +16424,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16195,7 +16438,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16209,7 +16452,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Distrito de Tel Aviv",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16223,7 +16466,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16237,7 +16480,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16251,7 +16494,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16265,7 +16508,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16279,7 +16522,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16293,7 +16536,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16307,7 +16550,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16321,7 +16564,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16349,7 +16592,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16363,7 +16606,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16391,7 +16634,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Kfar Saba",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16405,7 +16648,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Kfar Saba",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16419,7 +16662,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Kfar Saba",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16433,7 +16676,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16447,10 +16690,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4414496738",
@@ -16461,10 +16704,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4397217964",
@@ -16475,7 +16718,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16489,7 +16732,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16503,10 +16746,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4414490778",
@@ -16517,10 +16760,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4320727783",
@@ -16531,7 +16774,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16545,7 +16788,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16559,7 +16802,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16573,7 +16816,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16587,7 +16830,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Pardes Hana - Karkur",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16601,7 +16844,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16615,7 +16858,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16629,7 +16872,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16643,7 +16886,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16657,7 +16900,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16671,7 +16914,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16699,7 +16942,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16713,7 +16956,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16727,7 +16970,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Distrito de Tel Aviv",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16741,7 +16984,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16755,7 +16998,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16769,7 +17012,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16783,7 +17026,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16797,10 +17040,10 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4347659872",
@@ -16811,7 +17054,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16825,7 +17068,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16839,7 +17082,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16853,7 +17096,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16867,7 +17110,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16881,7 +17124,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16895,7 +17138,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16909,7 +17152,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16923,7 +17166,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16937,7 +17180,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16965,7 +17208,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16979,7 +17222,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -16993,7 +17236,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17007,7 +17250,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17021,10 +17264,10 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4410825033",
@@ -17035,7 +17278,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17049,10 +17292,10 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4395017325",
@@ -17077,7 +17320,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17091,7 +17334,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17105,7 +17348,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17119,10 +17362,10 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4412214875",
@@ -17133,7 +17376,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17147,7 +17390,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17161,7 +17404,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17175,7 +17418,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17189,7 +17432,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17203,7 +17446,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17231,7 +17474,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17245,7 +17488,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rosh HaAyin",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17259,7 +17502,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rosh HaAyin",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17273,7 +17516,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17287,7 +17530,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17301,7 +17544,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17315,7 +17558,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17329,7 +17572,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17343,7 +17586,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17357,7 +17600,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17371,7 +17614,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17385,7 +17628,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17399,7 +17642,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17413,7 +17656,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17427,7 +17670,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17441,7 +17684,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Modiin-Maccabim-Reut",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17455,7 +17698,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17469,7 +17712,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Modiin-Maccabim-Reut",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17483,7 +17726,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Modiin-Maccabim-Reut",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17497,7 +17740,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17511,7 +17754,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17525,7 +17768,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17539,7 +17782,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17567,7 +17810,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17581,7 +17824,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17595,7 +17838,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Telavive",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17609,7 +17852,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17637,7 +17880,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17651,7 +17894,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17665,7 +17908,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17679,7 +17922,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17693,7 +17936,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17707,7 +17950,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17721,7 +17964,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Telavive",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17749,7 +17992,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17763,7 +18006,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17777,7 +18020,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17791,7 +18034,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17805,7 +18048,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17819,7 +18062,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17833,7 +18076,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17847,7 +18090,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17861,7 +18104,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17875,7 +18118,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17889,7 +18132,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17903,7 +18146,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17917,7 +18160,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Caesarea",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17931,7 +18174,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17945,7 +18188,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Caesarea",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17959,7 +18202,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Caesarea",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17973,7 +18216,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -17987,7 +18230,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Caesarea",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18001,7 +18244,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18015,7 +18258,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Caesarea",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18029,7 +18272,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Caesarea",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18043,7 +18286,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18057,7 +18300,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18071,7 +18314,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18085,7 +18328,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18099,7 +18342,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18127,7 +18370,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18141,7 +18384,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18155,7 +18398,7 @@ const JOB_DATA = {
       "workMode": "Remote",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18169,7 +18412,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18183,7 +18426,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18197,7 +18440,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Caesarea",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18211,7 +18454,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Caesarea",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18225,7 +18468,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18239,7 +18482,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Yishai",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18253,7 +18496,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18267,7 +18510,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Yishai",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18309,10 +18552,10 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Yishai",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4372520429",
@@ -18323,10 +18566,10 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4400247891",
@@ -18337,7 +18580,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18351,7 +18594,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18365,7 +18608,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18379,7 +18622,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18393,7 +18636,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18421,7 +18664,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rosh HaAyin",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18435,7 +18678,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18449,7 +18692,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ashdod",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18463,7 +18706,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rosh HaAyin",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18477,7 +18720,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Beit Shean",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18491,7 +18734,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18505,7 +18748,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18519,7 +18762,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18533,7 +18776,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18547,10 +18790,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rishon LeZion",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4337214574",
@@ -18561,7 +18804,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18575,7 +18818,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18589,7 +18832,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18603,7 +18846,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Even Yehuda",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18617,10 +18860,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Karmiel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4416905910",
@@ -18631,7 +18874,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18659,7 +18902,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18673,7 +18916,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18687,7 +18930,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18701,7 +18944,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "West Jerusalem",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18715,7 +18958,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yehud Monosson",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18729,7 +18972,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18743,7 +18986,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yavne",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18757,7 +19000,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yavne",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18771,7 +19014,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18785,7 +19028,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18813,7 +19056,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18827,7 +19070,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18841,7 +19084,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18855,7 +19098,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18869,7 +19112,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18880,10 +19123,10 @@ const JOB_DATA = {
       "title": "Marketing Data Analyst- Temporary 10 Months",
       "url": "https://devjobs.co.il/job-details/4400438857",
       "devType": "Data/ML",
-      "workMode": "On-site",
+      "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18897,10 +19140,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4365751301",
@@ -18911,7 +19154,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18925,7 +19168,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18953,7 +19196,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Rishon LeZion",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18981,7 +19224,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -18995,7 +19238,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19009,7 +19252,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19023,7 +19266,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19037,7 +19280,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19051,7 +19294,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19079,7 +19322,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19093,7 +19336,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "West Jerusalem",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19107,7 +19350,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "West Jerusalem",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19121,7 +19364,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jerusalén Oeste",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19135,7 +19378,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "West Jerusalem",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19149,7 +19392,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "West Jerusalem",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19163,7 +19406,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "West Jerusalem",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19177,7 +19420,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "West Jerusalem",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19191,7 +19434,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19205,7 +19448,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19219,10 +19462,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4391091111",
@@ -19233,7 +19476,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19247,7 +19490,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19261,7 +19504,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19275,7 +19518,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19289,7 +19532,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19304,9 +19547,9 @@ const JOB_DATA = {
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-05-30",
-      "dateRemoved": "",
+      "dateRemoved": "2026-05-31",
       "daysListed": 7,
-      "isActive": true
+      "isActive": false
     },
     {
       "jobId": "4363920684",
@@ -19317,7 +19560,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19331,7 +19574,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19345,7 +19588,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19359,7 +19602,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19373,7 +19616,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19387,7 +19630,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19401,7 +19644,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19415,7 +19658,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19429,7 +19672,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19443,7 +19686,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19457,7 +19700,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19472,9 +19715,9 @@ const JOB_DATA = {
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-05-30",
-      "dateRemoved": "",
+      "dateRemoved": "2026-05-31",
       "daysListed": 7,
-      "isActive": true
+      "isActive": false
     },
     {
       "jobId": "4373160937",
@@ -19485,7 +19728,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19499,7 +19742,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19513,7 +19756,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Givatayim",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19527,7 +19770,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Givatayim",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19541,10 +19784,10 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "3791372011",
@@ -19569,10 +19812,10 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4371540086",
@@ -19583,7 +19826,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19597,10 +19840,10 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4371540085",
@@ -19611,7 +19854,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19625,7 +19868,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19639,7 +19882,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19667,7 +19910,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19681,7 +19924,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Be'er Sheva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19695,7 +19938,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19709,10 +19952,10 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4366018220",
@@ -19723,7 +19966,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19737,10 +19980,10 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4368029082",
@@ -19765,7 +20008,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19779,7 +20022,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Be'er Sheva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19793,7 +20036,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19807,7 +20050,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19821,7 +20064,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19835,7 +20078,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19849,10 +20092,10 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4371530237",
@@ -19863,7 +20106,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19877,10 +20120,10 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4373308577",
@@ -19891,10 +20134,10 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Be'er Sheva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4379410892",
@@ -19905,7 +20148,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19919,7 +20162,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19933,7 +20176,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19961,7 +20204,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19975,7 +20218,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -19989,7 +20232,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20003,7 +20246,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20017,7 +20260,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20031,7 +20274,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20045,7 +20288,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20059,7 +20302,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20073,7 +20316,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20087,7 +20330,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20115,7 +20358,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20129,7 +20372,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20157,10 +20400,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4413119067",
@@ -20171,7 +20414,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20185,7 +20428,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20199,7 +20442,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20227,7 +20470,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20241,7 +20484,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20255,7 +20498,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20269,7 +20512,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20283,7 +20526,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20298,9 +20541,9 @@ const JOB_DATA = {
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-05-30",
-      "dateRemoved": "",
+      "dateRemoved": "2026-05-31",
       "daysListed": 7,
-      "isActive": true
+      "isActive": false
     },
     {
       "jobId": "4364215184",
@@ -20311,7 +20554,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20325,7 +20568,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20367,7 +20610,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Telavive",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20381,7 +20624,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20395,7 +20638,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20409,7 +20652,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Holon",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20423,7 +20666,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Holon",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20437,7 +20680,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20465,7 +20708,7 @@ const JOB_DATA = {
       "workMode": "Remote",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20479,10 +20722,10 @@ const JOB_DATA = {
       "workMode": "Remote",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4413883243",
@@ -20493,7 +20736,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20507,7 +20750,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20521,7 +20764,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Bezirk Tel Aviv",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20549,7 +20792,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20563,7 +20806,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20591,7 +20834,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20605,7 +20848,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20619,7 +20862,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20633,7 +20876,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20647,10 +20890,10 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4415989032",
@@ -20661,7 +20904,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Givat Shmuel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20689,7 +20932,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20703,7 +20946,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20717,7 +20960,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20731,7 +20974,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20745,7 +20988,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20759,7 +21002,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20773,7 +21016,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20787,7 +21030,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20801,7 +21044,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20815,7 +21058,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20829,7 +21072,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20843,7 +21086,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20857,7 +21100,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20871,7 +21114,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20885,7 +21128,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20913,7 +21156,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20927,7 +21170,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20941,7 +21184,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20955,7 +21198,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20969,7 +21212,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -20984,9 +21227,9 @@ const JOB_DATA = {
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-05-30",
-      "dateRemoved": "",
+      "dateRemoved": "2026-05-31",
       "daysListed": 7,
-      "isActive": true
+      "isActive": false
     },
     {
       "jobId": "4401076382",
@@ -20997,7 +21240,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21011,7 +21254,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21039,7 +21282,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21053,7 +21296,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21095,7 +21338,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21109,7 +21352,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21123,7 +21366,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21151,7 +21394,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21165,7 +21408,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21179,7 +21422,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21193,7 +21436,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21207,7 +21450,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21221,7 +21464,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21235,7 +21478,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21249,7 +21492,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21263,7 +21506,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21277,7 +21520,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21291,7 +21534,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21305,7 +21548,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21347,7 +21590,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21361,7 +21604,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21375,7 +21618,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21389,7 +21632,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21403,7 +21646,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21417,7 +21660,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21445,7 +21688,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzlia",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21459,7 +21702,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21473,7 +21716,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Caesarea",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21501,7 +21744,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21515,7 +21758,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21529,7 +21772,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21543,7 +21786,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21557,7 +21800,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21571,7 +21814,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rishon Le Zion",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21599,7 +21842,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21613,7 +21856,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Sdot Dan Regional Council",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21627,7 +21870,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21641,7 +21884,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21655,7 +21898,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21669,7 +21912,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tiberias",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21683,7 +21926,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21697,7 +21940,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tiberias",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21711,7 +21954,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21725,7 +21968,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21739,7 +21982,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21753,7 +21996,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Sdot Dan Regional Council",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21767,10 +22010,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4373519930",
@@ -21781,10 +22024,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4416258028",
@@ -21796,9 +22039,9 @@ const JOB_DATA = {
       "location": "Sdot Dan Regional Council",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-05-30",
-      "dateRemoved": "",
+      "dateRemoved": "2026-05-31",
       "daysListed": 7,
-      "isActive": true
+      "isActive": false
     },
     {
       "jobId": "4401570257",
@@ -21809,7 +22052,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21879,7 +22122,7 @@ const JOB_DATA = {
       "workMode": "Remote",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21893,7 +22136,7 @@ const JOB_DATA = {
       "workMode": "Remote",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21935,7 +22178,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21949,7 +22192,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21963,7 +22206,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ramat HaSharon",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21977,7 +22220,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -21991,7 +22234,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22005,7 +22248,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Holon",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22019,7 +22262,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Holon",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22033,7 +22276,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yoqneam Illit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22047,7 +22290,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Holon",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22061,7 +22304,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22075,7 +22318,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22089,7 +22332,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22117,7 +22360,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22131,7 +22374,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ramat HaSharon",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22145,7 +22388,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Modiin-Maccabim-Reut",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22159,7 +22402,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22187,7 +22430,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yoqneam Illit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22201,7 +22444,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yoqneam Illit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22215,7 +22458,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Holon",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22229,7 +22472,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22243,7 +22486,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Caesarea",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22257,7 +22500,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yoqneam Illit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22271,7 +22514,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ramat HaSharon",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22285,7 +22528,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22299,7 +22542,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ramat HaSharon",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22313,7 +22556,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22327,7 +22570,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22341,7 +22584,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22355,7 +22598,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22369,7 +22612,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22383,7 +22626,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22397,7 +22640,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rosh HaAyin",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22411,10 +22654,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4375576123",
@@ -22425,7 +22668,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yoqneam Illit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22439,7 +22682,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22453,7 +22696,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22467,7 +22710,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rosh HaAyin",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22481,10 +22724,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4410194585",
@@ -22495,7 +22738,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Modiin-Maccabim-Reut",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22509,7 +22752,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Modiin-Maccabim-Reut",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22523,7 +22766,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Modiin-Maccabim-Reut",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22537,7 +22780,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yoqneam Illit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22551,7 +22794,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22565,7 +22808,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yoqneam Illit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22579,7 +22822,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Holon",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22593,10 +22836,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4376618723",
@@ -22607,7 +22850,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rosh HaAyin",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22621,7 +22864,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ramat HaSharon",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22635,7 +22878,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Distrito de Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22649,7 +22892,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22663,7 +22906,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22677,7 +22920,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22691,7 +22934,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22705,7 +22948,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22719,7 +22962,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rosh HaAyin",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22733,10 +22976,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4391071279",
@@ -22747,7 +22990,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Bezirk Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22761,10 +23004,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rosh HaAyin",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4375561456",
@@ -22775,7 +23018,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22789,7 +23032,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22803,7 +23046,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ramat HaSharon",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22817,7 +23060,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Be'er Sheva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22831,7 +23074,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Holon",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22845,7 +23088,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22859,7 +23102,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Holon",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22873,7 +23116,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22887,7 +23130,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Holon",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22901,7 +23144,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Holon",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22915,7 +23158,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22929,7 +23172,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22943,7 +23186,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22957,7 +23200,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Distrito de Jerusalén",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22985,7 +23228,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -22999,7 +23242,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23013,7 +23256,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23027,7 +23270,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23041,7 +23284,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Holon",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23055,7 +23298,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23069,7 +23312,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23083,7 +23326,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23097,7 +23340,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23111,7 +23354,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23125,7 +23368,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Holon",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23139,7 +23382,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23153,7 +23396,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23167,7 +23410,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23181,7 +23424,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yoqneam Illit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23195,7 +23438,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23209,7 +23452,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yoqneam Illit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23223,7 +23466,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rosh HaAyin",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23237,7 +23480,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23265,7 +23508,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23279,7 +23522,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23293,10 +23536,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yoqneam Illit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4375574140",
@@ -23307,7 +23550,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ramat HaSharon",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23321,7 +23564,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23335,7 +23578,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23349,7 +23592,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23363,7 +23606,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yoqneam Illit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23377,7 +23620,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yoqneam Illit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23391,7 +23634,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yoqneam Illit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23405,7 +23648,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23419,7 +23662,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Holon",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23447,10 +23690,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4375574110",
@@ -23461,7 +23704,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Karmiel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23475,7 +23718,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23489,7 +23732,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rosh HaAyin",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23503,7 +23746,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yavne",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23517,7 +23760,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23531,7 +23774,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23545,7 +23788,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23559,7 +23802,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Distrito de Jerusalén",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23573,7 +23816,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23587,7 +23830,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23601,7 +23844,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Holon",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23615,7 +23858,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "District de Haïfa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23685,7 +23928,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23699,7 +23942,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23713,7 +23956,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23784,9 +24027,9 @@ const JOB_DATA = {
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-05-30",
-      "dateRemoved": "",
+      "dateRemoved": "2026-05-31",
       "daysListed": 7,
-      "isActive": true
+      "isActive": false
     },
     {
       "jobId": "4399900261",
@@ -23811,7 +24054,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23825,7 +24068,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23839,7 +24082,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23853,7 +24096,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23867,7 +24110,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23895,7 +24138,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23909,7 +24152,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23923,7 +24166,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Givat Shmuel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23937,7 +24180,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23965,7 +24208,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -23979,7 +24222,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24007,7 +24250,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24021,7 +24264,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24035,7 +24278,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24049,7 +24292,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24063,7 +24306,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24077,7 +24320,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24091,7 +24334,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24105,7 +24348,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Ha-Sharon",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24119,7 +24362,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Binyamina",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24133,7 +24376,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24147,7 +24390,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24161,7 +24404,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24175,7 +24418,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24203,7 +24446,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24217,7 +24460,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24231,7 +24474,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24245,7 +24488,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24259,7 +24502,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24273,7 +24516,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24287,7 +24530,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24301,7 +24544,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24315,7 +24558,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24329,7 +24572,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24413,7 +24656,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24427,7 +24670,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24441,7 +24684,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24469,7 +24712,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24483,7 +24726,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24497,7 +24740,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24525,7 +24768,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24539,7 +24782,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24553,7 +24796,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Migdal HaEmek",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24567,7 +24810,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "West Jerusalem",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24581,7 +24824,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "West Jerusalem",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24609,7 +24852,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24623,10 +24866,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4414952551",
@@ -24637,10 +24880,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4365091167",
@@ -24651,7 +24894,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24665,10 +24908,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4416159416",
@@ -24679,7 +24922,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ness Ziona",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24707,7 +24950,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24721,7 +24964,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24735,7 +24978,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24749,7 +24992,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24763,7 +25006,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24777,7 +25020,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24791,7 +25034,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24805,7 +25048,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24819,7 +25062,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24833,7 +25076,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24861,7 +25104,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24875,7 +25118,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24889,7 +25132,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24903,7 +25146,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24917,7 +25160,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24931,7 +25174,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24945,7 +25188,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -24959,7 +25202,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25043,7 +25286,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25071,7 +25314,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25085,7 +25328,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Sunnyvale",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25127,7 +25370,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25141,7 +25384,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25155,7 +25398,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25169,7 +25412,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25183,7 +25426,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25197,7 +25440,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25211,7 +25454,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25225,7 +25468,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25239,7 +25482,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25253,7 +25496,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25267,7 +25510,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25281,7 +25524,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25295,7 +25538,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25323,7 +25566,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25337,7 +25580,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25351,7 +25594,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25365,7 +25608,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25379,7 +25622,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25393,7 +25636,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25407,7 +25650,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25421,10 +25664,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4415665952",
@@ -25436,9 +25679,9 @@ const JOB_DATA = {
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-05-30",
-      "dateRemoved": "",
+      "dateRemoved": "2026-05-31",
       "daysListed": 7,
-      "isActive": true
+      "isActive": false
     },
     {
       "jobId": "4410160627",
@@ -25449,7 +25692,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25477,7 +25720,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25491,10 +25734,10 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Lod",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4374728510",
@@ -25505,10 +25748,10 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4344871407",
@@ -25519,7 +25762,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25533,10 +25776,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4416284127",
@@ -25547,7 +25790,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25561,7 +25804,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25575,7 +25818,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Yoqneam Illit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25589,7 +25832,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25603,7 +25846,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Telavive",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25617,7 +25860,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25631,10 +25874,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4388535381",
@@ -25645,7 +25888,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25659,10 +25902,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4376824506",
@@ -25673,7 +25916,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25687,10 +25930,10 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4379712216",
@@ -25701,7 +25944,7 @@ const JOB_DATA = {
       "workMode": "Remote",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25715,7 +25958,7 @@ const JOB_DATA = {
       "workMode": "Remote",
       "location": "Israël",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25729,7 +25972,7 @@ const JOB_DATA = {
       "workMode": "Remote",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25743,7 +25986,7 @@ const JOB_DATA = {
       "workMode": "Remote",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25757,7 +26000,7 @@ const JOB_DATA = {
       "workMode": "Remote",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25771,7 +26014,7 @@ const JOB_DATA = {
       "workMode": "Remote",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25785,7 +26028,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25799,7 +26042,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25813,7 +26056,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25827,7 +26070,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25841,7 +26084,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25855,7 +26098,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25883,7 +26126,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25897,7 +26140,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25911,7 +26154,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25925,7 +26168,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25939,7 +26182,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25953,7 +26196,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25967,7 +26210,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Telavive",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -25982,9 +26225,9 @@ const JOB_DATA = {
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-05-30",
-      "dateRemoved": "",
+      "dateRemoved": "2026-05-31",
       "daysListed": 7,
-      "isActive": true
+      "isActive": false
     },
     {
       "jobId": "4366998730",
@@ -25995,7 +26238,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26009,7 +26252,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26023,7 +26266,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26037,7 +26280,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26051,7 +26294,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26065,7 +26308,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26079,7 +26322,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26093,7 +26336,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26107,10 +26350,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4395435517",
@@ -26122,9 +26365,9 @@ const JOB_DATA = {
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-05-30",
-      "dateRemoved": "",
+      "dateRemoved": "2026-05-31",
       "daysListed": 7,
-      "isActive": true
+      "isActive": false
     },
     {
       "jobId": "4414157765",
@@ -26135,7 +26378,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26149,7 +26392,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26163,7 +26406,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26177,7 +26420,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26205,7 +26448,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26219,7 +26462,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26233,7 +26476,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Distrito de Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26247,10 +26490,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4399638304",
@@ -26261,7 +26504,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26275,7 +26518,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26289,7 +26532,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26303,7 +26546,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26317,7 +26560,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26331,7 +26574,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26345,7 +26588,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26387,7 +26630,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26399,9 +26642,9 @@ const JOB_DATA = {
       "url": "https://devjobs.co.il/job-details/4402116419",
       "devType": "Other",
       "workMode": "On-site",
-      "location": "Distrito de Haifa",
+      "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26415,7 +26658,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26429,7 +26672,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26443,7 +26686,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26457,7 +26700,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26471,7 +26714,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26485,7 +26728,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26499,7 +26742,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26513,7 +26756,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26527,7 +26770,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26541,7 +26784,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26555,7 +26798,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Telavive",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26569,7 +26812,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Distrito de Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26583,10 +26826,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4414460877",
@@ -26597,10 +26840,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4392893204",
@@ -26639,7 +26882,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26653,7 +26896,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "District de Haïfa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26667,7 +26910,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26682,9 +26925,9 @@ const JOB_DATA = {
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-05-30",
-      "dateRemoved": "",
+      "dateRemoved": "2026-05-31",
       "daysListed": 7,
-      "isActive": true
+      "isActive": false
     },
     {
       "jobId": "4395973264",
@@ -26695,7 +26938,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26723,10 +26966,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4414118595",
@@ -26737,7 +26980,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26751,7 +26994,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26765,7 +27008,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26779,7 +27022,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26793,7 +27036,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26807,7 +27050,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26821,7 +27064,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26835,7 +27078,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26849,7 +27092,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26877,7 +27120,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26891,7 +27134,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26906,9 +27149,9 @@ const JOB_DATA = {
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-05-30",
-      "dateRemoved": "",
+      "dateRemoved": "2026-05-31",
       "daysListed": 7,
-      "isActive": true
+      "isActive": false
     },
     {
       "jobId": "4413840229",
@@ -26919,7 +27162,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26961,7 +27204,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26975,7 +27218,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -26989,7 +27232,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27003,7 +27246,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Telavive",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27031,7 +27274,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27045,7 +27288,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27059,7 +27302,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27073,7 +27316,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Kadima - Zoran",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27087,7 +27330,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Kadima - Zoran",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27101,7 +27344,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27115,7 +27358,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27129,7 +27372,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Hod HaSharon",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27143,7 +27386,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Hod HaSharon",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27157,7 +27400,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ness Ziona",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27171,7 +27414,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ness Ziona",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27199,7 +27442,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27213,7 +27456,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27227,7 +27470,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27241,7 +27484,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27255,7 +27498,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27269,7 +27512,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27283,7 +27526,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27297,7 +27540,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27311,7 +27554,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Caesarea",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27325,7 +27568,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27339,7 +27582,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27353,7 +27596,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27367,7 +27610,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27381,7 +27624,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27395,7 +27638,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27409,7 +27652,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27423,10 +27666,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4373018694",
@@ -27437,7 +27680,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27451,7 +27694,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27465,7 +27708,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27479,7 +27722,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27493,7 +27736,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27507,7 +27750,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27521,7 +27764,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27535,7 +27778,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27549,7 +27792,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Telavive",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27563,7 +27806,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27577,10 +27820,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ashdod",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4411190409",
@@ -27591,10 +27834,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Lod",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4413655736",
@@ -27605,7 +27848,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yehud Monosson",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27619,7 +27862,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Beer Yaakov",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27633,7 +27876,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ashdod",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27661,7 +27904,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Beer Yaakov",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27675,7 +27918,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Beer Yaakov",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27689,10 +27932,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ashdod",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4410130909",
@@ -27703,7 +27946,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Beer Yaakov",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27717,7 +27960,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Beer Yaakov",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27731,7 +27974,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yehud Monosson",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27745,7 +27988,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Beer Yaakov",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27760,9 +28003,9 @@ const JOB_DATA = {
       "location": "Ashdod",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-05-30",
-      "dateRemoved": "",
+      "dateRemoved": "2026-05-31",
       "daysListed": 7,
-      "isActive": true
+      "isActive": false
     },
     {
       "jobId": "4411157688",
@@ -27773,10 +28016,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ashdod",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4319430301",
@@ -27787,7 +28030,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ashdod",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27801,7 +28044,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ashdod",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27815,7 +28058,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Lod",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27829,7 +28072,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yehud Monosson",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27843,7 +28086,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yehud Monosson",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27871,7 +28114,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ashdod",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27885,7 +28128,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ashdod",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27899,7 +28142,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ashdod",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27913,7 +28156,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Lod",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27927,7 +28170,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ashdod",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27941,7 +28184,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yehud Monosson",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27969,7 +28212,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Beer Yaakov",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27983,7 +28226,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Lod",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -27997,7 +28240,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yehud Monosson",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28011,7 +28254,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Beer Yaakov",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28025,7 +28268,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yehud Monosson",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28039,7 +28282,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Lod",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28053,7 +28296,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ashdod",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28067,10 +28310,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ashdod",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4329026707",
@@ -28081,7 +28324,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ashdod",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28095,7 +28338,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yehud Monosson",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28109,7 +28352,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yehud Monosson",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28123,7 +28366,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Beer Yaakov",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28137,7 +28380,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Beer Yaakov",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28151,7 +28394,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yehud Monosson",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28165,7 +28408,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ashdod",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28179,7 +28422,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yehud Monosson",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28193,7 +28436,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yehud Monosson",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28207,7 +28450,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Beer Yaakov",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28221,7 +28464,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Beer Yaakov",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28235,7 +28478,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ashdod",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28249,7 +28492,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Lod",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28263,7 +28506,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ashdod",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28277,7 +28520,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yehud Monosson",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28291,7 +28534,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Beer Yaakov",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28305,7 +28548,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yehud Monosson",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28320,9 +28563,9 @@ const JOB_DATA = {
       "location": "Beer Yaakov",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-05-30",
-      "dateRemoved": "",
+      "dateRemoved": "2026-05-31",
       "daysListed": 7,
-      "isActive": true
+      "isActive": false
     },
     {
       "jobId": "4365960167",
@@ -28333,7 +28576,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ashdod",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28347,7 +28590,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yehud Monosson",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28361,7 +28604,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Lod",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28375,7 +28618,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ashdod",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28389,7 +28632,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yehud-Monosson",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28403,7 +28646,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ashdod",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28417,7 +28660,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yehud-Monosson",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28431,7 +28674,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ashdod",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28445,7 +28688,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yehud Monosson",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28459,7 +28702,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ashdod",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28473,10 +28716,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ashdod",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4405795281",
@@ -28487,7 +28730,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ashdod",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28501,7 +28744,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Beer Yaakov",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28529,7 +28772,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ashdod",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28543,7 +28786,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ashdod",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28557,7 +28800,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Lod",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28571,7 +28814,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yehud Monosson",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28585,7 +28828,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Beer Yaakov",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28599,10 +28842,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Lod",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4415449435",
@@ -28613,7 +28856,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ashdod",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28627,7 +28870,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Lod",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28641,7 +28884,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yehud Monosson",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28655,7 +28898,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Lod",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28669,7 +28912,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yehud Monosson",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28683,7 +28926,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Beer Yaakov",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28697,7 +28940,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ashdod",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28711,7 +28954,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Lod",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28725,7 +28968,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Lod",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28739,7 +28982,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28753,7 +28996,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28767,7 +29010,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28781,7 +29024,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28795,7 +29038,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Or Yehuda",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28809,7 +29052,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Or Yehuda",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28823,7 +29066,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28851,7 +29094,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28865,7 +29108,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Nesher",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28879,7 +29122,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28893,7 +29136,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28907,7 +29150,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28935,7 +29178,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28949,7 +29192,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28963,7 +29206,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28977,7 +29220,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -28991,7 +29234,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29005,7 +29248,7 @@ const JOB_DATA = {
       "workMode": "Remote",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29019,7 +29262,7 @@ const JOB_DATA = {
       "workMode": "Remote",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29033,7 +29276,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29061,7 +29304,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rosh HaAyin",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29075,7 +29318,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29089,7 +29332,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29103,7 +29346,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29117,7 +29360,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29131,7 +29374,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29145,7 +29388,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29159,7 +29402,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Distrito de Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29173,7 +29416,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29187,7 +29430,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Zucca Petah",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29201,7 +29444,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29215,7 +29458,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Distrito de Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29229,7 +29472,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29243,7 +29486,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29257,7 +29500,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29271,7 +29514,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29285,7 +29528,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29299,7 +29542,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29313,7 +29556,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29327,10 +29570,10 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4375301269",
@@ -29341,7 +29584,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29355,7 +29598,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29369,7 +29612,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29397,7 +29640,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29411,7 +29654,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29439,7 +29682,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29453,7 +29696,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29467,7 +29710,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29481,7 +29724,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29495,7 +29738,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29509,7 +29752,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29523,7 +29766,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29537,7 +29780,7 @@ const JOB_DATA = {
       "workMode": "Remote",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29551,7 +29794,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29565,7 +29808,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29579,7 +29822,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29607,7 +29850,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29621,7 +29864,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29635,7 +29878,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29649,7 +29892,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29663,7 +29906,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29677,7 +29920,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29691,7 +29934,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29705,7 +29948,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29719,7 +29962,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29733,7 +29976,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29747,7 +29990,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Lod",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29761,7 +30004,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29775,7 +30018,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29789,7 +30032,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29803,7 +30046,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29817,7 +30060,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29845,7 +30088,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29859,7 +30102,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29873,7 +30116,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29887,7 +30130,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29901,7 +30144,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29915,7 +30158,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29929,7 +30172,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29943,7 +30186,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29957,7 +30200,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29972,9 +30215,9 @@ const JOB_DATA = {
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-05-30",
-      "dateRemoved": "",
+      "dateRemoved": "2026-05-31",
       "daysListed": 7,
-      "isActive": true
+      "isActive": false
     },
     {
       "jobId": "4354320344",
@@ -29985,7 +30228,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -29999,7 +30242,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30013,7 +30256,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30028,9 +30271,9 @@ const JOB_DATA = {
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-05-30",
-      "dateRemoved": "",
+      "dateRemoved": "2026-05-31",
       "daysListed": 7,
-      "isActive": true
+      "isActive": false
     },
     {
       "jobId": "4417341662",
@@ -30041,7 +30284,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30069,7 +30312,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30083,7 +30326,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30097,7 +30340,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30111,7 +30354,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30125,7 +30368,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30139,7 +30382,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30153,7 +30396,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30167,7 +30410,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30181,7 +30424,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30195,7 +30438,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30223,7 +30466,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30237,7 +30480,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Migdal HaEmeq",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30251,10 +30494,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Migdal HaEmeq",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4355693434",
@@ -30265,7 +30508,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Migdal HaEmeq",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30293,7 +30536,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Migdal HaEmeq",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30307,7 +30550,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Migdal HaEmeq",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30321,10 +30564,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4411552045",
@@ -30335,10 +30578,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4413376040",
@@ -30349,7 +30592,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Migdal HaEmeq",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30363,10 +30606,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Migdal HaEmeq",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4415781146",
@@ -30391,7 +30634,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30405,7 +30648,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30419,7 +30662,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30433,7 +30676,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30447,7 +30690,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30461,7 +30704,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30475,7 +30718,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30489,7 +30732,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30503,7 +30746,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30517,7 +30760,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30531,7 +30774,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30545,7 +30788,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30559,7 +30802,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30573,10 +30816,10 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4374759366",
@@ -30587,10 +30830,10 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4350399459",
@@ -30601,7 +30844,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30615,7 +30858,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30629,7 +30872,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30643,7 +30886,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30657,7 +30900,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30671,7 +30914,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30685,7 +30928,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30699,7 +30942,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30713,7 +30956,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30727,7 +30970,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30741,7 +30984,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30755,7 +30998,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30769,7 +31012,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30783,7 +31026,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30797,7 +31040,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Bnei Brak",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30811,7 +31054,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30825,7 +31068,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30839,7 +31082,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30853,7 +31096,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30867,7 +31110,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30881,7 +31124,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30895,7 +31138,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30909,7 +31152,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30923,7 +31166,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30937,7 +31180,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30951,7 +31194,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30965,7 +31208,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30979,7 +31222,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -30993,7 +31236,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31007,7 +31250,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31049,7 +31292,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31063,7 +31306,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31077,7 +31320,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Kfar Saba",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31091,10 +31334,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "3916038297",
@@ -31105,10 +31348,10 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4356610235",
@@ -31119,7 +31362,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31133,7 +31376,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31147,7 +31390,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31161,7 +31404,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31175,7 +31418,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31189,7 +31432,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31203,7 +31446,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31217,7 +31460,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31231,7 +31474,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31245,7 +31488,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31259,7 +31502,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31273,7 +31516,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31287,7 +31530,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31301,7 +31544,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31315,7 +31558,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31329,7 +31572,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31343,7 +31586,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Be’er Scheva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31357,7 +31600,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Be'er Sheva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31371,7 +31614,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31385,7 +31628,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31399,7 +31642,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Revadim",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31427,7 +31670,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31441,7 +31684,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31455,7 +31698,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31469,7 +31712,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31483,7 +31726,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Modiin-Maccabim-Reut",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31497,7 +31740,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31511,7 +31754,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31553,7 +31796,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Lod",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31567,7 +31810,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Lod",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31581,7 +31824,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Kfar Saba",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31609,7 +31852,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Frisco",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31623,7 +31866,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31637,7 +31880,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31651,7 +31894,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31665,7 +31908,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31679,7 +31922,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31693,7 +31936,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31708,9 +31951,9 @@ const JOB_DATA = {
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-05-30",
-      "dateRemoved": "",
+      "dateRemoved": "2026-05-31",
       "daysListed": 7,
-      "isActive": true
+      "isActive": false
     },
     {
       "jobId": "4325743005",
@@ -31721,7 +31964,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Telavive",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31735,7 +31978,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31749,7 +31992,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31763,7 +32006,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31777,7 +32020,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31791,7 +32034,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Givatayim",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31805,7 +32048,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Givatayim",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31819,7 +32062,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Givatayim",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31833,7 +32076,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31861,7 +32104,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31875,7 +32118,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31889,7 +32132,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31903,7 +32146,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31917,7 +32160,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31931,7 +32174,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31945,7 +32188,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31959,7 +32202,7 @@ const JOB_DATA = {
       "workMode": "Remote",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31973,7 +32216,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Hod HaSharon",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -31987,10 +32230,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Hod HaSharon",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4417090790",
@@ -32001,7 +32244,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32015,7 +32258,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32029,7 +32272,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32043,10 +32286,10 @@ const JOB_DATA = {
       "workMode": "Remote",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4413429266",
@@ -32057,7 +32300,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32071,7 +32314,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32085,7 +32328,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32099,7 +32342,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32113,7 +32356,7 @@ const JOB_DATA = {
       "workMode": "Remote",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32127,7 +32370,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32141,7 +32384,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32155,7 +32398,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32169,7 +32412,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32183,10 +32426,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4254632356",
@@ -32197,7 +32440,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32239,7 +32482,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Telavive",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32253,7 +32496,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32267,7 +32510,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32281,7 +32524,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32295,7 +32538,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32323,7 +32566,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32337,7 +32580,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32351,7 +32594,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32365,7 +32608,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Hadera",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32379,7 +32622,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Hadera",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32393,7 +32636,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32407,7 +32650,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Hadera",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32422,20 +32665,20 @@ const JOB_DATA = {
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-05-30",
-      "dateRemoved": "",
+      "dateRemoved": "2026-05-31",
       "daysListed": 7,
-      "isActive": true
+      "isActive": false
     },
     {
       "jobId": "4360948643",
       "company": "Mobileye",
-      "title": "AI Algorithm Engineer - Localization Team",
+      "title": "AI Algorithm Engineer - Vision Localization Group",
       "url": "https://devjobs.co.il/job-details/4360948643",
       "devType": "Data/ML",
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32449,7 +32692,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32463,7 +32706,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32477,7 +32720,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32491,7 +32734,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32506,9 +32749,9 @@ const JOB_DATA = {
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-05-30",
-      "dateRemoved": "",
+      "dateRemoved": "2026-05-31",
       "daysListed": 7,
-      "isActive": true
+      "isActive": false
     },
     {
       "jobId": "4415451355",
@@ -32519,7 +32762,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32533,7 +32776,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32547,7 +32790,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32561,7 +32804,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32575,7 +32818,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32603,10 +32846,10 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4359136268",
@@ -32617,7 +32860,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32631,7 +32874,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32645,7 +32888,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32659,7 +32902,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32673,7 +32916,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32687,7 +32930,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32701,7 +32944,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32715,7 +32958,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32730,9 +32973,9 @@ const JOB_DATA = {
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-05-30",
-      "dateRemoved": "",
+      "dateRemoved": "2026-05-31",
       "daysListed": 7,
-      "isActive": true
+      "isActive": false
     },
     {
       "jobId": "4394484163",
@@ -32743,7 +32986,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32757,7 +33000,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32771,7 +33014,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32785,7 +33028,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32799,7 +33042,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32813,7 +33056,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32827,7 +33070,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32841,7 +33084,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32856,9 +33099,9 @@ const JOB_DATA = {
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-05-30",
-      "dateRemoved": "",
+      "dateRemoved": "2026-05-31",
       "daysListed": 7,
-      "isActive": true
+      "isActive": false
     },
     {
       "jobId": "4327771116",
@@ -32869,7 +33112,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32883,7 +33126,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32897,7 +33140,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32911,7 +33154,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32925,7 +33168,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32939,7 +33182,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32953,7 +33196,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32967,7 +33210,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32981,7 +33224,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -32995,7 +33238,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33009,7 +33252,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33023,7 +33266,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33037,7 +33280,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33051,7 +33294,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33065,7 +33308,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33079,7 +33322,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33093,7 +33336,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33107,7 +33350,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33121,7 +33364,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33135,7 +33378,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33149,7 +33392,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33163,7 +33406,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33177,7 +33420,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33191,7 +33434,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33205,7 +33448,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33233,7 +33476,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33247,7 +33490,21 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
+    },
+    {
+      "jobId": "4402132278",
+      "company": "Mobileye",
+      "title": "Senior ML Data Engineer",
+      "url": "https://devjobs.co.il/job-details/4402132278",
+      "devType": "Data/ML",
+      "workMode": "Hybrid",
+      "location": "Jerusalem District",
+      "firstSeen": "2026-05-24",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33261,21 +33518,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
-      "dateRemoved": "",
-      "daysListed": 7,
-      "isActive": true
-    },
-    {
-      "jobId": "4402132278",
-      "company": "Mobileye",
-      "title": "Senior ML Data Engineering",
-      "url": "https://devjobs.co.il/job-details/4402132278",
-      "devType": "Data/ML",
-      "workMode": "Hybrid",
-      "location": "Jerusalem District",
-      "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33289,7 +33532,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33303,7 +33546,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33317,7 +33560,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33331,7 +33574,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33345,7 +33588,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33359,7 +33602,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Bezirk Jerusalem",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33373,7 +33616,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33387,7 +33630,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33401,7 +33644,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Distrito de Jerusalén",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33443,7 +33686,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33457,7 +33700,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33471,7 +33714,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33485,7 +33728,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33499,7 +33742,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33513,10 +33756,10 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4382887966",
@@ -33527,7 +33770,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33541,7 +33784,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33555,7 +33798,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33569,10 +33812,10 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Telavive",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4413268977",
@@ -33583,7 +33826,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33611,7 +33854,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33625,7 +33868,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33639,7 +33882,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33653,7 +33896,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33667,7 +33910,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33681,7 +33924,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33695,7 +33938,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Or Yehuda",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33709,7 +33952,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33723,7 +33966,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33737,7 +33980,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33751,7 +33994,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33765,7 +34008,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33779,7 +34022,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33793,7 +34036,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33807,7 +34050,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33821,7 +34064,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33835,7 +34078,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33849,7 +34092,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33863,7 +34106,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33877,7 +34120,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33891,7 +34134,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33905,7 +34148,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33919,7 +34162,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33933,7 +34176,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Be'er Sheva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33947,7 +34190,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33961,7 +34204,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33975,7 +34218,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -33989,7 +34232,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34003,7 +34246,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34017,7 +34260,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34031,7 +34274,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34045,7 +34288,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34059,7 +34302,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34073,7 +34316,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Kiryat Ata",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34087,7 +34330,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34101,7 +34344,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "District de Tel Aviv",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34115,7 +34358,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34129,7 +34372,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34143,7 +34386,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34157,7 +34400,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34171,7 +34414,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Hai",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34185,7 +34428,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34199,7 +34442,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Hai",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34213,7 +34456,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34227,7 +34470,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34241,7 +34484,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34255,7 +34498,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34269,7 +34512,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34283,7 +34526,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "이스라엘 베이구 Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34297,7 +34540,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34311,7 +34554,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34325,7 +34568,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34339,7 +34582,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34353,7 +34596,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34367,7 +34610,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34381,7 +34624,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34395,7 +34638,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34409,7 +34652,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34423,7 +34666,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34437,7 +34680,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "이스라엘 텔아비브구",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34451,7 +34694,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yoqneam",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34465,7 +34708,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34479,7 +34722,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34493,7 +34736,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34507,7 +34750,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34521,7 +34764,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34549,7 +34792,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34563,7 +34806,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34577,7 +34820,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34591,7 +34834,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34605,7 +34848,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34619,7 +34862,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34633,7 +34876,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34647,7 +34890,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34661,7 +34904,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34675,7 +34918,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34689,7 +34932,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34703,7 +34946,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34717,7 +34960,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34731,7 +34974,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Тель-Авивский округ",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34745,7 +34988,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34759,7 +35002,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34773,7 +35016,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34788,9 +35031,9 @@ const JOB_DATA = {
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-05-30",
-      "dateRemoved": "",
+      "dateRemoved": "2026-05-31",
       "daysListed": 7,
-      "isActive": true
+      "isActive": false
     },
     {
       "jobId": "4415473007",
@@ -34802,9 +35045,9 @@ const JOB_DATA = {
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-05-30",
-      "dateRemoved": "",
+      "dateRemoved": "2026-05-31",
       "daysListed": 7,
-      "isActive": true
+      "isActive": false
     },
     {
       "jobId": "4402329642",
@@ -34815,7 +35058,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34829,7 +35072,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34843,7 +35086,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "이스라엘 중부구 (이스라엘) Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34857,7 +35100,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34871,7 +35114,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34885,7 +35128,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34899,7 +35142,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34913,7 +35156,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34927,7 +35170,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Be'er Sheva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34941,7 +35184,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34955,7 +35198,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34969,7 +35212,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Be'er Sheva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34983,7 +35226,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -34997,7 +35240,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35011,7 +35254,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35025,7 +35268,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35039,7 +35282,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35067,7 +35310,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35081,7 +35324,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35095,7 +35338,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35109,7 +35352,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35123,7 +35366,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35137,7 +35380,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35151,7 +35394,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35165,7 +35408,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35179,7 +35422,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35193,7 +35436,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35207,7 +35450,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35221,7 +35464,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35235,7 +35478,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Telavive",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35249,7 +35492,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35263,7 +35506,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35277,7 +35520,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Be'er Sheva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35291,7 +35534,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35305,7 +35548,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35319,7 +35562,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35333,7 +35576,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35347,7 +35590,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35361,7 +35604,7 @@ const JOB_DATA = {
       "workMode": "Remote",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35375,7 +35618,7 @@ const JOB_DATA = {
       "workMode": "Remote",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35389,7 +35632,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35403,7 +35646,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35417,7 +35660,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35431,7 +35674,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35445,7 +35688,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35459,7 +35702,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35473,7 +35716,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Be'er Sheva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35487,7 +35730,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35502,9 +35745,9 @@ const JOB_DATA = {
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-05-30",
-      "dateRemoved": "",
+      "dateRemoved": "2026-05-31",
       "daysListed": 7,
-      "isActive": true
+      "isActive": false
     },
     {
       "jobId": "4395469581",
@@ -35516,9 +35759,9 @@ const JOB_DATA = {
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-05-30",
-      "dateRemoved": "",
+      "dateRemoved": "2026-05-31",
       "daysListed": 7,
-      "isActive": true
+      "isActive": false
     },
     {
       "jobId": "4395468879",
@@ -35529,7 +35772,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35543,7 +35786,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35557,7 +35800,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35571,7 +35814,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Be'er Sheva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35585,7 +35828,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35599,7 +35842,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35613,7 +35856,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35627,7 +35870,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35642,9 +35885,9 @@ const JOB_DATA = {
       "location": "Londra",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-05-30",
-      "dateRemoved": "",
+      "dateRemoved": "2026-05-31",
       "daysListed": 7,
-      "isActive": true
+      "isActive": false
     },
     {
       "jobId": "4395489204",
@@ -35655,7 +35898,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35669,7 +35912,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35683,7 +35926,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35697,7 +35940,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35711,7 +35954,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35725,7 +35968,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Be'er Sheva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35739,7 +35982,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Be'er Sheva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35753,7 +35996,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35767,7 +36010,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35781,7 +36024,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35795,7 +36038,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35809,7 +36052,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35823,7 +36066,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35837,7 +36080,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35851,7 +36094,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35865,7 +36108,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35879,7 +36122,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35893,7 +36136,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35907,7 +36150,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35921,7 +36164,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35935,7 +36178,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35949,7 +36192,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35963,7 +36206,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35977,7 +36220,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -35991,7 +36234,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36005,7 +36248,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36019,7 +36262,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36033,7 +36276,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36047,7 +36290,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36061,7 +36304,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36075,7 +36318,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36089,7 +36332,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36103,7 +36346,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Be'er Sheva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36117,7 +36360,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36131,7 +36374,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36145,7 +36388,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36159,7 +36402,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36173,7 +36416,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36187,7 +36430,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36201,7 +36444,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36215,7 +36458,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36229,7 +36472,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36243,7 +36486,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36257,7 +36500,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Be'er Sheva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36271,7 +36514,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36285,7 +36528,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36299,7 +36542,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36313,7 +36556,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36327,7 +36570,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36341,7 +36584,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36355,7 +36598,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36369,7 +36612,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36383,7 +36626,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Be'er Sheva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36397,7 +36640,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36411,7 +36654,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36425,7 +36668,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36439,7 +36682,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36453,7 +36696,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36467,7 +36710,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36481,7 +36724,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36495,7 +36738,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36509,7 +36752,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36523,7 +36766,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36537,7 +36780,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36551,7 +36794,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36565,7 +36808,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36579,7 +36822,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Be'er Sheva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36593,7 +36836,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36607,7 +36850,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ra’anana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36621,7 +36864,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36635,7 +36878,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Hai",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36649,7 +36892,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36663,7 +36906,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36677,7 +36920,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36691,7 +36934,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36705,7 +36948,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36719,7 +36962,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36733,7 +36976,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36747,7 +36990,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36761,7 +37004,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36775,7 +37018,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36789,7 +37032,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36803,7 +37046,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36817,7 +37060,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Kiryat Ata",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36831,7 +37074,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Hai",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36845,7 +37088,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36859,7 +37102,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36873,7 +37116,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36887,7 +37130,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36901,7 +37144,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36915,7 +37158,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36929,7 +37172,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Awiw",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36943,7 +37186,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36957,7 +37200,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36971,7 +37214,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36985,7 +37228,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -36999,7 +37242,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37013,7 +37256,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37027,7 +37270,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37041,7 +37284,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37055,7 +37298,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37069,7 +37312,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37083,7 +37326,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37097,7 +37340,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37111,7 +37354,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37125,7 +37368,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37139,7 +37382,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37153,7 +37396,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37167,7 +37410,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37182,9 +37425,9 @@ const JOB_DATA = {
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-05-30",
-      "dateRemoved": "",
+      "dateRemoved": "2026-05-31",
       "daysListed": 7,
-      "isActive": true
+      "isActive": false
     },
     {
       "jobId": "4395489264",
@@ -37195,7 +37438,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37209,7 +37452,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37223,7 +37466,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37237,7 +37480,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37251,7 +37494,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37265,7 +37508,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37279,7 +37522,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37293,7 +37536,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37307,7 +37550,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37321,7 +37564,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37335,7 +37578,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37349,7 +37592,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37363,7 +37606,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37377,7 +37620,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37391,7 +37634,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37405,7 +37648,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "이스라엘 텔아비브구",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37419,7 +37662,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37433,7 +37676,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37447,7 +37690,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37461,7 +37704,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37489,7 +37732,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37503,7 +37746,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37517,7 +37760,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37545,7 +37788,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Distretto di Tel Aviv",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37559,7 +37802,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37573,7 +37816,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37587,7 +37830,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37601,7 +37844,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37615,7 +37858,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37629,7 +37872,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37643,7 +37886,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37657,7 +37900,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37671,7 +37914,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37685,7 +37928,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37699,7 +37942,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37713,7 +37956,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Awiw",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37727,7 +37970,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Awiw",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37741,7 +37984,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37755,7 +37998,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37769,7 +38012,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37783,7 +38026,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Be'er Sheva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37797,7 +38040,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37811,7 +38054,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37825,7 +38068,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37839,7 +38082,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37853,7 +38096,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Be'er Sheva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37867,7 +38110,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37881,7 +38124,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37895,7 +38138,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37909,7 +38152,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37923,7 +38166,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37937,7 +38180,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37951,7 +38194,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37965,7 +38208,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37979,7 +38222,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Be'er Sheva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -37993,7 +38236,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38007,7 +38250,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38021,7 +38264,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Be'er Sheva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38035,7 +38278,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38049,7 +38292,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38063,7 +38306,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38077,7 +38320,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38091,7 +38334,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38105,7 +38348,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Be'er Sheva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38119,7 +38362,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38133,7 +38376,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38147,7 +38390,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38161,7 +38404,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Kiryat Ata",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38175,7 +38418,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38189,7 +38432,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38203,7 +38446,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Kiryat Ata",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38217,7 +38460,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38231,7 +38474,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38245,7 +38488,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38259,7 +38502,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38273,7 +38516,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38287,7 +38530,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38301,7 +38544,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38315,7 +38558,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38329,7 +38572,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38343,7 +38586,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Kiryat Ata",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38357,7 +38600,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38371,7 +38614,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38385,7 +38628,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38399,7 +38642,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38413,7 +38656,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38427,7 +38670,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38441,7 +38684,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38455,7 +38698,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38469,7 +38712,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38483,7 +38726,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38497,7 +38740,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38511,7 +38754,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38525,7 +38768,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38539,7 +38782,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38553,7 +38796,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38567,7 +38810,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38581,7 +38824,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38595,7 +38838,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38609,7 +38852,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38623,7 +38866,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38637,7 +38880,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38651,7 +38894,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38665,7 +38908,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38679,7 +38922,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38693,7 +38936,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38707,7 +38950,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38721,7 +38964,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Be'er Sheva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38735,7 +38978,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38749,7 +38992,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "이스라엘 중부구 (이스라엘) Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38763,7 +39006,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38777,7 +39020,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38791,7 +39034,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38805,7 +39048,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Hai",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38819,7 +39062,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Be'er Sheva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38833,7 +39076,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38847,7 +39090,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Be'er Sheva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38861,7 +39104,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38875,7 +39118,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38889,7 +39132,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38903,7 +39146,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38917,7 +39160,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38931,7 +39174,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38945,7 +39188,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38973,7 +39216,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -38987,7 +39230,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39001,7 +39244,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39015,7 +39258,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39029,7 +39272,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39043,7 +39286,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39057,7 +39300,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39071,7 +39314,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39085,7 +39328,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39099,7 +39342,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39113,7 +39356,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39127,7 +39370,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39141,7 +39384,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39155,7 +39398,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39169,7 +39412,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39183,7 +39426,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39197,7 +39440,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39211,7 +39454,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39225,7 +39468,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39239,7 +39482,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39253,7 +39496,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39267,7 +39510,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Kiryat Ata",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39281,7 +39524,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39295,7 +39538,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39309,7 +39552,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39323,7 +39566,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39337,7 +39580,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39351,7 +39594,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Kiryat Ata",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39365,7 +39608,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39379,7 +39622,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39393,7 +39636,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39407,7 +39650,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39421,7 +39664,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39435,7 +39678,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39449,7 +39692,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39463,7 +39706,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39477,7 +39720,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39491,7 +39734,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39505,7 +39748,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39519,7 +39762,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39533,7 +39776,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39547,7 +39790,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39561,7 +39804,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39575,7 +39818,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39589,7 +39832,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39603,7 +39846,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39631,7 +39874,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39645,7 +39888,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39673,7 +39916,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yoqneam",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39687,7 +39930,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yoqneam",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39701,7 +39944,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39715,7 +39958,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39729,7 +39972,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39743,7 +39986,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Be'er Sheva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39757,7 +40000,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39771,7 +40014,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39785,7 +40028,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39799,7 +40042,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Be'er Sheva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39813,7 +40056,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39827,7 +40070,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39841,7 +40084,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39855,7 +40098,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39869,7 +40112,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39883,7 +40126,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39897,7 +40140,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39911,7 +40154,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39925,7 +40168,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yoqneam",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39939,7 +40182,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39953,7 +40196,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39967,7 +40210,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39981,7 +40224,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Be'er Sheva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -39995,7 +40238,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40009,7 +40252,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40023,7 +40266,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Kiryat Ata",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40037,7 +40280,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40051,7 +40294,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40065,7 +40308,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40079,7 +40322,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40093,7 +40336,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Kiryat Ata",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40107,7 +40350,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Distrito de Tel Aviv",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40121,7 +40364,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40135,7 +40378,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Kiryat Ata",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40149,7 +40392,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40163,7 +40406,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40178,9 +40421,9 @@ const JOB_DATA = {
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-05-30",
-      "dateRemoved": "",
+      "dateRemoved": "2026-05-31",
       "daysListed": 7,
-      "isActive": true
+      "isActive": false
     },
     {
       "jobId": "4415490982",
@@ -40191,7 +40434,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40205,7 +40448,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40233,7 +40476,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40247,7 +40490,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40261,7 +40504,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40275,7 +40518,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40317,7 +40560,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40331,7 +40574,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40345,7 +40588,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40359,7 +40602,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40373,7 +40616,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40387,7 +40630,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40401,7 +40644,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40415,7 +40658,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40429,7 +40672,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40443,7 +40686,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Be'er Sheva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40458,9 +40701,9 @@ const JOB_DATA = {
       "location": "Raanana",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-05-30",
-      "dateRemoved": "",
+      "dateRemoved": "2026-05-31",
       "daysListed": 7,
-      "isActive": true
+      "isActive": false
     },
     {
       "jobId": "4415451980",
@@ -40472,9 +40715,9 @@ const JOB_DATA = {
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-05-30",
-      "dateRemoved": "",
+      "dateRemoved": "2026-05-31",
       "daysListed": 7,
-      "isActive": true
+      "isActive": false
     },
     {
       "jobId": "4415984416",
@@ -40485,7 +40728,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40499,7 +40742,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40513,7 +40756,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40527,7 +40770,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40541,7 +40784,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40555,7 +40798,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40569,7 +40812,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40583,7 +40826,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40597,7 +40840,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yoqneam",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40612,9 +40855,9 @@ const JOB_DATA = {
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-05-30",
-      "dateRemoved": "",
+      "dateRemoved": "2026-05-31",
       "daysListed": 7,
-      "isActive": true
+      "isActive": false
     },
     {
       "jobId": "4395491078",
@@ -40625,7 +40868,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Be'er Sheva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40639,7 +40882,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40653,7 +40896,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40667,7 +40910,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40681,7 +40924,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40695,7 +40938,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40709,7 +40952,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Kiryat Ata",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40723,7 +40966,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40737,7 +40980,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40751,7 +40994,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40765,7 +41008,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40779,7 +41022,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40793,7 +41036,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40807,10 +41050,10 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4387825119",
@@ -40821,7 +41064,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40849,7 +41092,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40863,7 +41106,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40877,7 +41120,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40891,7 +41134,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40905,7 +41148,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40919,7 +41162,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40933,7 +41176,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40961,7 +41204,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40975,7 +41218,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -40989,7 +41232,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41003,7 +41246,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41017,7 +41260,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41045,7 +41288,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41087,7 +41330,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41101,7 +41344,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41115,10 +41358,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4397238028",
@@ -41129,7 +41372,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41143,7 +41386,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41157,7 +41400,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yoqneam Illit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41171,7 +41414,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Yoqneam Illit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41185,7 +41428,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41283,7 +41526,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Givatayim",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41297,7 +41540,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Givatayim",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41311,7 +41554,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Givatayim",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41325,7 +41568,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Givatayim",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41339,7 +41582,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Givatayim",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41353,7 +41596,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Givatayim",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41367,7 +41610,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Givatayim",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41381,7 +41624,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Givatayim",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41395,7 +41638,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Givatayim",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41409,7 +41652,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Givatayim",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41423,7 +41666,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Givatayim",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41437,7 +41680,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41451,7 +41694,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41465,7 +41708,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41479,7 +41722,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41493,7 +41736,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41507,7 +41750,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41521,7 +41764,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41535,7 +41778,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41550,9 +41793,9 @@ const JOB_DATA = {
       "location": "Raanana",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-05-30",
-      "dateRemoved": "",
+      "dateRemoved": "2026-05-31",
       "daysListed": 7,
-      "isActive": true
+      "isActive": false
     },
     {
       "jobId": "4412222702",
@@ -41563,7 +41806,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41577,7 +41820,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41592,9 +41835,9 @@ const JOB_DATA = {
       "location": "Raanana",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-05-30",
-      "dateRemoved": "",
+      "dateRemoved": "2026-05-31",
       "daysListed": 7,
-      "isActive": true
+      "isActive": false
     },
     {
       "jobId": "4353743200",
@@ -41619,7 +41862,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41647,7 +41890,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ra'anana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41661,7 +41904,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41675,7 +41918,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41689,7 +41932,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41703,7 +41946,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41717,7 +41960,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41731,7 +41974,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41745,10 +41988,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4364692225",
@@ -41759,7 +42002,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41773,7 +42016,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41787,7 +42030,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41801,7 +42044,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41815,7 +42058,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41829,7 +42072,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41843,7 +42086,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41857,7 +42100,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41871,7 +42114,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41885,7 +42128,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41899,7 +42142,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41913,10 +42156,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4414180101",
@@ -41927,7 +42170,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41941,7 +42184,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41955,7 +42198,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tirat HaCarmel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41969,7 +42212,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -41983,10 +42226,10 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4402372692",
@@ -41997,7 +42240,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42011,7 +42254,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42025,7 +42268,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42039,7 +42282,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42053,7 +42296,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42067,7 +42310,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42081,7 +42324,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42095,7 +42338,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42109,7 +42352,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42123,7 +42366,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42137,7 +42380,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42165,7 +42408,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42179,7 +42422,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42193,7 +42436,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42221,7 +42464,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42235,7 +42478,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Binyamina - Givat Ada",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42249,7 +42492,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42263,7 +42506,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42277,7 +42520,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42291,7 +42534,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42305,7 +42548,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42319,7 +42562,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42333,7 +42576,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42375,7 +42618,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42403,7 +42646,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42417,7 +42660,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Distrito de Tel Aviv",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42431,7 +42674,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42445,7 +42688,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42459,7 +42702,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42473,7 +42716,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42487,7 +42730,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Distrito Central",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42515,7 +42758,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42529,7 +42772,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42543,7 +42786,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42557,7 +42800,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42571,10 +42814,10 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4386778237",
@@ -42585,7 +42828,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42599,7 +42842,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42613,7 +42856,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42627,7 +42870,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42641,7 +42884,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42655,7 +42898,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42669,7 +42912,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42683,7 +42926,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42697,7 +42940,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42711,10 +42954,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4361812297",
@@ -42725,7 +42968,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42739,7 +42982,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42753,7 +42996,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42767,7 +43010,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42781,7 +43024,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42795,7 +43038,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42809,7 +43052,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42823,7 +43066,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42837,7 +43080,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42851,7 +43094,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42865,7 +43108,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42879,7 +43122,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42893,7 +43136,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42907,7 +43150,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42921,7 +43164,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42935,7 +43178,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42949,7 +43192,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42963,7 +43206,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42977,7 +43220,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -42991,7 +43234,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43005,7 +43248,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43019,7 +43262,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43033,7 +43276,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43047,7 +43290,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43061,7 +43304,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43075,7 +43318,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43089,7 +43332,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43103,7 +43346,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43117,10 +43360,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4378558740",
@@ -43131,7 +43374,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43145,7 +43388,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43159,7 +43402,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43173,7 +43416,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43187,7 +43430,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43201,7 +43444,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43215,7 +43458,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43229,7 +43472,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43243,10 +43486,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4361708308",
@@ -43257,7 +43500,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43271,7 +43514,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43285,7 +43528,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43299,7 +43542,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43313,10 +43556,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4372484890",
@@ -43327,7 +43570,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43341,7 +43584,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43355,7 +43598,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43383,7 +43626,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43397,7 +43640,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43411,7 +43654,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43425,7 +43668,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43439,7 +43682,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43453,7 +43696,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43467,7 +43710,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43495,7 +43738,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43509,7 +43752,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43551,7 +43794,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43579,7 +43822,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Kfar Saba",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43593,7 +43836,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Kfar Saba",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43607,7 +43850,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Kfar Saba",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43621,7 +43864,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Kfar Saba",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43635,7 +43878,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Kfar Saba",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43649,7 +43892,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Rishon LeZion",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43663,7 +43906,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "San Jose",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43677,7 +43920,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43691,7 +43934,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43705,7 +43948,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Holon",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43719,7 +43962,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43733,10 +43976,10 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4392591401",
@@ -43762,9 +44005,9 @@ const JOB_DATA = {
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-05-30",
-      "dateRemoved": "",
+      "dateRemoved": "2026-05-31",
       "daysListed": 7,
-      "isActive": true
+      "isActive": false
     },
     {
       "jobId": "4366368788",
@@ -43775,7 +44018,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43803,7 +44046,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43845,7 +44088,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43859,7 +44102,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43873,7 +44116,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43901,7 +44144,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rishon LeZion",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43929,7 +44172,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rishon LeZion",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43943,7 +44186,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Emek Izrael Regional Council",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43958,9 +44201,9 @@ const JOB_DATA = {
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-05-30",
-      "dateRemoved": "",
+      "dateRemoved": "2026-05-31",
       "daysListed": 7,
-      "isActive": true
+      "isActive": false
     },
     {
       "jobId": "4368651226",
@@ -43971,7 +44214,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43985,7 +44228,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -43999,7 +44242,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44013,7 +44256,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44027,7 +44270,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44041,7 +44284,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44055,7 +44298,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44069,7 +44312,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44083,7 +44326,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44111,7 +44354,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44125,7 +44368,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44139,7 +44382,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44153,7 +44396,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44167,7 +44410,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44181,7 +44424,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44195,7 +44438,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44209,7 +44452,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Distrito de Tel Aviv",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44223,7 +44466,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44237,7 +44480,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44251,7 +44494,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44265,7 +44508,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Rosh HaAyin",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44279,7 +44522,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Rosh HaAyin",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44293,7 +44536,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rosh HaAyin",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44307,7 +44550,7 @@ const JOB_DATA = {
       "workMode": "Remote",
       "location": "Rosh HaAyin",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44321,7 +44564,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44349,7 +44592,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Telavive",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44377,7 +44620,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44391,10 +44634,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4413963780",
@@ -44405,7 +44648,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44419,10 +44662,10 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4387807900",
@@ -44433,7 +44676,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44447,7 +44690,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44461,7 +44704,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Hod HaSharon",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44475,21 +44718,21 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4361980367",
       "company": "Qualcomm",
-      "title": "ASIC Design Verification Sr. Engineer - Haifa or Hod HaSharon",
+      "title": "ASIC Design Verification Engineer - Hod HaSharon",
       "url": "https://devjobs.co.il/job-details/4361980367",
       "devType": "Other",
-      "workMode": "On-site",
+      "workMode": "Hybrid",
       "location": "Hod HaSharon",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44503,7 +44746,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44531,7 +44774,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Kfar Netter",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44545,7 +44788,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Hod HaSharon",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44559,7 +44802,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Hod HaSharon",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44573,7 +44816,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44587,7 +44830,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44601,7 +44844,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44615,7 +44858,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44629,7 +44872,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44643,7 +44886,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Hod HaSharon",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44657,7 +44900,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Hod HaSharon",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44671,7 +44914,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44685,7 +44928,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Hod HaSharon",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44713,7 +44956,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44727,7 +44970,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Kfar Netter",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44741,7 +44984,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Kfar Netter",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44755,7 +44998,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Kfar-Netter",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44769,7 +45012,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haïfa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44783,7 +45026,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Hod Hasharon",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44797,7 +45040,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44811,7 +45054,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44825,7 +45068,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Hod HaSharon",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44839,7 +45082,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44853,7 +45096,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Hod Hasharon",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44867,7 +45110,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44881,7 +45124,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44895,7 +45138,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Hod HaSharon",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44909,7 +45152,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Hod HaSharon",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44923,7 +45166,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44937,7 +45180,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44965,7 +45208,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44979,7 +45222,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -44993,7 +45236,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45007,7 +45250,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45021,7 +45264,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45035,7 +45278,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45049,7 +45292,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45063,7 +45306,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Telavive",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45077,7 +45320,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45091,7 +45334,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45105,7 +45348,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45119,7 +45362,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45133,7 +45376,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45147,7 +45390,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45161,7 +45404,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45175,7 +45418,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45190,9 +45433,9 @@ const JOB_DATA = {
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-05-30",
-      "dateRemoved": "",
+      "dateRemoved": "2026-05-31",
       "daysListed": 7,
-      "isActive": true
+      "isActive": false
     },
     {
       "jobId": "4416049513",
@@ -45203,7 +45446,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45217,7 +45460,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45231,7 +45474,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45245,7 +45488,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45259,7 +45502,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45273,7 +45516,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45287,7 +45530,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45301,7 +45544,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45315,7 +45558,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45330,9 +45573,9 @@ const JOB_DATA = {
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-05-30",
-      "dateRemoved": "",
+      "dateRemoved": "2026-05-31",
       "daysListed": 7,
-      "isActive": true
+      "isActive": false
     },
     {
       "jobId": "4412834261",
@@ -45343,7 +45586,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45357,7 +45600,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45371,7 +45614,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Kiryat Bialik",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45385,10 +45628,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Mate Yehuda Regional Council",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4393513307",
@@ -45399,10 +45642,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Karmiel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4412766984",
@@ -45413,7 +45656,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45427,7 +45670,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Kiryat Bialik",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45441,7 +45684,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Karmiel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45455,7 +45698,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Kiryat Bialik",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45483,10 +45726,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "North District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4393575159",
@@ -45511,7 +45754,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Distrito de Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45525,10 +45768,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Hadera",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4393284214",
@@ -45553,7 +45796,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Kiryat Bialik",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45567,7 +45810,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45595,7 +45838,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Givatayim",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45609,7 +45852,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "North District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45623,7 +45866,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Kiryat Bialik",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45651,10 +45894,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "North District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4390855893",
@@ -45665,7 +45908,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Hadera",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45679,7 +45922,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "North District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45693,7 +45936,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "North District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45721,10 +45964,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Be'er Sheva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4412784145",
@@ -45735,7 +45978,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Bnei Brak",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45749,7 +45992,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Bnei Brak",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45763,7 +46006,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Kiryat Bialik",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45777,7 +46020,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "North District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45791,7 +46034,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Kiryat Bialik",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45805,7 +46048,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45819,7 +46062,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45833,7 +46076,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45847,7 +46090,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Bnei Brak",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45861,7 +46104,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Bnei Brak",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45875,7 +46118,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Bnei Brak",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45889,7 +46132,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Bnei Brak",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45903,7 +46146,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45973,7 +46216,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -45987,7 +46230,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46001,7 +46244,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46015,7 +46258,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46029,7 +46272,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46043,7 +46286,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46057,7 +46300,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46071,7 +46314,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46085,7 +46328,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46099,7 +46342,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46113,7 +46356,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46127,7 +46370,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46141,7 +46384,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46155,7 +46398,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46169,7 +46412,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46197,7 +46440,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46211,7 +46454,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46225,7 +46468,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46239,7 +46482,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46253,7 +46496,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46267,7 +46510,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46281,7 +46524,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46295,7 +46538,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46323,10 +46566,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Binyamina",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4415798193",
@@ -46337,7 +46580,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tirat Karmel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46351,7 +46594,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tirat Karmel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46365,7 +46608,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46379,7 +46622,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46393,7 +46636,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46407,7 +46650,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46421,7 +46664,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46449,7 +46692,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46463,7 +46706,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46477,7 +46720,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46491,7 +46734,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46505,7 +46748,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46519,7 +46762,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46533,7 +46776,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46547,7 +46790,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46561,7 +46804,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46575,7 +46818,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46589,7 +46832,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46603,7 +46846,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46617,7 +46860,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Hod HaSharon",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46645,7 +46888,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46659,7 +46902,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46673,7 +46916,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46687,7 +46930,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46701,7 +46944,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46715,7 +46958,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46729,7 +46972,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46743,7 +46986,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46757,7 +47000,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46772,9 +47015,9 @@ const JOB_DATA = {
       "location": "Center District",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-05-30",
-      "dateRemoved": "",
+      "dateRemoved": "2026-05-31",
       "daysListed": 7,
-      "isActive": true
+      "isActive": false
     },
     {
       "jobId": "4377840617",
@@ -46785,10 +47028,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Kfar Saba",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4377828867",
@@ -46799,7 +47042,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46813,7 +47056,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46827,7 +47070,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46841,7 +47084,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46855,7 +47098,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46883,10 +47126,10 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4413734182",
@@ -46897,7 +47140,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46911,10 +47154,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4414901140",
@@ -46925,7 +47168,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46939,7 +47182,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46953,7 +47196,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46967,7 +47210,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46981,7 +47224,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -46996,9 +47239,9 @@ const JOB_DATA = {
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-05-30",
-      "dateRemoved": "",
+      "dateRemoved": "2026-05-31",
       "daysListed": 7,
-      "isActive": true
+      "isActive": false
     },
     {
       "jobId": "4290484648",
@@ -47009,7 +47252,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47023,7 +47266,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47037,7 +47280,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47051,7 +47294,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47065,7 +47308,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47079,7 +47322,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47107,7 +47350,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Distrito Central",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47121,7 +47364,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47135,7 +47378,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47149,7 +47392,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47177,7 +47420,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47205,7 +47448,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47233,7 +47476,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47247,7 +47490,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47261,7 +47504,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47275,7 +47518,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Yokne'am (Moshava)",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47289,7 +47532,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47303,7 +47546,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47317,7 +47560,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47331,7 +47574,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47345,7 +47588,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47359,7 +47602,7 @@ const JOB_DATA = {
       "workMode": "Remote",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47373,7 +47616,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47387,7 +47630,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47401,7 +47644,7 @@ const JOB_DATA = {
       "workMode": "Remote",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47415,7 +47658,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47429,7 +47672,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47443,7 +47686,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47457,7 +47700,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47471,7 +47714,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47485,7 +47728,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47499,7 +47742,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47527,7 +47770,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47541,7 +47784,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47555,7 +47798,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47583,7 +47826,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47611,7 +47854,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47625,7 +47868,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47639,10 +47882,10 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4390126259",
@@ -47653,7 +47896,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47667,7 +47910,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47681,7 +47924,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47695,7 +47938,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47709,7 +47952,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47723,7 +47966,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47737,7 +47980,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47751,7 +47994,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47765,7 +48008,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47779,7 +48022,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47821,7 +48064,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47835,7 +48078,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47849,7 +48092,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47863,7 +48106,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47877,7 +48120,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47891,7 +48134,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47905,7 +48148,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47919,7 +48162,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47933,7 +48176,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47947,7 +48190,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47961,7 +48204,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47975,7 +48218,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -47989,7 +48232,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -48003,7 +48246,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -48017,7 +48260,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -48031,7 +48274,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -48059,7 +48302,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -48073,10 +48316,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4392588987",
@@ -48087,7 +48330,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -48115,7 +48358,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -48129,7 +48372,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -48143,7 +48386,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -48157,7 +48400,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -48171,7 +48414,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -48185,7 +48428,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -48199,7 +48442,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -48213,7 +48456,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -48227,7 +48470,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -48241,7 +48484,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -48255,7 +48498,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -48283,7 +48526,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -48297,7 +48540,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -48311,10 +48554,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4389724012",
@@ -48325,7 +48568,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Bnei Brak",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -48339,7 +48582,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -48353,7 +48596,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -48367,7 +48610,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -48381,7 +48624,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -48395,7 +48638,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -48409,7 +48652,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -48423,7 +48666,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -48437,7 +48680,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -48451,7 +48694,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Binyamina - Givat Ada",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -48479,7 +48722,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -48493,7 +48736,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -48507,7 +48750,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Kfar Saba",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -48521,7 +48764,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Distrito de Jerusalén",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -48535,7 +48778,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -48549,7 +48792,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -48563,7 +48806,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -48661,10 +48904,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "17121996",
@@ -48689,10 +48932,10 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "17121994",
@@ -48787,10 +49030,10 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Bnei Brak",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "17121988",
@@ -48801,10 +49044,10 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Or Yehuda",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "17122002",
@@ -48829,7 +49072,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -48843,7 +49086,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -48857,7 +49100,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -48871,7 +49114,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -48885,7 +49128,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Be'er Sheva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -48899,7 +49142,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Be'er Sheva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -48913,7 +49156,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Be'er Sheva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -48927,7 +49170,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Be'er Sheva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -48941,7 +49184,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -48955,7 +49198,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -48969,7 +49212,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -48983,7 +49226,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -48997,7 +49240,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49011,7 +49254,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49025,7 +49268,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49039,7 +49282,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49053,7 +49296,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49067,7 +49310,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49081,7 +49324,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49095,7 +49338,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49109,7 +49352,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49123,7 +49366,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49137,7 +49380,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49151,7 +49394,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49165,7 +49408,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49179,7 +49422,7 @@ const JOB_DATA = {
       "workMode": "Remote",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49193,7 +49436,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49207,10 +49450,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4370080963",
@@ -49221,7 +49464,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49235,7 +49478,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49249,7 +49492,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49263,7 +49506,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49277,7 +49520,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49291,7 +49534,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49303,9 +49546,9 @@ const JOB_DATA = {
       "url": "https://devjobs.co.il/job-details/4371409108",
       "devType": "Full Stack",
       "workMode": "On-site",
-      "location": "Tel Aviv",
+      "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49319,7 +49562,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49333,7 +49576,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49347,7 +49590,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49375,7 +49618,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49389,7 +49632,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49403,7 +49646,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49432,9 +49675,9 @@ const JOB_DATA = {
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-05-30",
-      "dateRemoved": "",
+      "dateRemoved": "2026-05-31",
       "daysListed": 7,
-      "isActive": true
+      "isActive": false
     },
     {
       "jobId": "4414601125",
@@ -49445,7 +49688,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49459,7 +49702,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49473,7 +49716,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49487,7 +49730,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49501,7 +49744,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49515,7 +49758,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49529,7 +49772,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49543,7 +49786,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49557,7 +49800,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49571,7 +49814,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Hod HaSharon",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49585,7 +49828,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49599,7 +49842,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49613,7 +49856,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49627,7 +49870,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49641,7 +49884,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv Bölgesi",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49655,7 +49898,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49669,7 +49912,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49683,7 +49926,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49697,7 +49940,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49711,7 +49954,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49753,7 +49996,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49767,7 +50010,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49781,7 +50024,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49795,7 +50038,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Kfar Monash",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49809,7 +50052,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49823,7 +50066,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49837,7 +50080,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49851,7 +50094,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49865,7 +50108,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49879,7 +50122,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49893,7 +50136,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49907,7 +50150,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49921,7 +50164,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49949,7 +50192,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49963,7 +50206,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49977,7 +50220,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -49991,7 +50234,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50019,7 +50262,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50033,7 +50276,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50047,7 +50290,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50061,7 +50304,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50075,7 +50318,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50089,7 +50332,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50103,7 +50346,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50117,7 +50360,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rishon LeZion",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50131,7 +50374,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rishon LeZion",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50159,7 +50402,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50173,7 +50416,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50201,7 +50444,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50215,7 +50458,7 @@ const JOB_DATA = {
       "workMode": "Remote",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50229,7 +50472,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50243,7 +50486,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50257,7 +50500,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50299,7 +50542,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50313,7 +50556,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "West Jerusalem",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50327,7 +50570,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50341,7 +50584,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50355,7 +50598,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50369,7 +50612,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50383,7 +50626,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50397,7 +50640,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50411,7 +50654,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50425,7 +50668,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50439,7 +50682,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50453,7 +50696,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50467,7 +50710,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50481,7 +50724,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50495,7 +50738,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50509,7 +50752,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50523,7 +50766,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50537,7 +50780,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50551,7 +50794,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50565,7 +50808,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50579,7 +50822,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50593,7 +50836,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50607,7 +50850,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50621,7 +50864,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50636,9 +50879,9 @@ const JOB_DATA = {
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-05-30",
-      "dateRemoved": "",
+      "dateRemoved": "2026-05-31",
       "daysListed": 7,
-      "isActive": true
+      "isActive": false
     },
     {
       "jobId": "4389235584",
@@ -50649,7 +50892,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50663,7 +50906,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50677,7 +50920,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50691,7 +50934,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50705,7 +50948,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50719,7 +50962,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50733,7 +50976,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50747,7 +50990,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50761,7 +51004,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50775,7 +51018,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50789,7 +51032,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Kiryat Ono",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50803,7 +51046,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Kiryat Ono",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50817,7 +51060,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Kiryat Ono",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50831,7 +51074,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Kiryat Ono",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50845,7 +51088,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Kiryat Ono",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50859,7 +51102,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50873,7 +51116,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50887,7 +51130,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50901,7 +51144,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50915,7 +51158,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50929,10 +51172,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4370469146",
@@ -50943,7 +51186,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Telavive",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50957,7 +51200,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Telavive",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50971,7 +51214,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50985,7 +51228,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -50999,7 +51242,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51013,7 +51256,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51027,7 +51270,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51041,7 +51284,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51055,7 +51298,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51069,7 +51312,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51083,7 +51326,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "South District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51097,7 +51340,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51125,7 +51368,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51153,7 +51396,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51167,7 +51410,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51181,7 +51424,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51195,7 +51438,7 @@ const JOB_DATA = {
       "workMode": "Remote",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51209,7 +51452,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51223,7 +51466,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51237,7 +51480,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51251,7 +51494,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51265,7 +51508,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51279,7 +51522,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51293,7 +51536,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51307,7 +51550,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51321,7 +51564,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51335,7 +51578,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51349,7 +51592,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51363,7 +51606,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51377,7 +51620,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51391,7 +51634,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rosh HaAyin",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51405,7 +51648,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51419,7 +51662,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51433,7 +51676,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51447,7 +51690,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51461,7 +51704,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51475,7 +51718,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51489,7 +51732,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51503,7 +51746,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51517,7 +51760,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51531,7 +51774,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51545,7 +51788,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51559,7 +51802,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51573,7 +51816,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51685,7 +51928,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51699,7 +51942,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51713,7 +51956,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51727,7 +51970,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51741,7 +51984,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51755,7 +51998,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51769,7 +52012,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51783,7 +52026,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51797,7 +52040,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51811,7 +52054,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51825,7 +52068,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51839,7 +52082,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51867,7 +52110,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51881,7 +52124,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51895,10 +52138,10 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4331829567",
@@ -51909,7 +52152,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51923,7 +52166,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51937,7 +52180,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51951,7 +52194,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51965,7 +52208,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51979,7 +52222,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -51993,7 +52236,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52007,7 +52250,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52021,7 +52264,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52049,7 +52292,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52063,7 +52306,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Givatayim",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52077,7 +52320,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Kiryat Gat",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52091,7 +52334,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Givatayim",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52105,7 +52348,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Givatayim",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52119,7 +52362,7 @@ const JOB_DATA = {
       "workMode": "Remote",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52133,7 +52376,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Bnei Brak",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52147,7 +52390,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52161,7 +52404,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52175,7 +52418,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52189,7 +52432,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52203,7 +52446,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52217,7 +52460,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52231,7 +52474,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52245,7 +52488,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52259,7 +52502,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52273,7 +52516,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52287,7 +52530,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52301,7 +52544,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52315,7 +52558,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52329,7 +52572,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52343,7 +52586,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52357,7 +52600,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52371,7 +52614,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52399,7 +52642,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Telavive",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52413,7 +52656,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52427,7 +52670,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52441,7 +52684,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52455,10 +52698,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "3879759492",
@@ -52469,10 +52712,10 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4298703520",
@@ -52483,7 +52726,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52497,7 +52740,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52511,7 +52754,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52525,7 +52768,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52540,9 +52783,9 @@ const JOB_DATA = {
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-05-30",
-      "dateRemoved": "",
+      "dateRemoved": "2026-05-31",
       "daysListed": 7,
-      "isActive": true
+      "isActive": false
     },
     {
       "jobId": "4400790889",
@@ -52553,7 +52796,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52567,7 +52810,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52595,7 +52838,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52609,7 +52852,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52637,7 +52880,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Distrito Central",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52651,7 +52894,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52665,7 +52908,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52693,7 +52936,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52707,7 +52950,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "North District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52749,7 +52992,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52763,7 +53006,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52777,7 +53020,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52791,7 +53034,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52805,7 +53048,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52819,7 +53062,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Distrito Central",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52833,7 +53076,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52847,7 +53090,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52861,7 +53104,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Distrito Central",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52889,7 +53132,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52903,7 +53146,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52917,7 +53160,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52931,7 +53174,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52945,7 +53188,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -52960,9 +53203,9 @@ const JOB_DATA = {
       "location": "Center District",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-05-30",
-      "dateRemoved": "",
+      "dateRemoved": "2026-05-31",
       "daysListed": 7,
-      "isActive": true
+      "isActive": false
     },
     {
       "jobId": "4384973869",
@@ -52987,7 +53230,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -53001,10 +53244,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4384864877",
@@ -53015,7 +53258,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -53029,7 +53272,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -53043,7 +53286,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -53057,7 +53300,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -53071,7 +53314,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -53085,7 +53328,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -53099,7 +53342,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -53127,7 +53370,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -53141,7 +53384,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -53155,7 +53398,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Bnei Brak",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -53169,7 +53412,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Bnei Brak",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -53197,7 +53440,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -53225,7 +53468,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -53253,7 +53496,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Karmiel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -53267,7 +53510,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Kiryat Bialik",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -53281,7 +53524,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -53295,7 +53538,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -53309,7 +53552,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -53323,7 +53566,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -53337,7 +53580,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -53351,7 +53594,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -53365,7 +53608,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -53379,7 +53622,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -53393,7 +53636,7 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -53407,10 +53650,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4371967805",
@@ -53421,10 +53664,10 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-28",
-      "dateRemoved": "2026-05-30",
-      "daysListed": 6,
-      "isActive": false
+      "lastSeen": "2026-05-31",
+      "dateRemoved": "",
+      "daysListed": 7,
+      "isActive": true
     },
     {
       "jobId": "4381539066",
@@ -53435,7 +53678,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -53449,7 +53692,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -53463,7 +53706,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -53477,7 +53720,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -53491,7 +53734,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -53505,7 +53748,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -53519,7 +53762,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -53533,7 +53776,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -53547,7 +53790,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
@@ -53561,7 +53804,7 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-05-30",
+      "lastSeen": "2026-05-31",
       "dateRemoved": "",
       "daysListed": 7,
       "isActive": true
