@@ -496,7 +496,7 @@ const PALETTE = [
 // ── Flow chart (added / removed per day) ─────────────────────────────────────
 let flowChart;
 
-const FLOW_SKIP = new Set(['2026-05-23', '2026-05-24']);
+const FLOW_SKIP = new Set(['2026-05-24']);
 
 function calcFlowData(records) {
   const labels  = D.labels.filter(d => !FLOW_SKIP.has(d));
