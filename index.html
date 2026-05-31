@@ -655,7 +655,32 @@ function buildGroupChart() {
         spanGaps: true,
       })),
     },
+    plugins: [{
+      id: 'endLabels',
+      afterDraw(chart) {
+        const c = chart.ctx;
+        c.save();
+        chart.data.datasets.forEach((ds, i) => {
+          const meta = chart.getDatasetMeta(i);
+          if (meta.hidden) return;
+          let lastIdx = -1;
+          for (let j = ds.data.length - 1; j >= 0; j--) {
+            if (ds.data[j] != null) { lastIdx = j; break; }
+          }
+          if (lastIdx < 0) return;
+          const pt = meta.data[lastIdx];
+          if (!pt) return;
+          c.fillStyle = ds.borderColor;
+          c.font = 'bold 11px sans-serif';
+          c.textBaseline = 'middle';
+          c.textAlign = 'left';
+          c.fillText(ds.label, pt.x + 8, pt.y);
+        });
+        c.restore();
+      },
+    }],
     options: {
+      layout: { padding: { right: 90 } },
       responsive: true,
       interaction: { mode: 'index', intersect: false },
       plugins: {
