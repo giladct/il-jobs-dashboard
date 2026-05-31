@@ -660,6 +660,12 @@ function buildGroupChart() {
       afterDraw(chart) {
         const c = chart.ctx;
         c.save();
+        c.font = 'bold 11px sans-serif';
+        c.textBaseline = 'middle';
+        c.textAlign = 'left';
+        const minGap = 14;
+        const placed = [];
+        const items = [];
         chart.data.datasets.forEach((ds, i) => {
           const meta = chart.getDatasetMeta(i);
           if (meta.hidden) return;
@@ -669,12 +675,14 @@ function buildGroupChart() {
           }
           if (lastIdx < 0) return;
           const pt = meta.data[lastIdx];
-          if (!pt) return;
-          c.fillStyle = ds.borderColor;
-          c.font = 'bold 11px sans-serif';
-          c.textBaseline = 'middle';
-          c.textAlign = 'left';
-          c.fillText(ds.label, pt.x + 8, pt.y);
+          if (pt) items.push({ x: pt.x, y: pt.y, label: ds.label, color: ds.borderColor });
+        });
+        items.forEach(item => {
+          if (placed.every(py => Math.abs(item.y - py) >= minGap)) {
+            placed.push(item.y);
+            c.fillStyle = item.color;
+            c.fillText(item.label, item.x + 8, item.y);
+          }
         });
         c.restore();
       },
@@ -682,7 +690,7 @@ function buildGroupChart() {
     options: {
       layout: { padding: { right: 90 } },
       responsive: true,
-      interaction: { mode: 'index', intersect: false },
+      interaction: { mode: 'nearest', intersect: false },
       plugins: {
         legend: { display: false },
         tooltip: {
