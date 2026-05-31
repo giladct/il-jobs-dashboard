@@ -590,16 +590,16 @@ function updateFlowChart(records) {
 let groupChart;
 
 const LABEL_DEFS = [
-  { name: 'Full Stack',     color: '#2563eb', re: /full.?stack|software.engineer|software.developer|web.developer|\br&d\b/i },
-  { name: 'Frontend',       color: '#06b6d4', re: /frontend|front.end|\bui\b|\bux\b|react|angular|vue|typescript|javascript|next\.?js|svelte|nuxt|webpack/i },
+  { name: 'Full Stack',     color: '#2563eb', re: /full.?stack|software.engineer|software.developer|software.dev\b|web.developer|\br&d\b|\bsw\b|software.architect|solutions.architect|technical.architect|\barchitect\b/i },
+  { name: 'Frontend',       color: '#06b6d4', re: /frontend|front.end|\bui\b|\bux\b|react|angular|vue|typescript|javascript|next\.?js|svelte|nuxt|webpack|html5/i },
   { name: 'Backend',        color: '#059669', re: /backend|back.end|\bapi\b|node\.?js|\bjava\b|python|ruby|\bgo\b|golang|php|\.net\b|spring|kotlin|scala|rust|c#|c\+\+|microservice|server.side|django|flask|fastapi|express/i },
   { name: 'Mobile',         color: '#7c3aed', re: /mobile|\bios\b|android|flutter|react.native|swift|\bxamarin\b/i },
-  { name: 'Embedded',       color: '#f97316', re: /embedded|firmware|hardware|\brtos\b|\bfpga\b|verilog|vhdl|microcontroller|signal.process|\bdsp\b|real.time.system/i },
-  { name: 'AI',             color: '#a855f7', re: /\bai\b|artificial.intellig|machine.learn|\bllm\b|\bgpt\b|\bnlp\b|deep.learn|neural|computer.vision|pytorch|tensorflow|keras|generative|mlops|\brag\b|algorithm|recommendation/i },
-  { name: 'Data',           color: '#ec4899', re: /\bdata\b|analytics|analytic|scientist|business.intel|\bsql\b|\bspark\b|warehouse|tableau|power.bi|\bdbt\b|airflow|snowflake|bigquery|databricks|looker|etl|\bredshift\b/i },
-  { name: 'Infrastructure', color: '#d97706', re: /devops|infra|cloud|platform|\bsre\b|kubernetes|\bk8s\b|terraform|\baws\b|\bazure\b|\bgcp\b|docker|ci.?cd|jenkins|network.eng|sysadmin|system.eng|linux.admin|observability/i },
-  { name: 'Security',       color: '#ef4444', re: /security|cyber|pentest|\bsoc\b|appsec|devsecops|vulnerability|penetration.test/i },
-  { name: 'QA',             color: '#16a34a', re: /\bqa\b|quality.assur|test.auto|automation.test|manual.test|\btester\b|testing.eng|\bsdet\b|selenium|playwright|cypress/i },
+  { name: 'Embedded',       color: '#f97316', re: /embedded|firmware|hardware|\brtos\b|\bfpga\b|verilog|vhdl|microcontroller|signal.process|\bdsp\b|real.time.system|asic|vlsi|chip.design|\bdft\b|\bdv\b|design.verif|verif.*engineer|silicon.valid|board.design|analog.design|mixed.signal|power.electron|\brf\b|\bwifi\b|wi-fi|wireless.eng|compiler|electrical.eng|emulation|\bhw\b|\bate\b|physical.design|\bcellular\b|low.level|\bbsp\b|control.eng|navigation.eng|motion.control|\bcpu\b|\bcad\b|logic.design|gate.array|post.silicon|\bgnc\b|guidance.eng|kernel/i },
+  { name: 'AI',             color: '#a855f7', re: /\bai\b|\bml\b|artificial.intellig|machine.learn|\bllm\b|\bgpt\b|\bnlp\b|deep.learn|neural|computer.vision|pytorch|tensorflow|keras|generative|mlops|\brag\b|algorithm|\balgo\b|recommendation/i },
+  { name: 'Data',           color: '#ec4899', re: /\bdata\b|analytics|analytic|scientist|business.intel|\bsql\b|\bspark\b|warehouse|tableau|power.bi|\bdbt\b|airflow|snowflake|bigquery|databricks|looker|etl|\bredshift\b|\bbi\b|dataops|\bdwh\b/i },
+  { name: 'Infrastructure', color: '#d97706', re: /devops|infra|cloud|platform|\bsre\b|kubernetes|\bk8s\b|terraform|\baws\b|\bazure\b|\bgcp\b|docker|ci.?cd|jenkins|network.eng|sysadmin|system.eng|linux.admin|observability|\blinux\b|\bhpc\b|finops/i },
+  { name: 'Security',       color: '#ef4444', re: /security|cyber|pentest|\bsoc\b|appsec|devsecops|vulnerability|penetration.test|exploit/i },
+  { name: 'QA',             color: '#16a34a', re: /\bqa\b|quality.assur|test.auto|automation.test|manual.test|\btester\b|testing.eng|\bsdet\b|selenium|playwright|cypress|automation.eng|devtest|validation.eng|quality.eng/i },
   { name: 'Manager',        color: '#6b7280', re: /\bmanager\b|team.lead|head.of|\bdirector\b|\bvp\b|\blead\b|scrum.master|product.owner|program.manager|project.manager/i },
 ];
 
