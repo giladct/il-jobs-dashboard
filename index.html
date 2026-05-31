@@ -30,18 +30,11 @@
   header h1 { font-size: 18px; font-weight: 600; }
   header .meta { font-size: 11px; opacity: .75; margin-top: 3px; }
 
-  /* ── Stats strip ── */
-  .stats-bar {
-    background: #fff;
-    border-bottom: 1px solid #dde1e7;
-    padding: 12px 24px;
-    display: flex;
-    gap: 32px;
-    flex-wrap: wrap;
-  }
+  /* ── Stats (inside header) ── */
+  .header-stats { display: flex; gap: 28px; flex-wrap: wrap; align-items: flex-start; }
   .stat { display: flex; flex-direction: column; }
-  .stat-value { font-size: 22px; font-weight: 700; color: #1a6e3c; line-height: 1.2; }
-  .stat-label { font-size: 11px; color: #888; margin-top: 2px; }
+  .stat-value { font-size: 22px; font-weight: 700; color: #fff; line-height: 1.2; }
+  .stat-label { font-size: 11px; color: rgba(255,255,255,.65); margin-top: 2px; }
 
   /* ── Filter bar ── */
   .filter-bar {
@@ -272,7 +265,7 @@
   tr:last-child td { border-bottom: none; }
   tr:hover td { background: #f9fbff; }
   .rank-cell { color: #aaa; width: 32px; }
-  .bar-cell { width: 160px; }
+  .bar-cell { }
   .bar-bg {
     height: 8px;
     background: #e8f0fe;
@@ -373,30 +366,38 @@
     <h1>🟢 Israel Jobs Dashboard</h1>
     <div class="meta" id="meta-line">Loading…</div>
   </div>
+  <div class="header-stats">
+    <div class="stat">
+      <span class="stat-value" id="stat-jobs">—</span>
+      <span class="stat-label">Jobs in snapshot</span>
+    </div>
+    <div class="stat">
+      <span class="stat-value" id="stat-companies">—</span>
+      <span class="stat-label">Companies</span>
+    </div>
+    <div class="stat">
+      <span class="stat-value" id="stat-days">—</span>
+      <span class="stat-label">Days tracked</span>
+    </div>
+    <div class="stat">
+      <span class="stat-value" id="stat-date">—</span>
+      <span class="stat-label">Latest snapshot</span>
+    </div>
+  </div>
 </header>
-
-<!-- stats strip -->
-<div class="stats-bar">
-  <div class="stat">
-    <span class="stat-value" id="stat-jobs">—</span>
-    <span class="stat-label">Jobs in snapshot</span>
-  </div>
-  <div class="stat">
-    <span class="stat-value" id="stat-companies">—</span>
-    <span class="stat-label">Companies</span>
-  </div>
-  <div class="stat">
-    <span class="stat-value" id="stat-days">—</span>
-    <span class="stat-label">Days tracked</span>
-  </div>
-  <div class="stat">
-    <span class="stat-value" id="stat-date">—</span>
-    <span class="stat-label">Latest snapshot</span>
-  </div>
-</div>
 
 <!-- meta filters: role / mode / location / title -->
 <div class="filter-bar2">
+  <label>Company</label>
+  <div class="co-filter-wrap" id="co-filter-wrap">
+    <button class="co-filter-btn" id="co-filter-btn" type="button">All companies ▾</button>
+    <div class="co-filter-panel" id="co-filter-panel">
+      <input class="co-filter-search" id="co-filter-search" placeholder="Search companies…" type="text">
+      <div class="co-filter-list" id="co-filter-list"></div>
+      <button class="co-filter-clear" id="co-filter-clear" type="button">Clear selection</button>
+    </div>
+  </div>
+
   <label for="flt-work-mode">Mode</label>
   <select class="filter-select" id="flt-work-mode">
     <option value="">All modes</option>
@@ -420,38 +421,31 @@
     <option value="">All</option>
     <option value="__active__">Active now</option>
   </select>
-
-  <label>Company</label>
-  <div class="co-filter-wrap" id="co-filter-wrap">
-    <button class="co-filter-btn" id="co-filter-btn" type="button">All companies ▾</button>
-    <div class="co-filter-panel" id="co-filter-panel">
-      <input class="co-filter-search" id="co-filter-search" placeholder="Search companies…" type="text">
-      <div class="co-filter-list" id="co-filter-list"></div>
-      <button class="co-filter-clear" id="co-filter-clear" type="button">Clear selection</button>
-    </div>
-  </div>
 </div>
 
 <!-- 2×2 chart grid -->
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;margin:20px;border-radius:10px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.08);background:#dde1e7;">
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:20px;">
 
-  <div class="table-wrap" style="margin:0;border-radius:0;box-shadow:none;max-height:340px;overflow-y:auto;">
-    <div class="chart-title" style="margin-bottom:12px">All companies</div>
-    <table>
-      <thead>
-        <tr>
-          <th class="rank-cell">#</th>
-          <th>Company</th>
-          <th style="text-align:right;color:#1a6e3c">Active</th>
-          <th style="text-align:right;color:#dc2626">Removed</th>
-          <th class="bar-cell"></th>
-        </tr>
-      </thead>
-      <tbody id="rank-body"></tbody>
-    </table>
+  <div class="table-wrap" style="margin:0;border-radius:10px;box-shadow:0 1px 4px rgba(0,0,0,.08);overflow:hidden;display:flex;flex-direction:column;max-height:374px;">
+    <div class="chart-title" style="margin-bottom:12px;flex-shrink:0">All companies <span style="font-size:11px;font-weight:400;color:#999">(click to filter)</span></div>
+    <div style="overflow-y:auto;flex:1;">
+      <table>
+        <thead>
+          <tr>
+            <th class="rank-cell">#</th>
+            <th>Company</th>
+            <th style="text-align:right;color:#1a6e3c">Active</th>
+            <th style="text-align:right;color:#dc2626">Removed</th>
+            <th style="text-align:center;color:#888;white-space:nowrap">± <span title="Change in active jobs compared to the previous snapshot" style="display:inline-flex;align-items:center;justify-content:center;width:13px;height:13px;border-radius:50%;background:#bbb;color:#fff;font-size:9px;font-weight:700;cursor:help;vertical-align:middle">i</span></th>
+            <th class="bar-cell"></th>
+          </tr>
+        </thead>
+        <tbody id="rank-body"></tbody>
+      </table>
+    </div>
   </div>
 
-  <div class="chart-wrap" style="margin:0;border-radius:0;box-shadow:none;">
+  <div class="chart-wrap" style="margin:0;border-radius:10px;box-shadow:0 1px 4px rgba(0,0,0,.08);">
     <div class="chart-title">Total open positions over time</div>
     <div class="bd-toggle" id="total-bd">
       <button class="bd-btn active" data-val="all">All</button>
@@ -462,12 +456,12 @@
     <canvas id="lineChart"></canvas>
   </div>
 
-  <div class="chart-wrap" style="margin:0;border-radius:0;box-shadow:none;">
-    <div class="chart-title">Positions added &amp; removed per day <span style="font-size:11px;font-weight:400;color:#999">(click a bar to filter)</span></div>
-    <canvas id="flowChart" style="max-height:200px;cursor:pointer"></canvas>
+  <div class="chart-wrap" style="margin:0;border-radius:10px;box-shadow:0 1px 4px rgba(0,0,0,.08);display:flex;flex-direction:column;">
+    <div class="chart-title" style="flex-shrink:0">Positions added &amp; removed per day <span style="font-size:11px;font-weight:400;color:#999">(click a bar to filter)</span></div>
+    <canvas id="flowChart" style="flex:1;min-height:0;cursor:pointer"></canvas>
   </div>
 
-  <div class="chart-wrap" style="margin:0;border-radius:0;box-shadow:none;">
+  <div class="chart-wrap" style="margin:0;border-radius:10px;box-shadow:0 1px 4px rgba(0,0,0,.08);">
     <div class="chart-title">Open positions by role group over time</div>
     <div class="bd-toggle" id="group-bd">
       <button class="bd-btn" data-val="all">All</button>
@@ -563,6 +557,7 @@ function buildFlowChart() {
     },
     options: {
       responsive: true,
+      maintainAspectRatio: false,
       interaction: { mode: 'index', intersect: false },
       onClick(e) {
         const pts = flowChart.getElementsAtEventForMode(e, 'nearest', { intersect: true }, false);
@@ -619,7 +614,7 @@ const LABEL_DEFS = [
   { name: 'Embedded',       color: '#f97316', re: /embedded|firmware|hardware|\brtos\b|\bfpga\b|verilog|vhdl|microcontroller|signal.process|\bdsp\b|real.time.system|asic|vlsi|chip.design|\bdft\b|\bdv\b|design.verif|verif.*engineer|silicon.valid|board.design|analog.design|mixed.signal|power.electron|\brf\b|\bwifi\b|wi-fi|wireless.eng|compiler|electrical.eng|emulation|\bhw\b|\bate\b|physical.design|\bcellular\b|low.level|\bbsp\b|control.eng|navigation.eng|motion.control|\bcpu\b|\bcad\b|logic.design|gate.array|post.silicon|\bgnc\b|guidance.eng|kernel/i },
   { name: 'AI',             color: '#a855f7', re: /\bai\b|\bml\b|artificial.intellig|machine.learn|\bllm\b|\bgpt\b|\bnlp\b|deep.learn|neural|computer.vision|pytorch|tensorflow|keras|generative|mlops|\brag\b|algorithm|\balgo\b|recommendation/i },
   { name: 'Data',           color: '#ec4899', re: /\bdata\b|analytics|analytic|scientist|business.intel|\bsql\b|\bspark\b|warehouse|tableau|power.bi|\bdbt\b|airflow|snowflake|bigquery|databricks|looker|etl|\bredshift\b|\bbi\b|dataops|\bdwh\b/i },
-  { name: 'Infrastructure', color: '#d97706', re: /devops|infra|cloud|platform|\bsre\b|kubernetes|\bk8s\b|terraform|\baws\b|\bazure\b|\bgcp\b|docker|ci.?cd|jenkins|network.eng|sysadmin|system.eng|linux.admin|observability|\blinux\b|\bhpc\b|finops/i },
+  { name: 'Infrastructure', color: '#d97706', re: /devops|infra|cloud|platform|\bsre\b|kubernetes|\bk8s\b|terraform|\baws\b|\bazure\b|\bgcp\b|docker|ci.?cd|jenkins|network.eng|sysadmin|system.eng|linux.admin|observability|\blinux\b|\bhpc\b|finops|gpu.network/i },
   { name: 'Security',       color: '#ef4444', re: /security|cyber|pentest|\bsoc\b|appsec|devsecops|vulnerability|penetration.test|exploit/i },
   { name: 'QA',             color: '#16a34a', re: /\bqa\b|quality.assur|test.auto|automation.test|manual.test|\btester\b|testing.eng|\bsdet\b|selenium|playwright|cypress|automation.eng|devtest|validation.eng|quality.eng/i },
   { name: 'Manager',        color: '#6b7280', re: /\bmanager\b|team.lead|head.of|\bdirector\b|\bvp\b|\blead\b|scrum.master|product.owner|program.manager|project.manager/i },
@@ -862,7 +857,7 @@ let setFlowFilter;   // set by IIFE — called from flow chart click
 
 // ── Populate stats ────────────────────────────────────────────────────────────
 document.getElementById('meta-line').textContent =
-  `Source: devjobs.co.il  ·  Generated: ${D.generated.replace('T', ' ')}`;
+  `Source: LinkedIn  ·  Generated: ${D.generated.replace('T', ' ')}`;
 document.getElementById('stat-days').textContent =
   D.daysTracked;
 document.getElementById('stat-date').textContent =
@@ -953,26 +948,40 @@ function renderRanking(filteredRecords) {
     company,
     active:  activeMap.get(company)  || 0,
     removed: removedMap.get(company) || 0,
-  })).sort((a, b) => (b.active + b.removed) - (a.active + a.removed));
+  })).sort((a, b) => b.active - a.active);
 
-  const maxTotal = rankData[0] ? rankData[0].active + rankData[0].removed : 1;
+  // trend vs previous snapshot
+  const prevDate = D.labels.length >= 2 ? D.labels[D.labels.length - 2] : null;
+  const prevActiveMap = new Map();
+  if (prevDate) {
+    filteredRecords.forEach(r => {
+      if (!r.firstSeen || r.firstSeen > prevDate) return;
+      if (r.dateRemoved && r.dateRemoved <= prevDate) return;
+      prevActiveMap.set(r.company, (prevActiveMap.get(r.company) || 0) + 1);
+    });
+  }
+
   rankTbody.innerHTML = '';
   rankData.forEach((row, i) => {
-    const activePct  = (row.active  / maxTotal * 100).toFixed(1);
-    const removedPct = (row.removed / maxTotal * 100).toFixed(1);
+    const activePct = (Math.min(row.active, 200) / 200 * 100).toFixed(1);
+    const delta = prevDate ? row.active - (prevActiveMap.get(row.company) || 0) : null;
+    const trendHtml = delta === null ? '' :
+      delta > 0 ? `<span style="color:#1a6e3c;font-weight:600;font-size:11px">↑${delta}</span>` :
+      delta < 0 ? `<span style="color:#dc2626;font-weight:600;font-size:11px">↓${Math.abs(delta)}</span>` :
+      `<span style="color:#bbb;font-size:11px">—</span>`;
     const sel = selectedCompanies.has(row.company);
     const tr  = document.createElement('tr');
     tr.style.cursor = 'pointer';
     if (sel) tr.style.background = '#e8f4ed';
     tr.innerHTML = `
       <td class="rank-cell">${i + 1}</td>
-      <td style="font-weight:${sel ? 700 : 400}">${row.company}</td>
-      <td style="text-align:right;font-weight:600;color:#1a6e3c">${row.active || '—'}</td>
-      <td style="text-align:right;font-weight:600;color:#dc2626">${row.removed || '—'}</td>
-      <td class="bar-cell">
-        <div class="bar-bg" style="display:flex">
-          <div style="height:8px;border-radius:4px 0 0 4px;background:#1a6e3c;width:${activePct}%"></div>
-          <div style="height:8px;border-radius:0 4px 4px 0;background:#dc2626;width:${removedPct}%"></div>
+      <td style="font-weight:${sel ? 700 : 400};max-width:130px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis" title="${row.company}">${row.company}</td>
+      <td style="text-align:right;font-weight:600;color:#1a6e3c;white-space:nowrap">${row.active || '—'}</td>
+      <td style="text-align:right;font-weight:600;color:#dc2626;white-space:nowrap">${row.removed || '—'}</td>
+      <td style="text-align:center;white-space:nowrap">${trendHtml}</td>
+      <td class="bar-cell" style="width:100%;padding-right:12px;">
+        <div style="height:8px;background:#e0ece6;border-radius:4px;overflow:hidden;">
+          <div style="height:100%;background:#1a6e3c;border-radius:4px;width:${activePct}%;"></div>
         </div>
       </td>
     `;
