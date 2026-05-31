@@ -97,6 +97,16 @@
   }
   .btn:hover { background: #f0f0f0; }
 
+  /* ── Breakdown toggle ── */
+  .bd-toggle { display:flex; gap:4px; margin:4px 0 12px; }
+  .bd-btn {
+    padding: 2px 11px; font-size: 11px; border-radius: 12px;
+    border: 1px solid #d1d5db; background: #fff; color: #6b7280;
+    cursor: pointer; transition: background 0.12s, color 0.12s;
+  }
+  .bd-btn:hover { background: #f3f4f6; color: #374151; }
+  .bd-btn.active { background: #2563eb; color: #fff; border-color: #2563eb; }
+
   /* ── Meta filters (role / mode / location / title) ── */
   .filter-bar2 {
     background: #fff;
@@ -443,6 +453,12 @@
 
   <div class="chart-wrap" style="margin:0;border-radius:0;box-shadow:none;">
     <div class="chart-title">Total open positions over time</div>
+    <div class="bd-toggle" id="total-bd">
+      <button class="bd-btn active" data-val="all">All</button>
+      <button class="bd-btn" data-val="label">Label</button>
+      <button class="bd-btn" data-val="mode">Mode</button>
+      <button class="bd-btn" data-val="district">District</button>
+    </div>
     <canvas id="lineChart"></canvas>
   </div>
 
@@ -453,6 +469,12 @@
 
   <div class="chart-wrap" style="margin:0;border-radius:0;box-shadow:none;">
     <div class="chart-title">Open positions by role group over time</div>
+    <div class="bd-toggle" id="group-bd">
+      <button class="bd-btn" data-val="all">All</button>
+      <button class="bd-btn active" data-val="label">Label</button>
+      <button class="bd-btn" data-val="mode">Mode</button>
+      <button class="bd-btn" data-val="district">District</button>
+    </div>
     <div id="group-chips" style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px;"></div>
     <canvas id="groupChart" style="max-height:200px;"></canvas>
   </div>
@@ -617,6 +639,42 @@ function getDistrict(loc) {
   return null;
 }
 
+const MODE_DEFS = [
+  { name: 'Hybrid',   color: '#2563eb' },
+  { name: 'On-site',  color: '#059669' },
+  { name: 'Remote',   color: '#d97706' },
+];
+const DISTRICT_DEFS = [
+  { name: 'Tel Aviv',   color: '#1d4ed8' },
+  { name: 'Haifa',      color: '#7c3aed' },
+  { name: 'Jerusalem',  color: '#b45309' },
+  { name: 'Beer Sheva', color: '#dc2626' },
+];
+
+function calcBreakdownSeries(records, dimension) {
+  function makeSeries(name, color, matchFn) {
+    const counts = new Array(D.labels.length).fill(0);
+    records.forEach(r => {
+      if (!matchFn(r)) return;
+      D.labels.forEach((d, di) => {
+        if (!r.firstSeen || r.firstSeen > d) return;
+        if (r.dateRemoved && r.dateRemoved <= d) return;
+        counts[di]++;
+      });
+    });
+    return { name, color, counts };
+  }
+  if (dimension === 'all')
+    return [makeSeries('Total open positions', '#1a6e3c', () => true)];
+  if (dimension === 'label')
+    return LABEL_DEFS.map(def => makeSeries(def.name, def.color, r => def.re.test(r.title || '')));
+  if (dimension === 'mode')
+    return MODE_DEFS.map(m => makeSeries(m.name, m.color, r => r.workMode === m.name));
+  if (dimension === 'district')
+    return DISTRICT_DEFS.map(m => makeSeries(m.name, m.color, r => getDistrict(r.location) === m.name));
+  return [];
+}
+
 function calcGroupTrendData(records) {
   const result = LABEL_DEFS.map(() => new Array(D.labels.length).fill(0));
   records.forEach(r => {
@@ -651,25 +709,12 @@ function buildGroupChart() {
   const GROUP_CHART_START = '2026-05-24';
   groupLabelOffset = Math.max(0, D.labels.indexOf(GROUP_CHART_START));
   const groupChartLabels = D.labels.slice(groupLabelOffset);
-  const rawCounts = calcGroupTrendData(D.jobRecords || []);
-  const trendData = indexTrendData(rawCounts);
   const ctx = document.getElementById('groupChart').getContext('2d');
   groupChart = new Chart(ctx, {
     type: 'line',
     data: {
       labels: groupChartLabels,
-      datasets: LABEL_DEFS.map((def, i) => ({
-        label: def.name,
-        data: trendData[i].slice(groupLabelOffset),
-        rawData: rawCounts[i].slice(groupLabelOffset),
-        borderColor: def.color,
-        backgroundColor: def.color + '22',
-        borderWidth: 2,
-        pointRadius: 2,
-        pointHoverRadius: 5,
-        tension: 0.3,
-        spanGaps: true,
-      })),
+      datasets: getGroupDatasets(D.jobRecords || []),
     },
     plugins: [{
       id: 'endLabels',
@@ -740,14 +785,36 @@ function buildGroupChart() {
   });
 }
 
+function getGroupDatasets(records) {
+  const series    = calcBreakdownSeries(records, groupBreakdown);
+  const rawArrays = series.map(s => s.counts);
+  const normalized = indexTrendData(rawArrays);
+  return series.map((s, i) => ({
+    label: s.name,
+    data: normalized[i].slice(groupLabelOffset),
+    rawData: rawArrays[i].slice(groupLabelOffset),
+    borderColor: s.color,
+    backgroundColor: s.color + '22',
+    borderWidth: 2,
+    pointRadius: 2,
+    pointHoverRadius: 5,
+    tension: 0.3,
+    spanGaps: true,
+  }));
+}
+
 function updateGroupChart(records) {
-  const rawCounts = calcGroupTrendData(records);
-  const trendData = indexTrendData(rawCounts);
-  LABEL_DEFS.forEach((_, i) => {
-    groupChart.data.datasets[i].data    = trendData[i].slice(groupLabelOffset);
-    groupChart.data.datasets[i].rawData = rawCounts[i].slice(groupLabelOffset);
-  });
+  groupChart.data.datasets = getGroupDatasets(records);
   groupChart.update();
+  const isLabel = groupBreakdown === 'label';
+  document.getElementById('group-chips').style.display = isLabel ? '' : 'none';
+  if (isLabel) {
+    document.querySelectorAll('#group-chips input[type=checkbox]').forEach((cb, i) => {
+      const meta = groupChart.getDatasetMeta(i);
+      if (meta) meta.hidden = !cb.checked;
+    });
+    groupChart.update();
+  }
 }
 
 function buildGroupChips() {
@@ -810,30 +877,27 @@ function updateStats(filteredRecords) {
 updateStats(D.jobRecords || []);
 
 
+// ── Breakdown state ───────────────────────────────────────────────────────────
+let totalBreakdown = 'all';
+let groupBreakdown = 'label';
+
 // ── Build / update chart ──────────────────────────────────────────────────────
-// Compute total open positions per day from filtered companies
 function buildTotalDataset(filteredRecords) {
   const records = filteredRecords || (D.jobRecords || []);
-  const totals = new Array(D.labels.length).fill(0);
-  records.forEach(r => {
-    D.labels.forEach((d, di) => {
-      if (!r.firstSeen || r.firstSeen > d) return;
-      if (r.dateRemoved && r.dateRemoved <= d) return;
-      totals[di]++;
-    });
-  });
-  return [{
-    label: 'Total open positions',
-    data: totals,
-    borderColor: '#1a6e3c',
-    backgroundColor: '#1a6e3c22',
-    borderWidth: 2.5,
-    pointRadius: D.labels.length <= 7 ? 4 : 2,
-    pointHoverRadius: 6,
+  const series  = calcBreakdownSeries(records, totalBreakdown);
+  const isMulti = series.length > 1;
+  return series.map(s => ({
+    label: s.name,
+    data: s.counts,
+    borderColor: s.color,
+    backgroundColor: s.color + '22',
+    borderWidth: isMulti ? 2 : 2.5,
+    pointRadius: 2,
+    pointHoverRadius: 5,
     tension: 0.3,
     spanGaps: true,
-    fill: true,
-  }];
+    fill: !isMulti,
+  }));
 }
 
 function updateChart(filteredRecords) {
@@ -1183,6 +1247,16 @@ let triggerRender;   // set by IIFE below so ranking table can call render()
   document.getElementById('raw-search').addEventListener('input',   e => { filterTxt   = e.target.value.trim().toLowerCase(); render(); });
   document.getElementById('flt-work-mode').addEventListener('change',e => { fltWorkMode = e.target.value; render(); });
   document.getElementById('flt-location').addEventListener('change', e => { fltLocation = e.target.value; render(); });
+  document.querySelectorAll('#total-bd .bd-btn').forEach(btn => btn.addEventListener('click', () => {
+    totalBreakdown = btn.dataset.val;
+    document.querySelectorAll('#total-bd .bd-btn').forEach(b => b.classList.toggle('active', b === btn));
+    render();
+  }));
+  document.querySelectorAll('#group-bd .bd-btn').forEach(btn => btn.addEventListener('click', () => {
+    groupBreakdown = btn.dataset.val;
+    document.querySelectorAll('#group-bd .bd-btn').forEach(b => b.classList.toggle('active', b === btn));
+    render();
+  }));
   document.getElementById('flt-title').addEventListener('input',     e => { fltTitle    = e.target.value.trim(); render(); });
   document.getElementById('flt-listed').addEventListener('change',   e => { fltListed   = e.target.value; render(); });
   document.getElementById('flt-removed').addEventListener('change',  e => { fltRemoved  = e.target.value; render(); });
