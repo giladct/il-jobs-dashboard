@@ -392,9 +392,9 @@
     <option value="">All modes</option>
   </select>
 
-  <label for="flt-location">Location</label>
+  <label for="flt-location">District</label>
   <select class="filter-select" id="flt-location">
-    <option value="">All locations</option>
+    <option value="">All districts</option>
   </select>
 
   <label for="flt-title">Title</label>
@@ -603,6 +603,20 @@ const LABEL_DEFS = [
   { name: 'Manager',        color: '#6b7280', re: /\bmanager\b|team.lead|head.of|\bdirector\b|\bvp\b|\blead\b|scrum.master|product.owner|program.manager|project.manager/i },
 ];
 
+function getDistrict(loc) {
+  if (!loc) return null;
+  if (/tel.?aviv|telavive|tel.?awiw|тель-авив|텔아비브|tel aviv b.l|daerah tel|distretto di tel|district de tel aviv|distrito de tel aviv/i.test(loc) ||
+      /herzli|petah.tikva|zucca.petah|ra.?anana|ramat.gan|netanya|center.district|distrito.central|중부구|rehovot|rejovot|hod.ha?sharon|yehud|givatayim|rosh.ha.?ayin|\blod\b|holon|beer.yaakov|rishon.le?.?zion|bnei.brak|or.yehuda|kfar.saba|modiin|kiryat.ono|yavne|ness.ziona|kfar.netter|givat.shmuel|kadima|even.yehuda|ashdod|pardes.han|ramat.ha.?sharon/i.test(loc))
+    return 'Tel Aviv';
+  if (/haifa|ha[iï]fa|distrito de haifa|district de ha[iï]|yokneam|yoqneam|karmiel|kiryat.bialik|kiryat.ata|migdal.ha.?em|north.district|hadera|tirat.karmel|tirat.ha.?carmel|ramat.yishai|nesher|caesarea|tiberias|tel.hai|sdot.dan|emek.izra|yizra.?el|sarid|binyamina|베이구/i.test(loc))
+    return 'Haifa';
+  if (/jerusalem|j[eé]rusalem|jerusal[eé]n|mate.yehuda/i.test(loc))
+    return 'Jerusalem';
+  if (/be.?er.?sheva|beer?.sheva|neot.hovav|south.district|kiryat.gat|revadim/i.test(loc))
+    return 'Beer Sheva';
+  return null;
+}
+
 function calcGroupTrendData(records) {
   const result = LABEL_DEFS.map(() => new Array(D.labels.length).fill(0));
   records.forEach(r => {
@@ -637,7 +651,8 @@ function buildGroupChart() {
   const GROUP_CHART_START = '2026-05-24';
   groupLabelOffset = Math.max(0, D.labels.indexOf(GROUP_CHART_START));
   const groupChartLabels = D.labels.slice(groupLabelOffset);
-  const trendData = indexTrendData(calcGroupTrendData(D.jobRecords || []));
+  const rawCounts = calcGroupTrendData(D.jobRecords || []);
+  const trendData = indexTrendData(rawCounts);
   const ctx = document.getElementById('groupChart').getContext('2d');
   groupChart = new Chart(ctx, {
     type: 'line',
@@ -646,11 +661,12 @@ function buildGroupChart() {
       datasets: LABEL_DEFS.map((def, i) => ({
         label: def.name,
         data: trendData[i].slice(groupLabelOffset),
+        rawData: rawCounts[i].slice(groupLabelOffset),
         borderColor: def.color,
         backgroundColor: def.color + '22',
         borderWidth: 2,
-        pointRadius: D.labels.length <= 7 ? 4 : 2,
-        pointHoverRadius: 6,
+        pointRadius: 2,
+        pointHoverRadius: 5,
         tension: 0.3,
         spanGaps: true,
       })),
@@ -675,7 +691,9 @@ function buildGroupChart() {
           }
           if (lastIdx < 0) return;
           const pt = meta.data[lastIdx];
-          if (pt) items.push({ x: pt.x, y: pt.y, label: ds.label, color: ds.borderColor });
+          const raw = ds.rawData?.[lastIdx];
+          const text = raw != null ? `${ds.label} (${raw})` : ds.label;
+          if (pt) items.push({ x: pt.x, y: pt.y, label: text, color: ds.borderColor });
         });
         items.forEach(item => {
           if (placed.every(py => Math.abs(item.y - py) >= minGap)) {
@@ -688,7 +706,7 @@ function buildGroupChart() {
       },
     }],
     options: {
-      layout: { padding: { right: 90 } },
+      layout: { padding: { right: 115 } },
       responsive: true,
       interaction: { mode: 'nearest', intersect: false },
       plugins: {
@@ -696,7 +714,14 @@ function buildGroupChart() {
         tooltip: {
           callbacks: {
             title: items => items[0].label,
-            label: item => item.parsed.y == null ? null : ` ${item.dataset.label}: ${item.parsed.y > 100 ? '+' : ''}${item.parsed.y - 100}%`,
+            label: item => {
+              if (item.parsed.y == null) return null;
+              const raw = item.dataset.rawData?.[item.dataIndex];
+              const pct = `${item.parsed.y > 100 ? '+' : ''}${item.parsed.y - 100}%`;
+              return raw != null
+                ? ` ${item.dataset.label}: ${raw} (${pct})`
+                : ` ${item.dataset.label}: ${pct}`;
+            },
           },
         },
       },
@@ -716,8 +741,12 @@ function buildGroupChart() {
 }
 
 function updateGroupChart(records) {
-  const trendData = indexTrendData(calcGroupTrendData(records));
-  LABEL_DEFS.forEach((_, i) => { groupChart.data.datasets[i].data = trendData[i].slice(groupLabelOffset); });
+  const rawCounts = calcGroupTrendData(records);
+  const trendData = indexTrendData(rawCounts);
+  LABEL_DEFS.forEach((_, i) => {
+    groupChart.data.datasets[i].data    = trendData[i].slice(groupLabelOffset);
+    groupChart.data.datasets[i].rawData = rawCounts[i].slice(groupLabelOffset);
+  });
   groupChart.update();
 }
 
@@ -921,7 +950,11 @@ let triggerRender;   // set by IIFE below so ranking table can call render()
     });
   }
   populateSelect('flt-work-mode', new Set(records.map(r => r.workMode)));
-  populateSelect('flt-location',  new Set(records.map(r => r.location)));
+  ['Tel Aviv', 'Haifa', 'Jerusalem', 'Beer Sheva'].forEach(d => {
+    const o = document.createElement('option');
+    o.value = o.textContent = d;
+    document.getElementById('flt-location').appendChild(o);
+  });
   // ── Build company multi-select ──────────────────────────────────────────
   const allCompanyNames = [...new Set(records.map(r => r.company))].filter(Boolean).sort();
   const coBtn    = document.getElementById('co-filter-btn');
@@ -970,8 +1003,8 @@ let triggerRender;   // set by IIFE below so ranking table can call render()
       if (!r.isActive) return;
       if (filterTxt   && !r.company.toLowerCase().includes(filterTxt) &&
                          !r.title.toLowerCase().includes(filterTxt)) return;
-      if (fltWorkMode && r.workMode  !== fltWorkMode) return;
-      if (fltLocation && r.location  !== fltLocation) return;
+      if (fltWorkMode && r.workMode           !== fltWorkMode) return;
+      if (fltLocation && getDistrict(r.location) !== fltLocation) return;
       if (fltTitle    && !r.title.toLowerCase().includes(fltTitle.toLowerCase())) return;
       if (fltListed   && r.firstSeen !== fltListed)   return;
       if (fltRemoved !== '' && fltRemoved !== '__active__' && r.dateRemoved !== fltRemoved) return;
@@ -1048,8 +1081,8 @@ let triggerRender;   // set by IIFE below so ranking table can call render()
       }))                                                            &&
       (!filterTxt   || r.company.toLowerCase().includes(filterTxt) ||
                        r.title.toLowerCase().includes(filterTxt))  &&
-      (!fltWorkMode || r.workMode  === fltWorkMode)                &&
-      (!fltLocation || r.location  === fltLocation)                &&
+      (!fltWorkMode || r.workMode              === fltWorkMode)     &&
+      (!fltLocation || getDistrict(r.location) === fltLocation)    &&
       (!fltTitle    || r.title.toLowerCase().includes(fltTitle.toLowerCase())) &&
       (!fltListed   || r.firstSeen === fltListed)                  &&
       (fltRemoved === ''           ? true :
