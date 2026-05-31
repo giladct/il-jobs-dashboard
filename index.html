@@ -738,8 +738,9 @@ function buildGroupChart() {
           const pt = meta.data[lastIdx];
           const raw = ds.rawData?.[lastIdx];
           const text = raw != null ? `${ds.label} (${raw})` : ds.label;
-          if (pt) items.push({ x: pt.x, y: pt.y, label: text, color: ds.borderColor });
+          if (pt) items.push({ x: pt.x, y: pt.y, label: text, color: ds.borderColor, raw: raw ?? 0 });
         });
+        items.sort((a, b) => b.raw - a.raw);
         items.forEach(item => {
           if (placed.every(py => Math.abs(item.y - py) >= minGap)) {
             placed.push(item.y);
