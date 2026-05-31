@@ -750,10 +750,8 @@ updateStats(D.jobRecords || []);
 
 // ── Build / update chart ──────────────────────────────────────────────────────
 // Compute total open positions per day from filtered companies
-function buildTotalDataset(filteredCos) {
-  const records = filteredCos
-    ? (D.jobRecords || []).filter(r => filteredCos.has(r.company))
-    : (D.jobRecords || []);
+function buildTotalDataset(filteredRecords) {
+  const records = filteredRecords || (D.jobRecords || []);
   const totals = new Array(D.labels.length).fill(0);
   records.forEach(r => {
     D.labels.forEach((d, di) => {
@@ -776,8 +774,8 @@ function buildTotalDataset(filteredCos) {
   }];
 }
 
-function updateChart(filteredCos) {
-  chart.data.datasets = buildTotalDataset(filteredCos);
+function updateChart(filteredRecords) {
+  chart.data.datasets = buildTotalDataset(filteredRecords);
   chart.update();
 }
 
@@ -1059,7 +1057,7 @@ let triggerRender;   // set by IIFE below so ranking table can call render()
     const filteredCos = hasMetaFilter ? new Set(data.map(r => r.company)) : null;
 
     // Update chart & ranking table & flow chart
-    updateChart(filteredCos);
+    updateChart(hasMetaFilter ? filtered : null);
     renderRanking(hasMetaFilter ? filtered : D.jobRecords);
     updateFlowChart(filtered);
     updateGroupChart(hasMetaFilter ? filtered : D.jobRecords);
