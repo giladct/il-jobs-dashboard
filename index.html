@@ -534,13 +534,7 @@
   </div>
 
   <div class="chart-wrap" style="margin:0;border-radius:10px;box-shadow:0 1px 4px rgba(0,0,0,.08);">
-    <div class="chart-title">Total open positions over time<span class="chart-info" data-tip="Total open listings on devjobs.co.il across all tracked dates. Use the toggle to break down by role label, work mode, or district. The chart reflects all active filters.">i</span></div>
-    <div class="bd-toggle" id="total-bd">
-      <button class="bd-btn active" data-val="all">All</button>
-      <button class="bd-btn" data-val="label">Label</button>
-      <button class="bd-btn" data-val="mode">Mode</button>
-      <button class="bd-btn" data-val="district">District</button>
-    </div>
+    <div class="chart-title">Total open positions over time<span class="chart-info" data-tip="Stacked area: green = active listings on that date; red = listings already removed by that date. Together they total all unique jobs ever tracked. Responds to the company and filter selections below.">i</span></div>
     <canvas id="lineChart"></canvas>
   </div>
 
@@ -965,26 +959,43 @@ updateStats(D.jobRecords || []);
 
 
 // ── Breakdown state ───────────────────────────────────────────────────────────
-let totalBreakdown = 'all';
 let groupBreakdown = 'label';
 
 // ── Build / update chart ──────────────────────────────────────────────────────
 function buildTotalDataset(filteredRecords) {
   const records = filteredRecords || (D.jobRecords || []);
-  const series  = calcBreakdownSeries(records, totalBreakdown);
-  const isMulti = series.length > 1;
-  return series.map(s => ({
-    label: s.name,
-    data: s.counts,
-    borderColor: s.color,
-    backgroundColor: s.color + '22',
-    borderWidth: isMulti ? 2 : 2.5,
-    pointRadius: 2,
-    pointHoverRadius: 5,
-    tension: 0.3,
-    spanGaps: true,
-    fill: !isMulti,
-  }));
+  const activeData  = D.labels.map(d =>
+    records.filter(r => r.firstSeen && r.firstSeen <= d && (!r.dateRemoved || r.dateRemoved > d)).length
+  );
+  const removedData = D.labels.map(d =>
+    records.filter(r => r.firstSeen && r.firstSeen <= d && r.dateRemoved && r.dateRemoved <= d).length
+  );
+  return [
+    {
+      label: 'Active',
+      data: activeData,
+      backgroundColor: 'rgba(22,163,74,0.45)',
+      borderColor: '#16a34a',
+      borderWidth: 1.5,
+      pointRadius: 2,
+      pointHoverRadius: 5,
+      tension: 0.3,
+      fill: true,
+      stack: 'total',
+    },
+    {
+      label: 'Removed',
+      data: removedData,
+      backgroundColor: 'rgba(220,38,38,0.35)',
+      borderColor: '#dc2626',
+      borderWidth: 1.5,
+      pointRadius: 2,
+      pointHoverRadius: 5,
+      tension: 0.3,
+      fill: true,
+      stack: 'total',
+    },
+  ];
 }
 
 function updateChart(filteredRecords) {
@@ -1008,15 +1019,20 @@ chart = new Chart(ctx, {
       tooltip: {
         callbacks: {
           title: items => items[0].label,
-          label: item => ` ${item.dataset.label}: ${item.parsed.y ?? '—'}`,
+          label: item => ` ${item.dataset.label}: ${item.parsed.y.toLocaleString()}`,
+          footer: items => {
+            const total = items.reduce((s, i) => s + (i.parsed.y || 0), 0);
+            return `Total ever tracked: ${total.toLocaleString()}`;
+          },
         },
       },
     },
     scales: {
       x: { ticks: { font: { size: 11 }, maxRotation: 45 }, grid: { color: '#f0f0f0' } },
       y: {
+        stacked: true,
         beginAtZero: true,
-        title: { display: true, text: 'Open positions', font: { size: 11 } },
+        title: { display: true, text: 'Jobs', font: { size: 11 } },
         ticks: { font: { size: 11 } },
         grid: { color: '#f0f0f0' },
       },
@@ -1469,11 +1485,6 @@ let triggerRender;   // set by IIFE below so ranking table can call render()
   document.getElementById('raw-search').addEventListener('input',   e => { filterTxt   = e.target.value.trim().toLowerCase(); render(); });
   document.getElementById('flt-work-mode').addEventListener('change',e => { fltWorkMode = e.target.value; render(); });
   document.getElementById('flt-location').addEventListener('change', e => { fltLocation = e.target.value; render(); });
-  document.querySelectorAll('#total-bd .bd-btn').forEach(btn => btn.addEventListener('click', () => {
-    totalBreakdown = btn.dataset.val;
-    document.querySelectorAll('#total-bd .bd-btn').forEach(b => b.classList.toggle('active', b === btn));
-    render();
-  }));
   document.querySelectorAll('#group-bd .bd-btn').forEach(btn => btn.addEventListener('click', () => {
     groupBreakdown = btn.dataset.val;
     document.querySelectorAll('#group-bd .bd-btn').forEach(b => b.classList.toggle('active', b === btn));
