@@ -234,6 +234,44 @@
     font-weight: 600;
     color: #333;
     margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  /* ── Info icon ── */
+  .chart-info {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #bbb;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    cursor: help;
+    flex-shrink: 0;
+  }
+  .chart-info:hover { background: #888; }
+
+  /* ── Global fixed tooltip (escapes overflow:hidden parents) ── */
+  #chart-tooltip {
+    position: fixed;
+    display: none;
+    background: rgba(30,30,30,.93);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 1.55;
+    padding: 9px 13px;
+    border-radius: 7px;
+    width: 270px;
+    white-space: normal;
+    z-index: 99999;
+    box-shadow: 0 2px 10px rgba(0,0,0,.22);
+    pointer-events: none;
   }
   canvas { max-height: 260px; }
 
@@ -339,6 +377,48 @@
     text-align: center;
   }
 
+  /* ── Insight widget ── */
+  #insight-bar {
+    margin: 12px 20px 0;
+    padding: 11px 16px;
+    background: linear-gradient(100deg, #edf7f2 0%, #f4f8ff 100%);
+    border: 1px solid #c3dece;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 44px;
+  }
+  #insight-icon { font-size: 17px; flex-shrink: 0; line-height: 1; }
+  #insight-text {
+    flex: 1;
+    font-size: 12.5px;
+    color: #1e4030;
+    line-height: 1.5;
+    transition: opacity .25s;
+  }
+  #insight-text.fade { opacity: 0; }
+  .insight-dots { display: flex; gap: 5px; flex-shrink: 0; align-items: center; }
+  .insight-dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: #b8d9c8;
+    transition: background .2s;
+    cursor: pointer;
+  }
+  .insight-dot.active { background: #1a6e3c; }
+  #insight-next {
+    background: none;
+    border: 1px solid #c3dece;
+    border-radius: 6px;
+    padding: 3px 9px;
+    font-size: 13px;
+    color: #1a6e3c;
+    cursor: pointer;
+    flex-shrink: 0;
+    line-height: 1;
+  }
+  #insight-next:hover { background: #dff0e8; }
+
   /* ── No-data overlay ── */
   #no-data {
     display: none;
@@ -423,11 +503,19 @@
   </select>
 </div>
 
+<!-- insight widget -->
+<div id="insight-bar">
+  <span id="insight-icon">💡</span>
+  <span id="insight-text">Computing insights…</span>
+  <div class="insight-dots" id="insight-dots"></div>
+  <button id="insight-next" title="Next insight">›</button>
+</div>
+
 <!-- 2×2 chart grid -->
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:20px;">
 
   <div class="table-wrap" style="margin:0;border-radius:10px;box-shadow:0 1px 4px rgba(0,0,0,.08);overflow:hidden;display:flex;flex-direction:column;max-height:374px;">
-    <div class="chart-title" style="margin-bottom:12px;flex-shrink:0">All companies <span style="font-size:11px;font-weight:400;color:#999">(click to filter)</span></div>
+    <div class="chart-title" style="margin-bottom:12px;flex-shrink:0">All companies <span style="font-size:11px;font-weight:400;color:#999">(click to filter)</span><span class="chart-info" data-tip="Ranks all companies by current active job count. Active = listings still open today; Removed = listings taken down. ± shows change vs the previous snapshot. Click any row to filter the other charts and the raw table to that company.">i</span></div>
     <div style="overflow-y:auto;flex:1;">
       <table>
         <thead>
@@ -446,7 +534,7 @@
   </div>
 
   <div class="chart-wrap" style="margin:0;border-radius:10px;box-shadow:0 1px 4px rgba(0,0,0,.08);">
-    <div class="chart-title">Total open positions over time</div>
+    <div class="chart-title">Total open positions over time<span class="chart-info" data-tip="Total open listings on devjobs.co.il across all tracked dates. Use the toggle to break down by role label, work mode, or district. The chart reflects all active filters.">i</span></div>
     <div class="bd-toggle" id="total-bd">
       <button class="bd-btn active" data-val="all">All</button>
       <button class="bd-btn" data-val="label">Label</button>
@@ -457,12 +545,12 @@
   </div>
 
   <div class="chart-wrap" style="margin:0;border-radius:10px;box-shadow:0 1px 4px rgba(0,0,0,.08);display:flex;flex-direction:column;">
-    <div class="chart-title" style="flex-shrink:0">Positions added &amp; removed per day <span style="font-size:11px;font-weight:400;color:#999">(click a bar to filter)</span></div>
+    <div class="chart-title" style="flex-shrink:0">Positions added &amp; removed per day <span style="font-size:11px;font-weight:400;color:#999">(click a bar to filter)</span><span class="chart-info" data-tip="Daily job flow: green bars = new listings posted that day (first seen); red bars = listings removed that day. Click any bar to filter all views to that specific date and event type. Click again to clear.">i</span></div>
     <canvas id="flowChart" style="flex:1;min-height:0;cursor:pointer"></canvas>
   </div>
 
   <div class="chart-wrap" style="margin:0;border-radius:10px;box-shadow:0 1px 4px rgba(0,0,0,.08);">
-    <div class="chart-title">Open positions by role group over time</div>
+    <div class="chart-title">Open positions by role group over time<span class="chart-info" data-tip="Indexed trend: each series is rebased to 100% on the first tracked date so you can compare growth rates regardless of absolute size. Hover a line for raw counts. Toggle between role labels, work modes, or districts.">i</span></div>
     <div class="bd-toggle" id="group-bd">
       <button class="bd-btn" data-val="all">All</button>
       <button class="bd-btn active" data-val="label">Label</button>
@@ -478,7 +566,7 @@
 <!-- raw data table -->
 <div class="raw-wrap">
   <div class="raw-header">
-    <div class="chart-title" style="margin:0">Raw data — all snapshots</div>
+    <div class="chart-title" style="margin:0">Raw data — all snapshots<span class="chart-info" data-tip="One row per unique job listing. Columns: when it first appeared, company, title, role labels (auto-classified), work mode, district, days listed, removal date, and a link. Click any column header to sort. All filter bar selections apply here too.">i</span></div>
     <input class="raw-search" id="raw-search" placeholder="Filter company or title…" type="text">
     <span class="raw-count" id="raw-count"></span>
   </div>
@@ -487,6 +575,9 @@
     <tbody id="raw-tbody"></tbody>
   </table>
 </div>
+
+<!-- global info tooltip -->
+<div id="chart-tooltip"></div>
 
 <!-- no-data state -->
 <div id="no-data">
@@ -998,6 +1089,131 @@ buildFlowChart();
 buildGroupChart();
 buildGroupChips();
 
+// ── Insight widget ───────────────────────────────────────────────────────────
+let _insightPool = [], _insightIdx = 0, _insightTimer;
+
+function _buildInsightPool(records) {
+  const pool = [];
+  const active     = records.filter(r => r.isActive);
+  const activeN    = active.length;
+  const totalN     = records.length;
+
+  if (!totalN) return ['No listings match the current filters.'];
+
+  // Top company (skip if only 1 company in view — trivially 100%)
+  const coMap = new Map();
+  active.forEach(r => coMap.set(r.company, (coMap.get(r.company) || 0) + 1));
+  const topCos = [...coMap.entries()].sort((a, b) => b[1] - a[1]);
+  if (topCos.length > 1 && activeN > 0) {
+    const [name, cnt] = topCos[0];
+    const pct = Math.round(cnt / activeN * 100);
+    pool.push(`${name} leads with ${cnt} active listing${cnt > 1 ? 's' : ''} — ${pct}% of the current view.`);
+  }
+
+  // Work mode dominance (skip if all records share the same mode)
+  const modeMap = new Map();
+  active.forEach(r => { if (r.workMode) modeMap.set(r.workMode, (modeMap.get(r.workMode) || 0) + 1); });
+  const topMode = [...modeMap.entries()].sort((a, b) => b[1] - a[1])[0];
+  if (topMode && modeMap.size > 1 && activeN >= 5) {
+    const pct = Math.round(topMode[1] / activeN * 100);
+    pool.push(`${pct}% of active listings are ${topMode[0].toLowerCase()} — the most common work arrangement in this view.`);
+  }
+
+  // Latest snapshot net flow
+  const lastDate = D.labels[D.labels.length - 1];
+  if (lastDate) {
+    const added   = records.filter(r => r.firstSeen   === lastDate).length;
+    const removed = records.filter(r => r.dateRemoved === lastDate).length;
+    if (added > 0 || removed > 0) {
+      const net = added - removed;
+      const netStr = net > 0 ? `a net gain of ${net}` : net < 0 ? `a net loss of ${Math.abs(net)}` : 'no net change';
+      pool.push(`Latest snapshot (${lastDate}): ${added} listing${added !== 1 ? 's' : ''} added, ${removed} removed — ${netStr}.`);
+    }
+  }
+
+  // Average + max days listed
+  const withDays = active.filter(r => r.daysListed != null && r.daysListed > 0);
+  if (withDays.length >= 3) {
+    const avg    = Math.round(withDays.reduce((s, r) => s + r.daysListed, 0) / withDays.length);
+    const maxVal = Math.max(...withDays.map(r => r.daysListed));
+    const oldest = withDays.find(r => r.daysListed === maxVal);
+    pool.push(`Active listings have been live an average of ${avg} days; the oldest (${oldest.company}) has been up for ${maxVal} days.`);
+  }
+
+  // Top role category (skip if only 1 role present in view)
+  const roleMap = new Map();
+  active.forEach(r => LABEL_DEFS.filter(d => d.re.test(r.title || '')).forEach(l =>
+    roleMap.set(l.name, (roleMap.get(l.name) || 0) + 1)));
+  const topRole = [...roleMap.entries()].sort((a, b) => b[1] - a[1])[0];
+  if (topRole && roleMap.size > 1 && activeN >= 5) {
+    const pct = Math.round(topRole[1] / activeN * 100);
+    pool.push(`${topRole[0]} is the top role — ${topRole[1]} active listing${topRole[1] !== 1 ? 's' : ''} (${pct}% of current view).`);
+  }
+
+  // Top district (skip if only 1 district present in view)
+  const distMap = new Map();
+  active.forEach(r => { const d = getDistrict(r.location); if (d) distMap.set(d, (distMap.get(d) || 0) + 1); });
+  const topDist = [...distMap.entries()].sort((a, b) => b[1] - a[1])[0];
+  if (topDist && distMap.size > 1 && activeN >= 5) {
+    const knownN = [...distMap.values()].reduce((a, b) => a + b, 0);
+    const pct    = Math.round(topDist[1] / knownN * 100);
+    pool.push(`${topDist[0]} is the top location hub — ${pct}% of listings with a known district.`);
+  }
+
+  // Top-3 company concentration
+  if (topCos.length >= 4 && activeN >= 20) {
+    const top3cnt = topCos.slice(0, 3).reduce((s, [, n]) => s + n, 0);
+    const pct     = Math.round(top3cnt / activeN * 100);
+    const names   = topCos.slice(0, 3).map(([n]) => n).join(', ');
+    pool.push(`${names} together account for ${pct}% of all active listings in this view.`);
+  }
+
+  return pool.length ? pool : ['No notable patterns found in the current selection.'];
+}
+
+function _showInsight(idx) {
+  const textEl = document.getElementById('insight-text');
+  textEl.classList.add('fade');
+  setTimeout(() => {
+    textEl.textContent = _insightPool[idx];
+    textEl.classList.remove('fade');
+    document.querySelectorAll('.insight-dot').forEach((d, i) => d.classList.toggle('active', i === idx));
+  }, 220);
+}
+
+function rebuildInsights(records) {
+  clearInterval(_insightTimer);
+  _insightPool = _buildInsightPool(records);
+  _insightIdx  = 0;
+
+  const dotsEl = document.getElementById('insight-dots');
+  dotsEl.innerHTML = '';
+  _insightPool.forEach((_, i) => {
+    const d = document.createElement('span');
+    d.className = 'insight-dot' + (i === 0 ? ' active' : '');
+    d.addEventListener('click', () => { clearInterval(_insightTimer); _insightIdx = i; _showInsight(i); });
+    dotsEl.appendChild(d);
+  });
+  document.getElementById('insight-text').textContent = _insightPool[0];
+
+  if (_insightPool.length > 1) {
+    _insightTimer = setInterval(() => {
+      _insightIdx = (_insightIdx + 1) % _insightPool.length;
+      _showInsight(_insightIdx);
+    }, 8000);
+  }
+}
+
+document.getElementById('insight-next').addEventListener('click', () => {
+  clearInterval(_insightTimer);
+  _insightIdx = (_insightIdx + 1) % _insightPool.length;
+  _showInsight(_insightIdx);
+  _insightTimer = setInterval(() => {
+    _insightIdx = (_insightIdx + 1) % _insightPool.length;
+    _showInsight(_insightIdx);
+  }, 8000);
+});
+
 // ── Raw data table ───────────────────────────────────────────────────────────
 let triggerRender;   // set by IIFE below so ranking table can call render()
 (function () {
@@ -1137,13 +1353,12 @@ let triggerRender;   // set by IIFE below so ranking table can call render()
   const headerRow = document.getElementById('raw-thead').insertRow();
   [['firstSeen','First Seen'], ['company','Company'], ['title','Job Title'],
    ['','Labels'], ['workMode','Mode'], ['location','Location'],
-   ['daysListed','Days'], ['dateRemoved','Removed'], ['jobId','ID']].forEach(([key, label]) => {
+   ['daysListed','Days'], ['dateRemoved','Removed'], ['','Links']].forEach(([key, label]) => {
     const th = document.createElement('th');
     th.textContent = label;
     th.dataset.key = key;
     headerRow.appendChild(th);
   });
-  headerRow.appendChild(document.createElement('th'));
 
   // ── Filter logic ─────────────────────────────────────────────────────────
   function getFiltered() {
@@ -1201,6 +1416,7 @@ let triggerRender;   // set by IIFE below so ranking table can call render()
     renderRanking(hasMetaFilter ? filtered : D.jobRecords);
     updateFlowChart(filtered);
     updateGroupChart(hasMetaFilter ? filtered : D.jobRecords);
+    rebuildInsights(filtered);
 
     // Refresh co-filter counts if panel is open
     if (coPanel.classList.contains('open')) refreshCoList();
@@ -1228,16 +1444,12 @@ let triggerRender;   // set by IIFE below so ranking table can call render()
           r.daysListed === 0 ? 'today' : r.daysListed + 'd'
         }</td>
         <td style="text-align:center;white-space:nowrap">${removedCell}</td>
-        <td style="white-space:nowrap">${
-          r.jobId
-            ? `<a href="https://www.linkedin.com/jobs/view/${r.jobId}" target="_blank"
-                  style="color:#0a66c2;text-decoration:none;font-size:11px;font-family:monospace"
-                  title="View on LinkedIn">${r.jobId}</a>`
-            : ''
-        }</td>
-        <td style="text-align:center">${
-          r.url ? `<a href="${r.url}" target="_blank" style="color:#1a6e3c;text-decoration:none;font-size:11px">↗</a>` : ''
-        }</td>
+        <td style="white-space:nowrap;text-align:center">${[
+          r.jobId ? `<a href="https://www.linkedin.com/jobs/view/${r.jobId}" target="_blank" title="View on LinkedIn"
+            style="display:inline-flex;align-items:center;padding:2px 6px;border-radius:4px;background:#0a66c2;color:#fff;font-size:10px;font-weight:700;text-decoration:none;letter-spacing:.3px">in</a>` : '',
+          r.url   ? `<a href="${r.url}" target="_blank" title="View on devjobs.co.il"
+            style="color:#1a6e3c;text-decoration:none;font-size:13px;vertical-align:middle">↗</a>` : '',
+        ].filter(Boolean).join(' ')}</td>
       `);
       rawTbody.appendChild(tr);
     });
@@ -1286,6 +1498,32 @@ let triggerRender;   // set by IIFE below so ranking table can call render()
 
   triggerRender = () => { updateCoBtnLabel(); refreshCoList(); render(); };
   render();
+})();
+
+// ── Info-icon tooltips (fixed-position, escapes overflow:hidden) ─────────────
+(function () {
+  const tip = document.getElementById('chart-tooltip');
+  const PAD = 10, W = 270;
+
+  function position(clientX, clientY) {
+    let x = clientX - W / 2;
+    let y = clientY - tip.offsetHeight - 14;
+    if (x < PAD) x = PAD;
+    if (x + W > window.innerWidth - PAD) x = window.innerWidth - W - PAD;
+    if (y < PAD) y = clientY + 20;
+    tip.style.left = x + 'px';
+    tip.style.top  = y + 'px';
+  }
+
+  document.querySelectorAll('.chart-info').forEach(el => {
+    el.addEventListener('mouseenter', e => {
+      tip.textContent = el.dataset.tip;
+      tip.style.display = 'block';
+      position(e.clientX, e.clientY);
+    });
+    el.addEventListener('mousemove', e => position(e.clientX, e.clientY));
+    el.addEventListener('mouseleave', () => { tip.style.display = 'none'; });
+  });
 })();
 </script>
 </body>
