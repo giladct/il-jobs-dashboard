@@ -601,7 +601,7 @@ const PALETTE = [
 // ── Flow chart (added / removed per day) ─────────────────────────────────────
 let flowChart;
 
-const FLOW_SKIP = new Set(['2026-05-24']);
+const FLOW_SKIP = new Set(['2026-05-23', '2026-05-24']);
 
 function calcFlowData(records) {
   const labels  = D.labels.filter(d => !FLOW_SKIP.has(d));
@@ -929,6 +929,9 @@ if (typeof JOB_DATA === 'undefined') {
 }
 
 const D = JOB_DATA;
+
+// Merge 23/5 into 24/5: drop the 2026-05-23 label so its data folds into 24/5's counts
+D.labels = D.labels.filter(d => d !== '2026-05-23');
 
 // ── Filter out Agoda globally ─────────────────────────────────────────────────
 const EXCLUDED_COMPANIES = new Set(['Agoda']);
