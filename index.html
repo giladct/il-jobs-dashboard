@@ -452,6 +452,10 @@
       <span class="stat-label">Jobs in snapshot</span>
     </div>
     <div class="stat">
+      <span class="stat-value" id="stat-active">—</span>
+      <span class="stat-label">Active jobs</span>
+    </div>
+    <div class="stat">
       <span class="stat-value" id="stat-companies">—</span>
       <span class="stat-label">Companies</span>
     </div>
@@ -950,8 +954,10 @@ document.getElementById('stat-date').textContent =
 
 function updateStats(filteredRecords) {
   const jobs      = filteredRecords.length;
+  const active    = filteredRecords.filter(r => r.isActive).length;
   const companies = new Set(filteredRecords.map(r => r.company)).size;
   document.getElementById('stat-jobs').textContent      = jobs.toLocaleString();
+  document.getElementById('stat-active').textContent    = active.toLocaleString();
   document.getElementById('stat-companies').textContent = companies.toLocaleString();
 }
 // initialise with unfiltered totals
