@@ -534,7 +534,7 @@
   </div>
 
   <div class="chart-wrap" style="margin:0;border-radius:10px;box-shadow:0 1px 4px rgba(0,0,0,.08);">
-    <div class="chart-title">Total open positions over time<span class="chart-info" data-tip="Stacked area: green = active listings on that date; red = listings already removed by that date. Together they total all unique jobs ever tracked. Responds to the company and filter selections below.">i</span></div>
+    <div class="chart-title">Total open positions over time<span class="chart-info" data-tip="Stacked area: green = active listings posted in the last 7 days; blue = older active listings. Responds to the company and filter selections below.">i</span></div>
     <canvas id="lineChart"></canvas>
   </div>
 
@@ -964,18 +964,32 @@ let groupBreakdown = 'label';
 // ── Build / update chart ──────────────────────────────────────────────────────
 function buildTotalDataset(filteredRecords) {
   const records = filteredRecords || (D.jobRecords || []);
-  const activeData  = D.labels.map(d =>
-    records.filter(r => r.firstSeen && r.firstSeen <= d && (!r.dateRemoved || r.dateRemoved > d)).length
+
+  function cutoff(d) {
+    const dt = new Date(d);
+    dt.setDate(dt.getDate() - 7);
+    return dt.toISOString().slice(0, 10);
+  }
+
+  const olderData = D.labels.map(d =>
+    records.filter(r =>
+      r.firstSeen && r.firstSeen <= cutoff(d) &&
+      (!r.dateRemoved || r.dateRemoved > d)
+    ).length
   );
-  const removedData = D.labels.map(d =>
-    records.filter(r => r.firstSeen && r.firstSeen <= d && r.dateRemoved && r.dateRemoved <= d).length
+  const newData = D.labels.map(d =>
+    records.filter(r =>
+      r.firstSeen && r.firstSeen > cutoff(d) && r.firstSeen <= d &&
+      (!r.dateRemoved || r.dateRemoved > d)
+    ).length
   );
+
   return [
     {
-      label: 'Active',
-      data: activeData,
-      backgroundColor: 'rgba(22,163,74,0.45)',
-      borderColor: '#16a34a',
+      label: 'Older listings',
+      data: olderData,
+      backgroundColor: 'rgba(37,99,235,0.45)',
+      borderColor: '#2563eb',
       borderWidth: 1.5,
       pointRadius: 2,
       pointHoverRadius: 5,
@@ -984,10 +998,10 @@ function buildTotalDataset(filteredRecords) {
       stack: 'total',
     },
     {
-      label: 'Removed',
-      data: removedData,
-      backgroundColor: 'rgba(220,38,38,0.35)',
-      borderColor: '#dc2626',
+      label: 'New (last 7 days)',
+      data: newData,
+      backgroundColor: 'rgba(22,163,74,0.55)',
+      borderColor: '#16a34a',
       borderWidth: 1.5,
       pointRadius: 2,
       pointHoverRadius: 5,
@@ -1022,7 +1036,7 @@ chart = new Chart(ctx, {
           label: item => ` ${item.dataset.label}: ${item.parsed.y.toLocaleString()}`,
           footer: items => {
             const total = items.reduce((s, i) => s + (i.parsed.y || 0), 0);
-            return `Total ever tracked: ${total.toLocaleString()}`;
+            return `Total active: ${total.toLocaleString()}`;
           },
         },
       },
