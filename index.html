@@ -126,7 +126,7 @@
     color: #333;
     background: #fafafa;
     outline: none;
-    min-width: 120px;
+    min-width: 90px;
     cursor: pointer;
   }
   .filter-select:focus { border-color: #1a6e3c; }
@@ -974,29 +974,69 @@ let groupBreakdown = 'label';
 function buildTotalDataset(filteredRecords) {
   const records = filteredRecords || (D.jobRecords || []);
 
-  function cutoff(d) {
+  function cutoff(d, days) {
     const dt = new Date(d);
-    dt.setDate(dt.getDate() - 7);
+    dt.setDate(dt.getDate() - days);
     return dt.toISOString().slice(0, 10);
   }
 
-  const olderData = D.labels.map(d =>
-    records.filter(r =>
-      r.firstSeen && r.firstSeen <= cutoff(d) &&
-      (!r.dateRemoved || r.dateRemoved > d)
-    ).length
+  const veryOldData = D.labels.map(d =>
+    records.filter(r => {
+      const start = r.postedDate || r.firstSeen;
+      return start && start <= cutoff(d, 90) &&
+             (!r.dateRemoved || r.dateRemoved > d);
+    }).length
+  );
+  const oldData = D.labels.map(d =>
+    records.filter(r => {
+      const start = r.postedDate || r.firstSeen;
+      return start && start > cutoff(d, 90) && start <= cutoff(d, 30) &&
+             (!r.dateRemoved || r.dateRemoved > d);
+    }).length
+  );
+  const midData = D.labels.map(d =>
+    records.filter(r => {
+      const start = r.postedDate || r.firstSeen;
+      return start && start > cutoff(d, 30) && start <= cutoff(d, 7) &&
+             (!r.dateRemoved || r.dateRemoved > d);
+    }).length
   );
   const newData = D.labels.map(d =>
-    records.filter(r =>
-      r.firstSeen && r.firstSeen > cutoff(d) && r.firstSeen <= d &&
-      (!r.dateRemoved || r.dateRemoved > d)
-    ).length
+    records.filter(r => {
+      const start = r.postedDate || r.firstSeen;
+      return start && start > cutoff(d, 7) && start <= d &&
+             (!r.dateRemoved || r.dateRemoved > d);
+    }).length
   );
 
   return [
     {
-      label: 'Older listings',
-      data: olderData,
+      label: 'Older than 90 days',
+      data: veryOldData,
+      backgroundColor: 'rgba(90,53,15,0.4)',
+      borderColor: '#78350f',
+      borderWidth: 1.5,
+      pointRadius: 2,
+      pointHoverRadius: 5,
+      tension: 0.3,
+      fill: true,
+      stack: 'total',
+    },
+    {
+      label: '30–90 days',
+      data: oldData,
+      backgroundColor: 'rgba(107,114,128,0.4)',
+      borderColor: '#6b7280',
+      borderWidth: 1.5,
+      pointRadius: 2,
+      pointHoverRadius: 5,
+      tension: 0.3,
+      fill: true,
+      stack: 'total',
+    },
+    {
+      label: '7–30 days',
+      data: midData,
       backgroundColor: 'rgba(37,99,235,0.45)',
       borderColor: '#2563eb',
       borderWidth: 1.5,
@@ -1391,7 +1431,7 @@ let triggerRender;   // set by IIFE below so ranking table can call render()
 
   // ── Build header ────────────────────────────────────────────────────────
   const headerRow = document.getElementById('raw-thead').insertRow();
-  [['firstSeen','First Seen'], ['postedDate','Posted'], ['company','Company'], ['title','Job Title'],
+  [['firstSeen','First Seen'], ['company','Company'], ['title','Job Title'],
    ['','Labels'], ['workMode','Mode'], ['location','Location'],
    ['daysListed','Days'], ['dateRemoved','Removed'], ['','Links']].forEach(([key, label]) => {
     const th = document.createElement('th');
@@ -1469,11 +1509,12 @@ let triggerRender;   // set by IIFE below so ranking table can call render()
         ? `<span style="color:#dc2626;font-size:11px">${r.dateRemoved}</span>`
         : `<span style="color:#1a6e3c;font-size:10px">active</span>`;
       tr.insertAdjacentHTML('beforeend', `
-        <td style="color:#888;white-space:nowrap">${r.firstSeen || ''}</td>
-        <td style="color:#888;white-space:nowrap">${r.postedDate || ''}</td>
+        <td style="color:#888;white-space:nowrap">${r.firstSeen || ''}${
+          r.postedDate ? `<br><span style="font-size:10px;color:#aaa">posted ${r.postedDate}</span>` : ''
+        }</td>
         <td style="font-weight:500">${r.company}</td>
         <td style="white-space:normal;max-width:260px">${r.title}</td>
-        <td style="white-space:normal;min-width:120px">${
+        <td style="white-space:normal;min-width:90px">${
           LABEL_DEFS.filter(def => def.re.test(r.title || '')).map(def =>
             `<span style="display:inline-block;padding:1px 5px;border-radius:3px;font-size:10px;font-weight:600;background:${def.color}22;color:${def.color};margin:1px 1px;white-space:nowrap">${def.name}</span>`
           ).join('')
@@ -1504,7 +1545,7 @@ let triggerRender;   // set by IIFE below so ranking table can call render()
     if (!th) return;
     const key = th.dataset.key;
     if (key === sortKey) { sortDir *= -1; }
-    else { sortKey = key; sortDir = (key === 'firstSeen' || key === 'postedDate' || key === 'daysListed' || key === 'dateRemoved') ? -1 : 1; }
+    else { sortKey = key; sortDir = (key === 'firstSeen' || key === 'daysListed' || key === 'dateRemoved') ? -1 : 1; }
     render();
   });
   document.getElementById('raw-search').addEventListener('input',   e => { filterTxt   = e.target.value.trim().toLowerCase(); render(); });
