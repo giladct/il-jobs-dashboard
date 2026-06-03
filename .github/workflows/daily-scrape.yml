@@ -15,14 +15,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Restore jobs.db from cache
-        id: cache-db
-        uses: actions/cache@v4
-        with:
-          path: jobs.db
-          key: jobs-db-${{ runner.os }}
-          restore-keys: jobs-db-${{ runner.os }}
-
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -34,22 +26,10 @@ jobs:
       - name: Run scraper
         run: python jobs_tracker.py
 
-      - name: Save jobs.db to cache
-        uses: actions/cache/save@v4
-        with:
-          path: jobs.db
-          key: jobs-db-${{ runner.os }}-${{ github.run_id }}
-
-      - name: Commit updated data.js (and remove seeded jobs.db if present)
+      - name: Commit updated data.js and jobs.db
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          # Remove jobs.db from repo tracking if it was seeded
-          if git ls-files --error-unmatch jobs.db 2>/dev/null; then
-            git rm --cached jobs.db
-            echo "*.db" >> .gitignore
-            git add .gitignore
-          fi
-          git add data.js
+          git add data.js jobs.db
           git diff --cached --quiet || git commit -m "Auto-update jobs data $(date -u +%Y-%m-%d)"
           git push

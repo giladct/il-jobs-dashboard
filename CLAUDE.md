@@ -11,7 +11,7 @@ Daily snapshots go to SQLite; a static `data.js` feeds the `index.html` dashboar
 | File | Purpose |
 |------|---------|
 | `jobs_tracker.py` | Scraper, DB, exporter — the only Python file |
-| `jobs.db` | SQLite database |
+| `jobs.db` | SQLite database — **tracked in git** so GitHub Actions never loses history |
 | `data.js` | Generated JS payload for dashboard (`const JOB_DATA = {...}`) |
 | `index.html` | Chart.js dashboard — open directly in browser |
 
@@ -28,6 +28,7 @@ py jobs_tracker.py loop              # run every 24 h (blocking)
 ```
 
 **Windows Task Scheduler** runs the full scrape daily automatically.
+**GitHub Actions** (`.github/workflows/daily-scrape.yml`) also runs daily at 06:00 UTC and commits both `data.js` and `jobs.db` back to the repo. `jobs.db` is tracked in git (not in .gitignore) so historical snapshots are never lost if the runner restarts.
 
 ---
 
