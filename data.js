@@ -1,5 +1,5 @@
 const JOB_DATA = {
-  "generated": "2026-06-03T10:29:58",
+  "generated": "2026-06-03T10:50:20",
   "labels": [
     "2026-05-24",
     "2026-05-25",
@@ -25,7 +25,7 @@ const JOB_DATA = {
         527,
         498,
         547,
-        531
+        547
       ]
     },
     {
@@ -40,7 +40,7 @@ const JOB_DATA = {
         120,
         116,
         119,
-        109
+        119
       ]
     },
     {
@@ -55,7 +55,7 @@ const JOB_DATA = {
         109,
         110,
         112,
-        114
+        115
       ]
     },
     {
@@ -70,7 +70,7 @@ const JOB_DATA = {
         88,
         92,
         93,
-        90
+        98
       ]
     },
     {
@@ -85,22 +85,7 @@ const JOB_DATA = {
         87,
         92,
         91,
-        88
-      ]
-    },
-    {
-      "label": "Amazon Web Services (AWS)",
-      "data": [
-        81,
-        78,
-        79,
-        82,
-        81,
-        80,
-        84,
-        84,
-        88,
-        82
+        92
       ]
     },
     {
@@ -115,6 +100,21 @@ const JOB_DATA = {
         81,
         73,
         84,
+        89
+      ]
+    },
+    {
+      "label": "Amazon Web Services (AWS)",
+      "data": [
+        81,
+        78,
+        79,
+        82,
+        81,
+        80,
+        84,
+        84,
+        88,
         87
       ]
     },
@@ -130,7 +130,7 @@ const JOB_DATA = {
         68,
         70,
         77,
-        83
+        87
       ]
     },
     {
@@ -160,7 +160,7 @@ const JOB_DATA = {
         52,
         40,
         46,
-        41
+        46
       ]
     },
     {
@@ -190,7 +190,7 @@ const JOB_DATA = {
         34,
         32,
         33,
-        32
+        33
       ]
     },
     {
@@ -205,22 +205,7 @@ const JOB_DATA = {
         30,
         33,
         32,
-        26
-      ]
-    },
-    {
-      "label": "Cato Networks",
-      "data": [
-        24,
-        24,
-        25,
-        28,
-        27,
-        27,
-        28,
-        27,
-        29,
-        30
+        32
       ]
     },
     {
@@ -235,6 +220,21 @@ const JOB_DATA = {
         29,
         30,
         30,
+        31
+      ]
+    },
+    {
+      "label": "Cato Networks",
+      "data": [
+        24,
+        24,
+        25,
+        28,
+        27,
+        27,
+        28,
+        27,
+        29,
         30
       ]
     },
@@ -265,7 +265,7 @@ const JOB_DATA = {
         28,
         28,
         28,
-        27
+        28
       ]
     },
     {
@@ -280,7 +280,7 @@ const JOB_DATA = {
         19,
         17,
         18,
-        16
+        17
       ]
     },
     {
@@ -374,6 +374,21 @@ const JOB_DATA = {
       ]
     },
     {
+      "label": "AlgoSec",
+      "data": [
+        14,
+        13,
+        12,
+        12,
+        10,
+        13,
+        15,
+        15,
+        16,
+        17
+      ]
+    },
+    {
       "label": "Red Hat",
       "data": [
         14,
@@ -400,7 +415,7 @@ const JOB_DATA = {
         15,
         16,
         15,
-        15
+        16
       ]
     },
     {
@@ -415,22 +430,7 @@ const JOB_DATA = {
         16,
         15,
         16,
-        15
-      ]
-    },
-    {
-      "label": "AlgoSec",
-      "data": [
-        14,
-        13,
-        12,
-        12,
-        10,
-        13,
-        15,
-        15,
-        16,
-        15
+        16
       ]
     },
     {
@@ -470,16 +470,16 @@ const JOB_DATA = {
     "Apple",
     "Mobileye",
     "IAI - Israel Aerospace Industries",
-    "Amazon Web Services (AWS)",
     "Google",
+    "Amazon Web Services (AWS)",
     "Palo Alto Networks",
     "Agoda",
     "Rafael Advanced Defense Systems",
     "Intel",
     "Qualcomm",
     "abra",
-    "Cato Networks",
     "CrowdStrike",
+    "Cato Networks",
     "CyberArk",
     "Check Point Software",
     "Elad Software Systems",
@@ -489,77 +489,77 @@ const JOB_DATA = {
     "NiCE",
     "JFrog",
     "Cellebrite",
+    "AlgoSec",
     "Red Hat",
     "Forter",
     "Gini-Apps",
-    "AlgoSec",
     "Varonis",
     "Amazon"
   ],
   "allRanking": [
     {
       "company": "NVIDIA",
-      "cnt": 531
-    },
-    {
-      "company": "Apple",
-      "cnt": 114
+      "cnt": 547
     },
     {
       "company": "Elbit Systems Israel",
-      "cnt": 109
+      "cnt": 119
+    },
+    {
+      "company": "Apple",
+      "cnt": 115
     },
     {
       "company": "Mobileye",
-      "cnt": 90
+      "cnt": 98
     },
     {
       "company": "IAI - Israel Aerospace Industries",
-      "cnt": 88
+      "cnt": 92
     },
     {
       "company": "Google",
+      "cnt": 89
+    },
+    {
+      "company": "Amazon Web Services (AWS)",
       "cnt": 87
     },
     {
       "company": "Palo Alto Networks",
-      "cnt": 83
-    },
-    {
-      "company": "Amazon Web Services (AWS)",
-      "cnt": 82
+      "cnt": 87
     },
     {
       "company": "Agoda",
       "cnt": 78
     },
     {
+      "company": "Rafael Advanced Defense Systems",
+      "cnt": 46
+    },
+    {
       "company": "Intel",
       "cnt": 45
     },
     {
-      "company": "Rafael Advanced Defense Systems",
-      "cnt": 41
+      "company": "Qualcomm",
+      "cnt": 33
     },
     {
-      "company": "Qualcomm",
+      "company": "abra",
       "cnt": 32
+    },
+    {
+      "company": "CrowdStrike",
+      "cnt": 31
     },
     {
       "company": "Cato Networks",
       "cnt": 30
     },
     {
-      "company": "CrowdStrike",
-      "cnt": 30
-    },
-    {
       "company": "Check Point Software",
-      "cnt": 27
-    },
-    {
-      "company": "abra",
-      "cnt": 26
+      "cnt": 28
     },
     {
       "company": "CyberArk",
@@ -574,6 +574,14 @@ const JOB_DATA = {
       "cnt": 18
     },
     {
+      "company": "Elad Software Systems",
+      "cnt": 17
+    },
+    {
+      "company": "AlgoSec",
+      "cnt": 17
+    },
+    {
       "company": "Red Hat",
       "cnt": 17
     },
@@ -582,7 +590,11 @@ const JOB_DATA = {
       "cnt": 16
     },
     {
-      "company": "Elad Software Systems",
+      "company": "Forter",
+      "cnt": 16
+    },
+    {
+      "company": "Gini-Apps",
       "cnt": 16
     },
     {
@@ -598,15 +610,11 @@ const JOB_DATA = {
       "cnt": 16
     },
     {
-      "company": "Forter",
-      "cnt": 15
+      "company": "Applied Materials - Israel",
+      "cnt": 16
     },
     {
-      "company": "Gini-Apps",
-      "cnt": 15
-    },
-    {
-      "company": "AlgoSec",
+      "company": "Astera Labs",
       "cnt": 15
     },
     {
@@ -614,23 +622,23 @@ const JOB_DATA = {
       "cnt": 14
     },
     {
-      "company": "Applied Materials - Israel",
-      "cnt": 14
-    },
-    {
-      "company": "Astera Labs",
-      "cnt": 14
-    },
-    {
       "company": "Similarweb",
       "cnt": 14
+    },
+    {
+      "company": "Commit",
+      "cnt": 12
+    },
+    {
+      "company": "NextSilicon",
+      "cnt": 12
     },
     {
       "company": "Team8",
       "cnt": 12
     },
     {
-      "company": "Commit",
+      "company": "Tenable",
       "cnt": 11
     },
     {
@@ -646,8 +654,8 @@ const JOB_DATA = {
       "cnt": 11
     },
     {
-      "company": "NextSilicon",
-      "cnt": 10
+      "company": "Melio",
+      "cnt": 11
     },
     {
       "company": "Ceva, Inc.",
@@ -658,11 +666,19 @@ const JOB_DATA = {
       "cnt": 10
     },
     {
+      "company": "Teads",
+      "cnt": 10
+    },
+    {
       "company": "Transmit Security",
       "cnt": 10
     },
     {
       "company": "Wiz",
+      "cnt": 10
+    },
+    {
+      "company": "Yotpo",
       "cnt": 10
     },
     {
@@ -678,15 +694,19 @@ const JOB_DATA = {
       "cnt": 10
     },
     {
-      "company": "Tenable",
+      "company": "Riverside",
       "cnt": 9
     },
     {
-      "company": "Melio",
+      "company": "Lightricks",
       "cnt": 9
     },
     {
-      "company": "Teads",
+      "company": "Gong",
+      "cnt": 9
+    },
+    {
+      "company": "Lemonade",
       "cnt": 9
     },
     {
@@ -698,6 +718,10 @@ const JOB_DATA = {
       "cnt": 9
     },
     {
+      "company": "WalkMe",
+      "cnt": 9
+    },
+    {
       "company": "proteanTecs",
       "cnt": 9
     },
@@ -706,23 +730,27 @@ const JOB_DATA = {
       "cnt": 9
     },
     {
+      "company": "Redis",
+      "cnt": 9
+    },
+    {
+      "company": "Thales",
+      "cnt": 9
+    },
+    {
+      "company": "ONE ZERO BANK",
+      "cnt": 9
+    },
+    {
+      "company": "Cadence",
+      "cnt": 9
+    },
+    {
+      "company": "KLA",
+      "cnt": 9
+    },
+    {
       "company": "JFrog",
-      "cnt": 8
-    },
-    {
-      "company": "Yotpo",
-      "cnt": 8
-    },
-    {
-      "company": "Gong",
-      "cnt": 8
-    },
-    {
-      "company": "Lemonade",
-      "cnt": 8
-    },
-    {
-      "company": "WalkMe",
       "cnt": 8
     },
     {
@@ -734,11 +762,11 @@ const JOB_DATA = {
       "cnt": 8
     },
     {
-      "company": "HoneyBook",
+      "company": "DRS RADA Technologies",
       "cnt": 8
     },
     {
-      "company": "Redis",
+      "company": "HoneyBook",
       "cnt": 8
     },
     {
@@ -754,35 +782,11 @@ const JOB_DATA = {
       "cnt": 8
     },
     {
-      "company": "ONE ZERO BANK",
-      "cnt": 8
-    },
-    {
-      "company": "Cadence",
-      "cnt": 8
-    },
-    {
-      "company": "KLA",
+      "company": "Cloudinary",
       "cnt": 8
     },
     {
       "company": "CodeValue",
-      "cnt": 7
-    },
-    {
-      "company": "Riverside",
-      "cnt": 7
-    },
-    {
-      "company": "Lightricks",
-      "cnt": 7
-    },
-    {
-      "company": "DRS RADA Technologies",
-      "cnt": 7
-    },
-    {
-      "company": "Thales",
       "cnt": 7
     },
     {
@@ -791,6 +795,10 @@ const JOB_DATA = {
     },
     {
       "company": "Cross River",
+      "cnt": 7
+    },
+    {
+      "company": "Semperis",
       "cnt": 7
     },
     {
@@ -806,10 +814,6 @@ const JOB_DATA = {
       "cnt": 7
     },
     {
-      "company": "Cloudinary",
-      "cnt": 7
-    },
-    {
       "company": "Moon Active",
       "cnt": 7
     },
@@ -819,10 +823,6 @@ const JOB_DATA = {
     },
     {
       "company": "JLL",
-      "cnt": 6
-    },
-    {
-      "company": "Semperis",
       "cnt": 6
     },
     {
@@ -878,6 +878,10 @@ const JOB_DATA = {
       "cnt": 6
     },
     {
+      "company": "Parallel Wireless",
+      "cnt": 6
+    },
+    {
       "company": "Radware",
       "cnt": 6
     },
@@ -898,7 +902,19 @@ const JOB_DATA = {
       "cnt": 5
     },
     {
+      "company": "Akamai Technologies",
+      "cnt": 5
+    },
+    {
+      "company": "AllCloud",
+      "cnt": 5
+    },
+    {
       "company": "Cyera",
+      "cnt": 5
+    },
+    {
+      "company": "Nimble",
       "cnt": 5
     },
     {
@@ -926,15 +942,15 @@ const JOB_DATA = {
       "cnt": 5
     },
     {
-      "company": "Parallel Wireless",
-      "cnt": 5
-    },
-    {
       "company": "Snyk",
       "cnt": 5
     },
     {
       "company": "Toluna",
+      "cnt": 5
+    },
+    {
+      "company": "Veeva Systems",
       "cnt": 5
     },
     {
@@ -950,6 +966,14 @@ const JOB_DATA = {
       "cnt": 5
     },
     {
+      "company": "NetNut.io",
+      "cnt": 5
+    },
+    {
+      "company": "Unity",
+      "cnt": 5
+    },
+    {
       "company": "BioCatch",
       "cnt": 5
     },
@@ -962,15 +986,7 @@ const JOB_DATA = {
       "cnt": 4
     },
     {
-      "company": "Akamai Technologies",
-      "cnt": 4
-    },
-    {
       "company": "Glassbox",
-      "cnt": 4
-    },
-    {
-      "company": "Nimble",
       "cnt": 4
     },
     {
@@ -983,6 +999,10 @@ const JOB_DATA = {
     },
     {
       "company": "Fortinet",
+      "cnt": 4
+    },
+    {
+      "company": "Port.io",
       "cnt": 4
     },
     {
@@ -1074,7 +1094,15 @@ const JOB_DATA = {
       "cnt": 4
     },
     {
+      "company": "Unilink Ltd.",
+      "cnt": 4
+    },
+    {
       "company": "WEKA",
+      "cnt": 4
+    },
+    {
+      "company": "Bringg",
       "cnt": 4
     },
     {
@@ -1086,7 +1114,11 @@ const JOB_DATA = {
       "cnt": 4
     },
     {
-      "company": "NetNut.io",
+      "company": "Payoneer",
+      "cnt": 4
+    },
+    {
+      "company": "Qodo",
       "cnt": 4
     },
     {
@@ -1094,23 +1126,11 @@ const JOB_DATA = {
       "cnt": 4
     },
     {
-      "company": "Unity",
-      "cnt": 4
-    },
-    {
-      "company": "AllCloud",
-      "cnt": 3
-    },
-    {
       "company": "GitLab",
       "cnt": 3
     },
     {
-      "company": "Port.io",
-      "cnt": 3
-    },
-    {
-      "company": "Veeva Systems",
+      "company": "Pagaya",
       "cnt": 3
     },
     {
@@ -1142,15 +1162,15 @@ const JOB_DATA = {
       "cnt": 3
     },
     {
+      "company": "Appdome",
+      "cnt": 3
+    },
+    {
       "company": "Aqua Security",
       "cnt": 3
     },
     {
       "company": "BMC Software",
-      "cnt": 3
-    },
-    {
-      "company": "Bringg",
       "cnt": 3
     },
     {
@@ -1163,6 +1183,10 @@ const JOB_DATA = {
     },
     {
       "company": "Cybereason, A LevelBlue Company",
+      "cnt": 3
+    },
+    {
+      "company": "Datadog",
       "cnt": 3
     },
     {
@@ -1210,6 +1234,10 @@ const JOB_DATA = {
       "cnt": 3
     },
     {
+      "company": "Mentee Robotics",
+      "cnt": 3
+    },
+    {
       "company": "Munters",
       "cnt": 3
     },
@@ -1230,14 +1258,6 @@ const JOB_DATA = {
       "cnt": 3
     },
     {
-      "company": "Payoneer",
-      "cnt": 3
-    },
-    {
-      "company": "Qodo",
-      "cnt": 3
-    },
-    {
       "company": "Seeking Alpha",
       "cnt": 3
     },
@@ -1251,6 +1271,10 @@ const JOB_DATA = {
     },
     {
       "company": "Travel Booster by Galor",
+      "cnt": 3
+    },
+    {
+      "company": "Trullion",
       "cnt": 3
     },
     {
@@ -1286,7 +1310,15 @@ const JOB_DATA = {
       "cnt": 3
     },
     {
+      "company": "Intuit",
+      "cnt": 3
+    },
+    {
       "company": "Ludeo",
+      "cnt": 3
+    },
+    {
+      "company": "Millennium",
       "cnt": 3
     },
     {
@@ -1294,7 +1326,15 @@ const JOB_DATA = {
       "cnt": 3
     },
     {
+      "company": "Sela",
+      "cnt": 3
+    },
+    {
       "company": "Torq",
+      "cnt": 3
+    },
+    {
+      "company": "WorldQuant",
       "cnt": 3
     },
     {
@@ -1310,10 +1350,6 @@ const JOB_DATA = {
       "cnt": 2
     },
     {
-      "company": "Pagaya",
-      "cnt": 2
-    },
-    {
       "company": "Classiq",
       "cnt": 2
     },
@@ -1322,11 +1358,7 @@ const JOB_DATA = {
       "cnt": 2
     },
     {
-      "company": "Unilink Ltd.",
-      "cnt": 2
-    },
-    {
-      "company": "Appdome",
+      "company": "Atera",
       "cnt": 2
     },
     {
@@ -1342,10 +1374,6 @@ const JOB_DATA = {
       "cnt": 2
     },
     {
-      "company": "Datadog",
-      "cnt": 2
-    },
-    {
       "company": "Fitness22",
       "cnt": 2
     },
@@ -1354,7 +1382,7 @@ const JOB_DATA = {
       "cnt": 2
     },
     {
-      "company": "Trullion",
+      "company": "Sensi.AI",
       "cnt": 2
     },
     {
@@ -1367,6 +1395,10 @@ const JOB_DATA = {
     },
     {
       "company": "Alice (Formerly ActiveFence)",
+      "cnt": 2
+    },
+    {
+      "company": "Appsforce",
       "cnt": 2
     },
     {
@@ -1390,6 +1422,10 @@ const JOB_DATA = {
       "cnt": 2
     },
     {
+      "company": "Black Rabbit",
+      "cnt": 2
+    },
+    {
       "company": "Blockaid",
       "cnt": 2
     },
@@ -1398,11 +1434,19 @@ const JOB_DATA = {
       "cnt": 2
     },
     {
+      "company": "Ceragon Networks",
+      "cnt": 2
+    },
+    {
       "company": "Chainalysis",
       "cnt": 2
     },
     {
       "company": "Checkmarx",
+      "cnt": 2
+    },
+    {
+      "company": "Checkout.com",
       "cnt": 2
     },
     {
@@ -1506,10 +1550,6 @@ const JOB_DATA = {
       "cnt": 2
     },
     {
-      "company": "Intuit",
-      "cnt": 2
-    },
-    {
       "company": "Keshet Media Group",
       "cnt": 2
     },
@@ -1526,7 +1566,15 @@ const JOB_DATA = {
       "cnt": 2
     },
     {
+      "company": "Loora",
+      "cnt": 2
+    },
+    {
       "company": "Lumana",
+      "cnt": 2
+    },
+    {
+      "company": "MDClone",
       "cnt": 2
     },
     {
@@ -1535,10 +1583,6 @@ const JOB_DATA = {
     },
     {
       "company": "Meta",
-      "cnt": 2
-    },
-    {
-      "company": "Millennium",
       "cnt": 2
     },
     {
@@ -1634,10 +1678,6 @@ const JOB_DATA = {
       "cnt": 2
     },
     {
-      "company": "Sela",
-      "cnt": 2
-    },
-    {
       "company": "Sentra",
       "cnt": 2
     },
@@ -1647,6 +1687,10 @@ const JOB_DATA = {
     },
     {
       "company": "SkillReal",
+      "cnt": 2
+    },
+    {
+      "company": "Snap Inc.",
       "cnt": 2
     },
     {
@@ -1694,11 +1738,11 @@ const JOB_DATA = {
       "cnt": 2
     },
     {
-      "company": "WorldQuant",
+      "company": "Zafran Security",
       "cnt": 2
     },
     {
-      "company": "Zafran Security",
+      "company": "Artlist",
       "cnt": 2
     },
     {
@@ -1707,6 +1751,10 @@ const JOB_DATA = {
     },
     {
       "company": "D-Fend Solutions",
+      "cnt": 2
+    },
+    {
+      "company": "Deel",
       "cnt": 2
     },
     {
@@ -1750,6 +1798,10 @@ const JOB_DATA = {
       "cnt": 2
     },
     {
+      "company": "PAPAYA",
+      "cnt": 2
+    },
+    {
       "company": "Rail Vision Ltd",
       "cnt": 2
     },
@@ -1774,19 +1826,23 @@ const JOB_DATA = {
       "cnt": 2
     },
     {
+      "company": "Adaptive6",
+      "cnt": 2
+    },
+    {
+      "company": "Vi",
+      "cnt": 2
+    },
+    {
+      "company": "Real Time Group - Software Solutions",
+      "cnt": 2
+    },
+    {
       "company": "365Scores",
       "cnt": 1
     },
     {
       "company": "Tap",
-      "cnt": 1
-    },
-    {
-      "company": "Atera",
-      "cnt": 1
-    },
-    {
-      "company": "Sensi.AI",
       "cnt": 1
     },
     {
@@ -1798,23 +1854,7 @@ const JOB_DATA = {
       "cnt": 1
     },
     {
-      "company": "Appsforce",
-      "cnt": 1
-    },
-    {
       "company": "Autobrains Technologies",
-      "cnt": 1
-    },
-    {
-      "company": "Black Rabbit",
-      "cnt": 1
-    },
-    {
-      "company": "Ceragon Networks",
-      "cnt": 1
-    },
-    {
-      "company": "Checkout.com",
       "cnt": 1
     },
     {
@@ -1838,10 +1878,6 @@ const JOB_DATA = {
       "cnt": 1
     },
     {
-      "company": "Loora",
-      "cnt": 1
-    },
-    {
       "company": "Nanox Vision",
       "cnt": 1
     },
@@ -1855,10 +1891,6 @@ const JOB_DATA = {
     },
     {
       "company": "Sidelines Group",
-      "cnt": 1
-    },
-    {
-      "company": "Snap Inc.",
       "cnt": 1
     },
     {
@@ -1890,6 +1922,10 @@ const JOB_DATA = {
       "cnt": 1
     },
     {
+      "company": "Akeyless Security",
+      "cnt": 1
+    },
+    {
       "company": "Antidote Health",
       "cnt": 1
     },
@@ -1899,10 +1935,6 @@ const JOB_DATA = {
     },
     {
       "company": "Arbitrip",
-      "cnt": 1
-    },
-    {
-      "company": "Artlist",
       "cnt": 1
     },
     {
@@ -2003,10 +2035,6 @@ const JOB_DATA = {
     },
     {
       "company": "DealHub.ai",
-      "cnt": 1
-    },
-    {
-      "company": "Deel",
       "cnt": 1
     },
     {
@@ -2218,11 +2246,19 @@ const JOB_DATA = {
       "cnt": 1
     },
     {
+      "company": "Lowental Hybrid",
+      "cnt": 1
+    },
+    {
       "company": "Lumen",
       "cnt": 1
     },
     {
       "company": "MKS Inc.",
+      "cnt": 1
+    },
+    {
+      "company": "Magnus Metal Ltd.",
       "cnt": 1
     },
     {
@@ -2334,10 +2370,6 @@ const JOB_DATA = {
       "cnt": 1
     },
     {
-      "company": "PAPAYA",
-      "cnt": 1
-    },
-    {
       "company": "PTC",
       "cnt": 1
     },
@@ -2355,6 +2387,14 @@ const JOB_DATA = {
     },
     {
       "company": "Perion",
+      "cnt": 1
+    },
+    {
+      "company": "PhaseV",
+      "cnt": 1
+    },
+    {
+      "company": "Philips",
       "cnt": 1
     },
     {
@@ -2403,6 +2443,10 @@ const JOB_DATA = {
     },
     {
       "company": "Reflectiz",
+      "cnt": 1
+    },
+    {
+      "company": "Rescana",
       "cnt": 1
     },
     {
@@ -2483,6 +2527,10 @@ const JOB_DATA = {
     },
     {
       "company": "SysAid",
+      "cnt": 1
+    },
+    {
+      "company": "Tango",
       "cnt": 1
     },
     {
@@ -2662,10 +2710,6 @@ const JOB_DATA = {
       "cnt": 1
     },
     {
-      "company": "Adaptive6",
-      "cnt": 1
-    },
-    {
       "company": "Medāna",
       "cnt": 1
     },
@@ -2674,7 +2718,7 @@ const JOB_DATA = {
       "cnt": 1
     },
     {
-      "company": "Vi",
+      "company": "SafeBreach",
       "cnt": 1
     },
     {
@@ -2682,7 +2726,7 @@ const JOB_DATA = {
       "cnt": 1
     },
     {
-      "company": "Real Time Group - Software Solutions",
+      "company": "onsemi",
       "cnt": 1
     },
     {
@@ -2782,6 +2826,10 @@ const JOB_DATA = {
       "cnt": 1
     },
     {
+      "company": "DeepKeep",
+      "cnt": 1
+    },
+    {
       "company": "Dormotech",
       "cnt": 1
     },
@@ -2846,10 +2894,6 @@ const JOB_DATA = {
       "cnt": 0
     },
     {
-      "company": "Mentee Robotics",
-      "cnt": 0
-    },
-    {
       "company": "Miggo Security",
       "cnt": 0
     },
@@ -2862,10 +2906,6 @@ const JOB_DATA = {
       "cnt": 0
     },
     {
-      "company": "MDClone",
-      "cnt": 0
-    },
-    {
       "company": "eToro",
       "cnt": 0
     },
@@ -2875,10 +2915,6 @@ const JOB_DATA = {
     },
     {
       "company": "Aitech Systems",
-      "cnt": 0
-    },
-    {
-      "company": "Akeyless Security",
       "cnt": 0
     },
     {
@@ -2946,27 +2982,11 @@ const JOB_DATA = {
       "cnt": 0
     },
     {
-      "company": "Lowental Hybrid",
-      "cnt": 0
-    },
-    {
       "company": "MIND",
       "cnt": 0
     },
     {
-      "company": "Magnus Metal Ltd.",
-      "cnt": 0
-    },
-    {
       "company": "Moonsite - Moonsoft Development Ltd.",
-      "cnt": 0
-    },
-    {
-      "company": "PhaseV",
-      "cnt": 0
-    },
-    {
-      "company": "Philips",
       "cnt": 0
     },
     {
@@ -2986,19 +3006,11 @@ const JOB_DATA = {
       "cnt": 0
     },
     {
-      "company": "Rescana",
-      "cnt": 0
-    },
-    {
       "company": "Solvo, Now Part of CYE",
       "cnt": 0
     },
     {
       "company": "Synopsys Inc",
-      "cnt": 0
-    },
-    {
-      "company": "Tango",
       "cnt": 0
     },
     {
@@ -3046,19 +3058,11 @@ const JOB_DATA = {
       "cnt": 0
     },
     {
-      "company": "SafeBreach",
-      "cnt": 0
-    },
-    {
       "company": "Speedata.io",
       "cnt": 0
     },
     {
       "company": "abra R&D Solutions (formerly Devalore)",
-      "cnt": 0
-    },
-    {
-      "company": "onsemi",
       "cnt": 0
     },
     {
@@ -3071,7 +3075,7 @@ const JOB_DATA = {
     }
   ],
   "latestDate": "2026-06-03",
-  "latestTotal": 3148,
+  "latestTotal": 3298,
   "daysTracked": 10,
   "jobRecords": [
     {
@@ -3096,6 +3100,36 @@ const JOB_DATA = {
       "url": "https://devjobs.co.il/job-details/4422404865",
       "devType": "DevOps",
       "workMode": "Hybrid",
+      "location": "Petah Tikva",
+      "firstSeen": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
+      "daysListed": 0,
+      "isActive": true,
+      "postedDate": "2026-06-02"
+    },
+    {
+      "jobId": "4422419567",
+      "company": "AlgoSec",
+      "title": "Infrastructure Automation Developer, Israel",
+      "url": "https://devjobs.co.il/job-details/4422419567",
+      "devType": "DevOps",
+      "workMode": "On-site",
+      "location": "Petah Tikva",
+      "firstSeen": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
+      "daysListed": 0,
+      "isActive": true,
+      "postedDate": "2026-06-02"
+    },
+    {
+      "jobId": "4422417595",
+      "company": "AlgoSec",
+      "title": "Infrastructure Automation Developer, Israel",
+      "url": "https://devjobs.co.il/job-details/4422417595",
+      "devType": "DevOps",
+      "workMode": "On-site",
       "location": "Petah Tikva",
       "firstSeen": "2026-06-03",
       "lastSeen": "2026-06-03",
@@ -3225,6 +3259,21 @@ const JOB_DATA = {
       "postedDate": "2026-06-02"
     },
     {
+      "jobId": "4423802271",
+      "company": "Black Rabbit",
+      "title": "Backend Developer",
+      "url": "https://devjobs.co.il/job-details/4423802271",
+      "devType": "Backend",
+      "workMode": "Hybrid",
+      "location": "Tel Aviv-Yafo",
+      "firstSeen": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
+      "daysListed": 0,
+      "isActive": true,
+      "postedDate": "2026-06-02"
+    },
+    {
       "jobId": "4411177987",
       "company": "Bringg",
       "title": "Backend Engineer - AI Driven Development",
@@ -3262,6 +3311,21 @@ const JOB_DATA = {
       "devType": "Manager",
       "workMode": "On-site",
       "location": "Ramat Gan",
+      "firstSeen": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
+      "daysListed": 0,
+      "isActive": true,
+      "postedDate": "2026-06-02"
+    },
+    {
+      "jobId": "4419248803",
+      "company": "DeepKeep",
+      "title": "Senior NLP/LLM Researcher",
+      "url": "https://devjobs.co.il/job-details/4419248803",
+      "devType": "Data/ML",
+      "workMode": "On-site",
+      "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-06-03",
       "lastSeen": "2026-06-03",
       "dateRemoved": "",
@@ -3639,9 +3703,9 @@ const JOB_DATA = {
       "location": "Yokneam Ilit",
       "firstSeen": "2026-06-03",
       "lastSeen": "2026-06-03",
-      "dateRemoved": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 0,
-      "isActive": false,
+      "isActive": true,
       "postedDate": "2026-06-03"
     },
     {
@@ -4035,6 +4099,21 @@ const JOB_DATA = {
       "postedDate": "2026-06-02"
     },
     {
+      "jobId": "4419291378",
+      "company": "Sela",
+      "title": "Back End Developer",
+      "url": "https://devjobs.co.il/job-details/4419291378",
+      "devType": "Backend",
+      "workMode": "Hybrid",
+      "location": "Center District",
+      "firstSeen": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
+      "daysListed": 0,
+      "isActive": true,
+      "postedDate": "2026-06-02"
+    },
+    {
       "jobId": "4419285867",
       "company": "Shamir Optical Industry Itd.",
       "title": "Vision Neuroscientist",
@@ -4131,6 +4210,21 @@ const JOB_DATA = {
       "url": "https://devjobs.co.il/job-details/4419244823",
       "devType": "Data/ML",
       "workMode": "Hybrid",
+      "location": "Tel Aviv-Yafo",
+      "firstSeen": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
+      "daysListed": 0,
+      "isActive": true,
+      "postedDate": "2026-06-02"
+    },
+    {
+      "jobId": "4423900948",
+      "company": "Vi",
+      "title": "Architect (Data Platform)",
+      "url": "https://devjobs.co.il/job-details/4423900948",
+      "devType": "Other",
+      "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-06-03",
       "lastSeen": "2026-06-03",
@@ -4295,14 +4389,14 @@ const JOB_DATA = {
       "title": "Software Data Engineer",
       "url": "https://devjobs.co.il/job-details/4423298225",
       "devType": "Data/ML",
-      "workMode": "Hybrid",
+      "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 1,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-06-02"
     },
     {
       "jobId": "4418777357",
@@ -5004,9 +5098,9 @@ const JOB_DATA = {
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-06-02",
       "lastSeen": "2026-06-03",
-      "dateRemoved": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 1,
-      "isActive": false,
+      "isActive": true,
       "postedDate": "2026-06-02"
     },
     {
@@ -5019,9 +5113,9 @@ const JOB_DATA = {
       "location": "Yokneam Ilit",
       "firstSeen": "2026-06-02",
       "lastSeen": "2026-06-03",
-      "dateRemoved": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 1,
-      "isActive": false,
+      "isActive": true,
       "postedDate": "2026-06-02"
     },
     {
@@ -5034,9 +5128,9 @@ const JOB_DATA = {
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-06-02",
       "lastSeen": "2026-06-03",
-      "dateRemoved": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 1,
-      "isActive": false,
+      "isActive": true,
       "postedDate": "2026-06-02"
     },
     {
@@ -5049,9 +5143,9 @@ const JOB_DATA = {
       "location": "Tel Aviv District",
       "firstSeen": "2026-06-02",
       "lastSeen": "2026-06-03",
-      "dateRemoved": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 1,
-      "isActive": false,
+      "isActive": true,
       "postedDate": "2026-06-02"
     },
     {
@@ -5064,9 +5158,9 @@ const JOB_DATA = {
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-06-02",
       "lastSeen": "2026-06-03",
-      "dateRemoved": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 1,
-      "isActive": false,
+      "isActive": true,
       "postedDate": "2026-06-02"
     },
     {
@@ -5079,9 +5173,9 @@ const JOB_DATA = {
       "location": "Be'er Sheva",
       "firstSeen": "2026-06-02",
       "lastSeen": "2026-06-03",
-      "dateRemoved": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 1,
-      "isActive": false,
+      "isActive": true,
       "postedDate": "2026-06-02"
     },
     {
@@ -5094,9 +5188,9 @@ const JOB_DATA = {
       "location": "Yokneam Ilit",
       "firstSeen": "2026-06-02",
       "lastSeen": "2026-06-03",
-      "dateRemoved": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 1,
-      "isActive": false,
+      "isActive": true,
       "postedDate": "2026-06-02"
     },
     {
@@ -5109,9 +5203,9 @@ const JOB_DATA = {
       "location": "Raanana",
       "firstSeen": "2026-06-02",
       "lastSeen": "2026-06-03",
-      "dateRemoved": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 1,
-      "isActive": false,
+      "isActive": true,
       "postedDate": "2026-06-02"
     },
     {
@@ -5124,9 +5218,9 @@ const JOB_DATA = {
       "location": "Raanana",
       "firstSeen": "2026-06-02",
       "lastSeen": "2026-06-03",
-      "dateRemoved": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 1,
-      "isActive": false,
+      "isActive": true,
       "postedDate": "2026-06-02"
     },
     {
@@ -5139,9 +5233,9 @@ const JOB_DATA = {
       "location": "Kiryat Ata",
       "firstSeen": "2026-06-02",
       "lastSeen": "2026-06-03",
-      "dateRemoved": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 1,
-      "isActive": false,
+      "isActive": true,
       "postedDate": "2026-06-02"
     },
     {
@@ -5154,9 +5248,9 @@ const JOB_DATA = {
       "location": "Yokneam Ilit",
       "firstSeen": "2026-06-02",
       "lastSeen": "2026-06-03",
-      "dateRemoved": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 1,
-      "isActive": false,
+      "isActive": true,
       "postedDate": "2026-06-02"
     },
     {
@@ -5169,9 +5263,9 @@ const JOB_DATA = {
       "location": "Yokneam Ilit",
       "firstSeen": "2026-06-02",
       "lastSeen": "2026-06-03",
-      "dateRemoved": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 1,
-      "isActive": false,
+      "isActive": true,
       "postedDate": "2026-06-02"
     },
     {
@@ -5184,9 +5278,9 @@ const JOB_DATA = {
       "location": "Yokneam Ilit",
       "firstSeen": "2026-06-02",
       "lastSeen": "2026-06-03",
-      "dateRemoved": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 1,
-      "isActive": false,
+      "isActive": true,
       "postedDate": "2026-06-02"
     },
     {
@@ -5199,9 +5293,9 @@ const JOB_DATA = {
       "location": "Kiryat Ata",
       "firstSeen": "2026-06-02",
       "lastSeen": "2026-06-03",
-      "dateRemoved": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 1,
-      "isActive": false,
+      "isActive": true,
       "postedDate": "2026-06-02"
     },
     {
@@ -5600,14 +5694,14 @@ const JOB_DATA = {
       "title": "Linux Developer",
       "url": "https://devjobs.co.il/job-details/4418767789",
       "devType": "DevOps",
-      "workMode": "Hybrid",
+      "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 1,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-06-02"
     },
     {
       "jobId": "4422815469",
@@ -5798,11 +5892,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 1,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-06-02"
     },
     {
       "jobId": "4422886832",
@@ -5813,11 +5907,11 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "West Jerusalem",
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 1,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-06-02"
     },
     {
       "jobId": "4418750868",
@@ -8948,11 +9042,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-30",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 4,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-06-02"
     },
     {
       "jobId": "4420274648",
@@ -10733,11 +10827,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rehovot",
       "firstSeen": "2026-05-27",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 7,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-06-02"
     },
     {
       "jobId": "4418252114",
@@ -12203,11 +12297,11 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-26",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 8,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-06-02"
     },
     {
       "jobId": "4418928842",
@@ -14693,11 +14787,11 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-31"
     },
     {
       "jobId": "4416179341",
@@ -16058,11 +16152,11 @@ const JOB_DATA = {
       "workMode": "Remote",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-22"
     },
     {
       "jobId": "4338967656",
@@ -16088,11 +16182,11 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-04-14"
     },
     {
       "jobId": "4417316399",
@@ -16418,11 +16512,11 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-22"
     },
     {
       "jobId": "4388793583",
@@ -16433,11 +16527,11 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ra’anana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-22"
     },
     {
       "jobId": "4414730101",
@@ -17033,11 +17127,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-05-28"
     },
     {
       "jobId": "4416989664",
@@ -17273,11 +17367,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-05-28"
     },
     {
       "jobId": "4359385548",
@@ -17498,11 +17592,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-31"
     },
     {
       "jobId": "4345961864",
@@ -17633,11 +17727,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-31"
     },
     {
       "jobId": "4374750906",
@@ -17693,11 +17787,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-31"
     },
     {
       "jobId": "4377560555",
@@ -18218,11 +18312,11 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-20"
     },
     {
       "jobId": "4414151995",
@@ -19823,11 +19917,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-17"
     },
     {
       "jobId": "4410636072",
@@ -20048,11 +20142,11 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-22"
     },
     {
       "jobId": "4401057222",
@@ -20378,11 +20472,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-06-02"
     },
     {
       "jobId": "4412258748",
@@ -20513,11 +20607,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-05-28"
     },
     {
       "jobId": "4387397893",
@@ -20648,11 +20742,11 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-18"
     },
     {
       "jobId": "4261775051",
@@ -21788,11 +21882,11 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-18"
     },
     {
       "jobId": "4411571882",
@@ -21953,11 +22047,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-31"
     },
     {
       "jobId": "4414496738",
@@ -22808,11 +22902,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rosh HaAyin",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-18"
     },
     {
       "jobId": "4413312266",
@@ -23123,11 +23217,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-17"
     },
     {
       "jobId": "4389559491",
@@ -23513,11 +23607,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-05-29"
     },
     {
       "jobId": "4404081008",
@@ -23888,11 +23982,11 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-04-14"
     },
     {
       "jobId": "4394443544",
@@ -24203,11 +24297,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rishon LeZion",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-31"
     },
     {
       "jobId": "4337214574",
@@ -26018,11 +26112,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-17"
     },
     {
       "jobId": "4413963785",
@@ -26093,11 +26187,11 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-05-28"
     },
     {
       "jobId": "4275344055",
@@ -26273,11 +26367,11 @@ const JOB_DATA = {
       "workMode": "Remote",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-31"
     },
     {
       "jobId": "4413883243",
@@ -27638,11 +27732,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Sdot Dan Regional Council",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-04-14"
     },
     {
       "jobId": "4374449813",
@@ -27878,11 +27972,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-04-14"
     },
     {
       "jobId": "4376616834",
@@ -27923,11 +28017,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Holon",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-20"
     },
     {
       "jobId": "4375575101",
@@ -28148,11 +28242,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-04-14"
     },
     {
       "jobId": "4394160422",
@@ -28418,11 +28512,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-31"
     },
     {
       "jobId": "4410194585",
@@ -28688,11 +28782,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-31"
     },
     {
       "jobId": "4391071279",
@@ -28838,11 +28932,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-04-14"
     },
     {
       "jobId": "4382096905",
@@ -28883,11 +28977,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-20"
     },
     {
       "jobId": "4412235493",
@@ -28928,11 +29022,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Distrito de Jerusalén",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-19"
     },
     {
       "jobId": "4386622602",
@@ -29453,11 +29547,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-31"
     },
     {
       "jobId": "4375574110",
@@ -29483,11 +29577,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-04-14"
     },
     {
       "jobId": "4412219509",
@@ -31013,11 +31107,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-04-14"
     },
     {
       "jobId": "4384842162",
@@ -31808,11 +31902,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-20"
     },
     {
       "jobId": "4374733246",
@@ -32153,11 +32247,11 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Telavive",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-04-14"
     },
     {
       "jobId": "4390839000",
@@ -32528,11 +32622,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-04-14"
     },
     {
       "jobId": "4414148119",
@@ -32678,11 +32772,11 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-05-29"
     },
     {
       "jobId": "4400420834",
@@ -34118,11 +34212,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ashdod",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-05-28"
     },
     {
       "jobId": "4288161179",
@@ -34223,11 +34317,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ashdod",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-31"
     },
     {
       "jobId": "4300701686",
@@ -34568,11 +34662,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Beer Yaakov",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-05-28"
     },
     {
       "jobId": "4414137552",
@@ -34823,11 +34917,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Ashdod",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-05-28"
     },
     {
       "jobId": "4414497460",
@@ -36098,11 +36192,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-05-28"
     },
     {
       "jobId": "4377902469",
@@ -36758,11 +36852,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Migdal HaEmeq",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-31"
     },
     {
       "jobId": "4350462240",
@@ -37133,11 +37227,11 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-04-14"
     },
     {
       "jobId": "4416261432",
@@ -37418,11 +37512,11 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-05-28"
     },
     {
       "jobId": "4356043936",
@@ -37463,11 +37557,11 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-31"
     },
     {
       "jobId": "4412298803",
@@ -37688,11 +37782,11 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-04-14"
     },
     {
       "jobId": "4373312106",
@@ -37718,11 +37812,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-19"
     },
     {
       "jobId": "4399879827",
@@ -37913,11 +38007,11 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Be’er Scheva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-22"
     },
     {
       "jobId": "4386772506",
@@ -37928,11 +38022,11 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Be'er Sheva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-17"
     },
     {
       "jobId": "4268253128",
@@ -37973,11 +38067,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Revadim",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-19"
     },
     {
       "jobId": "4416325504",
@@ -38288,11 +38382,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-31"
     },
     {
       "jobId": "4415700035",
@@ -38378,11 +38472,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-04-14"
     },
     {
       "jobId": "4343809246",
@@ -38468,11 +38562,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-04-14"
     },
     {
       "jobId": "4397729710",
@@ -38483,11 +38577,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-04-14"
     },
     {
       "jobId": "4397909998",
@@ -38498,11 +38592,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-04-14"
     },
     {
       "jobId": "4398066309",
@@ -38813,11 +38907,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-31"
     },
     {
       "jobId": "4254632356",
@@ -39113,11 +39207,11 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-05-28"
     },
     {
       "jobId": "4235862358",
@@ -39188,11 +39282,11 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-05-28"
     },
     {
       "jobId": "4416181276",
@@ -39773,11 +39867,11 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-05-28"
     },
     {
       "jobId": "4389584723",
@@ -39938,11 +40032,11 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-05-28"
     },
     {
       "jobId": "4372521271",
@@ -40073,11 +40167,11 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Bezirk Jerusalem",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-31"
     },
     {
       "jobId": "4361910632",
@@ -40088,11 +40182,11 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Petah Tikva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-05-28"
     },
     {
       "jobId": "4361970430",
@@ -40103,11 +40197,11 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-05-28"
     },
     {
       "jobId": "4362050221",
@@ -40253,11 +40347,11 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Jerusalem District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-05-28"
     },
     {
       "jobId": "4392358368",
@@ -43118,11 +43212,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Yokneam Ilit",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-05-29"
     },
     {
       "jobId": "4407970357",
@@ -48413,11 +48507,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Israel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-04-14"
     },
     {
       "jobId": "4354540886",
@@ -48623,11 +48717,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Givatayim",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-18"
     },
     {
       "jobId": "4386855738",
@@ -48638,11 +48732,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Givatayim",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-18"
     },
     {
       "jobId": "4342991235",
@@ -48968,11 +49062,11 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-04-14"
     },
     {
       "jobId": "4416211344",
@@ -49448,11 +49542,11 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-17"
     },
     {
       "jobId": "4367317007",
@@ -49943,11 +50037,11 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-31"
     },
     {
       "jobId": "4386778237",
@@ -49988,11 +50082,11 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-17"
     },
     {
       "jobId": "4316888825",
@@ -50258,11 +50352,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-05-29"
     },
     {
       "jobId": "4364576271",
@@ -50528,11 +50622,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-31"
     },
     {
       "jobId": "4378558740",
@@ -50543,11 +50637,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-05-28"
     },
     {
       "jobId": "4361803095",
@@ -50558,11 +50652,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-05-28"
     },
     {
       "jobId": "4400422402",
@@ -51068,11 +51162,11 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Kfar Saba",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-31"
     },
     {
       "jobId": "4388790345",
@@ -51188,11 +51282,11 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-31"
     },
     {
       "jobId": "4392591401",
@@ -51323,11 +51417,11 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-19"
     },
     {
       "jobId": "4382412007",
@@ -51338,11 +51432,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Raanana",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-04-14"
     },
     {
       "jobId": "4392455062",
@@ -51653,11 +51747,11 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-22"
     },
     {
       "jobId": "4390768765",
@@ -51938,11 +52032,11 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-19"
     },
     {
       "jobId": "4397715669",
@@ -51983,11 +52077,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-31"
     },
     {
       "jobId": "4361980367",
@@ -52958,11 +53052,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Mate Yehuda Regional Council",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-31"
     },
     {
       "jobId": "4393513307",
@@ -52973,11 +53067,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Karmiel",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-31"
     },
     {
       "jobId": "4412766984",
@@ -53063,11 +53157,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "North District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-31"
     },
     {
       "jobId": "4393575159",
@@ -53108,11 +53202,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Hadera",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-31"
     },
     {
       "jobId": "4393284214",
@@ -53318,11 +53412,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Be'er Sheva",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-31"
     },
     {
       "jobId": "4412784145",
@@ -53873,11 +53967,11 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-04-14"
     },
     {
       "jobId": "4283986509",
@@ -54068,11 +54162,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-04-14"
     },
     {
       "jobId": "4412891913",
@@ -54323,11 +54417,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-05-28"
     },
     {
       "jobId": "4281796974",
@@ -54368,11 +54462,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-31"
     },
     {
       "jobId": "4354933512",
@@ -54563,11 +54657,11 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-31"
     },
     {
       "jobId": "4413734182",
@@ -55028,11 +55122,11 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-04-14"
     },
     {
       "jobId": "4387383895",
@@ -55043,11 +55137,11 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-19"
     },
     {
       "jobId": "4414463787",
@@ -55673,11 +55767,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-19"
     },
     {
       "jobId": "4345977539",
@@ -56693,11 +56787,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-05-28"
     },
     {
       "jobId": "4376996594",
@@ -56888,11 +56982,11 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Netanya",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-04-14"
     },
     {
       "jobId": "4337316899",
@@ -57248,11 +57342,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-05-28"
     },
     {
       "jobId": "4367999948",
@@ -57263,11 +57357,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-16"
     },
     {
       "jobId": "4370580569",
@@ -57383,11 +57477,11 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-05-28"
     },
     {
       "jobId": "4343562293",
@@ -57413,11 +57507,11 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Rehovot",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-05-28"
     },
     {
       "jobId": "4334929422",
@@ -58313,11 +58407,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-06-02"
     },
     {
       "jobId": "4416028554",
@@ -58763,11 +58857,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Kiryat Ono",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-04-14"
     },
     {
       "jobId": "4415005984",
@@ -58793,11 +58887,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Kiryat Ono",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-04-14"
     },
     {
       "jobId": "4377290906",
@@ -59348,11 +59442,11 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-05-28"
     },
     {
       "jobId": "4343636348",
@@ -59933,11 +60027,11 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-31"
     },
     {
       "jobId": "4331829567",
@@ -60308,11 +60402,11 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-05-28"
     },
     {
       "jobId": "4348116299",
@@ -60323,11 +60417,11 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-05-28"
     },
     {
       "jobId": "4329136914",
@@ -60638,11 +60732,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-04-14"
     },
     {
       "jobId": "4413263656",
@@ -60683,11 +60777,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-04-14"
     },
     {
       "jobId": "4385208421",
@@ -60728,11 +60822,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Distrito Central",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-04-14"
     },
     {
       "jobId": "4384991128",
@@ -60863,11 +60957,11 @@ const JOB_DATA = {
       "workMode": "Hybrid",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-22"
     },
     {
       "jobId": "4401105014",
@@ -60878,11 +60972,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-04-14"
     },
     {
       "jobId": "4415459288",
@@ -61058,11 +61152,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Center District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-04-14"
     },
     {
       "jobId": "4415494898",
@@ -61568,11 +61662,11 @@ const JOB_DATA = {
       "workMode": "On-site",
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
-      "lastSeen": "2026-06-02",
-      "dateRemoved": "2026-06-03",
+      "lastSeen": "2026-06-03",
+      "dateRemoved": "",
       "daysListed": 10,
-      "isActive": false,
-      "postedDate": ""
+      "isActive": true,
+      "postedDate": "2026-03-31"
     },
     {
       "jobId": "4381539066",
