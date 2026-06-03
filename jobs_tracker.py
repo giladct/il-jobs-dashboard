@@ -112,20 +112,21 @@ def init_db() -> sqlite3.Connection:
     """)
     con.execute("""
         CREATE TABLE IF NOT EXISTS job_records (
-            id        INTEGER PRIMARY KEY,
-            snap_date TEXT NOT NULL,
-            company   TEXT NOT NULL,
-            title     TEXT NOT NULL,
-            url       TEXT,
-            dev_type  TEXT DEFAULT '',
-            work_mode TEXT DEFAULT '',
-            location  TEXT DEFAULT '',
-            job_id    TEXT DEFAULT '',
+            id          INTEGER PRIMARY KEY,
+            snap_date   TEXT NOT NULL,
+            company     TEXT NOT NULL,
+            title       TEXT NOT NULL,
+            url         TEXT,
+            dev_type    TEXT DEFAULT '',
+            work_mode   TEXT DEFAULT '',
+            location    TEXT DEFAULT '',
+            job_id      TEXT DEFAULT '',
+            posted_date TEXT DEFAULT '',
             UNIQUE(snap_date, company, title)
         )
     """)
     # Migrate older DBs: add columns if they don't exist yet
-    for col, dflt in [("dev_type", "''"), ("work_mode", "''"), ("location", "''"), ("job_id", "''")]:
+    for col, dflt in [("dev_type", "''"), ("work_mode", "''"), ("location", "''"), ("job_id", "''"), ("posted_date", "''")]:
         try:
             con.execute(f"ALTER TABLE job_records ADD COLUMN {col} TEXT DEFAULT {dflt}")
         except Exception:
@@ -155,9 +156,15 @@ def init_db() -> sqlite3.Connection:
             location     TEXT DEFAULT '',
             first_seen   TEXT NOT NULL,
             last_seen    TEXT NOT NULL,
-            date_removed TEXT DEFAULT ''
+            date_removed TEXT DEFAULT '',
+            posted_date  TEXT DEFAULT ''
         )
     """)
+    for col, dflt in [("posted_date", "''")]:
+        try:
+            con.execute(f"ALTER TABLE job_index ADD COLUMN {col} TEXT DEFAULT {dflt}")
+        except Exception:
+            pass
 
     # Bootstrap job_index from job_records history (runs once when job_index is empty)
     ji_count = con.execute("SELECT COUNT(*) FROM job_index").fetchone()[0]
@@ -199,13 +206,13 @@ def save_snapshot(con: sqlite3.Connection, snap_date: str,
     rec_rows = [
         (snap_date, j["company"], j["title"], j.get("url", ""),
          j.get("dev_type", ""), j.get("work_mode", ""), j.get("location", ""),
-         j.get("job_id", ""))
+         j.get("job_id", ""), j.get("posted_date", ""))
         for j in job_list
     ]
     con.executemany(
         "INSERT OR IGNORE INTO job_records"
-        "(snap_date, company, title, url, dev_type, work_mode, location, job_id)"
-        " VALUES (?,?,?,?,?,?,?,?)",
+        "(snap_date, company, title, url, dev_type, work_mode, location, job_id, posted_date)"
+        " VALUES (?,?,?,?,?,?,?,?,?)",
         rec_rows,
     )
     con.commit()
@@ -224,14 +231,14 @@ def update_job_index(con: sqlite3.Connection, job_list: list, today_date: str,
     upsert_rows = [
         (j["job_id"], j["company"], j["title"], j.get("url", ""),
          j.get("dev_type", ""), j.get("work_mode", ""), j.get("location", ""),
-         today_date, today_date)
+         today_date, today_date, j.get("posted_date", ""))
         for j in job_list if j.get("job_id")
     ]
     con.executemany("""
         INSERT INTO job_index
             (job_id, company, title, url, dev_type, work_mode, location,
-             first_seen, last_seen, date_removed)
-        VALUES (?,?,?,?,?,?,?,?,?,'')
+             first_seen, last_seen, date_removed, posted_date)
+        VALUES (?,?,?,?,?,?,?,?,?,'',?)
         ON CONFLICT(job_id) DO UPDATE SET
             last_seen    = excluded.last_seen,
             date_removed = '',
@@ -242,7 +249,9 @@ def update_job_index(con: sqlite3.Connection, job_list: list, today_date: str,
             work_mode    = CASE WHEN excluded.work_mode != '' THEN excluded.work_mode
                                 ELSE job_index.work_mode END,
             location     = CASE WHEN excluded.location != '' THEN excluded.location
-                                ELSE job_index.location END
+                                ELSE job_index.location END,
+            posted_date  = CASE WHEN excluded.posted_date != '' THEN excluded.posted_date
+                                ELSE job_index.posted_date END
     """, upsert_rows)
 
     if mark_removals:
@@ -353,13 +362,23 @@ def fetch_jobs_israel() -> tuple[dict, list]:
                 location  = location_full
                 work_mode = ""
 
+            # ── Posted date (span.card-time: "Jun 03, 2026") ──────────────
+            time_el = card.find("span", class_="card-time")
+            try:
+                posted_date = datetime.strptime(
+                    time_el.get_text(strip=True), "%b %d, %Y"
+                ).date().isoformat() if time_el else ""
+            except ValueError:
+                posted_date = ""
+
             # ── Developer type (derived from job title) ────────────────────
             dev_type = classify_dev_type(title)
 
             company_counts[co] = company_counts.get(co, 0) + 1
             job_list.append({"company": co, "title": title, "url": url,
                              "dev_type": dev_type, "work_mode": work_mode,
-                             "location": location, "job_id": job_id})
+                             "location": location, "job_id": job_id,
+                             "posted_date": posted_date})
             new += 1
 
         total = sum(company_counts.values())
@@ -417,7 +436,7 @@ def export_data_js(con: sqlite3.Connection):
     if ji_count > 0:
         job_rows = con.execute("""
             SELECT job_id, company, title, url, dev_type, work_mode, location,
-                   first_seen, last_seen, date_removed
+                   first_seen, last_seen, date_removed, posted_date
             FROM job_index
             ORDER BY first_seen DESC, company, title
         """).fetchall()
@@ -429,7 +448,7 @@ def export_data_js(con: sqlite3.Connection):
             con.commit()
             job_rows = con.execute("""
                 SELECT job_id, company, title, url, dev_type, work_mode, location,
-                       first_seen, last_seen, date_removed
+                       first_seen, last_seen, date_removed, posted_date
                 FROM job_index
                 ORDER BY first_seen DESC, company, title
             """).fetchall()
@@ -437,7 +456,7 @@ def export_data_js(con: sqlite3.Connection):
         job_records = []
         for r in job_rows:
             job_id, company, title, url, dev_type, work_mode, location, \
-                first_seen, last_seen, date_removed = r
+                first_seen, last_seen, date_removed, posted_date = r
             try:
                 end_date = date_removed if date_removed else today_str
                 days_listed = (date.fromisoformat(end_date) - date.fromisoformat(first_seen)).days
@@ -456,6 +475,7 @@ def export_data_js(con: sqlite3.Connection):
                 "dateRemoved": date_removed,   # '' = still active
                 "daysListed":  days_listed,
                 "isActive":    date_removed == '',
+                "postedDate":  posted_date,
             })
     else:
         # Fallback: job_index not yet populated (export before first full scrape)
@@ -576,11 +596,20 @@ def fetch_jobs_company(filter_name: str) -> tuple[dict, list]:
                 location  = location_full
                 work_mode = ""
 
+            time_el = card.find("span", class_="card-time")
+            try:
+                posted_date = datetime.strptime(
+                    time_el.get_text(strip=True), "%b %d, %Y"
+                ).date().isoformat() if time_el else ""
+            except ValueError:
+                posted_date = ""
+
             dev_type = classify_dev_type(title)
             company_counts[co] = company_counts.get(co, 0) + 1
             job_list.append({"company": co, "title": title, "url": url,
                              "dev_type": dev_type, "work_mode": work_mode,
-                             "location": location, "job_id": job_id})
+                             "location": location, "job_id": job_id,
+                             "posted_date": posted_date})
             new += 1
 
         total = sum(company_counts.values())
@@ -622,13 +651,13 @@ def run_company(filter_name: str):
     rec_rows = [
         (today, j["company"], j["title"], j.get("url", ""),
          j.get("dev_type", ""), j.get("work_mode", ""), j.get("location", ""),
-         j.get("job_id", ""))
+         j.get("job_id", ""), j.get("posted_date", ""))
         for j in job_list
     ]
     con.executemany(
         "INSERT OR REPLACE INTO job_records"
-        "(snap_date, company, title, url, dev_type, work_mode, location, job_id)"
-        " VALUES (?,?,?,?,?,?,?,?)",
+        "(snap_date, company, title, url, dev_type, work_mode, location, job_id, posted_date)"
+        " VALUES (?,?,?,?,?,?,?,?,?)",
         rec_rows,
     )
     con.commit()
