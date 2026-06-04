@@ -1,5 +1,5 @@
 const JOB_DATA = {
-  "generated": "2026-06-04T07:44:42",
+  "generated": "2026-06-04T09:51:07",
   "labels": [
     "2026-05-24",
     "2026-05-25",
@@ -43,7 +43,7 @@ const JOB_DATA = {
         116,
         119,
         119,
-        119
+        115
       ]
     },
     {
@@ -91,7 +91,7 @@ const JOB_DATA = {
         92,
         91,
         92,
-        94
+        93
       ]
     },
     {
@@ -123,7 +123,7 @@ const JOB_DATA = {
         84,
         88,
         87,
-        88
+        86
       ]
     },
     {
@@ -139,7 +139,7 @@ const JOB_DATA = {
         70,
         77,
         87,
-        87
+        86
       ]
     },
     {
@@ -155,7 +155,7 @@ const JOB_DATA = {
         78,
         78,
         78,
-        78
+        77
       ]
     },
     {
@@ -171,7 +171,7 @@ const JOB_DATA = {
         40,
         46,
         46,
-        45
+        44
       ]
     },
     {
@@ -219,7 +219,7 @@ const JOB_DATA = {
         33,
         32,
         32,
-        33
+        32
       ]
     },
     {
@@ -459,7 +459,7 @@ const JOB_DATA = {
         15,
         16,
         16,
-        16
+        15
       ]
     },
     {
@@ -475,7 +475,7 @@ const JOB_DATA = {
         16,
         16,
         16,
-        16
+        15
       ]
     },
     {
@@ -534,7 +534,7 @@ const JOB_DATA = {
     },
     {
       "company": "Elbit Systems Israel",
-      "cnt": 119
+      "cnt": 115
     },
     {
       "company": "Apple",
@@ -546,7 +546,7 @@ const JOB_DATA = {
     },
     {
       "company": "IAI - Israel Aerospace Industries",
-      "cnt": 94
+      "cnt": 93
     },
     {
       "company": "Google",
@@ -554,15 +554,15 @@ const JOB_DATA = {
     },
     {
       "company": "Amazon Web Services (AWS)",
-      "cnt": 88
+      "cnt": 86
     },
     {
       "company": "Palo Alto Networks",
-      "cnt": 87
+      "cnt": 86
     },
     {
       "company": "Agoda",
-      "cnt": 78
+      "cnt": 77
     },
     {
       "company": "Intel",
@@ -570,7 +570,7 @@ const JOB_DATA = {
     },
     {
       "company": "Rafael Advanced Defense Systems",
-      "cnt": 45
+      "cnt": 44
     },
     {
       "company": "Qualcomm",
@@ -578,7 +578,7 @@ const JOB_DATA = {
     },
     {
       "company": "abra",
-      "cnt": 33
+      "cnt": 32
     },
     {
       "company": "CrowdStrike",
@@ -613,19 +613,11 @@ const JOB_DATA = {
       "cnt": 16
     },
     {
-      "company": "Gini-Apps",
-      "cnt": 16
-    },
-    {
       "company": "NiCE",
       "cnt": 16
     },
     {
       "company": "Cellebrite",
-      "cnt": 16
-    },
-    {
-      "company": "Varonis",
       "cnt": 16
     },
     {
@@ -638,6 +630,14 @@ const JOB_DATA = {
     },
     {
       "company": "Dream",
+      "cnt": 15
+    },
+    {
+      "company": "Gini-Apps",
+      "cnt": 15
+    },
+    {
+      "company": "Varonis",
       "cnt": 15
     },
     {
@@ -693,10 +693,6 @@ const JOB_DATA = {
       "cnt": 11
     },
     {
-      "company": "Microsoft",
-      "cnt": 11
-    },
-    {
       "company": "Ceva, Inc.",
       "cnt": 10
     },
@@ -722,6 +718,10 @@ const JOB_DATA = {
     },
     {
       "company": "Gong",
+      "cnt": 10
+    },
+    {
+      "company": "Microsoft",
       "cnt": 10
     },
     {
@@ -797,10 +797,6 @@ const JOB_DATA = {
       "cnt": 8
     },
     {
-      "company": "DRS RADA Technologies",
-      "cnt": 8
-    },
-    {
       "company": "Via",
       "cnt": 8
     },
@@ -818,6 +814,10 @@ const JOB_DATA = {
     },
     {
       "company": "Nova Ltd.",
+      "cnt": 7
+    },
+    {
+      "company": "DRS RADA Technologies",
       "cnt": 7
     },
     {
@@ -905,10 +905,6 @@ const JOB_DATA = {
       "cnt": 6
     },
     {
-      "company": "Hyro",
-      "cnt": 6
-    },
-    {
       "company": "Jeen.ai",
       "cnt": 6
     },
@@ -918,10 +914,6 @@ const JOB_DATA = {
     },
     {
       "company": "Radware",
-      "cnt": 6
-    },
-    {
-      "company": "Silverfort",
       "cnt": 6
     },
     {
@@ -957,11 +949,11 @@ const JOB_DATA = {
       "cnt": 5
     },
     {
-      "company": "Axonius",
+      "company": "Fetcherr",
       "cnt": 5
     },
     {
-      "company": "Fetcherr",
+      "company": "Hyro",
       "cnt": 5
     },
     {
@@ -985,10 +977,6 @@ const JOB_DATA = {
       "cnt": 5
     },
     {
-      "company": "Xsight Labs",
-      "cnt": 5
-    },
-    {
       "company": "Nuvei",
       "cnt": 5
     },
@@ -1005,10 +993,6 @@ const JOB_DATA = {
       "cnt": 5
     },
     {
-      "company": "BioCatch",
-      "cnt": 5
-    },
-    {
       "company": "Retym, Inc",
       "cnt": 4
     },
@@ -1021,6 +1005,10 @@ const JOB_DATA = {
       "cnt": 4
     },
     {
+      "company": "Axonius",
+      "cnt": 4
+    },
+    {
       "company": "Fortinet",
       "cnt": 4
     },
@@ -1030,6 +1018,10 @@ const JOB_DATA = {
     },
     {
       "company": "Port.io",
+      "cnt": 4
+    },
+    {
+      "company": "Silverfort",
       "cnt": 4
     },
     {
@@ -1149,6 +1141,10 @@ const JOB_DATA = {
       "cnt": 4
     },
     {
+      "company": "BioCatch",
+      "cnt": 4
+    },
+    {
       "company": "Sela",
       "cnt": 4
     },
@@ -1158,6 +1154,10 @@ const JOB_DATA = {
     },
     {
       "company": "GitLab",
+      "cnt": 3
+    },
+    {
+      "company": "Xsight Labs",
       "cnt": 3
     },
     {
@@ -1286,10 +1286,6 @@ const JOB_DATA = {
     },
     {
       "company": "PayPal",
-      "cnt": 3
-    },
-    {
-      "company": "Seeking Alpha",
       "cnt": 3
     },
     {
@@ -1437,6 +1433,10 @@ const JOB_DATA = {
       "cnt": 2
     },
     {
+      "company": "Seeking Alpha",
+      "cnt": 2
+    },
+    {
       "company": "Sensi.AI",
       "cnt": 2
     },
@@ -1517,10 +1517,6 @@ const JOB_DATA = {
       "cnt": 2
     },
     {
-      "company": "Dragontail Systems",
-      "cnt": 2
-    },
-    {
       "company": "DualBird",
       "cnt": 2
     },
@@ -1570,10 +1566,6 @@ const JOB_DATA = {
     },
     {
       "company": "ISI - ImageSat International",
-      "cnt": 2
-    },
-    {
-      "company": "Imagen",
       "cnt": 2
     },
     {
@@ -1670,10 +1662,6 @@ const JOB_DATA = {
     },
     {
       "company": "Placer.ai",
-      "cnt": 2
-    },
-    {
-      "company": "PlainID",
       "cnt": 2
     },
     {
@@ -1897,6 +1885,10 @@ const JOB_DATA = {
       "cnt": 1
     },
     {
+      "company": "Dragontail Systems",
+      "cnt": 1
+    },
+    {
       "company": "Evinced",
       "cnt": 1
     },
@@ -1913,11 +1905,19 @@ const JOB_DATA = {
       "cnt": 1
     },
     {
+      "company": "Imagen",
+      "cnt": 1
+    },
+    {
       "company": "Millennium",
       "cnt": 1
     },
     {
       "company": "Nanox Vision",
+      "cnt": 1
+    },
+    {
+      "company": "PlainID",
       "cnt": 1
     },
     {
@@ -3130,7 +3130,7 @@ const JOB_DATA = {
     }
   ],
   "latestDate": "2026-06-04",
-  "latestTotal": 3298,
+  "latestTotal": 3272,
   "daysTracked": 11,
   "jobRecords": [
     {
@@ -16493,9 +16493,9 @@ const JOB_DATA = {
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-06-04",
-      "dateRemoved": "",
+      "dateRemoved": "2026-06-04",
       "daysListed": 11,
-      "isActive": true,
+      "isActive": false,
       "postedDate": "2026-04-13"
     },
     {
@@ -18008,9 +18008,9 @@ const JOB_DATA = {
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-06-04",
-      "dateRemoved": "",
+      "dateRemoved": "2026-06-04",
       "daysListed": 11,
-      "isActive": true,
+      "isActive": false,
       "postedDate": "2026-04-13"
     },
     {
@@ -18083,9 +18083,9 @@ const JOB_DATA = {
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-06-04",
-      "dateRemoved": "",
+      "dateRemoved": "2026-06-04",
       "daysListed": 11,
-      "isActive": true,
+      "isActive": false,
       "postedDate": "2026-04-13"
     },
     {
@@ -19238,9 +19238,9 @@ const JOB_DATA = {
       "location": "Daerah Tel Aviv",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-06-04",
-      "dateRemoved": "",
+      "dateRemoved": "2026-06-04",
       "daysListed": 11,
-      "isActive": true,
+      "isActive": false,
       "postedDate": "2026-04-14"
     },
     {
@@ -19253,9 +19253,9 @@ const JOB_DATA = {
       "location": "Distrito de Tel Aviv",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-06-04",
-      "dateRemoved": "",
+      "dateRemoved": "2026-06-04",
       "daysListed": 11,
-      "isActive": true,
+      "isActive": false,
       "postedDate": "2026-04-14"
     },
     {
@@ -19268,9 +19268,9 @@ const JOB_DATA = {
       "location": "Distrito de Tel Aviv",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-06-04",
-      "dateRemoved": "",
+      "dateRemoved": "2026-06-04",
       "daysListed": 11,
-      "isActive": true,
+      "isActive": false,
       "postedDate": "2026-04-14"
     },
     {
@@ -22118,9 +22118,9 @@ const JOB_DATA = {
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-06-04",
-      "dateRemoved": "",
+      "dateRemoved": "2026-06-04",
       "daysListed": 11,
-      "isActive": true,
+      "isActive": false,
       "postedDate": "2026-04-14"
     },
     {
@@ -22523,9 +22523,9 @@ const JOB_DATA = {
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-06-04",
-      "dateRemoved": "",
+      "dateRemoved": "2026-06-04",
       "daysListed": 11,
-      "isActive": true,
+      "isActive": false,
       "postedDate": "2026-04-13"
     },
     {
@@ -27113,9 +27113,9 @@ const JOB_DATA = {
       "location": "Netanya",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-06-04",
-      "dateRemoved": "",
+      "dateRemoved": "2026-06-04",
       "daysListed": 11,
-      "isActive": true,
+      "isActive": false,
       "postedDate": "2026-04-13"
     },
     {
@@ -27743,9 +27743,9 @@ const JOB_DATA = {
       "location": "Ramat Gan",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-06-04",
-      "dateRemoved": "",
+      "dateRemoved": "2026-06-04",
       "daysListed": 11,
-      "isActive": true,
+      "isActive": false,
       "postedDate": "2026-04-14"
     },
     {
@@ -29738,9 +29738,9 @@ const JOB_DATA = {
       "location": "Distrito de Haifa",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-06-04",
-      "dateRemoved": "",
+      "dateRemoved": "2026-06-04",
       "daysListed": 11,
-      "isActive": true,
+      "isActive": false,
       "postedDate": "2026-04-13"
     },
     {
@@ -30368,9 +30368,9 @@ const JOB_DATA = {
       "location": "Rosh HaAyin",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-06-04",
-      "dateRemoved": "",
+      "dateRemoved": "2026-06-04",
       "daysListed": 11,
-      "isActive": true,
+      "isActive": false,
       "postedDate": "2026-04-13"
     },
     {
@@ -30383,9 +30383,9 @@ const JOB_DATA = {
       "location": "Haifa District",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-06-04",
-      "dateRemoved": "",
+      "dateRemoved": "2026-06-04",
       "daysListed": 11,
-      "isActive": true,
+      "isActive": false,
       "postedDate": "2026-04-13"
     },
     {
@@ -30548,9 +30548,9 @@ const JOB_DATA = {
       "location": "Yoqneam Illit",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-06-04",
-      "dateRemoved": "",
+      "dateRemoved": "2026-06-04",
       "daysListed": 11,
-      "isActive": true,
+      "isActive": false,
       "postedDate": "2026-04-13"
     },
     {
@@ -32783,9 +32783,9 @@ const JOB_DATA = {
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-06-04",
-      "dateRemoved": "",
+      "dateRemoved": "2026-06-04",
       "daysListed": 11,
-      "isActive": true,
+      "isActive": false,
       "postedDate": "2026-04-13"
     },
     {
@@ -35018,9 +35018,9 @@ const JOB_DATA = {
       "location": "Telavive",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-06-04",
-      "dateRemoved": "",
+      "dateRemoved": "2026-06-04",
       "daysListed": 11,
-      "isActive": true,
+      "isActive": false,
       "postedDate": "2026-04-13"
     },
     {
@@ -35303,9 +35303,9 @@ const JOB_DATA = {
       "location": "Yehud Monosson",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-06-04",
-      "dateRemoved": "",
+      "dateRemoved": "2026-06-04",
       "daysListed": 11,
-      "isActive": true,
+      "isActive": false,
       "postedDate": "2026-04-13"
     },
     {
@@ -36368,9 +36368,9 @@ const JOB_DATA = {
       "location": "Center District",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-06-04",
-      "dateRemoved": "",
+      "dateRemoved": "2026-06-04",
       "daysListed": 11,
-      "isActive": true,
+      "isActive": false,
       "postedDate": "2026-04-13"
     },
     {
@@ -39803,9 +39803,9 @@ const JOB_DATA = {
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-06-04",
-      "dateRemoved": "",
+      "dateRemoved": "2026-06-04",
       "daysListed": 11,
-      "isActive": true,
+      "isActive": false,
       "postedDate": "2026-04-14"
     },
     {
@@ -51563,9 +51563,9 @@ const JOB_DATA = {
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-06-04",
-      "dateRemoved": "",
+      "dateRemoved": "2026-06-04",
       "daysListed": 11,
-      "isActive": true,
+      "isActive": false,
       "postedDate": "2026-04-14"
     },
     {
@@ -52643,9 +52643,9 @@ const JOB_DATA = {
       "location": "Tel Aviv District",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-06-04",
-      "dateRemoved": "",
+      "dateRemoved": "2026-06-04",
       "daysListed": 11,
-      "isActive": true,
+      "isActive": false,
       "postedDate": "2026-04-13"
     },
     {
@@ -54248,9 +54248,9 @@ const JOB_DATA = {
       "location": "Distrito de Haifa",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-06-04",
-      "dateRemoved": "",
+      "dateRemoved": "2026-06-04",
       "daysListed": 11,
-      "isActive": true,
+      "isActive": false,
       "postedDate": "2026-04-13"
     },
     {
@@ -55988,9 +55988,9 @@ const JOB_DATA = {
       "location": "Center District",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-06-04",
-      "dateRemoved": "",
+      "dateRemoved": "2026-06-04",
       "daysListed": 11,
-      "isActive": true,
+      "isActive": false,
       "postedDate": "2026-04-14"
     },
     {
@@ -56543,9 +56543,9 @@ const JOB_DATA = {
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-06-04",
-      "dateRemoved": "",
+      "dateRemoved": "2026-06-04",
       "daysListed": 11,
-      "isActive": true,
+      "isActive": false,
       "postedDate": "2026-04-13"
     },
     {
@@ -56558,9 +56558,9 @@ const JOB_DATA = {
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-06-04",
-      "dateRemoved": "",
+      "dateRemoved": "2026-06-04",
       "daysListed": 11,
-      "isActive": true,
+      "isActive": false,
       "postedDate": "2026-04-13"
     },
     {
@@ -59243,9 +59243,9 @@ const JOB_DATA = {
       "location": "Tel Aviv-Yafo",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-06-04",
-      "dateRemoved": "",
+      "dateRemoved": "2026-06-04",
       "daysListed": 11,
-      "isActive": true,
+      "isActive": false,
       "postedDate": "2026-04-13"
     },
     {
@@ -59753,9 +59753,9 @@ const JOB_DATA = {
       "location": "Herzliya",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-06-04",
-      "dateRemoved": "",
+      "dateRemoved": "2026-06-04",
       "daysListed": 11,
-      "isActive": true,
+      "isActive": false,
       "postedDate": "2026-04-13"
     },
     {
@@ -61253,9 +61253,9 @@ const JOB_DATA = {
       "location": "Haifa",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-06-04",
-      "dateRemoved": "",
+      "dateRemoved": "2026-06-04",
       "daysListed": 11,
-      "isActive": true,
+      "isActive": false,
       "postedDate": "2026-04-13"
     },
     {
@@ -61283,9 +61283,9 @@ const JOB_DATA = {
       "location": "Kiryat Gat",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-06-04",
-      "dateRemoved": "",
+      "dateRemoved": "2026-06-04",
       "daysListed": 11,
-      "isActive": true,
+      "isActive": false,
       "postedDate": "2026-04-13"
     },
     {
@@ -62198,9 +62198,9 @@ const JOB_DATA = {
       "location": "Center District",
       "firstSeen": "2026-05-24",
       "lastSeen": "2026-06-04",
-      "dateRemoved": "",
+      "dateRemoved": "2026-06-04",
       "daysListed": 11,
-      "isActive": true,
+      "isActive": false,
       "postedDate": "2026-04-13"
     },
     {
