@@ -443,7 +443,7 @@
 
 <header>
   <div>
-    <h1>🟢 Israel Jobs Dashboard <span style="font-size:13px;font-weight:400;opacity:.65;vertical-align:middle">v2.0</span></h1>
+    <h1>🟢 Israel Jobs Dashboard <span style="font-size:13px;font-weight:400;opacity:.65;vertical-align:middle">v2.1</span></h1>
     <div class="meta" id="meta-line">Loading…</div>
   </div>
   <div class="header-stats">
@@ -1114,7 +1114,8 @@ function renderRanking(filteredRecords) {
   filteredRecords.forEach(r => {
     if (!r.isActive) return;
     activeMap.set(r.company, (activeMap.get(r.company) || 0) + 1);
-    const age = r.daysListed ?? 0;
+    const startDate = r.postedDate || r.firstSeen;
+    const age = startDate ? Math.round((new Date(today) - new Date(startDate)) / 86400000) : (r.daysListed ?? 0);
     ageSumMap.set(r.company, (ageSumMap.get(r.company) || 0) + age);
   });
   let rankData = [...activeMap.keys()].map(company => ({
