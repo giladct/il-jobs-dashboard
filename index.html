@@ -1525,9 +1525,13 @@ let triggerRender;   // set by IIFE below so ranking table can call render()
         <td style="color:#555">${r.workMode || ''}</td>
         <td style="color:#555">${r.location || ''}</td>
         <td style="color:#777;white-space:nowrap;font-size:12px"
-            title="First seen: ${r.firstSeen}${r.lastSeen ? ' · Last seen: ' + r.lastSeen : ''}">${
-          r.daysListed === 0 ? 'today' : r.daysListed + 'd'
-        }</td>
+            title="Posted: ${r.postedDate || r.firstSeen}${r.lastSeen ? ' · Last seen: ' + r.lastSeen : ''}">${(() => {
+          const start = r.postedDate || r.firstSeen;
+          const end   = r.dateRemoved || D.latestDate || D.labels[D.labels.length - 1];
+          if (!start) return r.daysListed === 0 ? 'today' : r.daysListed + 'd';
+          const d = Math.round((new Date(end) - new Date(start)) / 86400000);
+          return d <= 0 ? 'today' : d + 'd';
+        })()}</td>
         <td style="text-align:center;white-space:nowrap">${removedCell}</td>
         <td style="text-align:center;white-space:nowrap">${(() => {
           const apps = r.appearances || [];
