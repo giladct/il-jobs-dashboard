@@ -190,6 +190,27 @@ def init_db() -> sqlite3.Connection:
         bootstrapped = con.execute("SELECT COUNT(*) FROM job_index").fetchone()[0]
         print(f"  Bootstrapped {bootstrapped} jobs into job_index.")
 
+    # job_appearances: full timeline of each job's listing/removal events
+    con.execute("""
+        CREATE TABLE IF NOT EXISTS job_appearances (
+            id       INTEGER PRIMARY KEY,
+            job_id   TEXT NOT NULL,
+            appeared TEXT NOT NULL,
+            removed  TEXT DEFAULT '',
+            UNIQUE(job_id, appeared)
+        )
+    """)
+    # Bootstrap from job_index (runs once, after job_index is populated)
+    ja_count     = con.execute("SELECT COUNT(*) FROM job_appearances").fetchone()[0]
+    ji_count_now = con.execute("SELECT COUNT(*) FROM job_index").fetchone()[0]
+    if ja_count == 0 and ji_count_now > 0:
+        con.execute("""
+            INSERT OR IGNORE INTO job_appearances(job_id, appeared, removed)
+            SELECT job_id, first_seen, date_removed FROM job_index
+        """)
+        bootstrapped_ja = con.execute("SELECT COUNT(*) FROM job_appearances").fetchone()[0]
+        print(f"  Bootstrapped {bootstrapped_ja} appearance records from job_index.")
+
     con.commit()
     return con
 
@@ -225,6 +246,7 @@ def update_job_index(con: sqlite3.Connection, job_list: list, today_date: str,
     Upsert today's scraped jobs into job_index (one row per unique job).
     If mark_removals=True (full scrape), jobs absent today get date_removed set.
     If mark_removals=False (company-only scrape), only the listed jobs are updated.
+    Also records appearance/removal events in job_appearances for full history tracking.
     """
     today_ids = {j["job_id"] for j in job_list if j.get("job_id")}
 
@@ -234,6 +256,27 @@ def update_job_index(con: sqlite3.Connection, job_list: list, today_date: str,
          today_date, today_date, j.get("posted_date", ""))
         for j in job_list if j.get("job_id")
     ]
+
+    # Build temp table early — needed for re-appearance detection and removal marking
+    if today_ids:
+        con.execute("CREATE TEMP TABLE IF NOT EXISTS _today_ids (job_id TEXT PRIMARY KEY)")
+        con.execute("DELETE FROM _today_ids")
+        con.executemany("INSERT INTO _today_ids VALUES (?)", [(jid,) for jid in today_ids])
+
+        # Jobs seen today that were previously removed → re-appearing
+        reappearing_ids = {row[0] for row in con.execute("""
+            SELECT job_id FROM job_index
+            WHERE job_id IN (SELECT job_id FROM _today_ids) AND date_removed != ''
+        """).fetchall()}
+
+        # Jobs seen today that have never been in job_index → brand new
+        new_ids = today_ids - {row[0] for row in con.execute(
+            "SELECT job_id FROM job_index WHERE job_id IN (SELECT job_id FROM _today_ids)"
+        ).fetchall()}
+    else:
+        reappearing_ids = set()
+        new_ids = set()
+
     con.executemany("""
         INSERT INTO job_index
             (job_id, company, title, url, dev_type, work_mode, location,
@@ -254,21 +297,34 @@ def update_job_index(con: sqlite3.Connection, job_list: list, today_date: str,
                                 ELSE job_index.posted_date END
     """, upsert_rows)
 
+    # Record new appearance events (brand-new jobs and re-appearing removed jobs)
+    appearing_today = new_ids | reappearing_ids
+    if appearing_today:
+        con.executemany(
+            "INSERT OR IGNORE INTO job_appearances(job_id, appeared) VALUES (?,?)",
+            [(jid, today_date) for jid in appearing_today],
+        )
+
     if mark_removals:
         if today_ids:
-            # Use a temp table to avoid SQLite's 999-parameter IN-clause limit
-            con.execute("CREATE TEMP TABLE IF NOT EXISTS _today_ids (job_id TEXT PRIMARY KEY)")
-            con.execute("DELETE FROM _today_ids")
-            con.executemany("INSERT INTO _today_ids VALUES (?)", [(jid,) for jid in today_ids])
             con.execute("""
                 UPDATE job_index
                 SET date_removed = ?
                 WHERE date_removed = ''
                   AND job_id NOT IN (SELECT job_id FROM _today_ids)
             """, (today_date,))
-            con.execute("DROP TABLE IF EXISTS _today_ids")
+            # Close open appearance records for jobs no longer seen today
+            con.execute("""
+                UPDATE job_appearances
+                SET removed = ?
+                WHERE removed = ''
+                  AND job_id NOT IN (SELECT job_id FROM _today_ids)
+            """, (today_date,))
         else:
             print("  WARNING: update_job_index called with empty job_list — skipping removal marking.")
+
+    if today_ids:
+        con.execute("DROP TABLE IF EXISTS _today_ids")
 
     con.commit()
     removed_today = con.execute(
@@ -453,6 +509,13 @@ def export_data_js(con: sqlite3.Connection):
                 ORDER BY first_seen DESC, company, title
             """).fetchall()
 
+        # Load full appearance history for all jobs in one query
+        appearances_map: dict = {}
+        for jr in con.execute(
+            "SELECT job_id, appeared, removed FROM job_appearances ORDER BY job_id, appeared"
+        ):
+            appearances_map.setdefault(jr[0], []).append({"appeared": jr[1], "removed": jr[2]})
+
         job_records = []
         for r in job_rows:
             job_id, company, title, url, dev_type, work_mode, location, \
@@ -462,20 +525,23 @@ def export_data_js(con: sqlite3.Connection):
                 days_listed = (date.fromisoformat(end_date) - date.fromisoformat(first_seen)).days
             except ValueError:
                 days_listed = 0
+            appearances = appearances_map.get(job_id, [])
             job_records.append({
-                "jobId":       job_id,
-                "company":     company,
-                "title":       title,
-                "url":         url,
-                "devType":     dev_type,
-                "workMode":    work_mode,
-                "location":    location,
-                "firstSeen":   first_seen,
-                "lastSeen":    last_seen,
-                "dateRemoved": date_removed,   # '' = still active
-                "daysListed":  days_listed,
-                "isActive":    date_removed == '',
-                "postedDate":  posted_date,
+                "jobId":        job_id,
+                "company":      company,
+                "title":        title,
+                "url":          url,
+                "devType":      dev_type,
+                "workMode":     work_mode,
+                "location":     location,
+                "firstSeen":    first_seen,
+                "lastSeen":     last_seen,
+                "dateRemoved":  date_removed,   # '' = still active
+                "daysListed":   days_listed,
+                "isActive":     date_removed == '',
+                "postedDate":   posted_date,
+                "appearances":  appearances,
+                "timesListed":  max(1, len(appearances)),
             })
     else:
         # Fallback: job_index not yet populated (export before first full scrape)

@@ -49,13 +49,20 @@ job_index    (job_id PK, company, title, url,
              -- one canonical row per unique job
              -- date_removed = '' means still active
              -- source of truth for the dashboard's raw table
+
+job_appearances (id, job_id, appeared, removed)
+             -- one row per listing period per job; UNIQUE(job_id, appeared)
+             -- tracks full history: a job removed and re-posted gets a new row
+             -- removed = '' means this appearance is still active
+             -- bootstrapped from job_index on first run
 ```
 
 ### job_index lifecycle
 - **Full scrape** (`run_once`): upserts all today's jobs; marks absent active jobs with `date_removed = today`
 - **Company scrape** (`run_company`): upserts that company's jobs only; never marks removals
-- **Re-listed job**: `date_removed` cleared back to `''`, `first_seen` preserved
+- **Re-listed job**: `date_removed` cleared back to `''`, `first_seen` preserved; a new `job_appearances` row is inserted
 - **Bootstrap**: on first run after adding `job_index`, auto-populated from `job_records` history
+- **Appearances bootstrap**: on first run after adding `job_appearances`, one row per job seeded from `job_index`
 
 ---
 
@@ -101,7 +108,9 @@ Always populated (derived from title, backfilled on export for old rows).
     "firstSeen", "lastSeen",
     "dateRemoved",   // '' = active, 'YYYY-MM-DD' = removed
     "daysListed",    // days from firstSeen to dateRemoved (or today if active)
-    "isActive"       // boolean
+    "isActive",      // boolean
+    "appearances",   // [{appeared, removed}, ...] — full history; removed='' = still active
+    "timesListed"    // number of times this job has been listed (1 = never re-posted)
   }, ...]
 }
 ```
@@ -143,7 +152,7 @@ Sortable by any column. Shows filtered count vs total.
 
 ## Pending / known issues
 
-1. **work_mode and location empty for 2026-05-23 records** — can't be backfilled (data not captured). Will be correct after next full scrape.
+1. **work_mode and location empty for 2026-05-23 records** — can't be backfilled (data not captured).
 2. **Intel has no current listings** on devjobs.co.il (verified 2026-05-24).
 3. **TOP_N = 30** — line chart only shows top 30 companies. Ranking table shows all.
-4. **date_removed not yet populated** — all jobs show "active" until the first full scrape runs after 2026-05-24. Removal detection kicks in from that scrape onward.
+4. **job_appearances pre-history**: bootstrap seeds one row per job from current job_index state; re-listing events before 2026-06-08 are not captured (only tracked going forward).

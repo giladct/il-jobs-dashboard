@@ -1433,7 +1433,7 @@ let triggerRender;   // set by IIFE below so ranking table can call render()
   const headerRow = document.getElementById('raw-thead').insertRow();
   [['firstSeen','First Seen'], ['company','Company'], ['title','Job Title'],
    ['','Labels'], ['workMode','Mode'], ['location','Location'],
-   ['daysListed','Days'], ['dateRemoved','Removed'], ['','Links']].forEach(([key, label]) => {
+   ['daysListed','Days'], ['dateRemoved','Removed'], ['','History'], ['','Links']].forEach(([key, label]) => {
     const th = document.createElement('th');
     th.textContent = label;
     th.dataset.key = key;
@@ -1526,6 +1526,15 @@ let triggerRender;   // set by IIFE below so ranking table can call render()
           r.daysListed === 0 ? 'today' : r.daysListed + 'd'
         }</td>
         <td style="text-align:center;white-space:nowrap">${removedCell}</td>
+        <td style="text-align:center;white-space:nowrap">${(() => {
+          const apps = r.appearances || [];
+          if (apps.length < 2) return '';
+          const lines = apps.map((a, i) =>
+            `#${i+1}: ${a.appeared} → ${a.removed || 'active'}`
+          ).join('&#10;');
+          return `<span style="display:inline-flex;align-items:center;padding:2px 7px;border-radius:4px;background:#7c3aed22;color:#7c3aed;font-size:10px;font-weight:700;cursor:help"
+            title="Listed ${apps.length} times:&#10;${lines}">×${apps.length}</span>`;
+        })()}</td>
         <td style="white-space:nowrap;text-align:center">${[
           r.jobId ? `<a href="https://www.linkedin.com/jobs/view/${r.jobId}" target="_blank" title="View on LinkedIn"
             style="display:inline-flex;align-items:center;padding:2px 6px;border-radius:4px;background:#0a66c2;color:#fff;font-size:10px;font-weight:700;text-decoration:none;letter-spacing:.3px">in</a>` : '',
