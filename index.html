@@ -519,7 +519,7 @@
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:20px;">
 
   <div class="table-wrap" style="margin:0;border-radius:10px;box-shadow:0 1px 4px rgba(0,0,0,.08);overflow:hidden;display:flex;flex-direction:column;max-height:374px;">
-    <div class="chart-title" style="margin-bottom:12px;flex-shrink:0">All companies <span style="font-size:11px;font-weight:400;color:#999">(click to filter)</span><span class="chart-info" data-tip="Ranks all companies by current active job count. Active = listings still open today; Removed = listings taken down. ± shows change vs the previous snapshot. Click any row to filter the other charts and the raw table to that company.">i</span></div>
+    <div class="chart-title" style="margin-bottom:12px;flex-shrink:0">All companies <span style="font-size:11px;font-weight:400;color:#999">(click to filter)</span><span class="chart-info" data-tip="Ranks all companies by current active job count. Active = listings still open today; Avg age = mean days active listings have been posted. ± shows change vs the previous snapshot. Click any row to filter the other charts and the raw table to that company.">i</span></div>
     <div style="overflow-y:auto;flex:1;">
       <table>
         <thead>
@@ -527,7 +527,7 @@
             <th class="rank-cell">#</th>
             <th>Company</th>
             <th style="text-align:right;color:#1a6e3c">Active</th>
-            <th style="text-align:right;color:#dc2626">Removed</th>
+            <th style="text-align:right;color:#888;white-space:nowrap" title="Average age of active listings (days)">Avg age</th>
             <th style="text-align:center;color:#888;white-space:nowrap">± <span title="Change in active jobs compared to the previous snapshot" style="display:inline-flex;align-items:center;justify-content:center;width:13px;height:13px;border-radius:50%;background:#bbb;color:#fff;font-size:9px;font-weight:700;cursor:help;vertical-align:middle">i</span></th>
             <th class="bar-cell"></th>
           </tr>
@@ -1109,16 +1109,18 @@ const rankTbody = document.getElementById('rank-body');
 
 function renderRanking(filteredRecords) {
   const activeMap  = new Map();
-  const removedMap = new Map();
+  const ageSumMap  = new Map();
+  const today = D.latestDate || D.labels[D.labels.length - 1];
   filteredRecords.forEach(r => {
-    if (r.isActive)     activeMap.set(r.company,  (activeMap.get(r.company)  || 0) + 1);
-    if (r.dateRemoved)  removedMap.set(r.company, (removedMap.get(r.company) || 0) + 1);
+    if (!r.isActive) return;
+    activeMap.set(r.company, (activeMap.get(r.company) || 0) + 1);
+    const age = r.daysListed ?? 0;
+    ageSumMap.set(r.company, (ageSumMap.get(r.company) || 0) + age);
   });
-  const allCos = new Set([...activeMap.keys(), ...removedMap.keys()]);
-  let rankData = [...allCos].map(company => ({
+  let rankData = [...activeMap.keys()].map(company => ({
     company,
-    active:  activeMap.get(company)  || 0,
-    removed: removedMap.get(company) || 0,
+    active:  activeMap.get(company),
+    avgAge:  Math.round(ageSumMap.get(company) / activeMap.get(company)),
   })).sort((a, b) => b.active - a.active);
 
   // trend vs previous snapshot
@@ -1148,7 +1150,7 @@ function renderRanking(filteredRecords) {
       <td class="rank-cell">${i + 1}</td>
       <td style="font-weight:${sel ? 700 : 400};max-width:130px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis" title="${row.company}">${row.company}</td>
       <td style="text-align:right;font-weight:600;color:#1a6e3c;white-space:nowrap">${row.active || '—'}</td>
-      <td style="text-align:right;font-weight:600;color:#dc2626;white-space:nowrap">${row.removed || '—'}</td>
+      <td style="text-align:right;font-weight:600;color:#888;white-space:nowrap">${row.avgAge}d</td>
       <td style="text-align:center;white-space:nowrap">${trendHtml}</td>
       <td class="bar-cell" style="width:100%;padding-right:12px;">
         <div style="height:8px;background:#e0ece6;border-radius:4px;overflow:hidden;">
