@@ -543,7 +543,11 @@
   </div>
 
   <div class="chart-wrap" style="margin:0;border-radius:10px;box-shadow:0 1px 4px rgba(0,0,0,.08);display:flex;flex-direction:column;">
-    <div class="chart-title" style="flex-shrink:0">Positions added &amp; removed per day <span style="font-size:11px;font-weight:400;color:#999">(click a bar to filter)</span><span class="chart-info" data-tip="Daily job flow: green bars = new listings posted that day (first seen); red bars = listings removed that day. Click any bar to filter all views to that specific date and event type. Click again to clear.">i</span></div>
+    <div class="chart-title" style="flex-shrink:0">Positions added &amp; removed per day <span id="flow-click-hint" style="font-size:11px;font-weight:400;color:#999">(click a bar to filter)</span><span class="chart-info" data-tip="Daily job flow: green bars = new listings posted that day (first seen); red bars = listings removed that day. Click any bar to filter all views to that specific date and event type. Click again to clear.">i</span></div>
+    <div class="bd-toggle" id="flow-bd" style="margin:4px 0 6px;">
+      <button class="bd-btn active" data-val="daily">Daily</button>
+      <button class="bd-btn" data-val="weekly">Weekly</button>
+    </div>
     <canvas id="flowChart" style="flex:1;min-height:0;cursor:pointer"></canvas>
   </div>
 
@@ -600,6 +604,7 @@ const PALETTE = [
 
 // ── Flow chart (added / removed per day) ─────────────────────────────────────
 let flowChart;
+let flowMode = 'daily';
 
 const FLOW_SKIP = new Set(['2026-05-23', '2026-05-24']);
 
@@ -616,6 +621,38 @@ function calcFlowData(records) {
     labels,
     addedData:   labels.map(d => added[d]),
     removedData: labels.map(d => removed[d]),
+  };
+}
+
+function getWeekStart(dateStr) {
+  const d = new Date(dateStr + 'T00:00:00Z');
+  const day = d.getUTCDay();
+  d.setUTCDate(d.getUTCDate() - (day === 0 ? 6 : day - 1));
+  return d.toISOString().slice(0, 10);
+}
+
+function calcFlowDataWeekly(records) {
+  const dailyLabels = D.labels.filter(d => !FLOW_SKIP.has(d));
+  const weekMap = new Map();
+  dailyLabels.forEach(d => {
+    const wk = getWeekStart(d);
+    if (!weekMap.has(wk)) weekMap.set(wk, { added: 0, removed: 0 });
+  });
+  records.forEach(r => {
+    if (r.firstSeen && !FLOW_SKIP.has(r.firstSeen)) {
+      const wk = getWeekStart(r.firstSeen);
+      if (weekMap.has(wk)) weekMap.get(wk).added++;
+    }
+    if (r.dateRemoved && !FLOW_SKIP.has(r.dateRemoved)) {
+      const wk = getWeekStart(r.dateRemoved);
+      if (weekMap.has(wk)) weekMap.get(wk).removed++;
+    }
+  });
+  const keys = [...weekMap.keys()].sort();
+  return {
+    labels:      keys,
+    addedData:   keys.map(wk => weekMap.get(wk).added),
+    removedData: keys.map(wk => weekMap.get(wk).removed),
   };
 }
 
@@ -649,6 +686,7 @@ function buildFlowChart() {
       maintainAspectRatio: false,
       interaction: { mode: 'index', intersect: false },
       onClick(e) {
+        if (flowMode === 'weekly') return;
         const pts = flowChart.getElementsAtEventForMode(e, 'nearest', { intersect: true }, false);
         if (!pts.length) return;
         const date   = flowChart.data.labels[pts[0].index];
@@ -686,7 +724,10 @@ function buildFlowChart() {
 }
 
 function updateFlowChart(records) {
-  const { addedData, removedData } = calcFlowData(records);
+  const { labels, addedData, removedData } = flowMode === 'weekly'
+    ? calcFlowDataWeekly(records)
+    : calcFlowData(records);
+  flowChart.data.labels = labels;
   flowChart.data.datasets[0].data = addedData;
   flowChart.data.datasets[1].data = removedData;
   flowChart.update();
@@ -1170,6 +1211,15 @@ renderRanking(D.jobRecords);
 buildFlowChart();
 buildGroupChart();
 buildGroupChips();
+
+document.querySelectorAll('#flow-bd .bd-btn').forEach(btn => btn.addEventListener('click', () => {
+  flowMode = btn.dataset.val;
+  document.querySelectorAll('#flow-bd .bd-btn').forEach(b => b.classList.toggle('active', b === btn));
+  document.getElementById('flow-click-hint').style.display = flowMode === 'daily' ? '' : 'none';
+  flowActiveDate  = null;
+  flowActiveDsIdx = null;
+  setFlowFilter(null, null);
+}));
 
 // ── Insight widget ───────────────────────────────────────────────────────────
 let _insightPool = [], _insightIdx = 0, _insightTimer;
