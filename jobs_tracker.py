@@ -27,7 +27,7 @@ import re
 import sqlite3
 import sys
 import time
-from datetime import datetime, date
+from datetime import datetime, date, timedelta
 from pathlib import Path
 
 try:
@@ -160,9 +160,11 @@ def init_db() -> sqlite3.Connection:
             posted_date  TEXT DEFAULT ''
         )
     """)
-    for col, dflt in [("posted_date", "''")]:
+    for col, coltype, dflt in [("posted_date", "TEXT", "''"), ("linkedin_posted", "TEXT", "''"),
+                               ("linkedin_applicants", "TEXT", "''"), ("linkedin_checked", "TEXT", "''"),
+                               ("linkedin_applicant_n", "INTEGER", "NULL")]:
         try:
-            con.execute(f"ALTER TABLE job_index ADD COLUMN {col} TEXT DEFAULT {dflt}")
+            con.execute(f"ALTER TABLE job_index ADD COLUMN {col} {coltype} DEFAULT {dflt}")
         except Exception:
             pass
 
@@ -190,26 +192,7 @@ def init_db() -> sqlite3.Connection:
         bootstrapped = con.execute("SELECT COUNT(*) FROM job_index").fetchone()[0]
         print(f"  Bootstrapped {bootstrapped} jobs into job_index.")
 
-    # job_appearances: full timeline of each job's listing/removal events
-    con.execute("""
-        CREATE TABLE IF NOT EXISTS job_appearances (
-            id       INTEGER PRIMARY KEY,
-            job_id   TEXT NOT NULL,
-            appeared TEXT NOT NULL,
-            removed  TEXT DEFAULT '',
-            UNIQUE(job_id, appeared)
-        )
-    """)
-    # Bootstrap from job_index (runs once, after job_index is populated)
-    ja_count     = con.execute("SELECT COUNT(*) FROM job_appearances").fetchone()[0]
-    ji_count_now = con.execute("SELECT COUNT(*) FROM job_index").fetchone()[0]
-    if ja_count == 0 and ji_count_now > 0:
-        con.execute("""
-            INSERT OR IGNORE INTO job_appearances(job_id, appeared, removed)
-            SELECT job_id, first_seen, date_removed FROM job_index
-        """)
-        bootstrapped_ja = con.execute("SELECT COUNT(*) FROM job_appearances").fetchone()[0]
-        print(f"  Bootstrapped {bootstrapped_ja} appearance records from job_index.")
+    con.execute("DROP TABLE IF EXISTS job_appearances")
 
     con.commit()
     return con
@@ -246,7 +229,6 @@ def update_job_index(con: sqlite3.Connection, job_list: list, today_date: str,
     Upsert today's scraped jobs into job_index (one row per unique job).
     If mark_removals=True (full scrape), jobs absent today get date_removed set.
     If mark_removals=False (company-only scrape), only the listed jobs are updated.
-    Also records appearance/removal events in job_appearances for full history tracking.
     """
     today_ids = {j["job_id"] for j in job_list if j.get("job_id")}
 
@@ -257,25 +239,11 @@ def update_job_index(con: sqlite3.Connection, job_list: list, today_date: str,
         for j in job_list if j.get("job_id")
     ]
 
-    # Build temp table early — needed for re-appearance detection and removal marking
+    # Build temp table early — needed for removal marking below
     if today_ids:
         con.execute("CREATE TEMP TABLE IF NOT EXISTS _today_ids (job_id TEXT PRIMARY KEY)")
         con.execute("DELETE FROM _today_ids")
         con.executemany("INSERT INTO _today_ids VALUES (?)", [(jid,) for jid in today_ids])
-
-        # Jobs seen today that were previously removed → re-appearing
-        reappearing_ids = {row[0] for row in con.execute("""
-            SELECT job_id FROM job_index
-            WHERE job_id IN (SELECT job_id FROM _today_ids) AND date_removed != ''
-        """).fetchall()}
-
-        # Jobs seen today that have never been in job_index → brand new
-        new_ids = today_ids - {row[0] for row in con.execute(
-            "SELECT job_id FROM job_index WHERE job_id IN (SELECT job_id FROM _today_ids)"
-        ).fetchall()}
-    else:
-        reappearing_ids = set()
-        new_ids = set()
 
     con.executemany("""
         INSERT INTO job_index
@@ -297,27 +265,12 @@ def update_job_index(con: sqlite3.Connection, job_list: list, today_date: str,
                                 ELSE job_index.posted_date END
     """, upsert_rows)
 
-    # Record new appearance events (brand-new jobs and re-appearing removed jobs)
-    appearing_today = new_ids | reappearing_ids
-    if appearing_today:
-        con.executemany(
-            "INSERT OR IGNORE INTO job_appearances(job_id, appeared) VALUES (?,?)",
-            [(jid, today_date) for jid in appearing_today],
-        )
-
     if mark_removals:
         if today_ids:
             con.execute("""
                 UPDATE job_index
                 SET date_removed = ?
                 WHERE date_removed = ''
-                  AND job_id NOT IN (SELECT job_id FROM _today_ids)
-            """, (today_date,))
-            # Close open appearance records for jobs no longer seen today
-            con.execute("""
-                UPDATE job_appearances
-                SET removed = ?
-                WHERE removed = ''
                   AND job_id NOT IN (SELECT job_id FROM _today_ids)
             """, (today_date,))
         else:
@@ -445,6 +398,118 @@ def fetch_jobs_israel() -> tuple[dict, list]:
     return company_counts, job_list
 
 
+# ── LinkedIn enrichment ────────────────────────────────────────────────────────
+
+LINKEDIN_HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/124.0.0.0 Safari/537.36"
+    ),
+    "Accept-Language": "en-US,en;q=0.9",
+}
+
+def fetch_linkedin_meta(job_id: str) -> tuple[str, str]:
+    """
+    Fetches the public LinkedIn job-view page (devjobs.co.il job IDs are LinkedIn
+    job IDs) and scrapes the posted-time-ago and applicant-count text.
+    Returns ('', '') on any failure (404, blocked, layout change, etc).
+    """
+    try:
+        resp = requests.get(
+            f"https://www.linkedin.com/jobs/view/{job_id}/",
+            headers=LINKEDIN_HEADERS, timeout=15,
+        )
+    except requests.RequestException as exc:
+        print(f"    {job_id}: network error - {exc}")
+        return "", ""
+
+    if resp.status_code != 200:
+        print(f"    {job_id}: HTTP {resp.status_code}")
+        return "", ""
+
+    soup = BeautifulSoup(resp.text, "html.parser")
+    posted     = soup.select_one(".posted-time-ago__text")
+    applicants = soup.select_one(".num-applicants__caption")
+    return (
+        posted.get_text(strip=True) if posted else "",
+        applicants.get_text(strip=True) if applicants else "",
+    )
+
+
+def parse_applicant_count(applicants_text: str) -> int | None:
+    """'111 applicants' -> 111, 'Be among the first 25 applicants' -> 25, '' -> None."""
+    m = re.search(r"(\d+)", applicants_text or "")
+    return int(m.group(1)) if m else None
+
+
+LINKEDIN_RECENT_DAYS  = 7      # only jobs first seen within this rolling window are eligible
+LINKEDIN_APPLICANT_CAP = 100   # once a job's applicant count reaches this, stop re-polling it
+LINKEDIN_DAILY_LIMIT  = 99     # max LinkedIn requests per run
+
+
+def _run_linkedin_batch(con: sqlite3.Connection, rows: list[tuple[str]]):
+    """Fetches LinkedIn data for the given job_id rows and updates job_index."""
+    if not rows:
+        print("No jobs matched the LinkedIn enrichment criteria.")
+        return
+    print(f"Fetching LinkedIn data for {len(rows)} job(s)...")
+    today_str = date.today().isoformat()
+    ok = 0
+    for i, (job_id,) in enumerate(rows, 1):
+        posted, applicants = fetch_linkedin_meta(job_id)
+        applicant_n = parse_applicant_count(applicants)
+        con.execute(
+            "UPDATE job_index SET linkedin_posted=?, linkedin_applicants=?, "
+            "linkedin_applicant_n=?, linkedin_checked=? WHERE job_id=?",
+            (posted, applicants, applicant_n, today_str, job_id),
+        )
+        con.commit()
+        status = "OK" if (posted or applicants) else "no data"
+        print(f"  [{i:3}/{len(rows)}] {job_id}: {posted!r} | {applicants!r} ({status})")
+        if posted or applicants:
+            ok += 1
+        time.sleep(random.uniform(1.5, 3.0))
+    print(f"Done. {ok}/{len(rows)} jobs got LinkedIn data.")
+
+
+def cmd_linkedin(limit: int):
+    """Manual/ad-hoc: enrich up to `limit` active jobs (oldest-checked first), no filters."""
+    con = init_db()
+    rows = con.execute("""
+        SELECT job_id FROM job_index
+        WHERE date_removed = ''
+        ORDER BY linkedin_checked = '' DESC, linkedin_checked ASC
+        LIMIT ?
+    """, (limit,)).fetchall()
+    _run_linkedin_batch(con, rows)
+    export_data_js(con)
+    con.close()
+
+
+def cmd_linkedin_data():
+    """
+    Manual-run policy: only 'Data/ML' jobs first seen within the last
+    LINKEDIN_RECENT_DAYS days, capped at LINKEDIN_APPLICANT_CAP applicants
+    (stop polling once reached), at most LINKEDIN_DAILY_LIMIT requests,
+    oldest-checked first.
+    """
+    con = init_db()
+    cutoff = (date.today() - timedelta(days=LINKEDIN_RECENT_DAYS)).isoformat()
+    rows = con.execute("""
+        SELECT job_id FROM job_index
+        WHERE date_removed = ''
+          AND dev_type = 'Data/ML'
+          AND first_seen >= ?
+          AND (linkedin_applicant_n IS NULL OR linkedin_applicant_n < ?)
+        ORDER BY linkedin_checked = '' DESC, linkedin_checked ASC
+        LIMIT ?
+    """, (cutoff, LINKEDIN_APPLICANT_CAP, LINKEDIN_DAILY_LIMIT)).fetchall()
+    _run_linkedin_batch(con, rows)
+    export_data_js(con)
+    con.close()
+
+
 # ── Export ────────────────────────────────────────────────────────────────────
 
 def export_data_js(con: sqlite3.Connection):
@@ -492,7 +557,8 @@ def export_data_js(con: sqlite3.Connection):
     if ji_count > 0:
         job_rows = con.execute("""
             SELECT job_id, company, title, url, dev_type, work_mode, location,
-                   first_seen, last_seen, date_removed, posted_date
+                   first_seen, last_seen, date_removed, posted_date,
+                   linkedin_posted, linkedin_applicants, linkedin_applicant_n
             FROM job_index
             ORDER BY first_seen DESC, company, title
         """).fetchall()
@@ -504,28 +570,22 @@ def export_data_js(con: sqlite3.Connection):
             con.commit()
             job_rows = con.execute("""
                 SELECT job_id, company, title, url, dev_type, work_mode, location,
-                       first_seen, last_seen, date_removed, posted_date
+                       first_seen, last_seen, date_removed, posted_date,
+                       linkedin_posted, linkedin_applicants, linkedin_applicant_n
                 FROM job_index
                 ORDER BY first_seen DESC, company, title
             """).fetchall()
 
-        # Load full appearance history for all jobs in one query
-        appearances_map: dict = {}
-        for jr in con.execute(
-            "SELECT job_id, appeared, removed FROM job_appearances ORDER BY job_id, appeared"
-        ):
-            appearances_map.setdefault(jr[0], []).append({"appeared": jr[1], "removed": jr[2]})
-
         job_records = []
         for r in job_rows:
             job_id, company, title, url, dev_type, work_mode, location, \
-                first_seen, last_seen, date_removed, posted_date = r
+                first_seen, last_seen, date_removed, posted_date, \
+                linkedin_posted, linkedin_applicants, linkedin_applicant_n = r
             try:
                 end_date = date_removed if date_removed else today_str
                 days_listed = (date.fromisoformat(end_date) - date.fromisoformat(first_seen)).days
             except ValueError:
                 days_listed = 0
-            appearances = appearances_map.get(job_id, [])
             job_records.append({
                 "jobId":        job_id,
                 "company":      company,
@@ -540,8 +600,9 @@ def export_data_js(con: sqlite3.Connection):
                 "daysListed":   days_listed,
                 "isActive":     date_removed == '',
                 "postedDate":   posted_date,
-                "appearances":  appearances,
-                "timesListed":  max(1, len(appearances)),
+                "linkedinPosted":     linkedin_posted,
+                "linkedinApplicants": linkedin_applicants,
+                "linkedinApplicantN": linkedin_applicant_n,
             })
     else:
         # Fallback: job_index not yet populated (export before first full scrape)
@@ -780,6 +841,11 @@ def main():
         if len(sys.argv) < 3:
             sys.exit("Usage: jobs_tracker.py company <CompanyName>")
         run_company(sys.argv[2])
+    elif cmd == "linkedin":
+        limit = int(sys.argv[2]) if len(sys.argv) > 2 else 15
+        cmd_linkedin(limit)
+    elif cmd == "linkedin-data":
+        cmd_linkedin_data()
     elif cmd == "loop":
         print(f"Loop mode -- collecting every {POLL_HOURS} h. Ctrl-C to stop.")
         while True:

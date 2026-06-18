@@ -1485,7 +1485,8 @@ let triggerRender;   // set by IIFE below so ranking table can call render()
   const headerRow = document.getElementById('raw-thead').insertRow();
   [['firstSeen','First Seen'], ['company','Company'], ['title','Job Title'],
    ['','Labels'], ['workMode','Mode'], ['location','Location'],
-   ['daysListed','Days'], ['dateRemoved','Removed'], ['','History'], ['','Links']].forEach(([key, label]) => {
+   ['daysListed','Days'], ['dateRemoved','Removed'], ['linkedinPosted','LI Posted'],
+   ['linkedinApplicantN','Applicants'], ['','Links']].forEach(([key, label]) => {
     const th = document.createElement('th');
     th.textContent = label;
     th.dataset.key = key;
@@ -1514,9 +1515,10 @@ let triggerRender;   // set by IIFE below so ranking table can call render()
 
   function getSorted(data) {
     return [...data].sort((a, b) => {
-      if (sortKey === 'daysListed') return sortDir * ((b[sortKey] ?? 0) - (a[sortKey] ?? 0));
+      if (sortKey === 'daysListed' || sortKey === 'linkedinApplicantN')
+        return sortDir * ((a[sortKey] ?? -1) - (b[sortKey] ?? -1));
       const va = a[sortKey] || '', vb = b[sortKey] || '';
-      return va < vb ? sortDir : va > vb ? -sortDir : 0;
+      return va < vb ? -sortDir : va > vb ? sortDir : 0;
     });
   }
 
@@ -1582,15 +1584,10 @@ let triggerRender;   // set by IIFE below so ranking table can call render()
           return d <= 0 ? 'today' : d + 'd';
         })()}</td>
         <td style="text-align:center;white-space:nowrap">${removedCell}</td>
-        <td style="text-align:center;white-space:nowrap">${(() => {
-          const apps = r.appearances || [];
-          if (apps.length < 2) return '';
-          const lines = apps.map((a, i) =>
-            `#${i+1}: ${a.appeared} → ${a.removed || 'active'}`
-          ).join('&#10;');
-          return `<span style="display:inline-flex;align-items:center;padding:2px 7px;border-radius:4px;background:#7c3aed22;color:#7c3aed;font-size:10px;font-weight:700;cursor:help"
-            title="Listed ${apps.length} times:&#10;${lines}">×${apps.length}</span>`;
-        })()}</td>
+        <td style="text-align:center;white-space:nowrap;color:#555;font-size:12px">${r.linkedinPosted || ''}</td>
+        <td style="text-align:center;white-space:nowrap;color:#555;font-size:12px" title="${r.linkedinApplicants || ''}">${
+          r.linkedinApplicantN != null ? r.linkedinApplicantN : ''
+        }</td>
         <td style="white-space:nowrap;text-align:center">${[
           r.jobId ? `<a href="https://www.linkedin.com/jobs/view/${r.jobId}" target="_blank" title="View on LinkedIn"
             style="display:inline-flex;align-items:center;padding:2px 6px;border-radius:4px;background:#0a66c2;color:#fff;font-size:10px;font-weight:700;text-decoration:none;letter-spacing:.3px">in</a>` : '',
@@ -1609,8 +1606,9 @@ let triggerRender;   // set by IIFE below so ranking table can call render()
     const th = e.target.closest('th[data-key]');
     if (!th) return;
     const key = th.dataset.key;
+    if (!key) return;
     if (key === sortKey) { sortDir *= -1; }
-    else { sortKey = key; sortDir = (key === 'firstSeen' || key === 'daysListed' || key === 'dateRemoved') ? -1 : 1; }
+    else { sortKey = key; sortDir = (key === 'firstSeen' || key === 'daysListed' || key === 'dateRemoved' || key === 'linkedinApplicantN') ? -1 : 1; }
     render();
   });
   document.getElementById('raw-search').addEventListener('input',   e => { filterTxt   = e.target.value.trim().toLowerCase(); render(); });

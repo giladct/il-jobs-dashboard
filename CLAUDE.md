@@ -25,6 +25,8 @@ py jobs_tracker.py export            # re-export data.js from existing DB (no sc
 py jobs_tracker.py company <Name>    # targeted single-company scrape (fast test)
 py jobs_tracker.py status            # print snapshot summary table
 py jobs_tracker.py loop              # run every 24 h (blocking)
+py jobs_tracker.py linkedin [N]      # manual: enrich N active jobs (default 15) with LinkedIn posted-time/applicants, no filters
+py jobs_tracker.py linkedin-data     # automated daily policy: Data/ML jobs only, first_seen >= launch date, capped at 100 applicants, max 99/day
 ```
 
 **Windows Task Scheduler** runs the full scrape daily automatically.
@@ -45,24 +47,22 @@ job_records  (id, snap_date, company, title, url,
 
 job_index    (job_id PK, company, title, url,
               dev_type, work_mode, location,
-              first_seen, last_seen, date_removed)
+              first_seen, last_seen, date_removed,
+              linkedin_posted, linkedin_applicants,
+              linkedin_applicant_n, linkedin_checked)
              -- one canonical row per unique job
              -- date_removed = '' means still active
              -- source of truth for the dashboard's raw table
-
-job_appearances (id, job_id, appeared, removed)
-             -- one row per listing period per job; UNIQUE(job_id, appeared)
-             -- tracks full history: a job removed and re-posted gets a new row
-             -- removed = '' means this appearance is still active
-             -- bootstrapped from job_index on first run
+             -- job_id doubles as the LinkedIn job ID (devjobs.co.il sources from LinkedIn,
+             --   so https://www.linkedin.com/jobs/view/{job_id}/ resolves directly)
+             -- linkedin_* columns populated by `linkedin` / `linkedin-data` commands only
 ```
 
 ### job_index lifecycle
 - **Full scrape** (`run_once`): upserts all today's jobs; marks absent active jobs with `date_removed = today`
 - **Company scrape** (`run_company`): upserts that company's jobs only; never marks removals
-- **Re-listed job**: `date_removed` cleared back to `''`, `first_seen` preserved; a new `job_appearances` row is inserted
+- **Re-listed job**: `date_removed` cleared back to `''`, `first_seen` preserved
 - **Bootstrap**: on first run after adding `job_index`, auto-populated from `job_records` history
-- **Appearances bootstrap**: on first run after adding `job_appearances`, one row per job seeded from `job_index`
 
 ---
 
@@ -108,9 +108,7 @@ Always populated (derived from title, backfilled on export for old rows).
     "firstSeen", "lastSeen",
     "dateRemoved",   // '' = active, 'YYYY-MM-DD' = removed
     "daysListed",    // days from firstSeen to dateRemoved (or today if active)
-    "isActive",      // boolean
-    "appearances",   // [{appeared, removed}, ...] — full history; removed='' = still active
-    "timesListed"    // number of times this job has been listed (1 = never re-posted)
+    "isActive"       // boolean
   }, ...]
 }
 ```
@@ -155,4 +153,5 @@ Sortable by any column. Shows filtered count vs total.
 1. **work_mode and location empty for 2026-05-23 records** — can't be backfilled (data not captured).
 2. **Intel has no current listings** on devjobs.co.il (verified 2026-05-24).
 3. **TOP_N = 30** — line chart only shows top 30 companies. Ranking table shows all.
-4. **job_appearances pre-history**: bootstrap seeds one row per job from current job_index state; re-listing events before 2026-06-08 are not captured (only tracked going forward).
+4. **LinkedIn enrichment (`linkedin-data`)** only covers `dev_type = 'Data/ML'` jobs first seen within the last `LINKEDIN_RECENT_DAYS` (7) days. Polling for a job stops once its applicant count reaches 100 (`LINKEDIN_APPLICANT_CAP`). Capped at `LINKEDIN_DAILY_LIMIT` (99) requests/run. **Run manually** (`py jobs_tracker.py linkedin-data`) — not part of the daily GitHub Actions workflow.
+5. **LinkedIn applicant count is the older "applicants" widget, not what you see logged in.** Our scraper hits the public/logged-out HTML, which only exposes `.num-applicants__caption` (e.g. "Over 200 applicants"). LinkedIn's logged-in UI now shows a different, separate metric — "X people clicked apply" — especially for jobs with "Responses managed off LinkedIn" (external ATS), where LinkedIn can't count real applicants and only counts Apply-button clicks. That text isn't present in the anonymous HTML at all, so the dashboard's number can be stale or simply a different metric than what you see browsing LinkedIn directly. Also note: "Over N applicants"/"Over 200 applicants" is a floor, not exact — `parse_applicant_count()` just extracts the first number, so treat values ≥ 100/200 as "at least this many," not precise.
