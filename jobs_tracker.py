@@ -443,7 +443,7 @@ def parse_applicant_count(applicants_text: str) -> int | None:
     return int(m.group(1)) if m else None
 
 
-LINKEDIN_RECENT_DAYS  = 7      # only jobs first seen within this rolling window are eligible
+LINKEDIN_OFFSET_DAYS  = 2      # only jobs first seen exactly this many days ago are eligible
 LINKEDIN_APPLICANT_CAP = 100   # once a job's applicant count reaches this, stop re-polling it
 LINKEDIN_DAILY_LIMIT  = 99     # max LinkedIn requests per run
 
@@ -489,22 +489,20 @@ def cmd_linkedin(limit: int):
 
 def cmd_linkedin_data():
     """
-    Manual-run policy: only 'Data/ML' jobs first seen within the last
-    LINKEDIN_RECENT_DAYS days, capped at LINKEDIN_APPLICANT_CAP applicants
-    (stop polling once reached), at most LINKEDIN_DAILY_LIMIT requests,
-    oldest-checked first.
+    Manual-run policy: all jobs first seen exactly LINKEDIN_OFFSET_DAYS days ago
+    (any dev_type), capped at LINKEDIN_APPLICANT_CAP applicants (stop polling
+    once reached), at most LINKEDIN_DAILY_LIMIT requests, oldest-checked first.
     """
     con = init_db()
-    cutoff = (date.today() - timedelta(days=LINKEDIN_RECENT_DAYS)).isoformat()
+    target_date = (date.today() - timedelta(days=LINKEDIN_OFFSET_DAYS)).isoformat()
     rows = con.execute("""
         SELECT job_id FROM job_index
         WHERE date_removed = ''
-          AND dev_type = 'Data/ML'
-          AND first_seen >= ?
+          AND first_seen = ?
           AND (linkedin_applicant_n IS NULL OR linkedin_applicant_n < ?)
         ORDER BY linkedin_checked = '' DESC, linkedin_checked ASC
         LIMIT ?
-    """, (cutoff, LINKEDIN_APPLICANT_CAP, LINKEDIN_DAILY_LIMIT)).fetchall()
+    """, (target_date, LINKEDIN_APPLICANT_CAP, LINKEDIN_DAILY_LIMIT)).fetchall()
     _run_linkedin_batch(con, rows)
     export_data_js(con)
     con.close()
