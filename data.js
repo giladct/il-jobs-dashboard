@@ -1,5 +1,5 @@
 const JOB_DATA = {
-  "generated": "2026-06-23T09:06:27",
+  "generated": "2026-06-23T16:03:02",
   "labels": [
     "2026-05-24",
     "2026-05-25",
@@ -7032,9 +7032,9 @@ const JOB_DATA = {
       "daysListed": 2,
       "isActive": true,
       "postedDate": "2026-06-20",
-      "linkedinPosted": "",
-      "linkedinApplicants": "",
-      "linkedinApplicantN": null
+      "linkedinPosted": "2 days ago",
+      "linkedinApplicants": "Be among the first 25 applicants",
+      "linkedinApplicantN": 25
     },
     {
       "jobId": "4431312995",
@@ -7050,9 +7050,9 @@ const JOB_DATA = {
       "daysListed": 2,
       "isActive": true,
       "postedDate": "2026-06-20",
-      "linkedinPosted": "",
-      "linkedinApplicants": "",
-      "linkedinApplicantN": null
+      "linkedinPosted": "2 days ago",
+      "linkedinApplicants": "Be among the first 25 applicants",
+      "linkedinApplicantN": 25
     },
     {
       "jobId": "4431331524",
@@ -7068,9 +7068,9 @@ const JOB_DATA = {
       "daysListed": 2,
       "isActive": true,
       "postedDate": "2026-06-20",
-      "linkedinPosted": "",
-      "linkedinApplicants": "",
-      "linkedinApplicantN": null
+      "linkedinPosted": "2 days ago",
+      "linkedinApplicants": "Be among the first 25 applicants",
+      "linkedinApplicantN": 25
     },
     {
       "jobId": "4431328577",
@@ -7086,9 +7086,9 @@ const JOB_DATA = {
       "daysListed": 2,
       "isActive": true,
       "postedDate": "2026-06-20",
-      "linkedinPosted": "",
-      "linkedinApplicants": "",
-      "linkedinApplicantN": null
+      "linkedinPosted": "2 days ago",
+      "linkedinApplicants": "Be among the first 25 applicants",
+      "linkedinApplicantN": 25
     },
     {
       "jobId": "4420992472",
@@ -7104,9 +7104,9 @@ const JOB_DATA = {
       "daysListed": 2,
       "isActive": true,
       "postedDate": "2026-06-20",
-      "linkedinPosted": "",
-      "linkedinApplicants": "",
-      "linkedinApplicantN": null
+      "linkedinPosted": "2 days ago",
+      "linkedinApplicants": "89 applicants",
+      "linkedinApplicantN": 89
     },
     {
       "jobId": "4402547414",
@@ -7122,9 +7122,9 @@ const JOB_DATA = {
       "daysListed": 2,
       "isActive": true,
       "postedDate": "2026-06-20",
-      "linkedinPosted": "",
-      "linkedinApplicants": "",
-      "linkedinApplicantN": null
+      "linkedinPosted": "2 days ago",
+      "linkedinApplicants": "Be among the first 25 applicants",
+      "linkedinApplicantN": 25
     },
     {
       "jobId": "4431337607",
@@ -7140,9 +7140,9 @@ const JOB_DATA = {
       "daysListed": 2,
       "isActive": true,
       "postedDate": "2026-06-20",
-      "linkedinPosted": "",
-      "linkedinApplicants": "",
-      "linkedinApplicantN": null
+      "linkedinPosted": "2 days ago",
+      "linkedinApplicants": "40 applicants",
+      "linkedinApplicantN": 40
     },
     {
       "jobId": "4430971567",
