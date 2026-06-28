@@ -89,6 +89,8 @@
     white-space: nowrap;
   }
   .btn:hover { background: #f0f0f0; }
+  .btn:disabled { opacity: .4; cursor: default; }
+  .btn:disabled:hover { background: #fff; }
 
   /* ── Breakdown toggle ── */
   .bd-toggle { display:flex; gap:4px; margin:4px 0 12px; }
@@ -576,6 +578,11 @@
     <thead id="raw-thead"></thead>
     <tbody id="raw-tbody"></tbody>
   </table>
+  <div id="raw-pagination" style="display:flex;align-items:center;justify-content:center;gap:10px;margin-top:14px;">
+    <button class="btn" id="raw-prev" type="button">‹ Prev</button>
+    <span id="raw-page-info" style="font-size:11px;color:#888;"></span>
+    <button class="btn" id="raw-next" type="button">Next ›</button>
+  </div>
 </div>
 
 <!-- global info tooltip -->
@@ -1359,8 +1366,14 @@ let triggerRender;   // set by IIFE below so ranking table can call render()
   let fltListed   = '';
   let fltRemoved  = '';
 
+  const PAGE_SIZE = 200;
+  let currentPage = 0;
+
   const rawTbody  = document.getElementById('raw-tbody');
   const countEl   = document.getElementById('raw-count');
+  const prevBtn   = document.getElementById('raw-prev');
+  const nextBtn   = document.getElementById('raw-next');
+  const pageInfo  = document.getElementById('raw-page-info');
 
   // ── Populate meta-filter dropdowns ──────────────────────────────────────
   function populateSelect(id, values) {
@@ -1401,6 +1414,7 @@ let triggerRender;   // set by IIFE below so ranking table can call render()
         if (cb.checked) selectedCompanies.add(c);
         else selectedCompanies.delete(c);
         updateCoBtnLabel();
+        currentPage = 0;
         render();
       });
       label.appendChild(cb);
@@ -1459,6 +1473,7 @@ let triggerRender;   // set by IIFE below so ranking table can call render()
     updateCoBtnLabel();
     lastCounts = getCountsForCoFilter();
     buildCoList(coSearch.value.trim(), lastCounts);
+    currentPage = 0;
     render();
   });
   document.addEventListener('click', e => {
@@ -1537,7 +1552,20 @@ let triggerRender;   // set by IIFE below so ranking table can call render()
 
     // Stats bar
     updateStats(data);
+
+    // Pagination
+    const totalPages = Math.max(1, Math.ceil(data.length / PAGE_SIZE));
+    if (currentPage >= totalPages) currentPage = totalPages - 1;
+    if (currentPage < 0) currentPage = 0;
+    const pageStart = currentPage * PAGE_SIZE;
+    const pageData  = data.slice(pageStart, pageStart + PAGE_SIZE);
+
     countEl.textContent = `${data.length.toLocaleString()} of ${records.length.toLocaleString()} jobs`;
+    pageInfo.textContent = data.length
+      ? `Page ${currentPage + 1} of ${totalPages} (rows ${pageStart + 1}–${pageStart + pageData.length})`
+      : '';
+    prevBtn.disabled = currentPage <= 0;
+    nextBtn.disabled = currentPage >= totalPages - 1;
 
     // Derive filtered company set for chart + ranking
     // null means "no filter active" — preserve unfiltered behaviour
@@ -1557,7 +1585,7 @@ let triggerRender;   // set by IIFE below so ranking table can call render()
 
     // Raw table rows
     rawTbody.innerHTML = '';
-    data.forEach(r => {
+    pageData.forEach(r => {
       const tr = document.createElement('tr');
       const removedCell = r.dateRemoved
         ? `<span style="color:#dc2626;font-size:11px">${r.dateRemoved}</span>`
@@ -1609,19 +1637,22 @@ let triggerRender;   // set by IIFE below so ranking table can call render()
     if (!key) return;
     if (key === sortKey) { sortDir *= -1; }
     else { sortKey = key; sortDir = (key === 'firstSeen' || key === 'daysListed' || key === 'dateRemoved' || key === 'linkedinApplicantN') ? -1 : 1; }
+    currentPage = 0;
     render();
   });
-  document.getElementById('raw-search').addEventListener('input',   e => { filterTxt   = e.target.value.trim().toLowerCase(); render(); });
-  document.getElementById('flt-work-mode').addEventListener('change',e => { fltWorkMode = e.target.value; render(); });
-  document.getElementById('flt-location').addEventListener('change', e => { fltLocation = e.target.value; render(); });
+  document.getElementById('raw-search').addEventListener('input',   e => { filterTxt   = e.target.value.trim().toLowerCase(); currentPage = 0; render(); });
+  document.getElementById('flt-work-mode').addEventListener('change',e => { fltWorkMode = e.target.value; currentPage = 0; render(); });
+  document.getElementById('flt-location').addEventListener('change', e => { fltLocation = e.target.value; currentPage = 0; render(); });
   document.querySelectorAll('#group-bd .bd-btn').forEach(btn => btn.addEventListener('click', () => {
     groupBreakdown = btn.dataset.val;
     document.querySelectorAll('#group-bd .bd-btn').forEach(b => b.classList.toggle('active', b === btn));
     render();
   }));
-  document.getElementById('flt-title').addEventListener('input',     e => { fltTitle    = e.target.value.trim(); render(); });
-  document.getElementById('flt-listed').addEventListener('change',   e => { fltListed   = e.target.value; render(); });
-  document.getElementById('flt-removed').addEventListener('change',  e => { fltRemoved  = e.target.value; render(); });
+  document.getElementById('flt-title').addEventListener('input',     e => { fltTitle    = e.target.value.trim(); currentPage = 0; render(); });
+  document.getElementById('flt-listed').addEventListener('change',   e => { fltListed   = e.target.value; currentPage = 0; render(); });
+  document.getElementById('flt-removed').addEventListener('change',  e => { fltRemoved  = e.target.value; currentPage = 0; render(); });
+  prevBtn.addEventListener('click', () => { currentPage--; render(); });
+  nextBtn.addEventListener('click', () => { currentPage++; render(); });
 
   function refreshCoList() {
     lastCounts = getCountsForCoFilter();
@@ -1633,10 +1664,11 @@ let triggerRender;   // set by IIFE below so ranking table can call render()
     fltRemoved = removed || '';
     document.getElementById('flt-listed').value  = fltListed;
     document.getElementById('flt-removed').value = fltRemoved;
+    currentPage = 0;
     render();
   };
 
-  triggerRender = () => { updateCoBtnLabel(); refreshCoList(); render(); };
+  triggerRender = () => { updateCoBtnLabel(); refreshCoList(); currentPage = 0; render(); };
   render();
 })();
 
