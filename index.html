@@ -379,48 +379,6 @@
     text-align: center;
   }
 
-  /* ── Insight widget ── */
-  #insight-bar {
-    margin: 12px 20px 0;
-    padding: 11px 16px;
-    background: linear-gradient(100deg, #edf7f2 0%, #f4f8ff 100%);
-    border: 1px solid #c3dece;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    min-height: 44px;
-  }
-  #insight-icon { font-size: 17px; flex-shrink: 0; line-height: 1; }
-  #insight-text {
-    flex: 1;
-    font-size: 12.5px;
-    color: #1e4030;
-    line-height: 1.5;
-    transition: opacity .25s;
-  }
-  #insight-text.fade { opacity: 0; }
-  .insight-dots { display: flex; gap: 5px; flex-shrink: 0; align-items: center; }
-  .insight-dot {
-    width: 6px; height: 6px; border-radius: 50%;
-    background: #b8d9c8;
-    transition: background .2s;
-    cursor: pointer;
-  }
-  .insight-dot.active { background: #1a6e3c; }
-  #insight-next {
-    background: none;
-    border: 1px solid #c3dece;
-    border-radius: 6px;
-    padding: 3px 9px;
-    font-size: 13px;
-    color: #1a6e3c;
-    cursor: pointer;
-    flex-shrink: 0;
-    line-height: 1;
-  }
-  #insight-next:hover { background: #dff0e8; }
-
   /* ── No-data overlay ── */
   #no-data {
     display: none;
@@ -506,15 +464,8 @@
   <select class="filter-select" id="flt-removed" style="min-width:130px">
     <option value="">All</option>
     <option value="__active__">Active now</option>
+    <option value="__inactive__">Non-active</option>
   </select>
-</div>
-
-<!-- insight widget -->
-<div id="insight-bar">
-  <span id="insight-icon">💡</span>
-  <span id="insight-text">Computing insights…</span>
-  <div class="insight-dots" id="insight-dots"></div>
-  <button id="insight-next" title="Next insight">›</button>
 </div>
 
 <!-- 2×2 chart grid -->
@@ -554,17 +505,42 @@
   </div>
 
   <div class="chart-wrap" style="margin:0;border-radius:10px;box-shadow:0 1px 4px rgba(0,0,0,.08);">
-    <div class="chart-title">Open positions by role group over time<span class="chart-info" data-tip="Indexed trend: each series is rebased to 100% on the first tracked date so you can compare growth rates regardless of absolute size. Hover a line for raw counts. Toggle between role labels, work modes, or districts.">i</span></div>
-    <div class="bd-toggle" id="group-bd">
-      <button class="bd-btn" data-val="all">All</button>
-      <button class="bd-btn active" data-val="label">Label</button>
-      <button class="bd-btn" data-val="mode">Mode</button>
-      <button class="bd-btn" data-val="district">District</button>
+    <div class="chart-title">Open positions by role group over time<span class="chart-info" data-tip="Indexed trend: each series is rebased to 100% on the From date so you can compare growth rates regardless of absolute size. Hover a line for raw counts. Toggle between role labels, work modes, or districts. In Label view, line color reflects hiring demand (avg. LinkedIn applicants per role): blue = fewer applicants/easier to get hired, red = more applicants/more competitive.">i</span></div>
+    <div style="display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin:4px 0 12px;">
+      <div class="bd-toggle" id="group-bd" style="margin:0;">
+        <button class="bd-btn" data-val="all">All</button>
+        <button class="bd-btn active" data-val="label">Label</button>
+        <button class="bd-btn" data-val="mode">Mode</button>
+        <button class="bd-btn" data-val="district">District</button>
+      </div>
+      <div style="display:flex;align-items:center;gap:5px;font-size:11px;color:#666;">
+        <label for="group-range-start">From</label>
+        <input type="date" id="group-range-start" class="filter-input" style="padding:2px 5px;font-size:11px;">
+        <label for="group-range-end">To</label>
+        <input type="date" id="group-range-end" class="filter-input" style="padding:2px 5px;font-size:11px;">
+        <button id="group-range-reset" class="btn" type="button" style="padding:2px 8px;font-size:11px;">Reset</button>
+      </div>
+      <div id="demand-legend" style="display:flex;align-items:center;gap:6px;font-size:10px;color:#666;margin-left:auto;">
+        <span>Low demand</span>
+        <div style="width:90px;height:6px;border-radius:3px;background:linear-gradient(90deg,#2563eb,#dc2626);"></div>
+        <span>High demand</span>
+      </div>
     </div>
     <div id="group-chips" style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px;"></div>
     <canvas id="groupChart" style="max-height:200px;"></canvas>
   </div>
 
+</div>
+
+<!-- applicant demand chart -->
+<div class="chart-wrap">
+  <div class="chart-title">Demand by role — avg. LinkedIn applicants<span class="chart-info" data-tip="Average LinkedIn applicant count per role category, using postings with a known applicant count (active or removed). Higher = more competition for that role (harder to get hired); lower = less competition. LinkedIn floors low counts at 'first 25 applicants', so values near 25 are a lower bound, not an exact count. Categories need at least 3 postings with data to appear. 'By week' groups postings by the week they were first listed.">i</span></div>
+  <div class="bd-toggle" id="demand-bd">
+    <button class="bd-btn active" data-val="overall">Overall</button>
+    <button class="bd-btn" data-val="weekly">By week</button>
+  </div>
+  <canvas id="applicantChart" style="max-height:280px;"></canvas>
+  <canvas id="applicantTrendChart" style="max-height:280px;display:none;"></canvas>
 </div>
 
 <!-- raw data table -->
@@ -798,7 +774,7 @@ function calcBreakdownSeries(records, dimension) {
   if (dimension === 'all')
     return [makeSeries('Total open positions', '#1a6e3c', () => true)];
   if (dimension === 'label')
-    return LABEL_DEFS.map(def => makeSeries(def.name, def.color, r => def.re.test(r.title || '')));
+    return LABEL_DEFS.map(def => makeSeries(def.name, roleDemandColors.get(def.name) || def.color, r => def.re.test(r.title || '')));
   if (dimension === 'mode')
     return MODE_DEFS.map(m => makeSeries(m.name, m.color, r => r.workMode === m.name));
   if (dimension === 'district')
@@ -822,9 +798,7 @@ function calcGroupTrendData(records) {
   return result;
 }
 
-function indexTrendData(rawData) {
-  const baseDate = '2026-05-24';
-  const baseDi   = D.labels.indexOf(baseDate);
+function indexTrendData(rawData, baseDi) {
   return rawData.map(series => {
     const base = baseDi >= 0 && series[baseDi] > 0
       ? series[baseDi]
@@ -834,12 +808,34 @@ function indexTrendData(rawData) {
   });
 }
 
-let groupLabelOffset = 0;
+const GROUP_CHART_DEFAULT_START = '2026-05-24';
+let groupRangeStart = null; // yyyy-mm-dd, null = default start
+let groupRangeEnd   = null; // yyyy-mm-dd, null = latest snapshot
+let groupLabelOffset = 0;   // index into D.labels of the visible range's start (= rebase baseline)
+let groupLabelEnd    = 0;   // index into D.labels of the visible range's end (inclusive)
+
+// Resolves the user-picked From/To dates to the nearest available snapshot
+// indices (D.labels isn't sampled every calendar day).
+function resolveGroupRange() {
+  const wantStart = groupRangeStart || GROUP_CHART_DEFAULT_START;
+  const wantEnd   = groupRangeEnd   || D.labels[D.labels.length - 1];
+
+  let startIdx = D.labels.findIndex(d => d >= wantStart);
+  if (startIdx < 0) startIdx = D.labels.length - 1;
+
+  let endIdx = -1;
+  for (let i = D.labels.length - 1; i >= 0; i--) {
+    if (D.labels[i] <= wantEnd) { endIdx = i; break; }
+  }
+  if (endIdx < 0) endIdx = 0;
+  if (endIdx < startIdx) endIdx = startIdx;
+
+  return { startIdx, endIdx };
+}
 
 function buildGroupChart() {
-  const GROUP_CHART_START = '2026-05-24';
-  groupLabelOffset = Math.max(0, D.labels.indexOf(GROUP_CHART_START));
-  const groupChartLabels = D.labels.slice(groupLabelOffset);
+  ({ startIdx: groupLabelOffset, endIdx: groupLabelEnd } = resolveGroupRange());
+  const groupChartLabels = D.labels.slice(groupLabelOffset, groupLabelEnd + 1);
   const ctx = document.getElementById('groupChart').getContext('2d');
   groupChart = new Chart(ctx, {
     type: 'line',
@@ -920,11 +916,11 @@ function buildGroupChart() {
 function getGroupDatasets(records) {
   const series    = calcBreakdownSeries(records, groupBreakdown);
   const rawArrays = series.map(s => s.counts);
-  const normalized = indexTrendData(rawArrays);
+  const normalized = indexTrendData(rawArrays, groupLabelOffset);
   return series.map((s, i) => ({
     label: s.name,
-    data: normalized[i].slice(groupLabelOffset),
-    rawData: rawArrays[i].slice(groupLabelOffset),
+    data: normalized[i].slice(groupLabelOffset, groupLabelEnd + 1),
+    rawData: rawArrays[i].slice(groupLabelOffset, groupLabelEnd + 1),
     borderColor: s.color,
     backgroundColor: s.color + '22',
     borderWidth: 2,
@@ -936,10 +932,13 @@ function getGroupDatasets(records) {
 }
 
 function updateGroupChart(records) {
+  ({ startIdx: groupLabelOffset, endIdx: groupLabelEnd } = resolveGroupRange());
+  groupChart.data.labels = D.labels.slice(groupLabelOffset, groupLabelEnd + 1);
   groupChart.data.datasets = getGroupDatasets(records);
   groupChart.update();
   const isLabel = groupBreakdown === 'label';
-  document.getElementById('group-chips').style.display = isLabel ? '' : 'none';
+  document.getElementById('group-chips').style.display   = isLabel ? '' : 'none';
+  document.getElementById('demand-legend').style.display = isLabel ? '' : 'none';
   if (isLabel) {
     document.querySelectorAll('#group-chips input[type=checkbox]').forEach((cb, i) => {
       const meta = groupChart.getDatasetMeta(i);
@@ -966,6 +965,173 @@ function buildGroupChips() {
     });
     container.appendChild(chip);
   });
+}
+
+// ── Applicant demand by role ─────────────────────────────────────────────────
+function calcApplicantDemand(records) {
+  const stats = LABEL_DEFS.map(def => ({ name: def.name, color: def.color, sum: 0, n: 0 }));
+  records.forEach(r => {
+    if (r.linkedinApplicantN == null) return;
+    LABEL_DEFS.forEach((def, i) => {
+      if (!def.re.test(r.title || '')) return;
+      stats[i].sum += r.linkedinApplicantN;
+      stats[i].n++;
+    });
+  });
+  return stats
+    .filter(s => s.n >= 3) // drop categories with too few data points to be meaningful
+    .map(s => ({ name: s.name, color: s.color, avg: s.sum / s.n, n: s.n }))
+    .sort((a, b) => b.avg - a.avg);
+}
+
+// ── Role line colors, scaled by demand (blue = low competition, red = high) ──
+const DEMAND_COLOR_LOW  = [37, 99, 235];  // #2563eb
+const DEMAND_COLOR_HIGH = [220, 38, 38];  // #dc2626
+
+function lerpColor(c1, c2, t) {
+  return '#' + c1.map((v, i) => Math.round(v + (c2[i] - v) * t).toString(16).padStart(2, '0')).join('');
+}
+
+let roleDemandColors = new Map(); // role name -> hex color, computed once from all data
+
+function buildRoleDemandColors() {
+  const stats = calcApplicantDemand(D.jobRecords || []);
+  roleDemandColors = new Map();
+  if (!stats.length) return;
+  const avgs = stats.map(s => s.avg);
+  const min  = Math.min(...avgs), max = Math.max(...avgs);
+  stats.forEach(s => {
+    const t = max > min ? (s.avg - min) / (max - min) : 0.5;
+    roleDemandColors.set(s.name, lerpColor(DEMAND_COLOR_LOW, DEMAND_COLOR_HIGH, t));
+  });
+}
+
+let applicantChart;
+
+function buildApplicantChart() {
+  const ctx = document.getElementById('applicantChart').getContext('2d');
+  applicantChart = new Chart(ctx, {
+    type: 'bar',
+    data: { labels: [], datasets: [{ data: [], backgroundColor: [], sampleN: [], borderRadius: 4, maxBarThickness: 22 }] },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            label: item => {
+              const n = item.dataset.sampleN[item.dataIndex];
+              return ` ${Math.round(item.parsed.x)} avg applicants (${n} posting${n !== 1 ? 's' : ''} with data)`;
+            },
+          },
+        },
+      },
+      scales: {
+        x: {
+          beginAtZero: true,
+          title: { display: true, text: 'Avg. LinkedIn applicants per posting', font: { size: 11 } },
+          grid: { color: '#f0f0f0' },
+        },
+        y: { grid: { display: false }, ticks: { font: { size: 11 } } },
+      },
+    },
+  });
+}
+
+function updateApplicantChart(records) {
+  const stats = calcApplicantDemand(records);
+  applicantChart.data.labels = stats.map(s => s.name);
+  const ds = applicantChart.data.datasets[0];
+  ds.data           = stats.map(s => Math.round(s.avg * 10) / 10);
+  ds.backgroundColor = stats.map(s => s.color);
+  ds.sampleN         = stats.map(s => s.n);
+  applicantChart.update();
+}
+
+// ── Applicant demand by role, trended by week ────────────────────────────────
+function applicantWeekStart(dstr) {
+  const d = new Date(dstr + 'T00:00:00Z');
+  d.setUTCDate(d.getUTCDate() - d.getUTCDay()); // snap back to Sunday
+  return d.toISOString().slice(0, 10);
+}
+
+function calcApplicantDemandByWeek(records) {
+  const withData = records.filter(r => r.linkedinApplicantN != null && r.firstSeen);
+  const weeks = [...new Set(withData.map(r => applicantWeekStart(r.firstSeen)))].sort();
+  const series = LABEL_DEFS.map(def => {
+    const sums   = new Array(weeks.length).fill(0);
+    const counts = new Array(weeks.length).fill(0);
+    withData.forEach(r => {
+      if (!def.re.test(r.title || '')) return;
+      const wi = weeks.indexOf(applicantWeekStart(r.firstSeen));
+      sums[wi]   += r.linkedinApplicantN;
+      counts[wi]++;
+    });
+    // require at least 3 postings in a week for that point to be meaningful
+    const data = sums.map((s, i) => counts[i] >= 3 ? Math.round((s / counts[i]) * 10) / 10 : null);
+    return { name: def.name, color: def.color, data, counts };
+  });
+  return { weeks, series };
+}
+
+let applicantTrendChart;
+
+function buildApplicantTrendChart() {
+  const ctx = document.getElementById('applicantTrendChart').getContext('2d');
+  applicantTrendChart = new Chart(ctx, {
+    type: 'line',
+    data: { labels: [], datasets: [] },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      interaction: { mode: 'nearest', intersect: false },
+      plugins: {
+        legend: { position: 'bottom', labels: { font: { size: 10 }, boxWidth: 12 } },
+        tooltip: {
+          callbacks: {
+            label: item => {
+              if (item.parsed.y == null) return null;
+              const n = item.dataset.sampleN?.[item.dataIndex];
+              return ` ${item.dataset.label}: ${item.parsed.y} avg applicants${n != null ? ` (n=${n})` : ''}`;
+            },
+          },
+        },
+      },
+      scales: {
+        x: {
+          title: { display: true, text: 'Week posting first seen', font: { size: 11 } },
+          ticks: { font: { size: 11 }, maxRotation: 45 },
+          grid: { color: '#f0f0f0' },
+        },
+        y: {
+          beginAtZero: true,
+          title: { display: true, text: 'Avg. LinkedIn applicants', font: { size: 11 } },
+          ticks: { font: { size: 11 } },
+          grid: { color: '#f0f0f0' },
+        },
+      },
+    },
+  });
+}
+
+function updateApplicantTrendChart(records) {
+  const { weeks, series } = calcApplicantDemandByWeek(records);
+  applicantTrendChart.data.labels = weeks;
+  applicantTrendChart.data.datasets = series.map(s => ({
+    label: s.name,
+    data: s.data,
+    sampleN: s.counts,
+    borderColor: s.color,
+    backgroundColor: s.color + '22',
+    borderWidth: 2,
+    pointRadius: 2,
+    pointHoverRadius: 5,
+    tension: 0.3,
+    spanGaps: true,
+  }));
+  applicantTrendChart.update();
 }
 
 // ── Guard: data.js may not exist yet ─────────────────────────────────────────
@@ -1216,8 +1382,13 @@ function renderRanking(filteredRecords) {
 }
 renderRanking(D.jobRecords);
 buildFlowChart();
+buildRoleDemandColors();
 buildGroupChart();
 buildGroupChips();
+buildApplicantChart();
+updateApplicantChart(D.jobRecords);
+buildApplicantTrendChart();
+updateApplicantTrendChart(D.jobRecords);
 
 document.querySelectorAll('#flow-bd .bd-btn').forEach(btn => btn.addEventListener('click', () => {
   flowMode = btn.dataset.val;
@@ -1228,130 +1399,15 @@ document.querySelectorAll('#flow-bd .bd-btn').forEach(btn => btn.addEventListene
   setFlowFilter(null, null);
 }));
 
-// ── Insight widget ───────────────────────────────────────────────────────────
-let _insightPool = [], _insightIdx = 0, _insightTimer;
+document.querySelectorAll('#demand-bd .bd-btn').forEach(btn => btn.addEventListener('click', () => {
+  document.querySelectorAll('#demand-bd .bd-btn').forEach(b => b.classList.toggle('active', b === btn));
+  const isWeekly = btn.dataset.val === 'weekly';
+  document.getElementById('applicantChart').style.display      = isWeekly ? 'none' : '';
+  document.getElementById('applicantTrendChart').style.display = isWeekly ? '' : 'none';
+  if (isWeekly) applicantTrendChart.resize();
+  else applicantChart.resize();
+}));
 
-function _buildInsightPool(records) {
-  const pool = [];
-  const active     = records.filter(r => r.isActive);
-  const activeN    = active.length;
-  const totalN     = records.length;
-
-  if (!totalN) return ['No listings match the current filters.'];
-
-  // Top company (skip if only 1 company in view — trivially 100%)
-  const coMap = new Map();
-  active.forEach(r => coMap.set(r.company, (coMap.get(r.company) || 0) + 1));
-  const topCos = [...coMap.entries()].sort((a, b) => b[1] - a[1]);
-  if (topCos.length > 1 && activeN > 0) {
-    const [name, cnt] = topCos[0];
-    const pct = Math.round(cnt / activeN * 100);
-    pool.push(`${name} leads with ${cnt} active listing${cnt > 1 ? 's' : ''} — ${pct}% of the current view.`);
-  }
-
-  // Work mode dominance (skip if all records share the same mode)
-  const modeMap = new Map();
-  active.forEach(r => { if (r.workMode) modeMap.set(r.workMode, (modeMap.get(r.workMode) || 0) + 1); });
-  const topMode = [...modeMap.entries()].sort((a, b) => b[1] - a[1])[0];
-  if (topMode && modeMap.size > 1 && activeN >= 5) {
-    const pct = Math.round(topMode[1] / activeN * 100);
-    pool.push(`${pct}% of active listings are ${topMode[0].toLowerCase()} — the most common work arrangement in this view.`);
-  }
-
-  // Latest snapshot net flow
-  const lastDate = D.labels[D.labels.length - 1];
-  if (lastDate) {
-    const added   = records.filter(r => r.firstSeen   === lastDate).length;
-    const removed = records.filter(r => r.dateRemoved === lastDate).length;
-    if (added > 0 || removed > 0) {
-      const net = added - removed;
-      const netStr = net > 0 ? `a net gain of ${net}` : net < 0 ? `a net loss of ${Math.abs(net)}` : 'no net change';
-      pool.push(`Latest snapshot (${lastDate}): ${added} listing${added !== 1 ? 's' : ''} added, ${removed} removed — ${netStr}.`);
-    }
-  }
-
-  // Average + max days listed
-  const withDays = active.filter(r => r.daysListed != null && r.daysListed > 0);
-  if (withDays.length >= 3) {
-    const avg    = Math.round(withDays.reduce((s, r) => s + r.daysListed, 0) / withDays.length);
-    const maxVal = Math.max(...withDays.map(r => r.daysListed));
-    const oldest = withDays.find(r => r.daysListed === maxVal);
-    pool.push(`Active listings have been live an average of ${avg} days; the oldest (${oldest.company}) has been up for ${maxVal} days.`);
-  }
-
-  // Top role category (skip if only 1 role present in view)
-  const roleMap = new Map();
-  active.forEach(r => LABEL_DEFS.filter(d => d.re.test(r.title || '')).forEach(l =>
-    roleMap.set(l.name, (roleMap.get(l.name) || 0) + 1)));
-  const topRole = [...roleMap.entries()].sort((a, b) => b[1] - a[1])[0];
-  if (topRole && roleMap.size > 1 && activeN >= 5) {
-    const pct = Math.round(topRole[1] / activeN * 100);
-    pool.push(`${topRole[0]} is the top role — ${topRole[1]} active listing${topRole[1] !== 1 ? 's' : ''} (${pct}% of current view).`);
-  }
-
-  // Top district (skip if only 1 district present in view)
-  const distMap = new Map();
-  active.forEach(r => { const d = getDistrict(r.location); if (d) distMap.set(d, (distMap.get(d) || 0) + 1); });
-  const topDist = [...distMap.entries()].sort((a, b) => b[1] - a[1])[0];
-  if (topDist && distMap.size > 1 && activeN >= 5) {
-    const knownN = [...distMap.values()].reduce((a, b) => a + b, 0);
-    const pct    = Math.round(topDist[1] / knownN * 100);
-    pool.push(`${topDist[0]} is the top location hub — ${pct}% of listings with a known district.`);
-  }
-
-  // Top-3 company concentration
-  if (topCos.length >= 4 && activeN >= 20) {
-    const top3cnt = topCos.slice(0, 3).reduce((s, [, n]) => s + n, 0);
-    const pct     = Math.round(top3cnt / activeN * 100);
-    const names   = topCos.slice(0, 3).map(([n]) => n).join(', ');
-    pool.push(`${names} together account for ${pct}% of all active listings in this view.`);
-  }
-
-  return pool.length ? pool : ['No notable patterns found in the current selection.'];
-}
-
-function _showInsight(idx) {
-  const textEl = document.getElementById('insight-text');
-  textEl.classList.add('fade');
-  setTimeout(() => {
-    textEl.textContent = _insightPool[idx];
-    textEl.classList.remove('fade');
-    document.querySelectorAll('.insight-dot').forEach((d, i) => d.classList.toggle('active', i === idx));
-  }, 220);
-}
-
-function rebuildInsights(records) {
-  clearInterval(_insightTimer);
-  _insightPool = _buildInsightPool(records);
-  _insightIdx  = 0;
-
-  const dotsEl = document.getElementById('insight-dots');
-  dotsEl.innerHTML = '';
-  _insightPool.forEach((_, i) => {
-    const d = document.createElement('span');
-    d.className = 'insight-dot' + (i === 0 ? ' active' : '');
-    d.addEventListener('click', () => { clearInterval(_insightTimer); _insightIdx = i; _showInsight(i); });
-    dotsEl.appendChild(d);
-  });
-  document.getElementById('insight-text').textContent = _insightPool[0];
-
-  if (_insightPool.length > 1) {
-    _insightTimer = setInterval(() => {
-      _insightIdx = (_insightIdx + 1) % _insightPool.length;
-      _showInsight(_insightIdx);
-    }, 8000);
-  }
-}
-
-document.getElementById('insight-next').addEventListener('click', () => {
-  clearInterval(_insightTimer);
-  _insightIdx = (_insightIdx + 1) % _insightPool.length;
-  _showInsight(_insightIdx);
-  _insightTimer = setInterval(() => {
-    _insightIdx = (_insightIdx + 1) % _insightPool.length;
-    _showInsight(_insightIdx);
-  }, 8000);
-});
 
 // ── Raw data table ───────────────────────────────────────────────────────────
 let triggerRender;   // set by IIFE below so ranking table can call render()
@@ -1496,6 +1552,38 @@ let triggerRender;   // set by IIFE below so ranking table can call render()
     document.getElementById('flt-removed').appendChild(o);
   });
 
+  // ── Group-chart date range (From = rebase baseline, To = right edge) ────
+  const groupStartInput = document.getElementById('group-range-start');
+  const groupEndInput   = document.getElementById('group-range-end');
+  const groupRangeReset = document.getElementById('group-range-reset');
+  const dataMinDate = D.labels[0];
+  const dataMaxDate = D.labels[D.labels.length - 1];
+  [groupStartInput, groupEndInput].forEach(inp => {
+    inp.min = dataMinDate;
+    inp.max = dataMaxDate;
+  });
+  groupStartInput.value = GROUP_CHART_DEFAULT_START;
+  groupEndInput.value   = dataMaxDate;
+  groupStartInput.addEventListener('change', () => {
+    groupRangeStart = groupStartInput.value || null;
+    groupEndInput.min = groupStartInput.value || dataMinDate;
+    render();
+  });
+  groupEndInput.addEventListener('change', () => {
+    groupRangeEnd = groupEndInput.value || null;
+    groupStartInput.max = groupEndInput.value || dataMaxDate;
+    render();
+  });
+  groupRangeReset.addEventListener('click', () => {
+    groupRangeStart = null;
+    groupRangeEnd   = null;
+    groupStartInput.value = GROUP_CHART_DEFAULT_START;
+    groupEndInput.value   = dataMaxDate;
+    groupStartInput.max = dataMaxDate;
+    groupEndInput.min   = dataMinDate;
+    render();
+  });
+
   // ── Build header ────────────────────────────────────────────────────────
   const headerRow = document.getElementById('raw-thead').insertRow();
   [['firstSeen','First Seen'], ['company','Company'], ['title','Job Title'],
@@ -1522,9 +1610,10 @@ let triggerRender;   // set by IIFE below so ranking table can call render()
       (!fltLocation || getDistrict(r.location) === fltLocation)    &&
       (!fltTitle    || r.title.toLowerCase().includes(fltTitle.toLowerCase())) &&
       (!fltListed   || r.firstSeen === fltListed)                  &&
-      (fltRemoved === ''           ? true :
-       fltRemoved === '__active__' ? r.isActive :
-                                    r.dateRemoved === fltRemoved)
+      (fltRemoved === ''             ? true :
+       fltRemoved === '__active__'   ? r.isActive :
+       fltRemoved === '__inactive__' ? !r.isActive :
+                                      r.dateRemoved === fltRemoved)
     );
   }
 
@@ -1546,7 +1635,9 @@ let triggerRender;   // set by IIFE below so ranking table can call render()
   }
 
   // ── Render all views ──────────────────────────────────────────────────────
-  function render() {
+  // fullUpdate=false skips chart/ranking/flow/applicant-demand recompute —
+  // used for pure pagination clicks, which can't change any of that output.
+  function render(fullUpdate = true) {
     const filtered = getFiltered();
     const data     = getSorted(filtered);
 
@@ -1567,21 +1658,23 @@ let triggerRender;   // set by IIFE below so ranking table can call render()
     prevBtn.disabled = currentPage <= 0;
     nextBtn.disabled = currentPage >= totalPages - 1;
 
-    // Derive filtered company set for chart + ranking
-    // null means "no filter active" — preserve unfiltered behaviour
-    const hasMetaFilter = selectedCompanies.size || selectedLabels.size || filterTxt ||
-                          fltWorkMode || fltLocation || fltTitle || fltListed || fltRemoved;
-    const filteredCos = hasMetaFilter ? new Set(data.map(r => r.company)) : null;
+    if (fullUpdate) {
+      // Derive filtered company set for chart + ranking
+      // null means "no filter active" — preserve unfiltered behaviour
+      const hasMetaFilter = selectedCompanies.size || selectedLabels.size || filterTxt ||
+                            fltWorkMode || fltLocation || fltTitle || fltListed || fltRemoved;
 
-    // Update chart & ranking table & flow chart
-    updateChart(hasMetaFilter ? filtered : null);
-    renderRanking(hasMetaFilter ? filtered : D.jobRecords);
-    updateFlowChart(filtered);
-    updateGroupChart(hasMetaFilter ? filtered : D.jobRecords);
-    rebuildInsights(filtered);
+      // Update chart & ranking table & flow chart
+      updateChart(hasMetaFilter ? filtered : null);
+      renderRanking(hasMetaFilter ? filtered : D.jobRecords);
+      updateFlowChart(filtered);
+      updateGroupChart(hasMetaFilter ? filtered : D.jobRecords);
+      updateApplicantChart(hasMetaFilter ? filtered : D.jobRecords);
+      updateApplicantTrendChart(hasMetaFilter ? filtered : D.jobRecords);
 
-    // Refresh co-filter counts if panel is open
-    if (coPanel.classList.contains('open')) refreshCoList();
+      // Refresh co-filter counts if panel is open
+      if (coPanel.classList.contains('open')) refreshCoList();
+    }
 
     // Raw table rows
     rawTbody.innerHTML = '';
@@ -1649,8 +1742,8 @@ let triggerRender;   // set by IIFE below so ranking table can call render()
   document.getElementById('flt-title').addEventListener('input',     e => { fltTitle    = e.target.value.trim(); currentPage = 0; render(); });
   document.getElementById('flt-listed').addEventListener('change',   e => { fltListed   = e.target.value; currentPage = 0; render(); });
   document.getElementById('flt-removed').addEventListener('change',  e => { fltRemoved  = e.target.value; currentPage = 0; render(); });
-  prevBtn.addEventListener('click', () => { currentPage--; render(); });
-  nextBtn.addEventListener('click', () => { currentPage++; render(); });
+  prevBtn.addEventListener('click', () => { currentPage--; render(false); });
+  nextBtn.addEventListener('click', () => { currentPage++; render(false); });
 
   function refreshCoList() {
     lastCounts = getCountsForCoFilter();
