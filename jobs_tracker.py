@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
-Israel Dev Jobs Tracker — devjobs.co.il edition
-Scrapes devjobs.co.il (Israeli tech-focused job board, ~3,170 listings) for
+Israel Dev Jobs Tracker — devjobs.co.il + lin-srael.com edition
+Scrapes devjobs.co.il (Israeli tech-focused job board, ~3,170 listings) and
+lin-srael.com (tech-classified subset of its LinkedIn-Israel job feed) for
 all open positions.  Aggregates by company name and stores daily snapshots to
 SQLite; exports data.js for the Chart.js dashboard.
 
@@ -9,15 +10,18 @@ Free — no API key required.
 Requires: pip install requests beautifulsoup4
 
 Usage:
-  python jobs_tracker.py                   # collect one snapshot now + export data.js
+  python jobs_tracker.py                   # collect one snapshot now (devjobs + lin-srael) + export data.js
   python jobs_tracker.py export            # re-export data.js from existing DB
   python jobs_tracker.py loop             # collect daily in a blocking loop
   python jobs_tracker.py status           # print DB summary
-  python jobs_tracker.py company <Name>   # scrape + update one company only (fast test)
+  python jobs_tracker.py company <Name>   # scrape + update one company only (fast test, devjobs.co.il)
+  python jobs_tracker.py linsrael         # standalone lin-srael.com scrape (no removal marking)
 
 Notes:
   - Paginates up to MAX_PAGES pages (30 jobs/page) through devjobs.co.il.
   - robots.txt is fully permissive; a polite 1-2 s delay is added between pages.
+  - lin-srael.com jobs are merged into job_index by job_id (same ID space as
+    LinkedIn/devjobs); a job seen by both sources is tagged source='both'.
   - Run once a day (or via Windows Task Scheduler) to build trend history.
 """
 
@@ -162,7 +166,8 @@ def init_db() -> sqlite3.Connection:
     """)
     for col, coltype, dflt in [("posted_date", "TEXT", "''"), ("linkedin_posted", "TEXT", "''"),
                                ("linkedin_applicants", "TEXT", "''"), ("linkedin_checked", "TEXT", "''"),
-                               ("linkedin_applicant_n", "INTEGER", "NULL")]:
+                               ("linkedin_applicant_n", "INTEGER", "NULL"),
+                               ("source", "TEXT", "'devjobs'")]:
         try:
             con.execute(f"ALTER TABLE job_index ADD COLUMN {col} {coltype} DEFAULT {dflt}")
         except Exception:
@@ -175,10 +180,10 @@ def init_db() -> sqlite3.Connection:
         con.execute("""
             INSERT OR IGNORE INTO job_index
                 (job_id, company, title, url, dev_type, work_mode, location,
-                 first_seen, last_seen, date_removed)
+                 first_seen, last_seen, date_removed, source)
             SELECT jr.job_id, jr.company, jr.title, jr.url,
                    jr.dev_type, jr.work_mode, jr.location,
-                   agg.first_seen, agg.last_seen, ''
+                   agg.first_seen, agg.last_seen, '', 'devjobs'
             FROM (
                 SELECT job_id,
                        MIN(snap_date) AS first_seen,
@@ -223,71 +228,124 @@ def save_snapshot(con: sqlite3.Connection, snap_date: str,
     print(f"  Saved {len(agg_rows)} companies, {len(rec_rows)} job records -> {DB_PATH.name}")
 
 
-def update_job_index(con: sqlite3.Connection, job_list: list, today_date: str,
-                     mark_removals: bool = True):
+def upsert_job_index(con: sqlite3.Connection, job_list: list, today_date: str,
+                     source: str = "devjobs") -> set[str]:
     """
-    Upsert today's scraped jobs into job_index (one row per unique job).
-    If mark_removals=True (full scrape), jobs absent today get date_removed set.
-    If mark_removals=False (company-only scrape), only the listed jobs are updated.
+    Upsert today's scraped jobs into job_index (one row per unique job), tagging
+    each with `source` ('devjobs' or 'linsrael'). A job seen by both sources
+    (same job_id — devjobs.co.il job IDs are LinkedIn job IDs, same ID space as
+    lin-srael's linkedin_job_id) gets source='both'.
+
+    `source='devjobs'` is treated as authoritative for identity fields (company,
+    title, url, dev_type, work_mode, location, posted_date) since devjobs.co.il's
+    structured cards parse more precisely than lin-srael's free-text listing —
+    a devjobs upsert always overwrites these fields, matching pre-existing
+    behavior. `source='linsrael'` only fills those fields in when the row wasn't
+    already seen by devjobs, so it never clobbers devjobs' richer data; it still
+    always refreshes last_seen / clears date_removed / merges the source tag.
+
+    Returns the set of job_ids upserted (this source's "seen today" set), for
+    use by mark_removed_jobs().
     """
+    assert source in ("devjobs", "linsrael")
     today_ids = {j["job_id"] for j in job_list if j.get("job_id")}
+    if not today_ids:
+        return today_ids
 
     upsert_rows = [
         (j["job_id"], j["company"], j["title"], j.get("url", ""),
          j.get("dev_type", ""), j.get("work_mode", ""), j.get("location", ""),
-         today_date, today_date, j.get("posted_date", ""))
+         today_date, today_date, j.get("posted_date", ""), source)
         for j in job_list if j.get("job_id")
     ]
 
-    # Build temp table early — needed for removal marking below
-    if today_ids:
-        con.execute("CREATE TEMP TABLE IF NOT EXISTS _today_ids (job_id TEXT PRIMARY KEY)")
-        con.execute("DELETE FROM _today_ids")
-        con.executemany("INSERT INTO _today_ids VALUES (?)", [(jid,) for jid in today_ids])
+    # devjobs is authoritative (always wins); linsrael is supplementary (only
+    # wins when the existing row wasn't already seen by devjobs) — express
+    # both as one templated CASE per identity field rather than two hand-
+    # written copies.
+    winner_cond   = "1=1" if source == "devjobs" else "job_index.source = 'linsrael'"
+    other_sources = "'linsrael','both'" if source == "devjobs" else "'devjobs','both'"
+    source_merge  = f"CASE WHEN job_index.source IN ({other_sources}) THEN 'both' ELSE '{source}' END"
 
-    con.executemany("""
+    NONEMPTY_GUARDED = {"work_mode", "location", "posted_date"}  # only overwrite when incoming value is non-empty
+    field_updates = ",\n            ".join(
+        f"{col} = CASE WHEN {winner_cond}"
+        + (f" AND excluded.{col} != ''" if col in NONEMPTY_GUARDED else "")
+        + f" THEN excluded.{col} ELSE job_index.{col} END"
+        for col in ("company", "title", "url", "dev_type", "work_mode", "location", "posted_date")
+    )
+
+    con.executemany(f"""
         INSERT INTO job_index
             (job_id, company, title, url, dev_type, work_mode, location,
-             first_seen, last_seen, date_removed, posted_date)
-        VALUES (?,?,?,?,?,?,?,?,?,'',?)
+             first_seen, last_seen, date_removed, posted_date, source)
+        VALUES (?,?,?,?,?,?,?,?,?,'',?,?)
         ON CONFLICT(job_id) DO UPDATE SET
             last_seen    = excluded.last_seen,
             date_removed = '',
-            company      = excluded.company,
-            title        = excluded.title,
-            url          = excluded.url,
-            dev_type     = excluded.dev_type,
-            work_mode    = CASE WHEN excluded.work_mode != '' THEN excluded.work_mode
-                                ELSE job_index.work_mode END,
-            location     = CASE WHEN excluded.location != '' THEN excluded.location
-                                ELSE job_index.location END,
-            posted_date  = CASE WHEN excluded.posted_date != '' THEN excluded.posted_date
-                                ELSE job_index.posted_date END
+            {field_updates},
+            source       = {source_merge}
     """, upsert_rows)
+    return today_ids
 
-    if mark_removals:
-        if today_ids:
-            con.execute("""
-                UPDATE job_index
-                SET date_removed = ?
-                WHERE date_removed = ''
-                  AND job_id NOT IN (SELECT job_id FROM _today_ids)
-            """, (today_date,))
-        else:
-            print("  WARNING: update_job_index called with empty job_list — skipping removal marking.")
 
-    if today_ids:
-        con.execute("DROP TABLE IF EXISTS _today_ids")
+def mark_removed_jobs(con: sqlite3.Connection, today_date: str, today_ids: set[str],
+                       source_filter: str | None = None):
+    """
+    Marks date_removed for any active job_index row whose job_id is absent from
+    `today_ids`. `today_ids` should be the UNION of every source's "seen today"
+    set for sources that actually ran this session — passing only one source's
+    ids here would wrongly mark jobs the other source still sees as removed.
 
-    con.commit()
+    `source_filter`, if given, restricts the update to rows whose `source`
+    column exactly matches it (e.g. 'linsrael'). This is what makes a
+    single-source run safe to mark removals with: we have full historical
+    visibility over jobs exclusively tagged with that source (we're the only
+    ones who ever reported them), so their disappearance from today's scrape
+    is a real removal signal — unlike 'devjobs'/'both' rows, which a lin-srael-
+    only scrape can't judge (lin-srael's tech subset doesn't cover devjobs'
+    full universe, so absence there doesn't mean the job is gone).
+    """
+    if not today_ids:
+        print("  WARNING: mark_removed_jobs called with empty today_ids — skipping.")
+        return
+    con.execute("CREATE TEMP TABLE IF NOT EXISTS _today_ids (job_id TEXT PRIMARY KEY)")
+    con.execute("DELETE FROM _today_ids")
+    con.executemany("INSERT INTO _today_ids VALUES (?)", [(jid,) for jid in today_ids])
+    source_clause = "AND source = ?" if source_filter else ""
+    params = (today_date,) + ((source_filter,) if source_filter else ())
+    con.execute(f"""
+        UPDATE job_index
+        SET date_removed = ?
+        WHERE date_removed = ''
+          AND job_id NOT IN (SELECT job_id FROM _today_ids)
+          {source_clause}
+    """, params)
+    con.execute("DROP TABLE IF EXISTS _today_ids")
+
+
+def _log_job_index_summary(con: sqlite3.Connection, today_date: str, upserted_label: str):
+    """Prints the standard 'N upserted, M removed today, K active total' line."""
     removed_today = con.execute(
         "SELECT COUNT(*) FROM job_index WHERE date_removed = ?", (today_date,)
     ).fetchone()[0]
     active = con.execute(
         "SELECT COUNT(*) FROM job_index WHERE date_removed = ''"
     ).fetchone()[0]
-    print(f"  job_index: {len(upsert_rows)} upserted, {removed_today} removed today, "
-          f"{active} active total.")
+    print(f"  job_index: {upserted_label}, {removed_today} removed today, {active} active total.")
+
+
+def update_job_index(con: sqlite3.Connection, job_list: list, today_date: str,
+                     mark_removals: bool = True, source: str = "devjobs"):
+    """Convenience wrapper: upsert a single source's jobs, optionally marking
+    removals against that same source's today_ids (safe for single-source runs
+    like `company`/standalone `linsrael`; `run_once` calls the two pieces
+    directly so it can mark removals against the UNION of both sources)."""
+    today_ids = upsert_job_index(con, job_list, today_date, source=source)
+    if mark_removals:
+        mark_removed_jobs(con, today_date, today_ids)
+    con.commit()
+    _log_job_index_summary(con, today_date, f"{len(today_ids)} upserted ({source})")
 
 
 # ── devjobs.co.il scraper ─────────────────────────────────────────────────────
@@ -395,6 +453,111 @@ def fetch_jobs_israel() -> tuple[dict, list]:
         time.sleep(random.uniform(1.0, 2.0))
 
     print(f"  -> {len(company_counts)} unique companies, {len(job_list)} unique jobs")
+    return company_counts, job_list
+
+
+# ── lin-srael.com scraper ───────────────────────────────────────────────────────
+# lin-srael.com ("LinSrael Insights") is a Base44-built site that pulls Israel
+# job postings straight from LinkedIn's public search. It's a much broader crawl
+# than devjobs.co.il (~12,000 postings across every profession vs. devjobs'
+# tech-only ~3,000), so we only pull its tech-classified subset here, matching
+# this dashboard's scope. Its `linkedin_job_id` is the same ID space as
+# devjobs.co.il job IDs (both ultimately point at LinkedIn job postings), which
+# is what lets upsert_job_index() merge duplicates by job_id.
+
+LINSRAEL_APP_ID = "6a06c46d3864156006253ad5"
+LINSRAEL_SEARCH_URL = f"https://lin-srael.com/api/apps/{LINSRAEL_APP_ID}/functions/searchJobs"
+LINSRAEL_PAGE_LIMIT = 100
+
+# Only the tech/engineering classifications lin-srael exposes — it also carries
+# a huge volume of non-tech postings (Sales, Marketing, Finance, HR, ...) that
+# are out of scope for this dashboard.
+LINSRAEL_TECH_CLASSIFICATIONS = [
+    "Backend Engineering", "DevOps", "Embedded, Low Level & Firmware Engineering",
+    "Frontend Engineering", "Mobile Development", "Data Science, ML & Algorithms",
+    "AI Engineering", "Fullstack Engineering", "Systems Engineering",
+    "Hardware Engineering", "QA", "QA Automation", "Cybersecurity",
+    "IT and System Administration", "UI/UX, Design & Content", "Data Analyst",
+]
+
+LINSRAEL_HEADERS = {
+    "User-Agent": HEADERS["User-Agent"],
+    "Content-Type": "application/json",
+}
+
+
+def fetch_jobs_linsrael() -> tuple[dict, list]:
+    """
+    Pulls all tech-classified job postings from lin-srael.com's public
+    (auth-free) searchJobs function, paginated per classification.
+    Returns ({company: count}, [{company, title, url, dev_type, work_mode,
+    location, job_id, posted_date}, ...]) deduplicated by linkedin_job_id.
+    """
+    session = requests.Session()
+    session.headers.update(LINSRAEL_HEADERS)
+
+    company_counts: dict[str, int] = {}
+    job_list: list[dict] = []
+    seen_ids: set[str] = set()
+
+    for classification in LINSRAEL_TECH_CLASSIFICATIONS:
+        page = 1
+        pages = 1
+        while page <= pages:
+            body = {
+                "title": "", "company_name": "", "location": "", "experience_level": "",
+                "work_type": "", "sector": "", "description": "",
+                "job_classification": classification,
+                "page": page, "limit": LINSRAEL_PAGE_LIMIT,
+            }
+            try:
+                resp = session.post(LINSRAEL_SEARCH_URL, json=body, timeout=20)
+            except requests.RequestException as exc:
+                print(f"  [{classification} p{page}]: network error - {exc}")
+                break
+
+            if resp.status_code == 429:
+                print(f"  [{classification} p{page}]: rate-limited, waiting 30 s...")
+                time.sleep(30)
+                continue
+            if resp.status_code != 200:
+                print(f"  [{classification} p{page}]: HTTP {resp.status_code}")
+                break
+
+            data = resp.json()
+            pages = data.get("pages", 1)
+            jobs = data.get("jobs", [])
+
+            for j in jobs:
+                job_id = str(j.get("linkedin_job_id") or "")
+                co     = (j.get("company_name") or "").strip()
+                title  = (j.get("title") or "").strip()
+                if not co or not title or not job_id:
+                    continue
+                if job_id in seen_ids:
+                    continue
+                seen_ids.add(job_id)
+
+                # published_at is usually 'YYYY-MM-DD' but occasionally a full
+                # ISO timestamp — normalize to a bare date either way.
+                posted_date = (j.get("published_at") or "")[:10]
+
+                company_counts[co] = company_counts.get(co, 0) + 1
+                job_list.append({
+                    "company": co, "title": title,
+                    "url": j.get("job_url") or j.get("apply_url") or "",
+                    "dev_type": classify_dev_type(title),
+                    "work_mode": "",   # lin-srael doesn't expose remote/hybrid/on-site in results
+                    "location": j.get("location") or "",
+                    "job_id": job_id,
+                    "posted_date": posted_date,
+                })
+
+            print(f"  [{classification}] page {page}/{pages}: +{len(jobs)} (total so far: {len(job_list)})")
+            page += 1
+            time.sleep(random.uniform(0.4, 0.8))
+
+    print(f"  -> {len(company_counts)} unique companies, {len(job_list)} unique jobs (lin-srael, tech only)")
     return company_counts, job_list
 
 
@@ -519,8 +682,11 @@ def export_data_js(con: sqlite3.Connection):
         print("No data in DB yet -- run without arguments first to collect a snapshot.")
         return
 
-    # All dates in order
-    all_dates = sorted(set(r[0] for r in rows))
+    # All dates in order — always include today. The "over time" charts compute
+    # each date's state live from job_index/jobRecords (first_seen/date_removed),
+    # not from `snapshots`, so today belongs on the axis even when only one
+    # source's scraper ran today (e.g. devjobs.co.il was down but lin-srael ran).
+    all_dates = sorted(set(r[0] for r in rows) | {date.today().isoformat()})
 
     # Pick top-N companies by their highest single-day count
     peak: dict[str, int] = {}
@@ -556,7 +722,7 @@ def export_data_js(con: sqlite3.Connection):
         job_rows = con.execute("""
             SELECT job_id, company, title, url, dev_type, work_mode, location,
                    first_seen, last_seen, date_removed, posted_date,
-                   linkedin_posted, linkedin_applicants, linkedin_applicant_n
+                   linkedin_posted, linkedin_applicants, linkedin_applicant_n, source
             FROM job_index
             ORDER BY first_seen DESC, company, title
         """).fetchall()
@@ -569,7 +735,7 @@ def export_data_js(con: sqlite3.Connection):
             job_rows = con.execute("""
                 SELECT job_id, company, title, url, dev_type, work_mode, location,
                        first_seen, last_seen, date_removed, posted_date,
-                       linkedin_posted, linkedin_applicants, linkedin_applicant_n
+                       linkedin_posted, linkedin_applicants, linkedin_applicant_n, source
                 FROM job_index
                 ORDER BY first_seen DESC, company, title
             """).fetchall()
@@ -578,7 +744,7 @@ def export_data_js(con: sqlite3.Connection):
         for r in job_rows:
             job_id, company, title, url, dev_type, work_mode, location, \
                 first_seen, last_seen, date_removed, posted_date, \
-                linkedin_posted, linkedin_applicants, linkedin_applicant_n = r
+                linkedin_posted, linkedin_applicants, linkedin_applicant_n, source = r
             try:
                 end_date = date_removed if date_removed else today_str
                 days_listed = (date.fromisoformat(end_date) - date.fromisoformat(first_seen)).days
@@ -601,6 +767,7 @@ def export_data_js(con: sqlite3.Connection):
                 "linkedinPosted":     linkedin_posted,
                 "linkedinApplicants": linkedin_applicants,
                 "linkedinApplicantN": linkedin_applicant_n,
+                "source":       source or "devjobs",   # 'devjobs' | 'linsrael' | 'both'
             })
     else:
         # Fallback: job_index not yet populated (export before first full scrape)
@@ -610,6 +777,7 @@ def export_data_js(con: sqlite3.Connection):
         ).fetchall()
         job_records = [
             {"jobId": r[7], "company": r[1], "title": r[2], "url": r[3],
+             "source": "devjobs",
              "devType": r[4], "workMode": r[5], "location": r[6],
              "firstSeen": r[0], "lastSeen": r[0], "dateRemoved": "",
              "daysListed": 0, "isActive": True}
@@ -806,7 +974,45 @@ def run_once():
     today = date.today().isoformat()
     con   = init_db()
     save_snapshot(con, today, company_counts, job_list)
-    update_job_index(con, job_list, today, mark_removals=True)
+    devjobs_ids = upsert_job_index(con, job_list, today, source="devjobs")
+
+    print(f"[{datetime.now():%Y-%m-%d %H:%M}] Collecting lin-srael.com jobs (tech only) ...")
+    try:
+        _, linsrael_job_list = fetch_jobs_linsrael()
+    except Exception as exc:
+        print(f"  lin-srael scrape failed, continuing with devjobs data only: {exc}")
+        linsrael_job_list = []
+    linsrael_ids = upsert_job_index(con, linsrael_job_list, today, source="linsrael") if linsrael_job_list else set()
+
+    # Mark removals against the UNION of both sources' today-ids — a job absent
+    # from devjobs but still seen by lin-srael (or vice versa) must stay active.
+    mark_removed_jobs(con, today, devjobs_ids | linsrael_ids)
+    con.commit()
+    _log_job_index_summary(con, today, f"{len(devjobs_ids)} devjobs + {len(linsrael_ids)} lin-srael upserted")
+
+    export_data_js(con)
+    con.close()
+    print("Done.")
+
+
+def cmd_linsrael():
+    """Standalone lin-srael.com scrape — upserts into job_index (merging with any
+    matching devjobs job_ids) and marks removals for source='linsrael'-only rows
+    (jobs we've only ever seen via lin-srael, so its own history is a complete
+    record for them). 'devjobs'/'both' rows are left untouched — lin-srael's
+    tech subset doesn't cover devjobs' full universe, so their absence here
+    isn't a reliable removal signal. Safe to run anytime."""
+    print(f"[{datetime.now():%Y-%m-%d %H:%M}] Collecting lin-srael.com jobs (tech only) ...")
+    _, job_list = fetch_jobs_linsrael()
+    if not job_list:
+        print("No data fetched -- lin-srael.com may be blocking or its API may have changed.")
+        return
+    today = date.today().isoformat()
+    con = init_db()
+    today_ids = upsert_job_index(con, job_list, today, source="linsrael")
+    mark_removed_jobs(con, today, today_ids, source_filter="linsrael")
+    con.commit()
+    _log_job_index_summary(con, today, f"{len(job_list)} lin-srael jobs upserted")
     export_data_js(con)
     con.close()
     print("Done.")
@@ -844,6 +1050,8 @@ def main():
         cmd_linkedin(limit)
     elif cmd == "linkedin-data":
         cmd_linkedin_data()
+    elif cmd == "linsrael":
+        cmd_linsrael()
     elif cmd == "loop":
         print(f"Loop mode -- collecting every {POLL_HOURS} h. Ctrl-C to stop.")
         while True:
