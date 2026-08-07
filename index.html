@@ -403,8 +403,12 @@
 
 <header>
   <div>
-    <h1>🟢 Israel Jobs Dashboard <span style="font-size:13px;font-weight:400;opacity:.65;vertical-align:middle">v2.1</span></h1>
+    <h1>🟢 Israel Jobs Dashboard <span style="font-size:13px;font-weight:400;opacity:.65;vertical-align:middle">v3.0</span></h1>
     <div class="meta" id="meta-line">Loading…</div>
+    <div class="bd-toggle" id="source-toggle" style="margin-top:6px">
+      <button class="bd-btn" data-val="devjobs">devjobs.co.il only</button>
+      <button class="bd-btn" data-val="all">+ lin-srael (LinkedIn)</button>
+    </div>
   </div>
   <div class="header-stats">
     <div class="stat">
@@ -526,8 +530,7 @@
         <span>High demand</span>
       </div>
     </div>
-    <div id="group-chips" style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px;"></div>
-    <canvas id="groupChart" style="max-height:200px;"></canvas>
+    <canvas id="groupChart" style="max-height:280px;"></canvas>
   </div>
 
 </div>
@@ -597,7 +600,8 @@ function calcFlowData(records) {
   const removed = {};
   labels.forEach(d => { added[d] = 0; removed[d] = 0; });
   records.forEach(r => {
-    if (r.firstSeen   && added[r.firstSeen]   !== undefined) added[r.firstSeen]++;
+    const addedDate = r.postedDate || r.firstSeen;
+    if (addedDate     && added[addedDate]       !== undefined) added[addedDate]++;
     if (r.dateRemoved && removed[r.dateRemoved] !== undefined) removed[r.dateRemoved]++;
   });
   return {
@@ -622,8 +626,9 @@ function calcFlowDataWeekly(records) {
     if (!weekMap.has(wk)) weekMap.set(wk, { added: 0, removed: 0 });
   });
   records.forEach(r => {
-    if (r.firstSeen && !FLOW_SKIP.has(r.firstSeen)) {
-      const wk = getWeekStart(r.firstSeen);
+    const addedDate = r.postedDate || r.firstSeen;
+    if (addedDate && !FLOW_SKIP.has(addedDate)) {
+      const wk = getWeekStart(addedDate);
       if (weekMap.has(wk)) weekMap.get(wk).added++;
     }
     if (r.dateRemoved && !FLOW_SKIP.has(r.dateRemoved)) {
@@ -771,8 +776,9 @@ function calcBreakdownSeries(records, dimension) {
     const counts = new Array(D.labels.length).fill(0);
     records.forEach(r => {
       if (!matchFn(r)) return;
+      const start = r.postedDate || r.firstSeen;
       D.labels.forEach((d, di) => {
-        if (!r.firstSeen || r.firstSeen > d) return;
+        if (!start || start > d) return;
         if (r.dateRemoved && r.dateRemoved <= d) return;
         counts[di]++;
       });
@@ -794,10 +800,11 @@ function calcGroupTrendData(records) {
   const result = LABEL_DEFS.map(() => new Array(D.labels.length).fill(0));
   records.forEach(r => {
     const title = r.title || '';
+    const start = r.postedDate || r.firstSeen;
     LABEL_DEFS.forEach((def, li) => {
       if (!def.re.test(title)) return;
       D.labels.forEach((d, di) => {
-        if (!r.firstSeen || r.firstSeen > d) return;
+        if (!start || start > d) return;
         if (r.dateRemoved && r.dateRemoved <= d) return;
         result[li][di]++;
       });
@@ -945,34 +952,7 @@ function updateGroupChart(records) {
   groupChart.data.datasets = getGroupDatasets(records);
   groupChart.update();
   const isLabel = groupBreakdown === 'label';
-  document.getElementById('group-chips').style.display   = isLabel ? '' : 'none';
   document.getElementById('demand-legend').style.display = isLabel ? '' : 'none';
-  if (isLabel) {
-    document.querySelectorAll('#group-chips input[type=checkbox]').forEach((cb, i) => {
-      const meta = groupChart.getDatasetMeta(i);
-      if (meta) meta.hidden = !cb.checked;
-    });
-    groupChart.update();
-  }
-}
-
-function buildGroupChips() {
-  const container = document.getElementById('group-chips');
-  LABEL_DEFS.forEach(def => {
-    const chip = document.createElement('button');
-    chip.className = 'chip';
-    chip.textContent = def.name;
-    chip.style.cssText = 'background:#f5f5f5;border-color:#ccc;color:#555';
-    chip.addEventListener('click', () => {
-      if (selectedLabels.has(def.name)) selectedLabels.delete(def.name);
-      else selectedLabels.add(def.name);
-      chip.style.cssText = selectedLabels.has(def.name)
-        ? `background:${def.color};border-color:${def.color};color:#fff`
-        : 'background:#f5f5f5;border-color:#ccc;color:#555';
-      triggerRender();
-    });
-    container.appendChild(chip);
-  });
 }
 
 // ── Applicant demand by role ─────────────────────────────────────────────────
@@ -1161,6 +1141,27 @@ D.datasets    = (D.datasets    || []).filter(ds => !EXCLUDED_COMPANIES.has(ds.la
 D.topCompanies= (D.topCompanies|| []).filter(c  => !EXCLUDED_COMPANIES.has(c));
 D.allRanking  = (D.allRanking  || []).filter(r  => !EXCLUDED_COMPANIES.has(r.company));
 
+// ── Data source toggle (devjobs.co.il only vs. + lin-srael/LinkedIn) ───────────
+// Each jobRecord is tagged devjobs / linsrael / both (see jobs_tracker.py). This
+// filters the WHOLE dashboard (stats, charts, ranking, raw table all derive from
+// D.jobRecords) by re-running the page with the preference read fresh on load —
+// simplest way to guarantee every closure downstream sees the filtered set,
+// rather than trying to live-patch state captured in already-built closures.
+const SOURCE_PREF_KEY  = 'linsrael-include';
+const includeLinsrael  = localStorage.getItem(SOURCE_PREF_KEY) !== 'false';  // default: include
+if (!includeLinsrael) {
+  D.jobRecords = (D.jobRecords || []).filter(r => (r.source || 'devjobs') !== 'linsrael');
+}
+document.querySelectorAll('#source-toggle .bd-btn').forEach(btn => {
+  const isAll = btn.dataset.val === 'all';
+  btn.classList.toggle('active', isAll === includeLinsrael);
+  btn.addEventListener('click', () => {
+    if (isAll === includeLinsrael) return;   // already in this state
+    localStorage.setItem(SOURCE_PREF_KEY, isAll ? 'true' : 'false');
+    location.reload();
+  });
+});
+
 // ── State ─────────────────────────────────────────────────────────────────────
 const ALL_COMPANIES = D.topCompanies;
 let chart;
@@ -1170,7 +1171,7 @@ let setFlowFilter;   // set by IIFE — called from flow chart click
 
 // ── Populate stats ────────────────────────────────────────────────────────────
 document.getElementById('meta-line').textContent =
-  `Source: LinkedIn  ·  Generated: ${D.generated.replace('T', ' ')}`;
+  `Source: devjobs.co.il${includeLinsrael ? ' + LinkedIn (lin-srael.com)' : ''}  ·  Generated: ${D.generated.replace('T', ' ')}`;
 document.getElementById('stat-days').textContent =
   D.daysTracked;
 document.getElementById('stat-date').textContent =
@@ -1392,7 +1393,6 @@ renderRanking(D.jobRecords);
 buildFlowChart();
 buildRoleDemandColors();
 buildGroupChart();
-buildGroupChips();
 buildApplicantChart();
 updateApplicantChart(D.jobRecords);
 buildApplicantTrendChart();
@@ -1594,7 +1594,7 @@ let triggerRender;   // set by IIFE below so ranking table can call render()
 
   // ── Build header ────────────────────────────────────────────────────────
   const headerRow = document.getElementById('raw-thead').insertRow();
-  [['firstSeen','First Seen'], ['company','Company'], ['title','Job Title'],
+  [['firstSeen','First Seen'], ['postedDate','Posted Date'], ['company','Company'], ['title','Job Title'],
    ['','Labels'], ['workMode','Mode'], ['location','Location'],
    ['daysListed','Days'], ['dateRemoved','Removed'], ['linkedinPosted','LI Posted'],
    ['linkedinApplicantN','Applicants'], ['','Links']].forEach(([key, label]) => {
@@ -1692,9 +1692,8 @@ let triggerRender;   // set by IIFE below so ranking table can call render()
         ? `<span style="color:#dc2626;font-size:11px">${r.dateRemoved}</span>`
         : `<span style="color:#1a6e3c;font-size:10px">active</span>`;
       tr.insertAdjacentHTML('beforeend', `
-        <td style="color:#888;white-space:nowrap">${r.firstSeen || ''}${
-          r.postedDate ? `<br><span style="font-size:10px;color:#aaa">posted ${r.postedDate}</span>` : ''
-        }</td>
+        <td style="color:#888;white-space:nowrap">${r.firstSeen || ''}</td>
+        <td style="color:#888;white-space:nowrap">${r.postedDate || ''}</td>
         <td style="font-weight:500">${r.company}</td>
         <td style="white-space:normal;max-width:260px">${r.title}</td>
         <td style="white-space:normal;min-width:90px">${
