@@ -199,6 +199,21 @@ def init_db() -> sqlite3.Connection:
 
     con.execute("DROP TABLE IF EXISTS job_appearances")
 
+    # repost_events: one row per close->reopen cycle for a given job_id (same
+    # LinkedIn job ID reappearing after being marked removed). Logged by
+    # upsert_job_index() at the moment it detects the reopen.
+    con.execute("""
+        CREATE TABLE IF NOT EXISTS repost_events (
+            id            INTEGER PRIMARY KEY,
+            job_id        TEXT NOT NULL,
+            company       TEXT NOT NULL,
+            title         TEXT NOT NULL,
+            closed_date   TEXT NOT NULL,
+            reopened_date TEXT NOT NULL,
+            gap_days      INTEGER NOT NULL
+        )
+    """)
+
     con.commit()
     return con
 
@@ -251,6 +266,30 @@ def upsert_job_index(con: sqlite3.Connection, job_list: list, today_date: str,
     today_ids = {j["job_id"] for j in job_list if j.get("job_id")}
     if not today_ids:
         return today_ids
+
+    # Repost detection: any of today's job_ids that are currently marked
+    # removed are being reopened right now — log the close->reopen cycle
+    # before the upsert below clears date_removed. Runs before either
+    # source's upsert in a given session, so only the first source to see
+    # the job_id today claims the event (the other's date_removed is
+    # already '' by the time it runs).
+    placeholders = ",".join("?" * len(today_ids))
+    reopened = con.execute(f"""
+        SELECT job_id, company, title, date_removed FROM job_index
+        WHERE job_id IN ({placeholders}) AND date_removed != ''
+    """, tuple(today_ids)).fetchall()
+    if reopened:
+        repost_rows = []
+        for job_id, company, title, closed_date in reopened:
+            try:
+                gap_days = (date.fromisoformat(today_date) - date.fromisoformat(closed_date)).days
+            except ValueError:
+                gap_days = 0
+            repost_rows.append((job_id, company, title, closed_date, today_date, gap_days))
+        con.executemany("""
+            INSERT INTO repost_events (job_id, company, title, closed_date, reopened_date, gap_days)
+            VALUES (?,?,?,?,?,?)
+        """, repost_rows)
 
     upsert_rows = [
         (j["job_id"], j["company"], j["title"], j.get("url", ""),
@@ -608,7 +647,7 @@ def parse_applicant_count(applicants_text: str) -> int | None:
 
 LINKEDIN_OFFSET_DAYS  = 2      # only jobs first seen exactly this many days ago are eligible
 LINKEDIN_APPLICANT_CAP = 100   # once a job's applicant count reaches this, stop re-polling it
-LINKEDIN_DAILY_LIMIT  = 99     # max LinkedIn requests per run
+LINKEDIN_DAILY_LIMIT  = 150    # max LinkedIn requests per run
 
 
 def _run_linkedin_batch(con: sqlite3.Connection, rows: list[tuple[str]]):
@@ -718,6 +757,16 @@ def export_data_js(con: sqlite3.Connection):
     today_str = date.today().isoformat()
     ji_count = con.execute("SELECT COUNT(*) FROM job_index").fetchone()[0]
 
+    # Repost history per job_id, for the raw table's "Reposts" column/tooltip
+    reposts_by_job = {}
+    for job_id, closed_date, reopened_date, gap_days in con.execute("""
+        SELECT job_id, closed_date, reopened_date, gap_days
+        FROM repost_events ORDER BY job_id, reopened_date
+    """).fetchall():
+        reposts_by_job.setdefault(job_id, []).append({
+            "closedDate": closed_date, "reopenedDate": reopened_date, "gapDays": gap_days,
+        })
+
     if ji_count > 0:
         job_rows = con.execute("""
             SELECT job_id, company, title, url, dev_type, work_mode, location,
@@ -768,6 +817,8 @@ def export_data_js(con: sqlite3.Connection):
                 "linkedinApplicants": linkedin_applicants,
                 "linkedinApplicantN": linkedin_applicant_n,
                 "source":       source or "devjobs",   # 'devjobs' | 'linsrael' | 'both'
+                "repostCount":   len(reposts_by_job.get(job_id, [])),
+                "repostHistory": reposts_by_job.get(job_id, []),
             })
     else:
         # Fallback: job_index not yet populated (export before first full scrape)
@@ -780,7 +831,8 @@ def export_data_js(con: sqlite3.Connection):
              "source": "devjobs",
              "devType": r[4], "workMode": r[5], "location": r[6],
              "firstSeen": r[0], "lastSeen": r[0], "dateRemoved": "",
-             "daysListed": 0, "isActive": True}
+             "daysListed": 0, "isActive": True,
+             "repostCount": 0, "repostHistory": []}
             for r in job_rows
         ]
 

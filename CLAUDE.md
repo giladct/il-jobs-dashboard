@@ -80,6 +80,19 @@ job_index    (job_id PK, company, title, url,
              --   lin-srael's free-text listing); a 'linsrael' upsert only fills those fields in
              --   when devjobs never had the row, so it can never clobber devjobs' data. See
              --   upsert_job_index() in jobs_tracker.py.
+
+repost_events (id, job_id, company, title,
+               closed_date, reopened_date, gap_days)
+             -- one row per close->reopen cycle for a job_id (same LinkedIn job ID marked
+             --   date_removed, then seen again in a later scrape). Logged inside
+             --   upsert_job_index() at the moment it detects the reopen, BEFORE the upsert
+             --   clears job_index.date_removed — otherwise that history is unrecoverable
+             --   (job_index only ever stores current state, one date_removed per job_id).
+             -- gap_days = reopened_date - closed_date; captures anywhere from same-day
+             --   reposts to multi-year gaps.
+             -- Does NOT catch a company reposting the same role under a brand-new job_id
+             --   (common on LinkedIn) — that would need fuzzy company/title matching across
+             --   job_ids, which was deliberately left out (noisy for generic titles).
 ```
 
 ### job_index lifecycle
@@ -139,7 +152,9 @@ Always populated (derived from title, backfilled on export for old rows).
     "dateRemoved",   // '' = active, 'YYYY-MM-DD' = removed
     "daysListed",    // days from firstSeen to dateRemoved (or today if active)
     "isActive",      // boolean
-    "source"         // 'devjobs' | 'linsrael' | 'both'
+    "source",        // 'devjobs' | 'linsrael' | 'both'
+    "repostCount",   // number of close->reopen cycles logged for this job_id, from repost_events
+    "repostHistory"  // [{closedDate, reopenedDate, gapDays}, ...] — one entry per cycle
   }, ...]
 }
 ```
@@ -194,9 +209,10 @@ All companies ranked by current active job count — computed **client-side** fr
 `datasets` above) — scrollable, max-height 420 px.
 
 ### Raw data table
-One row per unique job (from `job_index`). Columns: First Seen / Company / Job Title / Role (badge) / Mode / Location / Days / Removed / Link.
+One row per unique job (from `job_index`). Columns: First Seen / Company / Job Title / Role (badge) / Mode / Location / Days / Removed / Reposts / LI Posted / Applicants / Link.
 - **Days** — how long the job was/has been listed (tooltip shows exact first/last seen dates)
 - **Removed** — green "active" or red removal date
+- **Reposts** — amber "N×" badge if the job's LinkedIn ID was ever closed and later reopened (from `repost_events`/`repostHistory`); hover for the closed→reopened date and gap-days of each cycle. "—" if never reposted. Only catches same-job_id reposts (see known issue 9).
 Sortable by any column. Shows filtered count vs total.
 
 ---
@@ -206,8 +222,9 @@ Sortable by any column. Shows filtered count vs total.
 1. **work_mode and location empty for 2026-05-23 records** — can't be backfilled (data not captured).
 2. **Intel has no current listings** on devjobs.co.il (verified 2026-05-24).
 3. **TOP_N = 30** — line chart only shows top 30 companies. Ranking table shows all.
-4. **LinkedIn enrichment (`linkedin-data`)** covers all jobs (any `dev_type`) first seen exactly `LINKEDIN_OFFSET_DAYS` (2) days ago. Polling for a job stops once its applicant count reaches 100 (`LINKEDIN_APPLICANT_CAP`). Capped at `LINKEDIN_DAILY_LIMIT` (99) requests/run. Runs automatically every day as a step in the daily GitHub Actions workflow (`.github/workflows/daily-scrape.yml`), right after the main scrape.
+4. **LinkedIn enrichment (`linkedin-data`)** covers all jobs (any `dev_type`) first seen exactly `LINKEDIN_OFFSET_DAYS` (2) days ago. Polling for a job stops once its applicant count reaches 100 (`LINKEDIN_APPLICANT_CAP`). Capped at `LINKEDIN_DAILY_LIMIT` (150) requests/run. Runs automatically every day as a step in the daily GitHub Actions workflow (`.github/workflows/daily-scrape.yml`), right after the main scrape.
 5. **LinkedIn applicant count is the older "applicants" widget, not what you see logged in.** Our scraper hits the public/logged-out HTML, which only exposes `.num-applicants__caption` (e.g. "Over 200 applicants"). LinkedIn's logged-in UI now shows a different, separate metric — "X people clicked apply" — especially for jobs with "Responses managed off LinkedIn" (external ATS), where LinkedIn can't count real applicants and only counts Apply-button clicks. That text isn't present in the anonymous HTML at all, so the dashboard's number can be stale or simply a different metric than what you see browsing LinkedIn directly. Also note: "Over N applicants"/"Over 200 applicants" is a floor, not exact — `parse_applicant_count()` just extracts the first number, so treat values ≥ 100/200 as "at least this many," not precise.
 6. **lin-srael-sourced jobs always have `workMode = ''`** — lin-srael's `searchJobs` API doesn't return a remote/hybrid/on-site field in results (only accepts it as an unconfirmed filter param), so the Mode filter/column is blank for `source: 'linsrael'` rows. Not backfillable without finding that field.
 7. **Company filter chips (top-30) are still devjobs.co.il-only** — `topCompanies`/`ALL_COMPANIES` is computed from the `snapshots` table (devjobs peak counts only); lin-srael-only companies won't get a quick-filter chip. Use the raw-search text box (matches company name) to filter by them instead.
 8. **Standalone `linsrael` command marks removals only for `source='linsrael'`-only rows** (by design — see job_index lifecycle above). A job that's also seen by devjobs (`source='devjobs'`/`'both'`) only gets its `isActive` status properly maintained through the daily `run_once()` combined-source flow, not through ad-hoc `linsrael` runs.
+9. **Repost tracking (`repost_events`) only started 2026-08-09** — any close→reopen cycles before that date are invisible; `job_index.date_removed` was silently overwritten on relist with no history kept. It also only catches a job reappearing under the *same* LinkedIn job ID. A company reposting the same role under a brand-new job_id (common on LinkedIn) looks like an unrelated new listing — no fuzzy company/title matching was added to catch that (deliberately skipped, see conversation: too noisy for generic titles).

@@ -1596,7 +1596,7 @@ let triggerRender;   // set by IIFE below so ranking table can call render()
   const headerRow = document.getElementById('raw-thead').insertRow();
   [['firstSeen','First Seen'], ['postedDate','Posted Date'], ['company','Company'], ['title','Job Title'],
    ['','Labels'], ['workMode','Mode'], ['location','Location'],
-   ['daysListed','Days'], ['dateRemoved','Removed'], ['linkedinPosted','LI Posted'],
+   ['daysListed','Days'], ['dateRemoved','Removed'], ['repostCount','Reposts'], ['linkedinPosted','LI Posted'],
    ['linkedinApplicantN','Applicants'], ['','Links']].forEach(([key, label]) => {
     const th = document.createElement('th');
     th.textContent = label;
@@ -1627,7 +1627,7 @@ let triggerRender;   // set by IIFE below so ranking table can call render()
 
   function getSorted(data) {
     return [...data].sort((a, b) => {
-      if (sortKey === 'daysListed' || sortKey === 'linkedinApplicantN')
+      if (sortKey === 'daysListed' || sortKey === 'linkedinApplicantN' || sortKey === 'repostCount')
         return sortDir * ((a[sortKey] ?? -1) - (b[sortKey] ?? -1));
       const va = a[sortKey] || '', vb = b[sortKey] || '';
       return va < vb ? -sortDir : va > vb ? sortDir : 0;
@@ -1712,6 +1712,13 @@ let triggerRender;   // set by IIFE below so ranking table can call render()
           return d <= 0 ? 'today' : d + 'd';
         })()}</td>
         <td style="text-align:center;white-space:nowrap">${removedCell}</td>
+        <td style="text-align:center;white-space:nowrap">${
+          r.repostCount
+            ? `<span style="display:inline-block;padding:1px 6px;border-radius:10px;font-size:11px;font-weight:600;background:#f59e0b22;color:#b45309;cursor:help" title="${
+                r.repostHistory.map(h => `Closed ${h.closedDate} → reopened ${h.reopenedDate} (${h.gapDays}d gap)`).join('\n')
+              }">${r.repostCount}×</span>`
+            : `<span style="color:#ccc;font-size:11px">—</span>`
+        }</td>
         <td style="text-align:center;white-space:nowrap;color:#555;font-size:12px">${r.linkedinPosted || ''}</td>
         <td style="text-align:center;white-space:nowrap;color:#555;font-size:12px" title="${r.linkedinApplicants || ''}">${
           r.linkedinApplicantN != null ? r.linkedinApplicantN : ''
@@ -1734,7 +1741,7 @@ let triggerRender;   // set by IIFE below so ranking table can call render()
     const key = th.dataset.key;
     if (!key) return;
     if (key === sortKey) { sortDir *= -1; }
-    else { sortKey = key; sortDir = (key === 'firstSeen' || key === 'daysListed' || key === 'dateRemoved' || key === 'linkedinApplicantN') ? -1 : 1; }
+    else { sortKey = key; sortDir = (key === 'firstSeen' || key === 'daysListed' || key === 'dateRemoved' || key === 'linkedinApplicantN' || key === 'repostCount') ? -1 : 1; }
     currentPage = 0;
     render();
   });
