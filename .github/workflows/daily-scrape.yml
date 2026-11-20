@@ -20,6 +20,9 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Decompress jobs.db (stored gzipped to stay under GitHub's 100 MB limit)
+        run: gunzip -k jobs.db.gz
+
       - name: Install dependencies
         run: pip install requests beautifulsoup4
 
@@ -29,10 +32,11 @@ jobs:
       - name: Enrich jobs from 2 days ago with LinkedIn posted-time/applicants
         run: python jobs_tracker.py linkedin-data
 
-      - name: Commit updated data.js and jobs.db
+      - name: Commit updated data.js and jobs.db.gz
         run: |
+          gzip -n -9 -c jobs.db > jobs.db.gz
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data.js jobs.db
+          git add data.js jobs.db.gz
           git diff --cached --quiet || git commit -m "Auto-update jobs data $(date -u +%Y-%m-%d)"
           git push

@@ -42,7 +42,7 @@ py jobs_tracker.py linkedin-data     # automated daily policy: Data/ML jobs only
 ```
 
 **Windows Task Scheduler** runs the full scrape daily automatically.
-**GitHub Actions** (`.github/workflows/daily-scrape.yml`) also runs daily at 06:00 UTC and commits both `data.js` and `jobs.db` back to the repo. `jobs.db` is tracked in git (not in .gitignore) so historical snapshots are never lost if the runner restarts.
+**GitHub Actions** (`.github/workflows/daily-scrape.yml`) also runs daily at 06:00 UTC and commits both `data.js` and `jobs.db.gz` back to the repo (it gunzips before the scrape and re-gzips after). `jobs.db.gz` is tracked in git so historical snapshots are never lost if the runner restarts.
 
 The plain (no-args) run and the GitHub Actions workflow both call `run_once()`, which scrapes **both** sources
 and marks a job removed only if it's absent from the union of everything scraped that session — a job absent
